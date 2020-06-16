@@ -6,7 +6,7 @@ export const options = {
   headerLineHeight: 1.2,
   scaleRatio: 5,
   headerFontFamily: [
-    "Montserrat",
+    "Roboto",
     "Arial",
     "Avenir Next",
     "Helvetica Neue",
@@ -14,8 +14,8 @@ export const options = {
     "Helvetica",
     "sans-serif",
   ],
-  bodyFontFamily: ["Arial", "georgia", "serif"],
-  monospaceFontFamily: ["Arial", "Menlo", "monospace"],
+  bodyFontFamily: ["Roboto", "georgia", "serif"],
+  monospaceFontFamily: ["Roboto", "monospace"],
   headerWeight: 900, //default bold
   bodyWeight: 300, //default normal
   boldWeight: 700, //default bold

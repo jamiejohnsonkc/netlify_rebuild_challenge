@@ -29,7 +29,15 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Montserrat",
+              family: "Roboto",
+              variants: ["300", "400", "500", "600", "700", "800", "900"],
+              //subsets: ['latin']
+              //text: 'Hello'
+              //fontDisplay: 'swap',
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+            {
+              family: "Roboto Slab",
               variants: ["300", "400", "500", "600", "700", "800", "900"],
               //subsets: ['latin']
               //text: 'Hello'

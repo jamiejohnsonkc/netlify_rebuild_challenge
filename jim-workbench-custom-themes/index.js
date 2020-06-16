@@ -51,9 +51,9 @@ export default merge(typography, {
     heading: "-0.05em",
   },
   lineHeights: {
-    // body: 2,
-    // heading: 1,
-    // display: 1.2,
+    body: 2,
+    heading: 1,
+    display: 1.2,
   },
 
   text: {
@@ -75,11 +75,11 @@ export default merge(typography, {
     },
 
     utility: {
-      fontFamily: "monospace",
+      fontFamily: "Roboto",
     },
     legal: {
       fontWeight: "normal",
-      fontFamily: "monospace",
+      fontFamily: "Roboto",
       fontSize: 0,
       color: "white",
     },
@@ -100,22 +100,23 @@ export default merge(typography, {
       fontWeight: "body",
     },
     b1: {
-      fontFamily: "heading",
+      fontFamily: "Roboto Slab",
       fontWeight: "heavy",
       lineHeight: 0.8,
       letterSpacing: "-0.084em",
     },
     b2: {
-      fontFamily: "heading",
+      fontFamily: "Roboto Slab",
       fontWeight: "heavy",
       lineHeight: 0.8,
       letterSpacing: "-0.084em",
     },
     b3: {
-      fontFamily: "heading",
+      fontFamily: "Roboto Slab",
       fontWeight: "heavy",
       lineHeight: 0.8,
       letterSpacing: "-0.084em",
+      fontSize: 5,
     },
 
     h1: {

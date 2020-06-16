@@ -2,10 +2,10 @@ export default {
   nav: {
     fontWeight: "normal",
     fontSize: [3, 3, 1, 2],
-    fontFamily: "monospace",
+    fontFamily: "Roboto",
     color: "white",
     letterSpacing: ".1em",
-    textTransform: "uppercase",
+    textTransform: "captilalize",
     textDecoration: "none",
     transition: "all 0.3s ease-in-out",
     py: 1,

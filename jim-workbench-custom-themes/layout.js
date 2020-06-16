@@ -12,7 +12,7 @@ export default {
   },
   nav: {
     backgroundColor: "secondary",
-    textTransform: "uppercase",
+    textTransform: "capitalize",
     borderBottom: "1px solid gray",
     justifyContent: "flex-end",
     height: ["8vh", "10vh"],
