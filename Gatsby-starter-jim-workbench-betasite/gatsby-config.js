@@ -24,6 +24,27 @@ module.exports = {
   plugins: [
     { resolve: `gatsby-theme-jim-base-workbench`, options: {} },
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["300", "400", "500", "600", "700", "800", "900"],
+              //subsets: ['latin']
+              //text: 'Hello'
+              //fontDisplay: 'swap',
+              //strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+          ],
+        },
+        //formats: ['woff2', 'woff'],
+        //useMinify: true,
+        //usePreload: true,
+        //usePreconnect: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `betasite`,
