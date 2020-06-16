@@ -22,7 +22,7 @@ module.exports = {
     ],
   },
   plugins: [
-    { resolve: `gatsby-theme-jimworkbench-betasite`, options: {} },
+    { resolve: `gatsby-theme-jim-base-workbench`, options: {} },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
