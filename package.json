@@ -1,0 +1,20 @@
+{
+  "name": "gatsby-starter-jim-site-workbench",
+  "version": "1.0.0",
+  "description": "jim site workbench",
+  "main": "index.js",
+  "author": "@jamiejohnsonkc",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspace gatsby-starter-jim-workbench-betasite build",
+    "develop": "yarn workspace gatsby-starter-jim-workbench-betasite develop",
+    "clean": "yarn workspace gatsby-starter-jim-workbench-betasite gatsby clean",
+    "sanitize": "yarn run clean && yarn develop"
+  },
+  "workspaces": [
+    "gatsby-starter-jim-workbench-betasite",
+    "jim-workbench-custom-themes",
+    "jim-workbench-custom-presentation"
+  ]
+}
