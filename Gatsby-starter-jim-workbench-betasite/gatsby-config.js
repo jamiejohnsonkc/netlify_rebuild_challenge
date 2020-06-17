@@ -7,17 +7,52 @@ module.exports = {
       {
         name: "home",
         link: "/",
-        // subMenu: [],
+        subMenu: [
+          {
+            link: "/sub-1",
+            name: "Sub 1",
+          },
+        ],
       },
       {
         name: "page2",
         link: "/page-2",
         subMenu: [
-          // {
-          //   link: "/sub-1",
-          //   name: "Sub 1",
-          // },
+          {
+            link: "/sub-1",
+            name: "Sub 1",
+          },
         ],
+      },
+      {
+        name: "page3",
+        link: "/page-3",
+        subMenu: [
+          {
+            link: "/sub-1",
+            name: "Sub 1",
+          },
+        ],
+      },
+      {
+        name: "page4",
+        link: "/page-4",
+        subMenu: [
+          {
+            link: "/sub-1",
+            name: "Sub 1",
+          },
+        ],
+      },
+      {
+        name: "page5",
+        link: "/page-5",
+        subMenu: [],
+      },
+      {
+        name: "page6",
+        link: "/page-6",
+        subMenu: [],
       },
     ],
   },

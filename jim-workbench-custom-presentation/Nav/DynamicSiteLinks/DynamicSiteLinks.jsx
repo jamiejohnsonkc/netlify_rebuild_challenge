@@ -61,7 +61,6 @@ const DynamicSiteLinks = (props) => (
     )}
   />
 )
-
 DynamicSiteLinks.propTypes = {}
 
 DynamicSiteLinks.defaultProps = {}
