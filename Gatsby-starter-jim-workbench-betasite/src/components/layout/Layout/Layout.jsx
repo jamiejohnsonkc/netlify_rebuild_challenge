@@ -4,11 +4,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Top from "../Top"
+
 {
   /*
-import Navbar from "../Nav/Navbar"
+import Navbar from "../../../../../jim-workbench-custom-presentation/Nav/Navbar"
 */
 }
+// import DynamicSiteLinks from "../Nav/DynamicSiteLinks"
+import Navbar from "../Nav/Navbar"
 import Footer from "../Footer"
 
 const Layout = ({ children }) => {
@@ -34,8 +37,11 @@ const Layout = ({ children }) => {
       >
         <Top siteTitle={data.site.siteMetadata.title} />
         {/*
+        <DynamicSiteLinks />
+       */}
+
         <Navbar />
-     */}
+
         <main
           sx={{
             flex: "1 1 auto",
