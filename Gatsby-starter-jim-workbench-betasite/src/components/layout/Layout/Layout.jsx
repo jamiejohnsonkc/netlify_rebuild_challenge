@@ -1,34 +1,57 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
+import { Styled, jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Navbar from "../../../../../jim-workbench-custom-presentation/Nav/Navbar"
+import { useStaticQuery, graphql } from "gatsby"
+import Top from "../Top"
+{
+  /*
+import Navbar from "../Nav/Navbar"
+*/
+}
+import Footer from "../Footer"
 
-const Layout = (props) => (
-  <Styled.root>
-    <div
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        // set this to `minHeight: '100vh'` for full viewport height
-        minHeight: "100vh",
-      }}
-    >
-      <Navbar />
-      <main
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQueryAndSitetitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    <Styled.root>
+      <div
         sx={{
-          flex: "1 1 auto",
-          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          // set this to `minHeight: '100vh'` for full viewport height
+          minHeight: "100vh",
         }}
       >
-        {props.children}
-      </main>
-    </div>
-  </Styled.root>
-)
+        <Top siteTitle={data.site.siteMetadata.title} />
+        {/*
+        <Navbar />
+     */}
+        <main
+          sx={{
+            flex: "1 1 auto",
+            width: "100%",
+          }}
+        >
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </Styled.root>
+  )
+}
 
-Layout.propTypes = {}
-
-Layout.defaultProps = {}
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default Layout

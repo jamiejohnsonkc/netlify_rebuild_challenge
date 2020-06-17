@@ -57,7 +57,40 @@ module.exports = {
     ],
   },
   plugins: [
-    { resolve: `gatsby-theme-jim-base-workbench`, options: {} },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        name: `svg`,
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    `gatsby-plugin-theme-ui`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -81,16 +114,12 @@ module.exports = {
             },
           ],
         },
-        //formats: ['woff2', 'woff'],
-        //useMinify: true,
-        //usePreload: true,
-        //usePreconnect: false,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `betasite`,
+        name: `gatsby-starter-jim-workbench-betasite`,
         short_name: `betasite`,
         start_url: `/`,
         display: `minimal-ui`,

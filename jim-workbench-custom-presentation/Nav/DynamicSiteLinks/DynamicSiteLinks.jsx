@@ -28,35 +28,33 @@ const DynamicSiteLinks = (props) => (
           flexDirection: ["column", "column", "row"],
         }}
       >
-        {
-          (menuLinks = data.site.siteMetadata.menuLinks.map((link) => (
-            <li
-              key={link.name}
+        {menuLinks.map((link) => (
+          <li
+            key={link.name}
+            sx={{
+              display: ["inline-block"],
+              my: [4, 4, 2],
+              mx: [null, null, 2],
+              zIndex: [6, 6, 1],
+              listStyleType: "none",
+              padding: 1,
+            }}
+          >
+            <Link
+              {...props}
+              activeClassName="active"
               sx={{
-                display: ["inline-block"],
-                my: [4, 4, 2],
-                mx: [null, null, 2],
-                zIndex: [6, 6, 1],
-                listStyleType: "none",
-                padding: 1,
+                whiteSpace: "nowrap",
+                position: "relative",
+                cursor: "pointer",
+                variant: "links.nav",
               }}
+              to={link.link}
             >
-              <Link
-                {...props}
-                activeClassName="active"
-                sx={{
-                  whiteSpace: "nowrap",
-                  position: "relative",
-                  cursor: "pointer",
-                  variant: "links.nav",
-                }}
-                to={link.link}
-              >
-                {link.name}
-              </Link>
-            </li>
-          )))
-        }
+              {link.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     )}
   />

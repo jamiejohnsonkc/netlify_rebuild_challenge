@@ -1,19 +1,19 @@
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createFieldExtension, createTypes } = actions
-  createFieldExtension({
-    name: `defaultArray`,
-    extend() {
-      return {
-        resolve(source, args, context, info) {
-          if (source[info.fieldName] == null) {
-            return []
-          }
-          return source[info.fieldName]
-        },
-      }
-    },
-  })
-  const typeDefs = `
+	const { createFieldExtension, createTypes } = actions
+	createFieldExtension({
+		name: `defaultArray`,
+		extend() {
+			return {
+				resolve(source, args, context, info) {
+					if (source[info.fieldName] == null) {
+						return []
+					}
+					return source[info.fieldName]
+				},
+			}
+		},
+	})
+	const typeDefs = `
             type Site implements Node {
               siteMetadata: SiteMetadata
             }
@@ -30,5 +30,5 @@ exports.createSchemaCustomization = ({ actions }) => {
               link: String
             }
           `
-  createTypes(typeDefs)
+	createTypes(typeDefs)
 }

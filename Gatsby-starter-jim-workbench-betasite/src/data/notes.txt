@@ -1,0 +1,1 @@
+Using "image" as a field name when pulling data from json while using gatsbyImageSharp appears to create conflicts.
