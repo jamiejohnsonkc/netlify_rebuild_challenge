@@ -100,7 +100,7 @@ const Navbar = () => {
             variant: "layout.navbox.drawer",
           }}
         >
-          <DynamicSiteLinks />
+          {/* <DynamicSiteLinks /> */}
         </NavDrawer>
       ) : (
         <NavBox
@@ -109,7 +109,7 @@ const Navbar = () => {
           }}
           open
         >
-          <DynamicSiteLinks />
+          {/* <DynamicSiteLinks /> */}
         </NavBox>
       )}
     </Styled.div>

@@ -6,10 +6,20 @@ export default {
     px: 3,
     fontSize: 5,
   },
+  mastHead: {
+    width: "100%",
+    height: "10vh",
+    backgroundColor: "gray",
+  },
+
   bottom: {
     bg: "transparent",
     fontSize: 0,
   },
+
+  //TODO color modes
+
+  //TODO partial
   mastheadLogo: {
     width: "90px",
     "&>svg": {
@@ -41,40 +51,45 @@ export default {
         backgroundColor: "white",
       },
     },
-    li: {
-      alignSelf: "center",
-    },
-    footerNav: { fontSize: 1 },
-  },
-  navLogo: {
-    backgroundColor: "rgba(0,0,0,.15)",
-    textTransform: "capitalize",
-    borderBottom: "transparent",
-    justifyContent: "space-between",
-    height: ["8vh", "4vh"],
-
-    drawer: {
-      "@media (max-width: 768px)": {
-        // backgroundColor: "primary",
-      },
-    },
-    hamburger: {
-      backgroundColor: "white",
-      "&::before": {
-        backgroundColor: "white",
-      },
-      "&::after": {
-        backgroundColor: "white",
-      },
-    },
     ul: {
       display: "flex",
       flex: 1,
       flexDirection: ["column", "column", "row"],
     },
-    li: {},
+    li: {
+      alignSelf: "center",
+    },
     footerNav: { fontSize: 1 },
   },
+  // navLogo: {
+  //   backgroundColor: "rgba(0,0,0,.15)",
+  //   textTransform: "capitalize",
+  //   borderBottom: "transparent",
+  //   justifyContent: "space-between",
+  //   height: ["8vh", "4vh"],
+
+  //   drawer: {
+  //     "@media (max-width: 768px)": {
+  //       // backgroundColor: "primary",
+  //     },
+  //   },
+  //   hamburger: {
+  //     backgroundColor: "white",
+  //     "&::before": {
+  //       backgroundColor: "white",
+  //     },
+  //     "&::after": {
+  //       backgroundColor: "white",
+  //     },
+  //   },
+  //   ul: {
+  //     display: "flex",
+  //     flex: 1,
+  //     flexDirection: ["column", "column", "row"],
+  //   },
+
+  //   footerNav: { fontSize: 1 },
+  // },
 
   footer: {
     backgroundColor: "secondary",
