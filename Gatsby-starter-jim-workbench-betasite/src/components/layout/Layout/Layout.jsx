@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import { Styled, jsx } from "theme-ui"
+import { Styled, jsx, Container } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Top from "../Top"
 
 {
   /*
@@ -35,12 +34,9 @@ const Layout = ({ children }) => {
           minHeight: "100vh",
         }}
       >
-        <Top siteTitle={data.site.siteMetadata.title} />
         {/*
         <DynamicSiteLinks />
        */}
-
-        <Navbar />
 
         <main
           sx={{
@@ -48,7 +44,10 @@ const Layout = ({ children }) => {
             width: "100%",
           }}
         >
-          {children}
+          <Container>
+            <Navbar />
+            {children}
+          </Container>
         </main>
         <Footer />
       </div>

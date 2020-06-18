@@ -38,10 +38,11 @@ const Hamburger = styled.div`
 
 const NavBox = styled.div`
   display: flex;
-  height: 100%;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-
+  flex: 1;
+`
+const NavDrawer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     position: absolute;
@@ -62,13 +63,10 @@ const Navbar = () => {
     <Styled.div
       as="nav"
       sx={{
-        display: "flex",
+        display: ["flex"],
         position: ["sticky", "relative"],
         width: "100%",
-        margin: "0 auto",
         zIndex: 2,
-        py: 4,
-        px: 3,
         alignSelf: "center",
         alignItems: "center",
         top: ["0", "null"],
@@ -76,10 +74,12 @@ const Navbar = () => {
         right: ["0", "null"],
         left: ["0", "null"],
         variant: "layout.nav",
+        listStyleType: "none",
+        lineHeight: 1.5,
       }}
     >
       <Styled.div
-        as="toggle"
+        className="toggle"
         NavbarOpen={NavbarOpen}
         onClick={() => setNavbarOpen(!NavbarOpen)}
         sx={{
@@ -95,17 +95,17 @@ const Navbar = () => {
         )}
       </Styled.div>
       {NavbarOpen ? (
-        <NavBox
+        <NavDrawer
           sx={{
-            variant: "layout.nav.drawer",
+            variant: "layout.navbox.drawer",
           }}
         >
           <DynamicSiteLinks />
-        </NavBox>
+        </NavDrawer>
       ) : (
         <NavBox
           sx={{
-            variant: "layout.nav.drawer",
+            variant: "layout.navbox",
           }}
           open
         >

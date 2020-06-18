@@ -5,6 +5,8 @@ import Layout from "../components/layout/Layout"
 import { Styled, jsx } from "theme-ui"
 import SEO from "../pages/seo"
 import Image from "../components/base/image"
+import TestApp from "../components/base/TestApp"
+import TestApp2 from "../components/base/TestApp2"
 
 const IndexPage = (props) => (
   <Layout>
@@ -18,6 +20,8 @@ const IndexPage = (props) => (
     <Styled.p>
       <Link to="/page-2/">Go to page 2</Link>
     </Styled.p>
+    <TestApp />
+    <TestApp2 />
   </Layout>
 )
 

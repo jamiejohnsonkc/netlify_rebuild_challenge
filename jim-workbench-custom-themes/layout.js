@@ -10,16 +10,52 @@ export default {
     bg: "transparent",
     fontSize: 0,
   },
-  nav: {
-    backgroundColor: "secondary",
-    textTransform: "capitalize",
-    borderBottom: "1px solid gray",
-    justifyContent: "flex-end",
-    height: ["8vh", "10vh"],
+  mastheadLogo: {
+    width: "90px",
+    "&>svg": {
+      fill: "blue",
+    },
+  },
+  navbox: {
+    whiteSpace: "nowrap",
+    position: "relative",
+    cursor: "pointer",
+    backgroundColor: "rgba(0,0,0,.15)",
+    borderBottom: "transparent",
+    justifyContent: "space between",
+    height: ["8vh", "auto", null, null, null, null],
+    marginTop: 4,
+    borderRadius: 4,
 
     drawer: {
       "@media (max-width: 768px)": {
         backgroundColor: "primary",
+      },
+    },
+    hamburger: {
+      backgroundColor: "white",
+      "&::before": {
+        backgroundColor: "white",
+      },
+      "&::after": {
+        backgroundColor: "white",
+      },
+    },
+    li: {
+      alignSelf: "center",
+    },
+    footerNav: { fontSize: 1 },
+  },
+  navLogo: {
+    backgroundColor: "rgba(0,0,0,.15)",
+    textTransform: "capitalize",
+    borderBottom: "transparent",
+    justifyContent: "space-between",
+    height: ["8vh", "4vh"],
+
+    drawer: {
+      "@media (max-width: 768px)": {
+        // backgroundColor: "primary",
       },
     },
     hamburger: {
@@ -39,6 +75,7 @@ export default {
     li: {},
     footerNav: { fontSize: 1 },
   },
+
   footer: {
     backgroundColor: "secondary",
   },

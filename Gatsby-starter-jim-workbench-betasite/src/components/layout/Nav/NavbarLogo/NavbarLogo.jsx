@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import styled from "@emotion/styled"
-import StaticNavbarLinks from "../StaticNavbarLinks"
-import Logo from "../../../Molecules/Logo"
+import DynamicSiteLinks from "../DynamicSiteLinks"
+
+import Logo from "../../../base/Logo"
 
 const Hamburger = styled.div`
-  background-color: #fff;
   width: 28px;
   height: 2px;
   transition: all 0.3s linear;
@@ -20,7 +20,6 @@ const Hamburger = styled.div`
   ::after {
     width: 28px;
     height: 2px;
-    background-color: #fff;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -44,7 +43,6 @@ const NavBox = styled.div`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.secondary};
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -81,13 +79,9 @@ const NavbarLogo = () => {
         left: ["0", "null"],
         right: ["0", "null"],
         left: ["0", "null"],
-        variant: "layout.nav",
+        variant: "layout.navLogo",
       }}
     >
-      <Link href="/">
-        <Logo />
-      </Link>
-
       <Styled.div
         as="toggle"
         NavbarLogoOpen={NavbarLogoOpen}
@@ -102,11 +96,19 @@ const NavbarLogo = () => {
       </Styled.div>
       {NavbarLogoOpen ? (
         <NavBox>
-          <StaticNavbarLinks />
+          <DynamicSiteLinks />
         </NavBox>
       ) : (
         <NavBox open>
-          <StaticNavbarLinks />
+          <Link
+            href="/"
+            sx={{
+              width: "10em",
+            }}
+          >
+            <Logo />
+          </Link>
+          <DynamicSiteLinks />
         </NavBox>
       )}
     </Styled.div>

@@ -5,16 +5,6 @@ module.exports = {
     author: `@jamiejohnsonkc`,
     menuLinks: [
       {
-        name: "home",
-        link: "/",
-        subMenu: [
-          {
-            link: "/sub-1",
-            name: "Sub 1",
-          },
-        ],
-      },
-      {
         name: "page2",
         link: "/page-2",
         subMenu: [
