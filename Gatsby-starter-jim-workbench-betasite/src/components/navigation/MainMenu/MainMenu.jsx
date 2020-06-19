@@ -15,7 +15,7 @@ const StyledLink = ({ ...props }) => (
   />
 )
 
-const PageLinksMap = (props) => {
+const MainMenu = (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -37,16 +37,15 @@ const PageLinksMap = (props) => {
       `}
       render={(data) => (
         <ul
-          className="mainLinks"
           {...props}
+          className="mainMenu"
           sx={{
             display: "flex",
             width: "100%",
-            lineHeight: 1,
-            flexDirection: ["column", "column", "row"],
             listStyle: "none",
             justifyContent: "space-between",
-            px: 3,
+
+            variant: "layout.mainMenu",
           }}
         >
           <li>
@@ -150,6 +149,7 @@ const PageLinksMap = (props) => {
           <li
             sx={{
               marginRight: 0,
+              height: "16px",
             }}
           >
             <StyledLink>Sign Up</StyledLink>
@@ -176,4 +176,4 @@ const PageLinksMap = (props) => {
   )
 }
 
-export default PageLinksMap
+export default MainMenu

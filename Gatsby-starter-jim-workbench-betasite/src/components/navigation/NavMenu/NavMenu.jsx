@@ -6,27 +6,18 @@ import { Styled } from "theme-ui"
 import Hamburger from "../Hamburger"
 import Drawer from "../../layout/Drawer"
 import SideNav from "../SideNav"
+import MainMenu from "../MainMenu"
 import styled from "@emotion/styled"
-
-const NavBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
-`
 
 const NavMenu = (props) => {
   const [NavbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <ul
+    <Styled.div
       {...props}
       className="navMenu"
       sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        flex: 1,
+        variant: "layout.navMenu",
       }}
     >
       <Styled.div
@@ -41,15 +32,12 @@ const NavMenu = (props) => {
       >
         {NavbarOpen ? (
           <Hamburger
-            className="Burger"
-            sx={{ variant: "layout.navbox.hamburger" }}
+            className="hamburger"
+            sx={{ variant: "layout.hamburger" }}
             open
           />
         ) : (
-          <Hamburger
-            className="Burger"
-            sx={{ variant: "layout.navbox.hamburger" }}
-          />
+          <Hamburger className="Burger" sx={{ variant: "layout.hamburger" }} />
         )}
       </Styled.div>
 
@@ -57,29 +45,15 @@ const NavMenu = (props) => {
         <Drawer
           className="sideNavDrawer"
           sx={{
-            variant: "layout.navbox.drawer",
+            variant: "layout.sideNavDrawer",
           }}
         >
-          <SideNav className="sideNav">howdy</SideNav>
+          <SideNav className="sideNav" />
         </Drawer>
       ) : (
-        <Drawer
-          className="sideNavDrawer"
-          sx={{
-            variant: "layout.navbox.drawer",
-          }}
-          open
-        >
-          <NavBox
-            sx={{
-              variant: "layout.navbox",
-            }}
-          >
-            good ol nav
-          </NavBox>
-        </Drawer>
+        <MainMenu open />
       )}
-    </ul>
+    </Styled.div>
   )
 }
 

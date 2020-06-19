@@ -3,7 +3,7 @@ import { Styled, jsx, Container } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import LinkList3 from "../../base/LinkList3"
+// import LinkList3 from "../../base/LinkList3"
 // import LinkList3 from "../../../../../jim-workbench-custom-presentation/LinkList3"
 
 {
@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         <DynamicSiteLinks />
        */}
       <SaasMasthead />
-      <LinkList3 />
+      {/* <LinkList3 /> */}
       <main
         sx={{
           flex: "1 1 auto",

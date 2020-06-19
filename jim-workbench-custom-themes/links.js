@@ -33,6 +33,7 @@ export default {
 
   //dark
   nav: {
+    lineHeight: 1,
     fontWeight: "normal",
     fontSize: [3, 3, 1, 1],
     fontFamily: "Roboto",
@@ -68,4 +69,5 @@ export default {
       lineHeight: 1,
     },
   },
+  sideNavLinks: {},
 }

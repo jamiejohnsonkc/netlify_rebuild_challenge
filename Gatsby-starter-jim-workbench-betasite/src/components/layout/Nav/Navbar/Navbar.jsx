@@ -4,7 +4,7 @@ import { Styled, jsx } from "theme-ui"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import styled from "@emotion/styled"
-import DynamicSiteLinks from "../DynamicSiteLinks"
+// import DynamicSiteLinks from "../DynamicSiteLinks"
 
 const Hamburger = styled.div`
   width: 28px;

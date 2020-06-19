@@ -6,90 +6,73 @@ export default {
     px: 3,
     fontSize: 5,
   },
-  mastHead: {
-    width: "100%",
-    height: "10vh",
-    backgroundColor: "gray",
-  },
-
   bottom: {
     bg: "transparent",
     fontSize: 0,
   },
-
-  //TODO color modes
-
-  //TODO partial
-  mastheadLogo: {
-    width: "90px",
-    "&>svg": {
-      fill: "blue",
-    },
+  mastHead: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: 3,
+    // backgroundColor: "gray",
   },
-  navbox: {
+
+  navBar: {
+    borderRadius: 6,
+    variant: "layout.container",
+    backgroundColor: "rgba(0,0,0,.15)",
+    lineHeight: 1,
+  },
+
+  navMenu: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    flex: 1,
+    lineHeight: 1,
+  },
+
+  mainMenu: {
     whiteSpace: "nowrap",
     position: "relative",
     cursor: "pointer",
-    backgroundColor: "rgba(0,0,0,.15)",
+    alignItems: "center",
     borderBottom: "transparent",
-    justifyContent: "space between",
-    height: ["8vh", "auto", null, null, null, null],
-    marginTop: 4,
+    justifyContent: "space-between",
     borderRadius: 4,
-
-    drawer: {
-      "@media (max-width: 768px)": {
-        backgroundColor: "primary",
-      },
-    },
-    hamburger: {
-      backgroundColor: "white",
-      "&::before": {
-        backgroundColor: "white",
-      },
-      "&::after": {
-        backgroundColor: "white",
-      },
-    },
-    ul: {
-      display: "flex",
-      flex: 1,
-      flexDirection: ["column", "column", "row"],
-    },
-    li: {
-      alignSelf: "center",
-    },
-    footerNav: { fontSize: 1 },
+    px: 3,
+    lineHeight: 1,
+    height: ["8vh", "auto", null, null],
+    flexDirection: ["column", "column", "row", "row"],
   },
-  // navLogo: {
-  //   backgroundColor: "rgba(0,0,0,.15)",
-  //   textTransform: "capitalize",
-  //   borderBottom: "transparent",
-  //   justifyContent: "space-between",
-  //   height: ["8vh", "4vh"],
 
-  //   drawer: {
-  //     "@media (max-width: 768px)": {
-  //       // backgroundColor: "primary",
-  //     },
-  //   },
-  //   hamburger: {
-  //     backgroundColor: "white",
-  //     "&::before": {
-  //       backgroundColor: "white",
-  //     },
-  //     "&::after": {
-  //       backgroundColor: "white",
-  //     },
-  //   },
-  //   ul: {
-  //     display: "flex",
-  //     flex: 1,
-  //     flexDirection: ["column", "column", "row"],
-  //   },
+  mastheadLogo: {
+    width: "90px",
+  },
 
-  //   footerNav: { fontSize: 1 },
+  sideNavDrawer: {
+    "@media (max-width: 768px)": {
+      backgroundColor: "primary",
+    },
+  },
+  hamburger: {
+    backgroundColor: "white",
+    "&::before": {
+      backgroundColor: "white",
+    },
+    "&::after": {
+      backgroundColor: "white",
+    },
+  },
+  // ul: {
+  //   display: "flex",
+  //   flex: 1,
+  //   flexDirection: ["column", "column", "row"],
   // },
+  // li: {
+  //   alignSelf: "center",
+  // },
+  footerNav: { fontSize: 1 },
 
   footer: {
     backgroundColor: "secondary",
