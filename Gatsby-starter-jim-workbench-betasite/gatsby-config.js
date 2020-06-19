@@ -5,7 +5,7 @@ module.exports = {
     author: `@jamiejohnsonkc`,
     menuLinks: [
       {
-        name: "page2",
+        name: "Platform",
         link: "/page-2",
         subMenu: [
           {
@@ -15,7 +15,7 @@ module.exports = {
         ],
       },
       {
-        name: "page3",
+        name: "Pricing",
         link: "/page-3",
         subMenu: [
           {
@@ -25,7 +25,7 @@ module.exports = {
         ],
       },
       {
-        name: "page4",
+        name: "Enterprise",
         link: "/page-4",
         subMenu: [
           {
@@ -35,12 +35,12 @@ module.exports = {
         ],
       },
       {
-        name: "page5",
+        name: "Docs",
         link: "/page-5",
         subMenu: [],
       },
       {
-        name: "page6",
+        name: "Blog",
         link: "/page-6",
         subMenu: [],
       },

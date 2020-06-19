@@ -1,19 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
+import Link from "../../base/Link"
 import styled from "@emotion/styled"
-import Logo from "../../base/Logo"
 import { IconContext } from "react-icons"
 import Icon from "../../base/Icon"
 
-const StyledLink = ({ ...props }) => (
-  <Link
-    {...props}
-    sx={{
-      variant: "links.nav",
-    }}
-  />
-)
+//TODO fix logo box: what is forcing the extra space to the right?
+//TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
+//TODO delete the "NavBarLogo" component
 
 const MainMenu = (props) => {
   return (
@@ -43,39 +38,54 @@ const MainMenu = (props) => {
             display: "flex",
             width: "100%",
             listStyle: "none",
-            justifyContent: "space-between",
 
             variant: "layout.mainMenu",
           }}
         >
-          <li>
-            <StyledLink activeClassName="active" href="/">
-              <Logo {...props} />
-            </StyledLink>
-          </li>
-
           {data.site.siteMetadata.menuLinks.map((link) => (
-            <li key={link.name}>
-              <StyledLink to={link.link}>{link.name}</StyledLink>
+            <li
+              sx={{
+                variant: "layout.mainMenuli",
+                ":hover, :hover > ul, :focus-within > ul, :hover > ul + li": {
+                  visibility: "visible",
+                  opacity: "1",
+                  display: "block",
+                },
+              }}
+              key={link.name}
+            >
+              <Link
+                sx={{
+                  ":hover, :hover > ul, :focus-within > ul": {
+                    visibility: "visible",
+                    opacity: "1",
+                    display: "block",
+                  },
+                }}
+                to={link.link}
+                aria-haspopup={
+                  link.subMenu && link.subMenu.length > 0 ? true : false
+                }
+              >
+                {link.name}
+              </Link>
+
               {link.subMenu && link.subMenu.length > 0 ? (
                 <ul
+                  {...props}
+                  className="subMenu"
                   sx={{
-                    listStyle: "none",
-                    m: 0,
-                    p: 0,
-                    backgroundColor: "darkorange",
+                    variant: "layout.mainSubMenu",
                     visibility: "hidden",
                     opacity: "0",
                     display: "none",
-                    minWidth: "8rem",
                     position: "absolute",
-                    transition: "all 0.5s ease",
-                    marginTop: "1rem",
-                    left: "0",
-                    ":hover": {
+                    ":hover, :hover > li, :focus-within > li, :hover > li + a": {
                       visibility: "visible",
                       opacity: "1",
                       display: "block",
+                      zIndex: 100,
+                      top: "100%",
                     },
                   }}
                   aria-label="submenu"
@@ -86,21 +96,27 @@ const MainMenu = (props) => {
                         clear: "both",
                         width: "100%",
                         padding: "1rem",
-                        ":hover": {
+                        variant: "layout.mainSubMenuli",
+                        ":hover, & li + a:hover ": {
+                          visiblity: "visible",
+                          display: "block",
+                          opacity: "1",
                           backgroundColor: "red",
+                          zIndex: "100",
                         },
                       }}
                       key={subLink.name}
                     >
-                      <StyledLink
+                      <Link
                         sx={{
                           color: "white",
                           textDecoration: "none",
+                          variant: "links.subMenu",
                         }}
                         to={subLink.link}
                       >
                         {subLink.name}
-                      </StyledLink>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -108,40 +124,54 @@ const MainMenu = (props) => {
             </li>
           ))}
           <li
-            className="spacer"
             sx={{
-              flexBasis: [null, "6em", "10em"],
+              variant: "layout.mainMenuSpacer",
             }}
+            className="spacer"
           >
-            <StyledLink></StyledLink>
+            <Link />
           </li>
           <li className="search">
-            <StyledLink>
-              <IconContext.Provider
-                value={{
-                  style: {
-                    width: "2em",
-                    height: "1.5em",
-                    verticalAlign: "sub",
-                    color: "white",
+            <Link
+              sx={{
+                variant: "layout.mainMenuSearch",
+              }}
+            >
+              {/* //TODO remove iconContext provider hooks inside gatsby: unnecessary */}
+              <Icon
+                iconName="Search"
+                sx={{
+                  color: "white",
+                  width: "2em",
+                  height: "1.5em",
+                  verticalAlign: "sub",
+                  ":hover": {
+                    color: "accent",
                   },
                 }}
-              >
-                <Icon iconName="Search" />
-              </IconContext.Provider>
-            </StyledLink>
+              />
+            </Link>
           </li>
-          <li>
-            <StyledLink>Contact Sales</StyledLink>
+          <li
+            sx={{
+              variant: "layout.mainMenuContact",
+            }}
+          >
+            <Link>Contact Sales</Link>
           </li>
-          <li>
-            <StyledLink>Log In</StyledLink>
+          <li
+            sx={{
+              variant: "layout.mainMenuLogIn",
+            }}
+          >
+            <Link>Log In</Link>
           </li>
           <li
             className="divider"
             sx={{
               maxWidth: "10px",
               color: "white",
+              variant: "layout.mainMenuDivider",
             }}
           >
             |
@@ -150,9 +180,10 @@ const MainMenu = (props) => {
             sx={{
               marginRight: 0,
               height: "16px",
+              variant: "layout.mainMenu.SignUp",
             }}
           >
-            <StyledLink>Sign Up</StyledLink>
+            <Link>Sign Up</Link>
 
             <IconContext.Provider
               value={{

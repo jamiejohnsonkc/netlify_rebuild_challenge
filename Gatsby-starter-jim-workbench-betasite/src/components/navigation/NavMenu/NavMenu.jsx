@@ -9,6 +9,8 @@ import SideNav from "../SideNav"
 import MainMenu from "../MainMenu"
 import styled from "@emotion/styled"
 
+// TODO delete MainNavLinks
+
 const NavMenu = (props) => {
   const [NavbarOpen, setNavbarOpen] = useState(false)
 

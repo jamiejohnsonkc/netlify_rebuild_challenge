@@ -4,6 +4,7 @@ import { Styled, jsx } from "theme-ui"
 import SEO from "../pages/seo"
 import { Link } from "gatsby"
 import NavBar from "../components/navigation/NavBar"
+import MegaMenuTest from "../components/navigation/MegaMenuTest"
 
 const SecondPage = (props, data) => (
   <div>
@@ -17,6 +18,7 @@ const SecondPage = (props, data) => (
     {/* <TestApp /> */}
     {/* <TestApp2 /> */}
     {/* <LinkList3 /> */}
+    <MegaMenuTest />
   </div>
 )
 

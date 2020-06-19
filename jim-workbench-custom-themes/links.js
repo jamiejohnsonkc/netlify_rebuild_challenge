@@ -1,5 +1,5 @@
 export default {
-  //light
+  //!light
   // nav: {
   //   fontWeight: "normal",
   //   fontSize: [3, 3, 1, 2],
@@ -31,17 +31,19 @@ export default {
   //   },
   // },
 
-  //dark
+  //!dark
   nav: {
+    display: "inline-block",
+    position: "relative",
     lineHeight: 1,
     fontWeight: "normal",
     fontSize: [3, 3, 1, 1],
     fontFamily: "Roboto",
-    color: "white",
+    color: "#fff",
     letterSpacing: ".1em",
     textTransform: "captilalize",
     textDecoration: "none",
-    transition: "all 0.3s ease-in-out",
+    // transition: "all 0.3s ease-in",
 
     // my: [4, 4, 2],
     // mx: [null],
@@ -54,7 +56,6 @@ export default {
       "&::after": {
         width: "100%",
         backgroundColor: "accent",
-        transition: "all 0.3s ease-in-out",
       },
     },
     "&::after": {
@@ -66,8 +67,11 @@ export default {
       content: "'.'",
       color: "transparent",
       height: "0.1em",
-      lineHeight: 1,
+      top: "115%",
+      zIndex: "-1",
     },
   },
-  sideNavLinks: {},
+  subMenu: {
+    color: "primary",
+  },
 }

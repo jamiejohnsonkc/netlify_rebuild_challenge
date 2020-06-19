@@ -12,15 +12,12 @@ const NavBar = (props) => (
       display: ["flex"],
       position: ["sticky", "relative"],
       zIndex: 2,
-
       top: ["0", "null"],
       left: ["0", "null"],
       right: ["0", "null"],
       left: ["0", "null"],
       listStyleType: "none",
 
-      alignSelf: "center",
-      alignItems: "center",
       variant: "layout.navBar",
     }}
   >
