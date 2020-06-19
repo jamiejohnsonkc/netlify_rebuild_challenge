@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { StaticQuery, graphql } from "gatsby"
-import Link from "../../base/Link"
+import { StaticQuery, graphql, Link } from "gatsby"
+import MainNavLink from "../../navigation/MainNavLink"
+import MainNavSubLink from "../../navigation/MainNavSubLink"
 import styled from "@emotion/styled"
 import { IconContext } from "react-icons"
 import Icon from "../../base/Icon"
@@ -32,91 +33,86 @@ const MainMenu = (props) => {
       `}
       render={(data) => (
         <ul
-          {...props}
-          className="mainMenu"
+          className="mainNavUl"
           sx={{
-            display: "flex",
-            width: "100%",
             listStyle: "none",
-
-            variant: "layout.mainMenu",
+            margin: 0,
+            padding: 0,
+            cursor: "pointer",
+            variant: "layout.mainNavUl",
           }}
         >
           {data.site.siteMetadata.menuLinks.map((link) => (
             <li
+              className="mainNavListItem"
               sx={{
-                variant: "layout.mainMenuli",
-                ":hover, :hover > ul, :focus-within > ul, :hover > ul + li": {
+                display: "block",
+                float: "left",
+
+                position: "relative",
+                transitionDuration: "0.5s",
+                ":hover": {
+                  cursor: "pointer",
+                },
+                ":hover > ul, :focus-within > ul ": {
                   visibility: "visible",
                   opacity: "1",
                   display: "block",
                 },
+                variant: "layout.mainNavListItem",
               }}
               key={link.name}
             >
-              <Link
-                sx={{
-                  ":hover, :hover > ul, :focus-within > ul": {
-                    visibility: "visible",
-                    opacity: "1",
-                    display: "block",
-                  },
-                }}
-                to={link.link}
+              <MainNavLink
+                sx={{}}
+                href={link.link}
                 aria-haspopup={
                   link.subMenu && link.subMenu.length > 0 ? true : false
                 }
               >
                 {link.name}
-              </Link>
-
+              </MainNavLink>
               {link.subMenu && link.subMenu.length > 0 ? (
                 <ul
-                  {...props}
-                  className="subMenu"
+                  className="mainNavSubMenu"
                   sx={{
-                    variant: "layout.mainSubMenu",
                     visibility: "hidden",
                     opacity: "0",
                     display: "none",
                     position: "absolute",
-                    ":hover, :hover > li, :focus-within > li, :hover > li + a": {
+                    left: "0",
+                    ":hover": {
                       visibility: "visible",
                       opacity: "1",
                       display: "block",
-                      zIndex: 100,
-                      top: "100%",
                     },
+                    variant: "layout.mainNavSubMenu",
                   }}
                   aria-label="submenu"
                 >
                   {link.subMenu.map((subLink) => (
                     <li
+                      className="mainNavSubLink"
                       sx={{
                         clear: "both",
                         width: "100%",
                         padding: "1rem",
-                        variant: "layout.mainSubMenuli",
-                        ":hover, & li + a:hover ": {
-                          visiblity: "visible",
-                          display: "block",
-                          opacity: "1",
+                        ":hover": {
                           backgroundColor: "red",
-                          zIndex: "100",
                         },
+                        variant: "layout.mainNavSubLink",
                       }}
                       key={subLink.name}
                     >
-                      <Link
+                      <MainNavSubLink
                         sx={{
                           color: "white",
                           textDecoration: "none",
-                          variant: "links.subMenu",
                         }}
-                        to={subLink.link}
+                        href={subLink.link}
                       >
                         {subLink.name}
-                      </Link>
+                      </MainNavSubLink>
                     </li>
                   ))}
                 </ul>
@@ -129,25 +125,24 @@ const MainMenu = (props) => {
             }}
             className="spacer"
           >
-            <Link />
+            <MainNavLink />
           </li>
-          <li className="search">
+          <li
+            className="search"
+            sx={{
+              variant: "layout.mainMenuSearch",
+            }}
+          >
             <Link
               sx={{
-                variant: "layout.mainMenuSearch",
+                variant: "links.mainMenuSearch",
               }}
             >
-              {/* //TODO remove iconContext provider hooks inside gatsby: unnecessary */}
               <Icon
                 iconName="Search"
+                {...props}
                 sx={{
-                  color: "white",
-                  width: "2em",
-                  height: "1.5em",
-                  verticalAlign: "sub",
-                  ":hover": {
-                    color: "accent",
-                  },
+                  variant: "layout.mainMenuSearchIcon",
                 }}
               />
             </Link>
@@ -157,49 +152,39 @@ const MainMenu = (props) => {
               variant: "layout.mainMenuContact",
             }}
           >
-            <Link>Contact Sales</Link>
+            <MainNavLink>Contact Sales</MainNavLink>
           </li>
           <li
             sx={{
               variant: "layout.mainMenuLogIn",
             }}
           >
-            <Link>Log In</Link>
+            <MainNavLink>Log In</MainNavLink>
           </li>
+
           <li
             className="divider"
             sx={{
-              maxWidth: "10px",
-              color: "white",
               variant: "layout.mainMenuDivider",
             }}
           >
             |
           </li>
+
           <li
             sx={{
-              marginRight: 0,
-              height: "16px",
-              variant: "layout.mainMenu.SignUp",
+              variant: "layout.mainMenuSignUp",
             }}
           >
-            <Link>Sign Up</Link>
-
-            <IconContext.Provider
-              value={{
-                style: {
-                  // width: "1.25em",
-                  // height: "1.25em",
-                  verticalAlign: "sub",
-                  // marginLeft: ".5em",
-                  color: "white",
-                  lineHeight: 1,
-                  height: "14px",
-                },
-              }}
-            >
-              <Icon iconName="ArrowRight" />
-            </IconContext.Provider>
+            <MainNavLink>
+              Sign Up
+              <Icon
+                iconName="ArrowRight"
+                sx={{
+                  variant: "layout.mainNavArrow",
+                }}
+              />
+            </MainNavLink>
           </li>
         </ul>
       )}
@@ -207,4 +192,12 @@ const MainMenu = (props) => {
   )
 }
 
+MainMenu.propTypes = {}
+
+MainMenu.defaultProps = {}
+
 export default MainMenu
+
+{
+  /* //TODO remove iconContext provider hooks inside gatsby: unnecessary */
+}

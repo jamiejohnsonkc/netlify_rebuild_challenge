@@ -20,11 +20,12 @@ export default {
   },
 
   mastheadLogo: {
-    width: "90px",
+    width: "100px",
+    paddingRight: 3,
   },
 
   navBar: {
-    borderRadius: 4,
+    borderRadius: 6,
     backgroundColor: "rgba(0,0,0,.15)",
     lineHeight: 1,
     px: 3,
@@ -44,7 +45,7 @@ export default {
   mainMenu: {
     whiteSpace: "nowrap",
     // position: "relative",
-    cursor: "pointer",
+
     alignItems: "center",
     borderBottom: "transparent",
     justifyContent: "space-between",
@@ -54,29 +55,94 @@ export default {
     flexDirection: ["column", "column", "row", "row"],
   },
 
-  mainMenuli: {
+  mainNavUl: {
+    display: "flex",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: ["column", "column", "row"],
+  },
+  mainNavListItem: {
+    backgroundColor: "transparent",
+    color: "white",
+    padding: "1rem",
+    transitionDuration: "0.5s",
     display: "flex",
     flexBasis: "auto",
+    "&:hover": {
+      backgroundColor: "white",
+    },
   },
-  //targeting specific Li's
-  mainMenuSpacer: { display: "flex", flexBasis: "auto", flexGrow: ".5" },
-  mainMenuSearch: { display: "flex", flexBasis: "auto" },
-  mainMenuContact: { display: "flex", flexBasis: "auto" },
-  mainMenuLogIn: { display: "flex", flexBasis: "auto" },
-  mainMenuDivider: { display: "flex", flexBasis: "auto" },
-  mainMenuSignUp: { display: "flex", flexBasis: "auto" },
 
-  mainSubMenu: {
+  //* targeting additional main menu lineitems
+  mainMenuSignUp: {
+    variant: "layout.mainNavListItem",
+    marginRight: 0,
+  },
+  mainMenuContact: { variant: "layout.mainNavListItem" },
+  mainMenuLogIn: { variant: "layout.mainNavListItem" },
+
+  mainNavElements: {
+    color: "mainNavListItem",
+    padding: "1rem",
+    transitionDuration: "0.5s",
+    display: "flex",
+    flexBasis: "auto",
+    "&:hover": {
+      backgroundColor: "white",
+    },
+  },
+
+  mainMenuSearch: { variant: "layout.mainNavElements" },
+
+  mainMenuSearchIcon: {
+    color: "white",
+    width: "1.25em",
+    height: "1.25em",
+    verticalAlign: "sub",
+    ":hover": {
+      color: "accent",
+    },
+  },
+
+  mainMenuDivider: {
+    variant: "layout.mainNavElements",
+    maxWidth: "10px",
+    color: "white",
+    "&:hover": {
+      backgroundColor: "transparent",
+    },
+  },
+
+  mainMenuSpacer: {
+    display: "layout.mainNavListItem",
+    flexBasis: "layout.mainNavListItem",
+    flexGrow: ".75",
+    cursor: "default",
+  },
+
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  mainNavSubMenu: {
     listStyle: "none",
     m: 0,
     p: 0,
-    backgroundColor: "white",
-    minWidth: "20rem",
-    // transition: "all 0.5s ease",
-    // left: "0",
+    minWidth: "8rem",
+    backgroundColor: "darkorange",
+    transition: "all 0.5s ease",
     marginTop: "1rem",
-    borderRadius: 4,
   },
+
+  //   mainSubMenu: {
+  //     listStyle: "none",
+  //     m: 0,
+  //     p: 0,
+  //     backgroundColor: "white",
+  //     minWidth: "20rem",
+  //     // transition: "all 0.5s ease",
+  //     // left: "0",
+  //     marginTop: "1rem",
+  //     borderRadius: 4,
+  //   },
 
   mainSubMenuli: {},
 
@@ -85,6 +151,14 @@ export default {
       backgroundColor: "primary",
     },
   },
+
+  mainNavArrow: {
+    verticalAlign: "sub",
+    color: "layout.mainNavListItem",
+    lineHeight: 1,
+    height: "auto",
+  },
+
   hamburger: {
     backgroundColor: "white",
     "&::before": {

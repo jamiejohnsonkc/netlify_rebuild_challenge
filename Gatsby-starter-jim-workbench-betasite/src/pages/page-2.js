@@ -5,6 +5,8 @@ import SEO from "../pages/seo"
 import { Link } from "gatsby"
 import NavBar from "../components/navigation/NavBar"
 import MegaMenuTest from "../components/navigation/MegaMenuTest"
+import SaasMasthead from "../components/presentation/SaasMasthead"
+import MainMenu from "../components/navigation/MainMenu"
 
 const SecondPage = (props, data) => (
   <div>
@@ -17,7 +19,8 @@ const SecondPage = (props, data) => (
 
     {/* <TestApp /> */}
     {/* <TestApp2 /> */}
-    {/* <LinkList3 /> */}
+    <SaasMasthead />
+
     <MegaMenuTest />
   </div>
 )

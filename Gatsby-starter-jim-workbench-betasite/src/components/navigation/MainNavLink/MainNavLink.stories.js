@@ -1,8 +1,8 @@
 import React from "react"
-import MainNavLinks from "./MainNavLinks"
+import MainNavLink from "./MainNavLink"
 
 export default {
-  title: "MainNavLinks",
+  title: "MainNavLink",
 }
 
 export const standard = () => <MainNavLinks />
