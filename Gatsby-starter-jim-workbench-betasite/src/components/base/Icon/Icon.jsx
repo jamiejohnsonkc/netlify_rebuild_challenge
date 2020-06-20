@@ -14,6 +14,7 @@ import { FaRedditAlien } from "react-icons/fa"
 import { GoChevronUp } from "react-icons/go"
 import { MdFormatQuote } from "react-icons/md"
 import { BsArrowRight } from "react-icons/bs"
+
 {
   /*
 use the following method to import local icons in json format. svg to json converter available at: https://react-icons-json-generator.surge.sh/
@@ -47,6 +48,8 @@ export const Icon = (props) => {
       return <MdFormatQuote {...props} />
     case "ArrowRight":
       return <BsArrowRight {...props} />
+    case "ExpandMoreIcon":
+      return <MdExpandMoreIcon {...props} />
   }
 }
 

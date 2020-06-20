@@ -16,12 +16,11 @@ const SecondPage = (props, data) => (
     <Styled.p>
       <Link to="/">Go back to the homepage</Link>
     </Styled.p>
-
     {/* <TestApp /> */}
     {/* <TestApp2 /> */}
     <SaasMasthead />
-
     <MegaMenuTest />
+    <App />{" "}
   </div>
 )
 
