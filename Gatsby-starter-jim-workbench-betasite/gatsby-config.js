@@ -5,17 +5,7 @@ module.exports = {
     author: `@jamiejohnsonkc`,
     menuLinks: [
       {
-        name: "home",
-        link: "/",
-        subMenu: [
-          {
-            link: "/sub-1",
-            name: "Sub 1",
-          },
-        ],
-      },
-      {
-        name: "page2",
+        name: "Platform",
         link: "/page-2",
         subMenu: [
           {
@@ -25,7 +15,7 @@ module.exports = {
         ],
       },
       {
-        name: "page3",
+        name: "Pricing",
         link: "/page-3",
         subMenu: [
           {
@@ -35,7 +25,7 @@ module.exports = {
         ],
       },
       {
-        name: "page4",
+        name: "Enterprise",
         link: "/page-4",
         subMenu: [
           {
@@ -45,19 +35,52 @@ module.exports = {
         ],
       },
       {
-        name: "page5",
+        name: "Docs",
         link: "/page-5",
         subMenu: [],
       },
       {
-        name: "page6",
+        name: "Blog",
         link: "/page-6",
         subMenu: [],
       },
     ],
   },
   plugins: [
-    { resolve: `gatsby-theme-jim-base-workbench`, options: {} },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        name: `svg`,
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    `gatsby-plugin-theme-ui`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -81,16 +104,12 @@ module.exports = {
             },
           ],
         },
-        //formats: ['woff2', 'woff'],
-        //useMinify: true,
-        //usePreload: true,
-        //usePreconnect: false,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `betasite`,
+        name: `gatsby-starter-jim-workbench-betasite`,
         short_name: `betasite`,
         start_url: `/`,
         display: `minimal-ui`,
