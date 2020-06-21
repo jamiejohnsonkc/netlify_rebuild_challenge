@@ -2,12 +2,9 @@
 import { jsx } from "theme-ui"
 import { StaticQuery, graphql } from "gatsby"
 import React from "react"
-import Logo from "../../base/Logo"
-import MainNavLink from "../../navigation/MainNavLink"
-import MainNavSubLink from "../../navigation/MainNavSubLink"
 import PropTypes from "prop-types"
 
-const MainMenu = (props) => {
+const NavMenu = (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -33,28 +30,29 @@ const MainMenu = (props) => {
       `}
       render={(data) => (
         <>
-          {/* <Logo
+          <Logo
             className="mastHeadLogo"
             sx={{
               variant: "layout.mastheadLogo",
             }}
-          /> */}
+          />
           <ul
             className="mainNavUl"
             sx={{
               listStyle: "none",
+
               margin: 0,
               padding: 0,
-              cursor: "pointer",
-              variant: "layout.mainNavUl",
             }}
           >
             {data.site.siteMetadata.menuLinks.map((link) => (
               <li
-                className="mainNavListItem"
                 sx={{
+                  color: "white",
+                  backgroundColor: "darkorange",
                   display: "block",
                   float: "left",
+                  padding: "1rem",
                   position: "relative",
                   transitionDuration: "0.5s",
                   ":hover": {
@@ -66,39 +64,46 @@ const MainMenu = (props) => {
                     opacity: "1",
                     display: "block",
                   },
-                  variant: "layout.mainNavListItem",
                 }}
                 key={link.name}
               >
-                <MainNavLink
+                <a
+                  sx={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
                   href={link.link}
                   aria-haspopup={
                     link.subMenu && link.subMenu.length > 0 ? true : false
                   }
                 >
                   {link.name}
-                </MainNavLink>
+                </a>
                 {link.subMenu && link.subMenu.length > 0 ? (
                   <ul
-                    className="mainNavSubMenu"
                     sx={{
+                      listStyle: "none",
+                      m: 0,
+                      p: 0,
+                      backgroundColor: "darkorange",
                       visibility: "hidden",
                       opacity: "0",
                       display: "none",
+                      minWidth: "8rem",
                       position: "absolute",
+                      transition: "all 0.5s ease",
+                      marginTop: "1rem",
                       left: "0",
                       ":hover": {
                         visibility: "visible",
                         opacity: "1",
                         display: "block",
                       },
-                      variant: "layout.mainNavSubMenu",
                     }}
                     aria-label="submenu"
                   >
                     {link.subMenu.map((subLink) => (
                       <li
-                        className="mainNavSubLink"
                         sx={{
                           clear: "both",
                           width: "100%",
@@ -112,27 +117,38 @@ const MainMenu = (props) => {
                             opacity: "1",
                             display: "block",
                           },
-                          variant: "layout.mainNavSubListItem",
                         }}
                         key={subLink.name}
                       >
-                        <MainNavSubLink sx={{}} href={subLink.link}>
+                        <a
+                          sx={{
+                            color: "white",
+                            textDecoration: "none",
+                          }}
+                          href={subLink.link}
+                        >
                           {subLink.name}
-                        </MainNavSubLink>
+                        </a>
                         {subLink.subSubMenu && subLink.subSubMenu.length > 0 ? (
                           <ul
                             sx={{
+                              listStyle: "none",
+                              p: 0,
+                              m: 0,
+                              backgroundColor: "darkorange",
                               visibility: "hidden",
                               opacity: "0",
                               display: "none",
+                              minWidth: "8rem",
                               position: "absolute",
-
+                              transition: "all 0.5s ease",
+                              marginTop: "1rem",
+                              left: "0",
                               ":hover": {
                                 visibility: "visible",
                                 opacity: "1",
                                 display: "block",
                               },
-                              variant: "layout.mainNavSubSubMenu",
                             }}
                             aria-label="submenu"
                           >
@@ -143,6 +159,7 @@ const MainMenu = (props) => {
                                   width: "100%",
                                   padding: "1rem",
                                   ":hover": {
+                                    backgroundColor: "red",
                                     cursor: "pointer",
                                   },
                                   ":hover > ul, :focus-within > ul ": {
@@ -160,7 +177,8 @@ const MainMenu = (props) => {
                                   }}
                                   href={subSubLink.link}
                                 >
-                                  {subSubLink.name}
+                                  {/* {subLink.name} */}
+                                  subsublink
                                 </a>
                               </li>
                             ))}
@@ -179,8 +197,8 @@ const MainMenu = (props) => {
   )
 }
 
-MainMenu.propTypes = {}
+NavMenu.propTypes = {}
 
-MainMenu.defaultProps = {}
+NavMenu.defaultProps = {}
 
-export default MainMenu
+export default NavMenu

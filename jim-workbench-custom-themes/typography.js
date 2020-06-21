@@ -4,7 +4,7 @@ export const options = {
   baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerLineHeight: 1.2,
-  scaleRatio: 5,
+  scaleRatio: 1.5,
   headerFontFamily: [
     "Roboto",
     "Arial",

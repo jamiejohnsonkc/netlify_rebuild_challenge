@@ -3,14 +3,13 @@ import React from "react"
 import { Styled, jsx } from "theme-ui"
 import SEO from "../pages/seo"
 import { Link } from "gatsby"
-import NavBar from "../components/navigation/NavBar"
-import MegaMenuTest from "../components/navigation/MegaMenuTest"
+
+import NavMenu from "../components/navigation/NavMenu"
 import SaasMasthead from "../components/presentation/SaasMasthead"
-import MainMenu from "../components/navigation/MainMenu"
+import NavBar from "../components/navigation/NavBar"
 
 const SecondPage = (props, data) => (
   <div>
-    <NavBar />
     <Styled.h1>Hi from the second page</Styled.h1>
     <Styled.p>Welcome to page 2</Styled.p>
     <Styled.p>
@@ -18,9 +17,10 @@ const SecondPage = (props, data) => (
     </Styled.p>
     {/* <TestApp /> */}
     {/* <TestApp2 /> */}
-    <SaasMasthead />
-    <MegaMenuTest />
-    <App />{" "}
+
+    <NavBar>
+      <NavMenu />
+    </NavBar>
   </div>
 )
 

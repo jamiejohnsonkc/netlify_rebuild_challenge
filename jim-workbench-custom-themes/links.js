@@ -93,6 +93,13 @@ export default {
   },
 
   mainNavSubLink: {
-    color: "primary",
+    color: "white",
+    textDecoration: "none",
+  },
+
+  megaNavLink: {
+    display: "block",
+    fontSize: 2,
+    fontWeight: 400,
   },
 }
