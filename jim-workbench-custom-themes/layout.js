@@ -24,14 +24,14 @@ export default {
     paddingRight: 3,
   },
 
-  navBar: {
+  navigation: {
     borderRadius: 6,
     backgroundColor: "rgba(0,0,0,.15)",
     lineHeight: 1,
     px: 3,
     alignSelf: "center",
     alignItems: "center",
-    // variant: "layout.container",
+    variant: "layout.container",
     // "@media (max-width: 768px)": {
     //   backgroundColor: "primary",
     //   width: "100%",

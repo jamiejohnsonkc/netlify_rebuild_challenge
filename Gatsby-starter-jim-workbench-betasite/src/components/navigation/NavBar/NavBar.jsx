@@ -1,7 +1,11 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React, { useState } from "react"
 import NavbarLinks from "../NavbarLinks"
 import Logo from "../../base/Logo"
 import styled from "@emotion/styled"
+import PageLinksMap2 from "../PageLinksMap2"
+import MainMenu from "../MainMenu"
 
 const Navigation = styled.nav`
   height: 10vh;
@@ -92,7 +96,11 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <Navigation>
+    <Navigation
+      sx={{
+        variant: "layout.navigation",
+      }}
+    >
       <Logo />
       <Toggle
         navbarOpen={navbarOpen}
@@ -106,7 +114,7 @@ const Navbar = () => {
         </Navbox>
       ) : (
         <Navbox open>
-          <NavbarLinks />
+          <MainMenu />
         </Navbox>
       )}
     </Navigation>
