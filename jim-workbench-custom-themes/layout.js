@@ -31,7 +31,11 @@ export default {
     px: 3,
     alignSelf: "center",
     alignItems: "center",
-    variant: "layout.container",
+    // variant: "layout.container",
+    // "@media (max-width: 768px)": {
+    //   backgroundColor: "primary",
+    //   width: "100%",
+    // },
   },
 
   navMenu: {
@@ -149,6 +153,7 @@ export default {
   sideNavDrawer: {
     "@media (max-width: 768px)": {
       backgroundColor: "primary",
+      width: "100%",
     },
   },
 

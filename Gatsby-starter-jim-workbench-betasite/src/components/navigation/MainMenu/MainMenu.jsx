@@ -49,6 +49,7 @@ const MainMenu = (props) => {
               variant: "layout.mainNavUl",
             }}
           >
+            <h2>mainMenu</h2>
             {data.site.siteMetadata.menuLinks.map((link) => (
               <li
                 className="mainNavListItem"

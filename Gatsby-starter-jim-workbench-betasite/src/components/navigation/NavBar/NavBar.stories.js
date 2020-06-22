@@ -1,8 +1,8 @@
 import React from "react"
-import NavBar from "./NavBar"
+import NavMenu from "./NavMenu"
 
 export default {
-  title: "NavBar",
+  title: "NavMenu",
 }
 
-export const standard = () => <NavBar />
+export const standard = () => <NavMenu />

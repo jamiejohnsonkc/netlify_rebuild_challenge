@@ -3,7 +3,7 @@ import { Styled, jsx, ThemeProvider } from "theme-ui"
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 
-const NavBar = (props) => (
+const NavWrapper = (props) => (
   <Styled.div
     {...props}
     as="nav"
@@ -17,16 +17,15 @@ const NavBar = (props) => (
       right: ["0", "null"],
       left: ["0", "null"],
       listStyleType: "none",
-
-      variant: "layout.navBar",
+      variant: "layout.navWrapper",
     }}
   >
     {props.children}
   </Styled.div>
 )
 
-NavBar.propTypes = {}
+NavWrapper.propTypes = {}
 
-NavBar.defaultProps = {}
+NavWrapper.defaultProps = {}
 
-export default NavBar
+export default NavWrapper

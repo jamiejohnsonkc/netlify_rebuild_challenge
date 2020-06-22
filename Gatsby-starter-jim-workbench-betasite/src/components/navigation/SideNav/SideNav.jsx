@@ -7,7 +7,7 @@ import PageLinksMap2 from "../PageLinksMap2"
 
 const SideNav = (props) => (
   <>
-    <Flex>
+    <Flex className="sideNav">
       <PageLinksMap2 variant="sideNavLinks" />
     </Flex>
   </>

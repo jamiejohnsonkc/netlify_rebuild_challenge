@@ -10,25 +10,6 @@ import MainMenu from "../MainMenu"
 import styled from "@emotion/styled"
 import PageLinksMap2 from "../PageLinksMap2"
 
-// const NavBar = (props) => (
-//   <Styled.div
-//     {...props}
-//     as="nav"
-//     className="navBar"
-//     sx={{
-//       display: ["flex"],
-//       position: ["sticky", "relative"],
-//       zIndex: 2,
-//       top: ["0", "null"],
-//       left: ["0", "null"],
-//       right: ["0", "null"],
-//       left: ["0", "null"],
-//       listStyleType: "none",
-//       variant: "layout.navBarWDrawer",
-//     }}
-//   />
-// )
-
 const Navbox = styled.div`
   display: flex;
   height: 100%;
@@ -41,7 +22,7 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #fff;
+    background-color: transparent;
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${(props) => (props.open ? "-100%" : "0")};
@@ -49,58 +30,46 @@ const Navbox = styled.div`
 `
 
 const NavMenu = (props) => {
-  const [NavbarOpen, setNavbarOpen] = useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <>
+    <Styled.div
+      {...props}
+      className="navMenu"
+      sx={{
+        variant: "layout.navMenu",
+      }}
+    >
       <Styled.div
-        {...props}
-        className="navMenu"
+        className="Toggle"
+        navbarOpen={navbarOpen}
+        onClick={() => setNavbarOpen(!navbarOpen)}
         sx={{
-          variant: "layout.navMenu",
+          height: "100%",
+          cursor: "pointer",
+          display: ["flex", "flex", "none", "none"],
         }}
       >
-        <Styled.div
-          className="Toggle"
-          NavbarOpen={NavbarOpen}
-          onClick={() => setNavbarOpen(!NavbarOpen)}
-          sx={{
-            height: "100%",
-            cursor: "pointer",
-            display: ["flex", "flex", "none", "none"],
-          }}
-        >
-          {NavbarOpen ? (
-            <Hamburger
-              className="hamburger"
-              sx={{ variant: "layout.hamburger" }}
-              open
-            />
-          ) : (
-            <Hamburger
-              className="Burger"
-              sx={{ variant: "layout.hamburger" }}
-            />
-          )}
-        </Styled.div>
-
-        {NavbarOpen ? (
-          <Navbox
-            className="Navbox"
-            sx={{
-              variant: "layout.navbox",
-            }}
-          >
-            <PageLinksMap2 />
-            {/* <SideNav className="sideNav" /> */}
-          </Navbox>
+        {navbarOpen ? (
+          <Hamburger sx={{ variant: "layout.hamburger" }} open />
         ) : (
-          <Navbox Open>
-            <MainMenu />
-          </Navbox>
+          <Hamburger sx={{ variant: "layout.hamburger" }} />
         )}
       </Styled.div>
-    </>
+
+      {navbarOpen ? (
+        <Drawer
+          className="Drawer"
+          sx={{
+            variant: "layout.sideNavDrawer",
+          }}
+        >
+          <SideNav className="sideNav" />
+        </Drawer>
+      ) : (
+        <MainMenu />
+      )}
+    </Styled.div>
   )
 }
 
