@@ -6,12 +6,7 @@ import Netlify from "../../../svg/assets/Netlify_logo.svg"
 import PropTypes from "prop-types"
 
 const Logo = (props) => (
-  <div
-    {...props}
-    sx={{
-      variant: "layout.mastheadLogo",
-    }}
-  >
+  <div {...props}>
     <Netlify />
   </div>
 )

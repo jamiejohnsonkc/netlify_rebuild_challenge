@@ -5,6 +5,7 @@ export default (props) => (
   <Link
     {...props}
     activeClassName="active"
+    className="MainNavSubLink"
     sx={{
       variant: "links.mainNavSubLink",
 

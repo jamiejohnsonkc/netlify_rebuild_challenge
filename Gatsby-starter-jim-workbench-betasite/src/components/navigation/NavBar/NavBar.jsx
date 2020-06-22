@@ -6,77 +6,28 @@ import Logo from "../../base/Logo"
 import styled from "@emotion/styled"
 import PageLinksMap2 from "../PageLinksMap2"
 import MainMenu from "../MainMenu"
+import { Link } from "gatsby"
+import MainNav from "../MainNav"
 
-const Navigation = styled.nav`
-  height: 10vh;
-  display: flex;
-  background-color: #fff;
-  position: relative;
-  justify-content: space-between;
-  text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
-  margin: 0 auto;
-  padding: 0 5vw;
-  z-index: 2;
-  align-self: center;
-
-  @media (max-width: 768px) {
-    position: sticky;
-    height: 8vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
-  }
-`
-
-const Toggle = styled.div`
-  display: none;
-  height: 100%;
-  cursor: pointer;
-  padding: 0 10vw;
-
-  @media (max-width: 768px) {
-    display: flex;
-  }
-`
+const Toggle = styled.div``
 
 const Navbox = styled.div`
-  display: flex;
-  height: 100%;
-  justify-content: flex-end;
-  align-items: center;
-
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    width: 100%;
-    justify-content: flex-start;
-    padding-top: 10vh;
-    background-color: #fff;
-    transition: all 0.3s ease-in;
-    top: 8vh;
     left: ${(props) => (props.open ? "-100%" : "0")};
   }
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
-  width: 30px;
-  height: 3px;
-  transition: all 0.3s linear;
   align-self: center;
   position: relative;
   transform: ${(props) => (props.open ? "rotate(-45deg)" : "inherit")};
 
   ::before,
   ::after {
-    width: 30px;
-    height: 3px;
-    background-color: #111;
     content: "";
     position: absolute;
-    transition: all 0.3s linear;
   }
 
   ::before {
@@ -96,28 +47,59 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <Navigation
-      sx={{
-        variant: "layout.navigation",
-      }}
-    >
-      <Logo />
+    <MainNav>
+      <Link to="/">
+        <Logo
+          className="mastHeadLogo"
+          sx={{
+            variant: "layout.mastheadLogo",
+          }}
+        />
+      </Link>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
+        className="Toggle"
+        sx={{
+          variant: "layout.toggle",
+        }}
       >
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+        {navbarOpen ? (
+          <Hamburger
+            sx={{
+              variant: "layout.hamburger",
+            }}
+            open
+          />
+        ) : (
+          <Hamburger
+            sx={{
+              variant: "layout.hamburger",
+            }}
+          />
+        )}
       </Toggle>
       {navbarOpen ? (
-        <Navbox>
+        <Navbox
+          className="Navbox"
+          sx={{
+            variant: "layout.navBox",
+          }}
+        >
           <NavbarLinks />
         </Navbox>
       ) : (
-        <Navbox open>
-          <MainMenu />
+        <Navbox
+          className="Navbox"
+          sx={{
+            variant: "layout.navBox",
+          }}
+          open
+        >
+          <MainMenu className="MainMenu" />
         </Navbox>
       )}
-    </Navigation>
+    </MainNav>
   )
 }
 

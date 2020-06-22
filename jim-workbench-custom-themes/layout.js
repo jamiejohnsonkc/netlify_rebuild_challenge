@@ -1,3 +1,5 @@
+import links from "./links"
+
 export default {
   root: {},
   top: {
@@ -24,18 +26,43 @@ export default {
     paddingRight: 3,
   },
 
-  navigation: {
+  //* Navbar //
+
+  navBox: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "100%",
+    flex: 1,
+    display: "flex",
+    "@media (max-width: 768px)": {
+      width: "100%",
+      justifyContent: "flex-start",
+      paddingTop: "10vh",
+      backgroundColor: "#fff",
+      transition: "all 0.3s ease-in",
+      top: "8vh",
+    },
+  },
+
+  mainNav: {
+    textTransform: "uppercase",
     borderRadius: 6,
     backgroundColor: "rgba(0,0,0,.15)",
     lineHeight: 1,
     px: 3,
     alignSelf: "center",
     alignItems: "center",
+    justifyContent: "space-between",
+    height: "10vh",
+    display: "flex",
     variant: "layout.container",
-    // "@media (max-width: 768px)": {
-    //   backgroundColor: "primary",
-    //   width: "100%",
-    // },
+    "@media (max-width: 768px)": {
+      backgroundColor: "primary",
+      width: "100%",
+      height: "8vh",
+      py: 4,
+      px: 3,
+    },
   },
 
   navMenu: {
@@ -49,7 +76,6 @@ export default {
   mainMenu: {
     whiteSpace: "nowrap",
     // position: "relative",
-
     alignItems: "center",
     borderBottom: "transparent",
     justifyContent: "space-between",
@@ -58,7 +84,7 @@ export default {
     height: ["8vh", "auto", null, null],
     flexDirection: ["column", "column", "row", "row"],
   },
-
+  //* Lists //
   mainNavUl: {
     display: "flex",
     flex: 1,
@@ -66,6 +92,22 @@ export default {
     justifyContent: "center",
     flexDirection: ["column", "column", "row"],
   },
+
+  mainNavSubMenu: {
+    listStyle: "none",
+    m: 0,
+    p: 0,
+    minWidth: "8rem",
+    backgroundColor: "blue",
+    transition: "all 0.5s ease",
+    marginTop: "30px",
+  },
+
+  mainNavSubSubMenu: {
+    variant: "layout.mainNavSubMenu",
+  },
+
+  //* List Items //
   mainNavListItem: {
     backgroundColor: "transparent",
     color: "white",
@@ -75,44 +117,27 @@ export default {
     flexBasis: "auto",
     "&:hover": {
       backgroundColor: "white",
+      "& > a": {
+        color: "accent",
+      },
     },
   },
 
-  //* targeting additional main menu lineitems
-  mainMenuSignUp: {
+  mainNavSubListItem: {
     variant: "layout.mainNavListItem",
-    marginRight: 0,
   },
-  mainMenuContact: { variant: "layout.mainNavListItem" },
-  mainMenuLogIn: { variant: "layout.mainNavListItem" },
 
-  mainNavElements: {
-    color: "mainNavListItem",
+  mainNavSubSubListItem: {
+    variant: "layout.mainNavListItem",
+  },
+
+  //* Additional Menu Elements //
+  mainMenuDivider: {
+    color: "layout.mainNavListItem",
     padding: "1rem",
     transitionDuration: "0.5s",
     display: "flex",
     flexBasis: "auto",
-    "&:hover": {
-      backgroundColor: "white",
-    },
-  },
-
-  mainMenuSearch: { variant: "layout.mainNavElements" },
-
-  mainMenuSearchIcon: {
-    color: "white",
-    width: "1.25em",
-    height: "1.25em",
-    verticalAlign: "sub",
-    ":hover": {
-      color: "accent",
-    },
-  },
-
-  mainMenuDivider: {
-    variant: "layout.mainNavElements",
-    maxWidth: "10px",
-    color: "white",
     "&:hover": {
       backgroundColor: "transparent",
     },
@@ -124,31 +149,6 @@ export default {
     flexGrow: ".75",
     cursor: "default",
   },
-
-  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  mainNavSubMenu: {
-    listStyle: "none",
-    m: 0,
-    p: 0,
-    minWidth: "8rem",
-    backgroundColor: "darkorange",
-    transition: "all 0.5s ease",
-    marginTop: "1rem",
-  },
-
-  //   mainSubMenu: {
-  //     listStyle: "none",
-  //     m: 0,
-  //     p: 0,
-  //     backgroundColor: "white",
-  //     minWidth: "20rem",
-  //     // transition: "all 0.5s ease",
-  //     // left: "0",
-  //     marginTop: "1rem",
-  //     borderRadius: 4,
-  //   },
-
-  mainSubMenuli: {},
 
   sideNavDrawer: {
     "@media (max-width: 768px)": {
@@ -164,23 +164,39 @@ export default {
     height: "auto",
   },
 
+  toggle: {
+    display: "none",
+    height: "100%",
+    cursor: "pointer",
+    padding: 2,
+    "@media (max-width: 768px)": {
+      display: "flex",
+    },
+  },
+
   hamburger: {
     backgroundColor: "white",
+    borderRadius: 6,
+    width: "30px",
+    height: "3px",
+    transition: "all 0.3s linear",
+
     "&::before": {
       backgroundColor: "white",
+      borderRadius: 6,
+      width: "30px",
+      height: "3px",
+      transition: "all 0.3s linear",
     },
     "&::after": {
       backgroundColor: "white",
+      borderRadius: 6,
+      width: "30px",
+      height: "3px",
+      transition: "all 0.3s linear",
     },
   },
-  // ul: {
-  //   display: "flex",
-  //   flex: 1,
-  //   flexDirection: ["column", "column", "row"],
-  // },
-  // li: {
-  //   alignSelf: "center",
-  // },
+
   footerNav: { fontSize: 1 },
 
   footer: {

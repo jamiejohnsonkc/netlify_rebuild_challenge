@@ -1,12 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import Logo from "../../base/Logo"
 import Icon from "../../base/Icon"
 import MainNavLink from "../../navigation/MainNavLink"
 import MainNavSubLink from "../../navigation/MainNavSubLink"
 import PropTypes from "prop-types"
+
+//TODO fix logo box: what is forcing the extra space to the right?
+//TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
+//TODO delete the "NavBarLogo" component
+//TODO content breaking parent when downsizing
+//TODO remove iconContext provider hooks inside gatsby: unnecessary
 
 const MainMenu = (props) => {
   return (
@@ -33,217 +39,218 @@ const MainMenu = (props) => {
         }
       `}
       render={(data) => (
-        <>
-          {/* <Logo
-            className="mastHeadLogo"
+        <ul
+          className="mainNavUl"
+          sx={{
+            listStyle: "none",
+            margin: 0,
+            padding: 0,
+            cursor: "pointer",
+            variant: "layout.mainNavUl",
+          }}
+        >
+          {data.site.siteMetadata.menuLinks.map((link) => (
+            <li
+              className="mainNavListItem"
+              sx={{
+                display: "block",
+                float: "left",
+                position: "relative",
+                transitionDuration: "0.5s",
+                ":hover": {
+                  backgroundColor: "red",
+                  cursor: "pointer",
+                },
+                ":hover > ul, :focus-within > ul ": {
+                  visibility: "visible",
+                  opacity: "1",
+                  display: "block",
+                },
+                variant: "layout.mainNavListItem",
+              }}
+              key={link.name}
+            >
+              <MainNavLink
+                href={link.link}
+                aria-haspopup={
+                  link.subMenu && link.subMenu.length > 0 ? true : false
+                }
+              >
+                {link.name}
+              </MainNavLink>
+              {link.subMenu && link.subMenu.length > 0 ? (
+                <ul
+                  className="mainNavSubMenu"
+                  sx={{
+                    visibility: "hidden",
+                    opacity: "0",
+                    display: "none",
+                    position: "absolute",
+                    left: "0",
+                    ":hover": {
+                      visibility: "visible",
+                      opacity: "1",
+                      display: "block",
+                    },
+                    variant: "layout.mainNavSubMenu",
+                  }}
+                  aria-label="submenu"
+                >
+                  {link.subMenu.map((subLink) => (
+                    <li
+                      className="mainNavSubLink"
+                      sx={{
+                        clear: "both",
+                        width: "100%",
+                        padding: "1rem",
+                        ":hover": {},
+                        ":hover > ul, :focus-within > ul ": {
+                          visibility: "visible",
+                          opacity: "1",
+                          display: "block",
+                        },
+                        variant: "layout.mainNavSubListItem",
+                      }}
+                      key={subLink.name}
+                    >
+                      <MainNavSubLink sx={{}} href={subLink.link}>
+                        {subLink.name}
+                      </MainNavSubLink>
+                      {subLink.subSubMenu && subLink.subSubMenu.length > 0 ? (
+                        <ul
+                          sx={{
+                            visibility: "hidden",
+                            opacity: "0",
+                            display: "none",
+                            position: "absolute",
+
+                            ":hover": {
+                              visibility: "visible",
+                              opacity: "1",
+                              display: "block",
+                            },
+                            variant: "layout.mainNavSubSubMenu",
+                          }}
+                          aria-label="submenu"
+                          className="MainNavSubSubMenu"
+                        >
+                          {subLink.subSubMenu.map((subSubLink) => (
+                            <li
+                              sx={{
+                                clear: "both",
+                                width: "100%",
+                                padding: "1rem",
+                                ":hover": {
+                                  cursor: "pointer",
+                                },
+                                ":hover > ul, :focus-within > ul ": {
+                                  visibility: "visible",
+                                  opacity: "1",
+                                  display: "block",
+                                },
+                                variant: "layout.mainNavSubSubListItem",
+                              }}
+                              key={subSubLink.name}
+                              className="MainNavSubSubListItem"
+                            >
+                              <MainNavSubLink
+                                sx={{
+                                  color: "white",
+                                  textDecoration: "none",
+                                }}
+                                href={subSubLink.link}
+                              >
+                                {subSubLink.name}
+                              </MainNavSubLink>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </li>
+          ))}
+          <li
             sx={{
-              variant: "layout.mastheadLogo",
+              variant: "layout.mainMenuSpacer",
             }}
-          /> */}
-          <ul
-            className="mainNavUl"
+            className="spacer"
+          ></li>
+          <li
+            className="search"
             sx={{
-              listStyle: "none",
-              margin: 0,
-              padding: 0,
-              cursor: "pointer",
-              variant: "layout.mainNavUl",
+              variant: "layout.mainNavListItem",
             }}
           >
-            {data.site.siteMetadata.menuLinks.map((link) => (
-              <li
-                className="mainNavListItem"
+            <MainNavLink
+              sx={{
+                variant: "links.mainMenuSearch",
+              }}
+            >
+              <Icon
+                iconName="Search"
                 sx={{
-                  display: "block",
-                  float: "left",
-                  position: "relative",
-                  transitionDuration: "0.5s",
+                  color: "white",
+                  width: "2em",
+                  height: "1.5em",
+                  verticalAlign: "sub",
                   ":hover": {
-                    backgroundColor: "red",
-                    cursor: "pointer",
+                    color: "accent",
                   },
-                  ":hover > ul, :focus-within > ul ": {
-                    visibility: "visible",
-                    opacity: "1",
-                    display: "block",
-                  },
-                  variant: "layout.mainNavListItem",
                 }}
-                key={link.name}
-              >
-                <MainNavLink
-                  href={link.link}
-                  aria-haspopup={
-                    link.subMenu && link.subMenu.length > 0 ? true : false
-                  }
-                >
-                  {link.name}
-                </MainNavLink>
-                {link.subMenu && link.subMenu.length > 0 ? (
-                  <ul
-                    className="mainNavSubMenu"
-                    sx={{
-                      visibility: "hidden",
-                      opacity: "0",
-                      display: "none",
-                      position: "absolute",
-                      left: "0",
-                      ":hover": {
-                        visibility: "visible",
-                        opacity: "1",
-                        display: "block",
-                      },
-                      variant: "layout.mainNavSubMenu",
-                    }}
-                    aria-label="submenu"
-                  >
-                    {link.subMenu.map((subLink) => (
-                      <li
-                        className="mainNavSubLink"
-                        sx={{
-                          clear: "both",
-                          width: "100%",
-                          padding: "1rem",
-                          ":hover": {
-                            backgroundColor: "red",
-                            cursor: "pointer",
-                          },
-                          ":hover > ul, :focus-within > ul ": {
-                            visibility: "visible",
-                            opacity: "1",
-                            display: "block",
-                          },
-                          variant: "layout.mainNavSubListItem",
-                        }}
-                        key={subLink.name}
-                      >
-                        <MainNavSubLink sx={{}} href={subLink.link}>
-                          {subLink.name}
-                        </MainNavSubLink>
-                        {subLink.subSubMenu && subLink.subSubMenu.length > 0 ? (
-                          <ul
-                            sx={{
-                              visibility: "hidden",
-                              opacity: "0",
-                              display: "none",
-                              position: "absolute",
-
-                              ":hover": {
-                                visibility: "visible",
-                                opacity: "1",
-                                display: "block",
-                              },
-                              variant: "layout.mainNavSubSubMenu",
-                            }}
-                            aria-label="submenu"
-                          >
-                            {subLink.subSubMenu.map((subSubLink) => (
-                              <li
-                                sx={{
-                                  clear: "both",
-                                  width: "100%",
-                                  padding: "1rem",
-                                  ":hover": {
-                                    cursor: "pointer",
-                                  },
-                                  ":hover > ul, :focus-within > ul ": {
-                                    visibility: "visible",
-                                    opacity: "1",
-                                    display: "block",
-                                  },
-                                }}
-                                key={subSubLink.name}
-                              >
-                                <a
-                                  sx={{
-                                    color: "white",
-                                    textDecoration: "none",
-                                  }}
-                                  href={subSubLink.link}
-                                >
-                                  {subSubLink.name}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : null}
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
-              </li>
-            ))}
-            <li
-              sx={{
-                variant: "layout.mainMenuSpacer",
-              }}
-              className="spacer"
-            ></li>
-            <li className="search">
-              <a
-                sx={{
-                  variant: "layout.mainMenuSearch",
-                }}
-              >
-                <Icon
-                  iconName="Search"
-                  sx={{
-                    color: "white",
-                    width: "2em",
-                    height: "1.5em",
-                    verticalAlign: "sub",
-                    ":hover": {
-                      color: "accent",
-                    },
-                  }}
-                />
-              </a>
-            </li>
-            <li
-              sx={{
-                variant: "layout.mainMenuContact",
-              }}
-            >
-              <a>Contact Sales</a>
-            </li>
-            <li
-              sx={{
-                variant: "layout.mainMenuLogIn",
-              }}
-            >
-              <a>Log In</a>
-            </li>
-            <li
-              className="divider"
-              sx={{
-                maxWidth: "10px",
-                color: "white",
-                variant: "layout.mainMenuDivider",
-              }}
-            >
-              |
-            </li>
-            <li
-              sx={{
-                marginRight: 0,
-                height: "16px",
-                variant: "layout.mainMenu.SignUp",
-              }}
-            >
-              <a>Sign Up</a>
-
+              />
+            </MainNavLink>
+          </li>
+          <li
+            sx={{
+              variant: "layout.mainNavListItem",
+            }}
+          >
+            <MainNavLink>Contact Sales</MainNavLink>
+          </li>
+          <li
+            sx={{
+              variant: "layout.mainNavListItem",
+            }}
+          >
+            <MainNavLink>Log In</MainNavLink>
+          </li>
+          <li
+            className="divider"
+            sx={{
+              color: "white",
+              py: 2,
+              variant: "layout.mainMenuDivider",
+            }}
+          >
+            <a>|</a>
+          </li>
+          <li
+            sx={{
+              // marginRight: 0,
+              // height: "16px",
+              variant: "layout.mainNavListItem",
+            }}
+          >
+            <MainNavLink>
+              Sign Up
               <Icon
                 iconName="ArrowRight"
                 sx={{
-                  verticalAlign: "sub",
                   color: "white",
-                  lineHeight: 1,
-                  height: "14px",
+                  width: "2em",
+                  // height: "1.5em",
+                  verticalAlign: "middle",
+                  ":hover": {
+                    color: "accent",
+                  },
                 }}
               />
-            </li>
-          </ul>
-        </>
+            </MainNavLink>
+          </li>
+        </ul>
       )}
     />
   )
