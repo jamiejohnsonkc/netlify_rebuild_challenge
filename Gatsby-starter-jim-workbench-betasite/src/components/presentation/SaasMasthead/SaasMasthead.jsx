@@ -3,23 +3,11 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Masthead from "../../layout/Masthead"
-import NavBar from "../../navigation/NavBar"
-import Logo from "../../base/Logo"
-import NavMenu from "../../navigation/NavMenu"
+import Navbar from "../../navigation/Navbar"
 
 const SaasMasthead = (props) => (
   <>
-    <Masthead>
-      <NavBar>
-        <Logo
-          className="mastHeadLogo"
-          sx={{
-            variant: "layout.mastheadLogo",
-          }}
-        />
-        <NavMenu />
-      </NavBar>
-    </Masthead>
+    <Navbar />
   </>
 )
 
