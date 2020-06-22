@@ -16,14 +16,15 @@ export default {
     width: "100%",
     display: "flex",
     justifyContent: "center",
-    marginTop: 3,
+    marginTop: [0, 3, 3, 3],
     position: "relative",
     // backgroundColor: "gray",
   },
 
   mastheadLogo: {
-    width: "100px",
-    paddingRight: 3,
+    width: "5em",
+    mx: 3,
+    lineHeight: 1,
   },
 
   //* Navbar //
@@ -34,34 +35,35 @@ export default {
     height: "100%",
     flex: 1,
     display: "flex",
+    // py: 2,
     "@media (max-width: 768px)": {
       width: "100%",
       justifyContent: "flex-start",
-      paddingTop: "10vh",
-      backgroundColor: "#fff",
+      paddingTop: [2, 0],
+      backgroundColor: "primary",
       transition: "all 0.3s ease-in",
-      top: "8vh",
+      top: "10vh",
+      overflow: ["scroll", "hidden"],
     },
   },
 
   mainNav: {
-    textTransform: "uppercase",
+    textTransform: "capitalize",
     borderRadius: 6,
     backgroundColor: "rgba(0,0,0,.15)",
-    lineHeight: 1,
-    px: 3,
+    lineHeight: 1.5,
+    px: 0,
+    py: 0,
     alignSelf: "center",
     alignItems: "center",
     justifyContent: "space-between",
-    height: "10vh",
+    // height: "10vh",
     display: "flex",
     variant: "layout.container",
     "@media (max-width: 768px)": {
       backgroundColor: "primary",
       width: "100%",
-      height: "8vh",
-      py: 4,
-      px: 3,
+      height: "10vh",
     },
   },
 
@@ -78,7 +80,7 @@ export default {
     // position: "relative",
     alignItems: "center",
     borderBottom: "transparent",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
     borderRadius: 4,
     lineHeight: 1,
     height: ["8vh", "auto", null, null],
@@ -87,20 +89,25 @@ export default {
   //* Lists //
   mainNavUl: {
     display: "flex",
-    flex: 1,
+    margin: 0,
+    padding: [0, 3],
+    px: [0, 4],
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
     flexDirection: ["column", "column", "row"],
+    width: ["100%"],
   },
 
   mainNavSubMenu: {
     listStyle: "none",
     m: 0,
     p: 0,
+    top: "100%",
     minWidth: "8rem",
     backgroundColor: "blue",
     transition: "all 0.5s ease",
-    marginTop: "30px",
+
+    // marginTop: 1,
   },
 
   mainNavSubSubMenu: {
@@ -109,11 +116,15 @@ export default {
 
   //* List Items //
   mainNavListItem: {
-    backgroundColor: "transparent",
+    // backgroundColor: "transparent",
+    // ":nth-child(odd)": {
+    //   backgroundColor: ["rgba(0,0,0,.15)", "transparent"],
+    // },
     color: "white",
-    padding: "1rem",
+    padding: [4, 0, 0, 0],
     transitionDuration: "0.5s",
     display: "flex",
+    // width: ["fill-available", "default"],
     flexBasis: "auto",
     "&:hover": {
       backgroundColor: "white",
@@ -125,6 +136,7 @@ export default {
 
   mainNavSubListItem: {
     variant: "layout.mainNavListItem",
+    display: ["none", "none", "flex", "flex"],
   },
 
   mainNavSubSubListItem: {
@@ -133,21 +145,44 @@ export default {
 
   //* Additional Menu Elements //
   mainMenuDivider: {
-    color: "layout.mainNavListItem",
-    padding: "1rem",
+    color: "white",
     transitionDuration: "0.5s",
-    display: "flex",
     flexBasis: "auto",
+    padding: 1,
+    display: ["none", "flex", "flex", "flex"],
+    visibility: ["hidden", "visible"],
+    // transitionDuration: "0.5s",
+    // display: "flex",
+    // flexBasis: "auto",
     "&:hover": {
       backgroundColor: "transparent",
     },
   },
 
+  mainNavSearch: {
+    variant: "layout.mainNavListItem",
+    display: ["none", "flex", "flex", "flex"],
+    padding: "layout.mainNavListItem",
+  },
+
+  // searchSpan: {
+  //   display: ["inline-block", "none"],
+  //   padding: "layout.mainNavListItem",
+  // },
+
+  // searchIcon: {
+  //   display: ["none", "flex"],
+  // },
+
   mainMenuSpacer: {
-    display: "layout.mainNavListItem",
-    flexBasis: "layout.mainNavListItem",
-    flexGrow: ".75",
+    variant: "layout.mainNavListItem",
+    display: ["none", "flex", "flex", "flex"],
+    padding: 0,
+    flexGrow: 0.5,
     cursor: "default",
+    "&:hover": {
+      backgroundColor: "transparent",
+    },
   },
 
   sideNavDrawer: {
@@ -203,10 +238,10 @@ export default {
     backgroundColor: "secondary",
   },
   container: {
-    width: ["90%", "75%", "63%"],
-    content: {
-      width: ["75%", "98%", "63%"],
-    },
+    width: ["100%", "100%", "79em"],
+    // content: {
+    //   width: ["75%", "98%", "63%"],
+    // },
   },
 
   row: {

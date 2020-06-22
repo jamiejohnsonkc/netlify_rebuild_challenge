@@ -16,7 +16,7 @@ import Navbar from "../../../../../jim-workbench-custom-presentation/Nav/Navbar"
 import Footer from "../Footer"
 import SaasMasthead from "../../presentation/SaasMasthead"
 
-const Layout = ({ children }) => (
+const Layout = (props) => (
   <Styled.root>
     <div
       sx={{
@@ -37,10 +37,7 @@ const Layout = ({ children }) => (
           width: "100%",
         }}
       >
-        <Container>
-          {/* <Navbar /> */}
-          {children}
-        </Container>
+        <Container>{props.children}</Container>
       </main>
       <Footer />
     </div>

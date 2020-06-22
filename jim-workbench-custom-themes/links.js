@@ -2,16 +2,15 @@ export default {
   mainNavLink: {
     display: "inline-block",
     position: "relative",
-    lineHeight: 1,
-    fontWeight: "normal",
-    fontSize: [1, 1, 0, 0],
+    lineHeight: 2,
+    fontWeight: 600,
     fontFamily: "Roboto",
     color: "#fff",
-    letterSpacing: ".1em",
+    letterSpacing: "-.025em",
     textTransform: "captilalize",
     textDecoration: "none",
     transition: "all 0.3s ease-in",
-
+    fontSize: [2, 4, 1, 1],
     "&.active": { color: "accent" },
     "&:hover": {
       color: "",

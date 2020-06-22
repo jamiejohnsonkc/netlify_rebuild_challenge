@@ -43,7 +43,7 @@ const Hamburger = styled.div`
   }
 `
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
@@ -86,7 +86,7 @@ const Navbar = () => {
             variant: "layout.navBox",
           }}
         >
-          <NavbarLinks />
+          <MainMenu className="MainMenu" />
         </Navbox>
       ) : (
         <Navbox

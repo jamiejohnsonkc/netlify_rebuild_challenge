@@ -7,7 +7,9 @@ import Navbar from "../../navigation/Navbar"
 
 const SaasMasthead = (props) => (
   <>
-    <Navbar />
+    <Masthead>
+      <Navbar />
+    </Masthead>
   </>
 )
 

@@ -43,8 +43,7 @@ const MainMenu = (props) => {
           className="mainNavUl"
           sx={{
             listStyle: "none",
-            margin: 0,
-            padding: 0,
+
             cursor: "pointer",
             variant: "layout.mainNavUl",
           }}
@@ -54,11 +53,9 @@ const MainMenu = (props) => {
               className="mainNavListItem"
               sx={{
                 display: "block",
-                float: "left",
                 position: "relative",
-                transitionDuration: "0.5s",
+
                 ":hover": {
-                  backgroundColor: "red",
                   cursor: "pointer",
                 },
                 ":hover > ul, :focus-within > ul ": {
@@ -98,11 +95,10 @@ const MainMenu = (props) => {
                 >
                   {link.subMenu.map((subLink) => (
                     <li
-                      className="mainNavSubLink"
+                      className="mainNavSubListItem"
                       sx={{
                         clear: "both",
                         width: "100%",
-                        padding: "1rem",
                         ":hover": {},
                         ":hover > ul, :focus-within > ul ": {
                           visibility: "visible",
@@ -137,9 +133,8 @@ const MainMenu = (props) => {
                           {subLink.subSubMenu.map((subSubLink) => (
                             <li
                               sx={{
-                                clear: "both",
                                 width: "100%",
-                                padding: "1rem",
+
                                 ":hover": {
                                   cursor: "pointer",
                                 },
@@ -181,7 +176,7 @@ const MainMenu = (props) => {
           <li
             className="search"
             sx={{
-              variant: "layout.mainNavListItem",
+              variant: "layout.mainNavSearch",
             }}
           >
             <MainNavLink
@@ -221,7 +216,7 @@ const MainMenu = (props) => {
             className="divider"
             sx={{
               color: "white",
-              py: 2,
+
               variant: "layout.mainMenuDivider",
             }}
           >
