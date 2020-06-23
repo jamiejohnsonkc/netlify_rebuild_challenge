@@ -2,10 +2,10 @@
 import { jsx } from "theme-ui"
 import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
-import Logo from "../../base/Logo"
-import Icon from "../../base/Icon"
-import MainNavLink from "../NavElements/MainNavLink"
-import MainNavSubLink from "../NavElements/MainNavSubLink"
+import Logo from "../../../base/Logo"
+import Icon from "../../../base/Icon"
+import NavLink from "../../navElements/NavLink"
+import NavSubLink from "../../NavElements/NavSubLink"
 import PropTypes from "prop-types"
 
 const DynamicMenu = (props) => {
@@ -62,14 +62,14 @@ const DynamicMenu = (props) => {
               }}
               key={link.name}
             >
-              <MainNavLink
+              <NavLink
                 href={link.link}
                 aria-haspopup={
                   link.subMenu && link.subMenu.length > 0 ? true : false
                 }
               >
                 {link.name}
-              </MainNavLink>
+              </NavLink>
               {link.subMenu && link.subMenu.length > 0 ? (
                 <ul
                   className="mainNavSubMenu"
@@ -104,9 +104,9 @@ const DynamicMenu = (props) => {
                       }}
                       key={subLink.name}
                     >
-                      <MainNavSubLink sx={{}} href={subLink.link}>
+                      <NavSubLink sx={{}} href={subLink.link}>
                         {subLink.name}
-                      </MainNavSubLink>
+                      </NavSubLink>
                       {subLink.subSubMenu && subLink.subSubMenu.length > 0 ? (
                         <ul
                           sx={{
@@ -143,7 +143,7 @@ const DynamicMenu = (props) => {
                               key={subSubLink.name}
                               className="MainNavSubSubListItem"
                             >
-                              <MainNavSubLink
+                              <NavSubLink
                                 sx={{
                                   color: "white",
                                   textDecoration: "none",
@@ -151,7 +151,7 @@ const DynamicMenu = (props) => {
                                 href={subSubLink.link}
                               >
                                 {subSubLink.name}
-                              </MainNavSubLink>
+                              </NavSubLink>
                             </li>
                           ))}
                         </ul>
@@ -174,7 +174,7 @@ const DynamicMenu = (props) => {
               variant: "layout.mainNavSearch",
             }}
           >
-            <MainNavLink
+            <NavLink
               sx={{
                 variant: "links.mainMenuSearch",
               }}
@@ -191,21 +191,21 @@ const DynamicMenu = (props) => {
                   },
                 }}
               />
-            </MainNavLink>
+            </NavLink>
           </li>
           <li
             sx={{
               variant: "layout.mainNavListItem",
             }}
           >
-            <MainNavLink>Contact Sales</MainNavLink>
+            <NavLink>Contact Sales</NavLink>
           </li>
           <li
             sx={{
               variant: "layout.mainNavListItem",
             }}
           >
-            <MainNavLink>Log In</MainNavLink>
+            <NavLink>Log In</NavLink>
           </li>
           <li
             className="divider"
@@ -224,7 +224,7 @@ const DynamicMenu = (props) => {
               variant: "layout.mainNavListItem",
             }}
           >
-            <MainNavLink>
+            <NavLink>
               Sign Up
               <Icon
                 iconName="ArrowRight"
@@ -238,7 +238,7 @@ const DynamicMenu = (props) => {
                   },
                 }}
               />
-            </MainNavLink>
+            </NavLink>
           </li>
         </ul>
       )}

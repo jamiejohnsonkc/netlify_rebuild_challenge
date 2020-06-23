@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Masthead from "../../layout/Masthead"
-import Navbar from "../../navigation/Navbar"
+import Navbar from "../../navigation/navFunctions/Navbar"
 
 const SaasMasthead = (props) => (
   <>

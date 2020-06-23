@@ -1,3 +1,3 @@
-import DynamicMenu from "./DynamicMenu"
+import MainMenu from "./MainMenu"
 
-export default DynamicMenu
+export default MainMenu

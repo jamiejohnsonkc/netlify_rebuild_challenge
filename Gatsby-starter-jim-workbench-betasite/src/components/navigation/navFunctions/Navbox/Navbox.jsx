@@ -5,9 +5,11 @@ import PropTypes from "prop-types"
 
 const Navbox = (props) => (
   <Flex
+    {...props}
     sx={{
-      variant: "layout.navBox",
+      variant: "nav.navBox",
     }}
+    className="navBox"
   >
     {props.children}
   </Flex>

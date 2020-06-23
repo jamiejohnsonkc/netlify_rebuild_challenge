@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React, { useState } from "react"
-import NavbarLinks from "../NavbarLinks"
+// import NavbarLinks from "../NavbarLinks"
 import Logo from "../../../base/Logo"
 import styled from "@emotion/styled"
-import PageLinksMap2 from "../../PageLinksMap2"
-import MainMenu from "../MainMenu"
+// import PageLinksMap2 from "../../PageLinksMap2"
+import MainMenu from "../../../presentation/MainMenu"
 import { Link } from "gatsby"
-import MainNav from "../MainNav"
+// import MainNav from "../MainNav"
 
 const Toggle = styled.div``
 
@@ -47,7 +47,12 @@ const Navbar = (props) => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <MainNav>
+    <div
+      sx={{
+        variant: "nav.navBar",
+      }}
+      className="navBar"
+    >
       <Link to="/">
         <Logo
           className="mastHeadLogo"
@@ -61,45 +66,45 @@ const Navbar = (props) => {
         onClick={() => setNavbarOpen(!navbarOpen)}
         className="Toggle"
         sx={{
-          variant: "layout.toggle",
+          variant: "nav.toggle",
         }}
       >
         {navbarOpen ? (
           <Hamburger
             sx={{
-              variant: "layout.hamburger",
+              variant: "nav.hamburger",
             }}
             open
           />
         ) : (
           <Hamburger
             sx={{
-              variant: "layout.hamburger",
+              variant: "nav.hamburger",
             }}
           />
         )}
       </Toggle>
       {navbarOpen ? (
         <Navbox
-          className="Navbox"
+          className="navBox"
           sx={{
-            variant: "layout.navBox",
+            variant: "nav.navBox",
           }}
         >
-          <MainMenu className="MainMenu" />
+          <MainMenu className="mainMenu" />
         </Navbox>
       ) : (
         <Navbox
-          className="Navbox"
+          className="navBox"
           sx={{
-            variant: "layout.navBox",
+            variant: "nav.navBox",
           }}
           open
         >
-          <MainMenu className="MainMenu" />
+          <MainMenu className="mainMenu" />
         </Navbox>
       )}
-    </MainNav>
+    </div>
   )
 }
 

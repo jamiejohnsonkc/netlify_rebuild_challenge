@@ -5,9 +5,9 @@ export default (props) => (
   <Link
     {...props}
     activeClassName="active"
-    className="NavLink"
+    className="navLink"
     sx={{
-      variant: "links.NavLink",
+      variant: "links.navLink",
 
       //   "&.active": {
       //     color: "accent",

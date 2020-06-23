@@ -17,7 +17,7 @@ const Nav = (props) => (
         right: "0",
         left: "0",
       },
-      variant: "layout.mainNav",
+      variant: "nav.nav",
     }}
   >
     {props.children}

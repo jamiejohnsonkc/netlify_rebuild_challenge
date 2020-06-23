@@ -2,10 +2,10 @@
 import { jsx } from "theme-ui"
 import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
-import Logo from "../../base/Logo"
+// import Logo from "../../base/Logo"
 import Icon from "../../base/Icon"
-import MainNavLink from "../../navigation/navElements/MainNavLink"
-import MainNavSubLink from "../../navigation/MainNavSubLink"
+import NavLink from "../../navigation/navElements/NavLink"
+import NavSubLink from "../../navigation/navElements/NavSubLink"
 import PropTypes from "prop-types"
 
 //TODO fix logo box: what is forcing the extra space to the right?
@@ -13,6 +13,8 @@ import PropTypes from "prop-types"
 //TODO delete the "NavBarLogo" component
 //TODO content breaking parent when downsizing
 //TODO remove iconContext provider hooks inside gatsby: unnecessary
+
+//!Main menu will be the presentation component
 
 const MainMenu = (props) => {
   return (
@@ -40,17 +42,17 @@ const MainMenu = (props) => {
       `}
       render={(data) => (
         <ul
-          className="mainNavUl"
+          className="navMenu"
           sx={{
             listStyle: "none",
 
             cursor: "pointer",
-            variant: "layout.mainNavUl",
+            variant: "nav.navMenu",
           }}
         >
           {data.site.siteMetadata.menuLinks.map((link) => (
             <li
-              className="mainNavListItem"
+              className="navItem"
               sx={{
                 display: "block",
                 position: "relative",
@@ -63,21 +65,21 @@ const MainMenu = (props) => {
                   opacity: "1",
                   display: "block",
                 },
-                variant: "layout.mainNavListItem",
+                variant: "nav.navItem",
               }}
               key={link.name}
             >
-              <MainNavLink
+              <NavLink
                 href={link.link}
                 aria-haspopup={
                   link.subMenu && link.subMenu.length > 0 ? true : false
                 }
               >
                 {link.name}
-              </MainNavLink>
+              </NavLink>
               {link.subMenu && link.subMenu.length > 0 ? (
                 <ul
-                  className="mainNavSubMenu"
+                  className="subMenu"
                   sx={{
                     visibility: "hidden",
                     opacity: "0",
@@ -89,13 +91,13 @@ const MainMenu = (props) => {
                       opacity: "1",
                       display: "block",
                     },
-                    variant: "layout.mainNavSubMenu",
+                    variant: "nav.subMenu",
                   }}
                   aria-label="submenu"
                 >
                   {link.subMenu.map((subLink) => (
                     <li
-                      className="mainNavSubListItem"
+                      className="subMenuNavItem"
                       sx={{
                         clear: "both",
                         width: "100%",
@@ -105,13 +107,13 @@ const MainMenu = (props) => {
                           opacity: "1",
                           display: "block",
                         },
-                        variant: "layout.mainNavSubListItem",
+                        variant: "nav.subMenuNavItem",
                       }}
                       key={subLink.name}
                     >
-                      <MainNavSubLink sx={{}} href={subLink.link}>
+                      <NavSubLink sx={{}} href={subLink.link}>
                         {subLink.name}
-                      </MainNavSubLink>
+                      </NavSubLink>
                       {subLink.subSubMenu && subLink.subSubMenu.length > 0 ? (
                         <ul
                           sx={{
@@ -125,10 +127,10 @@ const MainMenu = (props) => {
                               opacity: "1",
                               display: "block",
                             },
-                            variant: "layout.mainNavSubSubMenu",
+                            variant: "nav.subSubMenu",
                           }}
                           aria-label="submenu"
-                          className="MainNavSubSubMenu"
+                          className="subSubMenu"
                         >
                           {subLink.subSubMenu.map((subSubLink) => (
                             <li
@@ -143,12 +145,12 @@ const MainMenu = (props) => {
                                   opacity: "1",
                                   display: "block",
                                 },
-                                variant: "layout.mainNavSubSubListItem",
+                                variant: "nav.subSubMenuNavItem",
                               }}
                               key={subSubLink.name}
-                              className="MainNavSubSubListItem"
+                              className="subSubMenuNavItem"
                             >
-                              <MainNavSubLink
+                              <NavSubLink
                                 sx={{
                                   color: "white",
                                   textDecoration: "none",
@@ -156,7 +158,7 @@ const MainMenu = (props) => {
                                 href={subSubLink.link}
                               >
                                 {subSubLink.name}
-                              </MainNavSubLink>
+                              </NavSubLink>
                             </li>
                           ))}
                         </ul>
@@ -169,17 +171,17 @@ const MainMenu = (props) => {
           ))}
           <li
             sx={{
-              variant: "layout.mainMenuSpacer",
+              variant: "nav.navMenuSpacer",
             }}
             className="spacer"
           ></li>
           <li
             className="search"
             sx={{
-              variant: "layout.mainNavSearch",
+              variant: "nav.navSearch",
             }}
           >
-            <MainNavLink
+            <NavLink
               sx={{
                 variant: "links.mainMenuSearch",
               }}
@@ -196,28 +198,28 @@ const MainMenu = (props) => {
                   },
                 }}
               />
-            </MainNavLink>
+            </NavLink>
           </li>
           <li
             sx={{
-              variant: "layout.mainNavListItem",
+              variant: "nav.navItem",
             }}
           >
-            <MainNavLink>Contact Sales</MainNavLink>
+            <NavLink>Contact Sales</NavLink>
           </li>
           <li
             sx={{
-              variant: "layout.mainNavListItem",
+              variant: "nav.navItem",
             }}
           >
-            <MainNavLink>Log In</MainNavLink>
+            <NavLink>Log In</NavLink>
           </li>
           <li
             className="divider"
             sx={{
               color: "white",
 
-              variant: "layout.mainMenuDivider",
+              variant: "nav.navMenuDivider",
             }}
           >
             <a>|</a>
@@ -226,10 +228,10 @@ const MainMenu = (props) => {
             sx={{
               // marginRight: 0,
               // height: "16px",
-              variant: "layout.mainNavListItem",
+              variant: "nav.navItem",
             }}
           >
-            <MainNavLink>
+            <NavLink>
               Sign Up
               <Icon
                 iconName="ArrowRight"
@@ -243,7 +245,7 @@ const MainMenu = (props) => {
                   },
                 }}
               />
-            </MainNavLink>
+            </NavLink>
           </li>
         </ul>
       )}

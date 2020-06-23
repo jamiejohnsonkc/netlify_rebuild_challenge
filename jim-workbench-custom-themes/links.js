@@ -1,5 +1,5 @@
 export default {
-  mainNavLink: {
+  navLink: {
     display: "inline-block",
     position: "relative",
     lineHeight: 2,
@@ -33,8 +33,12 @@ export default {
     },
   },
 
+  navSubLink: {
+    variant: "links.navLink",
+  },
+
   mainMenuSearch: {
-    variant: "links.mainNavLink",
+    variant: "links.navLink",
     padding: 1,
     "&:hover": {
       color: "",
@@ -43,10 +47,6 @@ export default {
         backgroundColor: "transparent",
       },
     },
-  },
-
-  mainNavSubLink: {
-    variant: "links.mainNavLink",
   },
 
   megaNavLink: {

@@ -21,12 +21,14 @@ import layout from "./layout"
 import cards from "./cards"
 import links from "./links"
 import buttons from "./buttons"
+import nav from "./nav"
 // import main from "./main"
 
 const typography = toTheme(merge(wp2016, options), {})
 
 export default merge(typography, {
   layout,
+  nav,
   cards,
   colors,
   links,

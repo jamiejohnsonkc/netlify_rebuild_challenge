@@ -2,7 +2,7 @@
 import { jsx, Styled, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { MainNavLink } from "../../navigation/MainNavLink"
+import { NavLink } from "../../navigation/navElements/NavLink"
 
 const TextTest = (props) => (
   <div>
@@ -55,7 +55,7 @@ const TextTest = (props) => (
     <div>
       <Styled.div
         sx={{
-          variant: "links.mainNavLink",
+          variant: "links.MainNavLink",
         }}
       >
         Main Nav Link 1
