@@ -2,22 +2,146 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout/Layout"
-import { Styled, jsx } from "theme-ui"
+import { Styled, jsx, Container } from "theme-ui"
 import SEO from "../pages/seo"
 import Image from "../components/base/image"
 
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-    <Styled.h1>jjkc portfolio</Styled.h1>
-    <Styled.p>Welcome to your new portfolio site.</Styled.p>
-    <Styled.p>Now go build something great, rtfn!</Styled.p>
-    <div sx={{ maxWidth: 300, marginBottom: [3] }}>
-      <Image />
+    <div
+      {...props}
+      sx={{
+        width: "500px",
+      }}
+    >
+      <Styled.h1>jjkc portfolio</Styled.h1>
+      <Styled.p>Welcome to your new portfolio site.</Styled.p>
+      <Styled.p>Now go build something great, rtfn!</Styled.p>
+      <div sx={{ maxWidth: 300, marginBottom: [3] }}>
+        <Image />
+      </div>
+      <Styled.p>
+        <Link to="/page-2/">Go to page 2</Link>
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>{" "}
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>{" "}
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <Styled.p>
+        Laborum nulla elit adipisicing voluptate duis laboris eu. Reprehenderit
+        eu sit aute aute occaecat labore fugiat enim enim. Mollit ea aliquip
+        tempor sit dolore. Amet commodo minim qui dolore culpa ipsum occaecat.
+        Anim est non occaecat eiusmod non ea aliquip consectetur quis ad ipsum
+        amet labore laboris. Do enim ipsum consectetur qui officia.
+      </Styled.p>
+      <div id="testlink">
+        <h2>Test Link Content Is Here</h2>
+        <Styled.p>
+          Laborum nulla elit adipisicing voluptate duis laboris eu.
+          Reprehenderit eu sit aute aute occaecat labore fugiat enim enim.
+          Mollit ea aliquip tempor sit dolore. Amet commodo minim qui dolore
+          culpa ipsum occaecat. Anim est non occaecat eiusmod non ea aliquip
+          consectetur quis ad ipsum amet labore laboris. Do enim ipsum
+          consectetur qui officia.
+        </Styled.p>
+        <Styled.p>
+          Laborum nulla elit adipisicing voluptate duis laboris eu.
+          Reprehenderit eu sit aute aute occaecat labore fugiat enim enim.
+          Mollit ea aliquip tempor sit dolore. Amet commodo minim qui dolore
+          culpa ipsum occaecat. Anim est non occaecat eiusmod non ea aliquip
+          consectetur quis ad ipsum amet labore laboris. Do enim ipsum
+          consectetur qui officia.
+        </Styled.p>
+      </div>
     </div>
-    <Styled.p>
-      <Link to="/page-2/">Go to page 2</Link>
-    </Styled.p>
   </Layout>
 )
 

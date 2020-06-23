@@ -25,6 +25,11 @@ exports.createSchemaCustomization = ({ actions }) => {
               link: String!
               subMenu: [SubMenu] @defaultArray
             }
+            type MegaNavMenu{
+              name: String!
+              link: String!
+              subMenu: [SubMenu] @defaultArray
+            }
             type SubMenu {
               name: String
               link: String

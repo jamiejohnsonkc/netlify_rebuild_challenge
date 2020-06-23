@@ -101,10 +101,11 @@ export default {
   mainNavSubMenu: {
     listStyle: "none",
     m: 0,
-    p: 0,
+    p: 4,
     top: "100%",
     minWidth: "8rem",
-    backgroundColor: "blue",
+    backgroundColor: "white",
+    borderRadius: 6,
     transition: "all 0.5s ease",
 
     // marginTop: 1,
@@ -127,7 +128,7 @@ export default {
     // width: ["fill-available", "default"],
     flexBasis: "auto",
     "&:hover": {
-      backgroundColor: "white",
+      // backgroundColor: "white",
       "& > a": {
         color: "accent",
       },
