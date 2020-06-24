@@ -19,8 +19,23 @@ const IndexPage = (props) => (
     >
       <ColorModeToggle />
       <ColorModeCycler />
-      <div style={{ fontFamily: "roboto slab", fontSize: "80px" }}>
+      <div
+        style={{
+          fontFamily: "roboto slab",
+          fontWeight: "600",
+          fontSize: "80px",
+        }}
+      >
         jjkc portfolio
+      </div>
+      <div
+        style={{
+          fontFamily: "geomanistregular",
+          fontWeight: "600",
+          fontSize: "80px",
+        }}
+      >
+        geomanist
       </div>
       <Styled.p>Welcome to your new portfolio site.</Styled.p>
       <Styled.p>Now go build something great, rtfn!</Styled.p>
