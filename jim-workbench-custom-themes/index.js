@@ -37,12 +37,12 @@ export default merge(typography, {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   // fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
 
-  fontWeights: {
-    body: 300,
-    bold: 600,
-    heading: 600,
-    heavy: 900,
-  },
+  // fontWeights: {
+  //   body: 300,
+  //   bold: 600,
+  //   heading: 600,
+  //   heavy: 900,
+  // },
   letterSpacings: {
     spread: "0.25em",
     loose: "0.1em",
@@ -144,6 +144,9 @@ export default merge(typography, {
       lineHeight: "heading",
       fontWeight: "heading",
       fontSize: 2,
+      caps: {
+        variant: "text.caps",
+      },
     },
     h5: {
       color: "text",
@@ -198,6 +201,7 @@ export default merge(typography, {
         color: "inherit",
       },
     },
+
     code: {
       fontFamily: "monospace",
       fontSize: "inherit",

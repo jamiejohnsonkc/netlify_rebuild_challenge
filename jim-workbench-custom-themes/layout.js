@@ -21,12 +21,6 @@ export default {
     // backgroundColor: "gray",
   },
 
-  mastheadLogo: {
-    width: "5em",
-    mx: 3,
-    lineHeight: 1,
-  },
-
   footer: {
     backgroundColor: "secondary",
   },

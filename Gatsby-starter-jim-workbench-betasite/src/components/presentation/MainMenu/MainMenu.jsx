@@ -176,14 +176,14 @@ const MainMenu = (props) => {
             className="spacer"
           ></li>
           <li
-            className="search"
+            className="navSearch"
             sx={{
               variant: "nav.navSearch",
             }}
           >
             <NavLink
               sx={{
-                variant: "links.mainMenuSearch",
+                variant: "links.navSearch",
               }}
             >
               <Icon

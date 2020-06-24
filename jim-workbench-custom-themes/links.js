@@ -1,8 +1,8 @@
 export default {
-  navLink: {
+  nav: {
     display: "inline-block",
     position: "relative",
-    lineHeight: 2,
+    lineHeight: 1.5,
     fontWeight: 600,
     fontFamily: "Roboto",
     color: "#fff",
@@ -10,7 +10,7 @@ export default {
     textTransform: "captilalize",
     textDecoration: "none",
     transition: "all 0.3s ease-in",
-    fontSize: [2, 4, 1, 1],
+    fontSize: [2, 3, 1, 1],
     "&.active": { color: "accent" },
     "&:hover": {
       color: "",
@@ -34,24 +34,30 @@ export default {
   },
 
   navSubLink: {
-    variant: "links.navLink",
+    variant: "links.nav",
   },
 
-  mainMenuSearch: {
-    variant: "links.navLink",
-    padding: 1,
-    "&:hover": {
-      color: "",
-      "&::after": {
-        width: "100%",
-        backgroundColor: "transparent",
-      },
-    },
+  navCTA: {
+    color: "accent",
   },
+  // navSearch: {
+  //   display: ["none", "none", "flex", "flex"],
+  //   visibility: ["hidden", "hidden", "visible", "visible"],
+  //   padding: 1,
+  //   "&:hover": {
+  //     color: "",
+  //     "&::after": {
+  //       width: "100%",
+  //       backgroundColor: "transparent",
+  //     },
+  //   },
+  // },
 
   megaNavLink: {
     display: "block",
     fontSize: 2,
-    fontWeight: 400,
+    fontWeight: "500",
+    marginBottom: 2,
+    color: "#000",
   },
 }

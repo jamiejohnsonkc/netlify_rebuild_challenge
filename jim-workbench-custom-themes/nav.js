@@ -2,31 +2,24 @@ import layout from "./layout"
 
 export default {
   nav: {},
-  navBar: {},
 
-  //* Navbar //
+  //!!! turns out this was scrap too.  saving jic
+  // mainMenu: {
+  //   whiteSpace: "nowrap",
+  //   // position: "relative",
+  //   alignItems: "center",
+  //   borderBottom: "transparent",
+  //   // justifyContent: "space-between",
+  //   borderRadius: 4,
+  //   lineHeight: 1,
+  //   height: ["8vh", "auto", null, null],
+  //   flexDirection: ["column", "column", "row", "row"],
+  // },
 
-  navBox: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    height: "100%",
-    flex: 1,
-    display: "flex",
-    // py: 2,
-    "@media (max-width: 768px)": {
-      width: "100%",
-      justifyContent: "flex-start",
-      paddingTop: [2, 0],
-      backgroundColor: "primary",
-      transition: "all 0.3s ease-in",
-      top: "10vh",
-      overflow: ["scroll", "hidden"],
-    },
-  },
-
+  //* nav root directory
   navBar: {
     textTransform: "capitalize",
-    borderRadius: 6,
+    borderRadius: [0, 0, 6, 6],
     backgroundColor: "rgba(0,0,0,.15)",
     lineHeight: 1.5,
     px: 0,
@@ -44,26 +37,41 @@ export default {
     },
   },
 
-  //!where was this used before (or was it?)
-  // navMenu: {
-  //   justifyContent: "space-between",
-  //   alignItems: "center",
-  //   flex: 1,
-  //   lineHeight: 1,
-  //   display: "flex",
-  // },
-
-  //!!!! this should be moved to a custom file for the saas-spec project
-  mainMenu: {
-    whiteSpace: "nowrap",
-    // position: "relative",
-    alignItems: "center",
-    borderBottom: "transparent",
-    // justifyContent: "space-between",
-    borderRadius: 4,
+  mastHeadLogo: {
+    width: "5em",
+    mx: 3,
     lineHeight: 1,
-    height: ["8vh", "auto", null, null],
-    flexDirection: ["column", "column", "row", "row"],
+  },
+
+  //!where was this used before (or was it?) +> believe this is scrap.  saving jic
+
+  navMenu: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "100%",
+    flex: 1,
+    display: "flex",
+    py: 2,
+  },
+
+  //*  Responsive Menu/Drawer
+  navBox: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "100%",
+    flex: 1,
+    display: "flex",
+    paddingTop: [2, 0],
+    // py: 2,
+    "@media (max-width: 768px)": {
+      width: "100%",
+      justifyContent: "flex-start",
+      backgroundColor: "primary",
+      transition: "all 0.3s ease-in",
+      top: "10vh",
+      // overflow: ["scroll", "hidden"],
+      // zIndex: 3,
+    },
   },
 
   //* Lists //
@@ -85,7 +93,7 @@ export default {
     p: 4,
     top: "100%",
     minWidth: "8rem",
-    backgroundColor: "white",
+    backgroundColor: "nav.navBar",
     borderRadius: 6,
     transition: "all 0.5s ease",
 
@@ -102,17 +110,30 @@ export default {
     // ":nth-child(odd)": {
     //   backgroundColor: ["rgba(0,0,0,.15)", "transparent"],
     // },
-    color: "white",
+    // color: "white",
     padding: [4, 0, 0, 0],
     transitionDuration: "0.5s",
     display: "flex",
     // width: ["fill-available", "default"],
-    flexBasis: "auto",
+    // flexBasis: "auto",
+    // minWidth: ["100%", "auto", "auto", "auto"],
     "&:hover": {
       // backgroundColor: "white",
       "& > a": {
-        color: "accent",
+        // color: "accent",
       },
+    },
+    "@media (max-width: 768px)": {
+      width: "100%",
+      // justifyContent: "flex-start",
+      // paddingTop: [2, 0],
+      backgroundColor: "primary",
+      transition: "all 0.3s ease-in",
+      // top: "10vh",
+      // overflow: ["scroll", "hidden"],
+      // zIndex: 3,
+      display: "block",
+      position: "relative",
     },
   },
 
@@ -131,8 +152,8 @@ export default {
     transitionDuration: "0.5s",
     flexBasis: "auto",
     padding: 1,
-    display: ["none", "flex", "flex", "flex"],
-    visibility: ["hidden", "visible"],
+    display: ["none", "none", "flex", "flex"],
+    visibility: ["hidden", "hidden", "visible", "visible"],
     // transitionDuration: "0.5s",
     // display: "flex",
     // flexBasis: "auto",
@@ -142,9 +163,9 @@ export default {
   },
 
   navSearch: {
-    variant: "nav.navItem",
-    display: ["none", "flex", "flex", "flex"],
+    display: ["none", "none", "flex", "flex"],
     padding: "nav.navItem",
+    alignSelf: "end",
   },
 
   // searchSpan: {
@@ -157,7 +178,6 @@ export default {
   // },
 
   navMenuSpacer: {
-    variant: "nav.navItem",
     display: ["none", "flex", "flex", "flex"],
     padding: 0,
     flexGrow: 0.5,
@@ -174,11 +194,14 @@ export default {
     },
   },
 
-  navMenuarrow: {
-    verticalAlign: "sub",
-    color: "nav.navItem",
-    lineHeight: 1,
-    height: "auto",
+  menuChevronDown: {
+    color: "muted",
+    verticalAlign: "middle",
+    width: "1.25em",
+  },
+
+  menuArrowRight: {
+    color: "accent",
   },
 
   toggle: {
@@ -214,5 +237,14 @@ export default {
     },
   },
 
+  megaNav: {
+    width: "71vw",
+    borderRadius: 6,
+    backgroundColor: "muted",
+    transition: "all 0.3s ease-in",
+  },
+
   footerNav: { fontSize: 1 },
 }
+
+//TODO fix search icon in mobile

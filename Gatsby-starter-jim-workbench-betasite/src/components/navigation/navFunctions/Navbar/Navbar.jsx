@@ -7,17 +7,10 @@ import styled from "@emotion/styled"
 // import PageLinksMap2 from "../../PageLinksMap2"
 import MainMenu from "../../../presentation/MainMenu"
 import { Link } from "gatsby"
+import Navbox from "../Navbox"
 // import MainNav from "../MainNav"
 
 const Toggle = styled.div``
-
-const Navbox = styled.div`
-  @media (max-width: 768px) {
-    flex-direction: column;
-    position: fixed;
-    left: ${(props) => (props.open ? "-100%" : "0")};
-  }
-`
 
 const Hamburger = styled.div`
   align-self: center;
@@ -57,7 +50,7 @@ const Navbar = (props) => {
         <Logo
           className="mastHeadLogo"
           sx={{
-            variant: "layout.mastheadLogo",
+            variant: "nav.mastHeadLogo",
           }}
         />
       </Link>
@@ -84,26 +77,7 @@ const Navbar = (props) => {
           />
         )}
       </Toggle>
-      {navbarOpen ? (
-        <Navbox
-          className="navBox"
-          sx={{
-            variant: "nav.navBox",
-          }}
-        >
-          <MainMenu className="mainMenu" />
-        </Navbox>
-      ) : (
-        <Navbox
-          className="navBox"
-          sx={{
-            variant: "nav.navBox",
-          }}
-          open
-        >
-          <MainMenu className="mainMenu" />
-        </Navbox>
-      )}
+      {navbarOpen ? <Navbox /> : <Navbox open />}
     </div>
   )
 }

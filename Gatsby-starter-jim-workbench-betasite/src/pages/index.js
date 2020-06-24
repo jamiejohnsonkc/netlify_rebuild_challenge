@@ -5,6 +5,8 @@ import Layout from "../components/layout/Layout"
 import { Styled, jsx, Container } from "theme-ui"
 import SEO from "../pages/seo"
 import Image from "../components/base/image"
+import ColorModeToggle from "../components/inputs/ColorModeToggle"
+import ColorModeCycler from "../components/inputs/ColorModeCycler"
 
 const IndexPage = (props) => (
   <Layout>
@@ -15,6 +17,8 @@ const IndexPage = (props) => (
         width: "500px",
       }}
     >
+      <ColorModeToggle />
+      <ColorModeCycler />
       <Styled.h1>jjkc portfolio</Styled.h1>
       <Styled.p>Welcome to your new portfolio site.</Styled.p>
       <Styled.p>Now go build something great, rtfn!</Styled.p>

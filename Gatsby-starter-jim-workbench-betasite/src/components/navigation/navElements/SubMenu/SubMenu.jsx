@@ -3,16 +3,30 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 
-const SubMenu = (props) => (
+const SubMenu = ({ width, color, bg, ...props }) => (
   <ul
     {...props}
+    className="subMenu"
     sx={{
-      listStyle: "none",
-      cursor: "pointer",
+      width,
+      color,
+      bg,
+      visibility: "hidden",
+      opacity: "0",
+      display: "none",
+      position: "absolute",
+      left: "0",
+      ":hover": {
+        visibility: "visible",
+        opacity: "1",
+        display: "block",
+      },
       variant: "nav.subMenu",
     }}
-    className="subMenu"
-  />
+    aria-label="submenu"
+  >
+    {props.children}
+  </ul>
 )
 
 SubMenu.propTypes = {}

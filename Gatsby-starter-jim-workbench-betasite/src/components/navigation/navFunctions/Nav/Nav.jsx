@@ -7,11 +7,10 @@ const Nav = (props) => (
   <nav
     className="Nav"
     sx={{
-      position: "relative",
+      position: ["fixed", "fixed", "relative"],
 
       zIndex: "2",
       "@media (max-width: 768px)": {
-        position: "sticky",
         top: "0",
         left: "0",
         right: "0",

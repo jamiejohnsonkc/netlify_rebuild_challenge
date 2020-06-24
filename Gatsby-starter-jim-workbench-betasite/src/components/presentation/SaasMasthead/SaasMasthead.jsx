@@ -4,11 +4,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import Masthead from "../../layout/Masthead"
 import Navbar from "../../navigation/navFunctions/Navbar"
-
+import Nav from "../../navigation/navFunctions/Nav"
 const SaasMasthead = (props) => (
   <>
     <Masthead>
-      <Navbar />
+      <Nav>
+        <Navbar />
+      </Nav>
     </Masthead>
   </>
 )

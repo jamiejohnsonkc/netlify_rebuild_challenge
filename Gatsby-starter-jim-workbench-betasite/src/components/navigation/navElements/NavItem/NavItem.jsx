@@ -3,16 +3,28 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 
-const NavItem = (props) => (
+const NavItem = ({ bg, color, padding, ...props }) => (
   <li
     {...props}
+    className="navItem"
     sx={{
-      listStyle: "none",
-      cursor: "pointer",
+      color,
+      display: "block",
+      position: "relative",
+
+      "&:hover": {
+        cursor: "pointer",
+      },
+      "&:hover > ul, :focus-within > ul ": {
+        visibility: "visible",
+        opacity: "1",
+        display: "block",
+      },
       variant: "nav.navItem",
     }}
-    className="navItem"
-  />
+  >
+    {props.children}
+  </li>
 )
 
 NavItem.propTypes = {}

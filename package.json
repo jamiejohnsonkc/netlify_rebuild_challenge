@@ -16,5 +16,10 @@
     "gatsby-starter-jim-workbench-betasite",
     "jim-workbench-custom-themes",
     "jim-workbench-custom-presentation"
-  ]
+  ],
+  "nohoist": [
+      "@storybook",
+      "**/@storybook",
+      "**/@storybook/**"
+    ]
 }

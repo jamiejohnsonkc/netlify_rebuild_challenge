@@ -12,6 +12,7 @@ import { FaYoutube } from "react-icons/fa"
 import { FaFacebookMessenger } from "react-icons/fa"
 import { FaRedditAlien } from "react-icons/fa"
 import { GoChevronUp } from "react-icons/go"
+import { GoChevronDown } from "react-icons/go"
 import { MdFormatQuote } from "react-icons/md"
 import { BsArrowRight } from "react-icons/bs"
 
@@ -44,12 +45,16 @@ export const Icon = (props) => {
       return <FaRedditAlien {...props} />
     case "ChevronUp":
       return <GoChevronUp {...props} />
+    case "ChevronDown":
+      return <GoChevronDown {...props} />
+    case "ChevronRight":
+      return <GoChevronRight {...props} />
+    case "ChevronLeft":
+      return <GoChevronLeft {...props} />
     case "MdFormatQuote":
       return <MdFormatQuote {...props} />
     case "ArrowRight":
       return <BsArrowRight {...props} />
-    case "ExpandMoreIcon":
-      return <MdExpandMoreIcon {...props} />
   }
 }
 

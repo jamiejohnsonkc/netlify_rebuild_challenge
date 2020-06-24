@@ -12,7 +12,9 @@ const SubSubMenu = (props) => (
       variant: "nav.subSubMenu",
     }}
     className="subSubMenu"
-  />
+  >
+    {props.children}
+  </ul>
 )
 
 SubSubMenu.propTypes = {}

@@ -7,12 +7,23 @@ const SubMenuNavItem = (props) => (
   <li
     {...props}
     sx={{
-      listStyle: "none",
-      cursor: "pointer",
-      variant: "nav.subMenuNavItem",
+      visibility: "hidden",
+      opacity: "0",
+      display: "none",
+      position: "absolute",
+
+      ":hover": {
+        visibility: "visible",
+        opacity: "1",
+        display: "block",
+      },
+      variant: "nav.subSubMenu",
     }}
-    className="subMenuNavItem"
-  />
+    aria-label="submenu"
+    className="subSubMenu"
+  >
+    {props.children}
+  </li>
 )
 
 SubMenuNavItem.propTypes = {}

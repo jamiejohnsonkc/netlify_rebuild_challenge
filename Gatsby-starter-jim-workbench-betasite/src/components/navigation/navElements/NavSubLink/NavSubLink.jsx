@@ -13,5 +13,7 @@ export default (props) => (
       //     color: "accent",
       //   },
     }}
-  />
+  >
+    {props.children}
+  </Link>
 )
