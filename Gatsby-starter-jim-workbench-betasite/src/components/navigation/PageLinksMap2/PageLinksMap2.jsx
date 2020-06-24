@@ -23,6 +23,7 @@ const PageLinksMap2 = () => {
       `}
       render={(data) => (
         <ul className="pageLinksList">
+          pagelinks 2
           {data.site.siteMetadata.menuLinks.map((link) => (
             <li key={link.name} link={link}>
               {link.name}

@@ -12,8 +12,23 @@ module.exports = {
             link: "/sub-1",
             name: "Sub 1",
           },
+          {
+            link: "/sub-2",
+            name: "Sub 2",
+            subSubMenu: [
+              {
+                link: "/subSub-1",
+                name: "SubSub 1",
+              },
+              {
+                link: "/subSub-2",
+                name: "SubSub 2",
+              },
+            ],
+          },
         ],
       },
+
       {
         name: "Pricing",
         link: "/page-3",

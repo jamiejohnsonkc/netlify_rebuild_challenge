@@ -2,12 +2,19 @@ masthead
 |-navbar
 |-logo
 |-NavMenu
-|-(toggle/hamburger)
+|- Hamburger (closed)
 |-Drawer
 |-SideNav
-|-MainMenu Ul
-|-mainMenuLi
-|-Mainlinks
-|-SubMenu
-Sublinks|-
+|-MainMenu Ul (open)
+|-mainNavListItem
+|-mainNavLink
+|-mainNavSubMenu
+|-mainNavSublinks
 |-Added li
+
+navbar
+navmenu
+toggle
+masheadlogo
+mainnavUl
+mainNavListItem

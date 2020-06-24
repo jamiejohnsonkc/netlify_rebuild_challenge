@@ -1,55 +1,19 @@
 export default {
-  //!light
-  // nav: {
-  //   fontWeight: "normal",
-  //   fontSize: [3, 3, 1, 2],
-  //   fontFamily: "Roboto",
-  //   color: "white",
-  //   letterSpacing: ".1em",
-  //   textTransform: "captilalize",
-  //   textDecoration: "none",
-  //   transition: "all 0.3s ease-in-out",
-  //   py: 1,
-  //   "&.active": { color: "accent" },
-  //   "&:hover": {
-  //     color: "accent",
-  //     "&::after": {
-  //       width: "100%",
-  //       backgroundColor: "accent",
-  //       transition: "all 0.3s ease-in-out",
-  //     },
-  //   },
-  //   "&::after": {
-  //     position: "absolute",
-  //     bottom: "0",
-  //     left: "0",
-  //     right: "0",
-  //     width: "0%",
-  //     content: "'.'",
-  //     color: "transparent",
-  //     height: "0.1em",
-  //   },
-  // },
-  //!dark
-  mainNavLink: {
+  nav: {
     display: "inline-block",
     position: "relative",
-    lineHeight: 1,
-    fontWeight: "normal",
-    fontSize: [3, 3, 1, 1],
+    lineHeight: 1.5,
+    fontWeight: 600,
     fontFamily: "Roboto",
     color: "#fff",
-    letterSpacing: ".1em",
+    letterSpacing: "-.025em",
     textTransform: "captilalize",
     textDecoration: "none",
     transition: "all 0.3s ease-in",
-    // my: [4, 4, 2],
-    // mx: [null],
-    // zIndex: [6, 6, 1],
-    // padding: 1,
+    fontSize: [2, 3, 1, 1],
     "&.active": { color: "accent" },
     "&:hover": {
-      color: "accent",
+      color: "",
       "&::after": {
         width: "100%",
         backgroundColor: "accent",
@@ -64,35 +28,36 @@ export default {
       content: "'.'",
       color: "transparent",
       height: "0.1em",
-      top: "115%",
+      top: "85%",
       zIndex: "1",
     },
   },
 
-  mainMenuSearch: {
+  navSubLink: {
     variant: "links.nav",
-    // display: "inline-block",
-    // position: "relative",
-    // lineHeight: 1,
-    // fontWeight: "normal",
-    // fontSize: [3, 3, 1, 1],
-    // fontFamily: "Roboto",
-    // color: "#fff",
-    // letterSpacing: ".1em",
-    // textTransform: "captilalize",
-    // textDecoration: "none",
-    // transition: "all 0.3s ease-in",
-    // my: [4, 4, 2],
-    // mx: [null],
-    // zIndex: [6, 6, 1],
-    padding: 1,
-    "&.active": { color: "accent" },
-    "&:hover": {
-      color: "accent",
-    },
   },
 
-  mainNavSubLink: {
-    color: "primary",
+  navCTA: {
+    color: "accent",
+  },
+  // navSearch: {
+  //   display: ["none", "none", "flex", "flex"],
+  //   visibility: ["hidden", "hidden", "visible", "visible"],
+  //   padding: 1,
+  //   "&:hover": {
+  //     color: "",
+  //     "&::after": {
+  //       width: "100%",
+  //       backgroundColor: "transparent",
+  //     },
+  //   },
+  // },
+
+  megaNavLink: {
+    display: "block",
+    fontSize: 2,
+    fontWeight: "500",
+    marginBottom: 2,
+    color: "#000",
   },
 }
