@@ -19,7 +19,9 @@ const IndexPage = (props) => (
     >
       <ColorModeToggle />
       <ColorModeCycler />
-      <Styled.h1>jjkc portfolio</Styled.h1>
+      <div style={{ fontFamily: "roboto slab", fontSize: "80px" }}>
+        jjkc portfolio
+      </div>
       <Styled.p>Welcome to your new portfolio site.</Styled.p>
       <Styled.p>Now go build something great, rtfn!</Styled.p>
       <div sx={{ maxWidth: 300, marginBottom: [3] }}>
