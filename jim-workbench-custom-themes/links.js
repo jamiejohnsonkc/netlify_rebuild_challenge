@@ -53,6 +53,12 @@ export default {
   //   },
   // },
 
+  ctaLink: {},
+
+  ctaIcon: {
+    lineHeight: 1,
+  },
+
   megaNavLink: {
     display: "block",
     fontSize: 2,

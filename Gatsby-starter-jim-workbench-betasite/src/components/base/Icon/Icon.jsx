@@ -15,12 +15,12 @@ import { GoChevronUp } from "react-icons/go"
 import { GoChevronDown } from "react-icons/go"
 import { MdFormatQuote } from "react-icons/md"
 import { BsArrowRight } from "react-icons/bs"
+import { GrRadialSelected } from "react-icons/gr"
 
-{
-  /*
+/*
 use the following method to import local icons in json format. svg to json converter available at: https://react-icons-json-generator.surge.sh/
 */
-}
+
 const Jimglyph = GenIcon(JimglyphJson)
 
 export const Icon = (props) => {
@@ -55,7 +55,9 @@ export const Icon = (props) => {
       return <MdFormatQuote {...props} />
     case "ArrowRight":
       return <BsArrowRight {...props} />
+    case "RadialSelected":
+      return <GrRadialSelected {...props} />
   }
 }
-
+GrRadialSelected
 export default Icon

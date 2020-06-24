@@ -79,7 +79,7 @@ const SaasMenu = (props) => (
             iconName="Search"
             {...props}
             sx={{
-              color: "white",
+              // color: "white",
               width: "2em",
               height: "1.5em",
               verticalAlign: "sub",
@@ -90,7 +90,11 @@ const SaasMenu = (props) => (
           />
         </NavLink>
       </NavElement>
-      <NavItem>
+      <NavItem
+        sx={{
+          variant: "nav.navItem.hideSmall",
+        }}
+      >
         <NavLink>Contact Sales</NavLink>
       </NavItem>
       <NavItem>

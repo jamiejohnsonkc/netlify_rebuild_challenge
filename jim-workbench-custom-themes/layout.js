@@ -12,23 +12,28 @@ export default {
     bg: "transparent",
     fontSize: 0,
   },
-  mastHead: {
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    marginTop: [0, 3, 3, 3],
+  container: {
+    width: ["100%", "100%", "79em"],
+    display: "block",
     position: "relative",
+    mx: "auto",
+    // content: {
+    //   width: ["75%", "98%", "63%"],
+    // },
+  },
+
+  mastHead: {
+    display: "block",
+    justifyContent: "center",
+    marginTop: [0, 4, 4, 4],
+    position: "relative",
+    mx: "auto",
+    width: "layout.container",
     // backgroundColor: "gray",
   },
 
   footer: {
     backgroundColor: "secondary",
-  },
-  container: {
-    width: ["100%", "100%", "79em"],
-    // content: {
-    //   width: ["75%", "98%", "63%"],
-    // },
   },
 
   row: {
@@ -38,5 +43,13 @@ export default {
     width: "100%",
     display: "block",
     padding: [0, 3],
+  },
+
+  intro: {
+    height: `calc(100vh - 18.75rem)`,
+    maxHeight: "40.625em",
+    minHeight: "26.875em",
+    alignItems: "center",
+    color: "primary",
   },
 }

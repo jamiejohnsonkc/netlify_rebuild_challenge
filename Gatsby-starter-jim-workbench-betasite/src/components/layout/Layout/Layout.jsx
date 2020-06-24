@@ -2,45 +2,33 @@
 import { Styled, jsx, Container } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-// import LinkList3 from "../../base/LinkList3"
-// import LinkList3 from "../../../../../jim-workbench-custom-presentation/LinkList3"
-
-{
-  /*
-import Navbar from "../../../../../jim-workbench-custom-presentation/Nav/Navbar"
-*/
-}
-// import DynamicSiteLinks from "../Nav/DynamicSiteLinks"
-// import Navbar from "../Nav/Navbar"
+import Header from "../Header"
 import Footer from "../Footer"
+import AnnouncementBar from "../AnnouncementBar"
 import SaasMasthead from "../../presentation/SaasMasthead"
 
 const Layout = (props) => (
   <Styled.root>
-    <div
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        // set this to `minHeight: '100vh'` for full viewport height
-        minHeight: "100vh",
-      }}
-    >
-      {/*
-        <DynamicSiteLinks />
-       */}
+    <AnnouncementBar />
+    <Header>
       <SaasMasthead />
-      {/* <LinkList3 /> */}
-      <main
+    </Header>
+    <Container>
+      <div
         sx={{
-          flex: "1 1 auto",
-          width: "100%",
+          display: "grid",
+          gridGap: 4, // theme.space[4]
+          // use arrays for mobile-first responsive styles
+          gridTemplateColumns: [
+            "auto", // default to a stacked layout on small screens
+            "1fr 256px", // use columns for larger screens
+          ],
         }}
       >
-        <Container>{props.children}</Container>
-      </main>
-      <Footer />
-    </div>
+        <main>{props.children}</main>
+      </div>
+    </Container>
+    <Footer />
   </Styled.root>
 )
 

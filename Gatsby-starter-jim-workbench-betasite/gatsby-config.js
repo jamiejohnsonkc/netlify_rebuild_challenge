@@ -97,43 +97,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["roboto", "roboto-slab"],
-        },
-        custom: {
-          families: ["geomanistregular"],
-          urls: ["./src/fonts/fonts.css"],
-        },
-      },
-    },
-    // {
-    //   resolve: `gatsby-plugin-webfonts`,
-    //   options: {
-    //     fonts: {
-    //       google: [
-    //         {
-    //           family: "Roboto",
-    //           variants: ["300", "400", "500", "600", "700", "800", "900"],
-    //           //subsets: ['latin']
-    //           //text: 'Hello'
-    //           //fontDisplay: 'swap',
-    //           //strategy: 'selfHosted' // 'base64' || 'cdn'
-    //         },
-    //         {
-    //           family: "Roboto Slab",
-    //           variants: ["300", "400", "500", "600", "700", "800", "900"],
-    //           //subsets: ['latin']
-    //           //text: 'Hello'
-    //           //fontDisplay: 'swap',
-    //           //strategy: 'selfHosted' // 'base64' || 'cdn'
-    //         },
-    //       ],
-    //     },
-    //   },
-    // },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-jim-workbench-betasite`,

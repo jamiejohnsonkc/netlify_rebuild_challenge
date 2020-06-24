@@ -55,7 +55,7 @@ export default merge(typography, {
   lineHeights: {
     body: 2,
     heading: 1,
-    display: 1.2,
+    display: 1.5,
   },
 
   text: {
@@ -68,7 +68,7 @@ export default merge(typography, {
     display: {
       fontFamily: "heading",
       fontWeight: "body",
-      lineHeight: "heading",
+      lineHeight: "display",
     },
     copy: {
       fontWeight: "body",
@@ -102,10 +102,11 @@ export default merge(typography, {
       fontWeight: "body",
     },
     b1: {
-      fontFamily: "Roboto Slab",
+      fontFamily: "MadeDillan",
       fontWeight: "heavy",
-      lineHeight: 0.8,
-      letterSpacing: "-0.084em",
+      lineHeight: 1,
+      letterSpacing: ".015em",
+      fontSize: 7,
     },
     b2: {
       fontFamily: "Roboto Slab",
@@ -164,12 +165,13 @@ export default merge(typography, {
     },
     d1: {
       variant: "text.display",
-      lineHeight: "body",
+      lineHeight: "lineHeights.body",
       fontSize: 4,
     },
     d2: {
       variant: "text.display",
       fontSize: 3,
+      lineHeight: 2,
     },
     d3: {
       variant: "text.display",

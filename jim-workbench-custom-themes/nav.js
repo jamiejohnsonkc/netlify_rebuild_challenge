@@ -20,7 +20,7 @@ export default {
   navBar: {
     textTransform: "capitalize",
     borderRadius: [0, 0, 6, 6],
-    backgroundColor: "rgba(0,0,0,.15)",
+    // backgroundColor: "rgba(0,0,0,.15)",
     lineHeight: 1.5,
     px: 0,
     py: 0,
@@ -29,7 +29,7 @@ export default {
     justifyContent: "space-between",
     // height: "10vh",
     display: "flex",
-    variant: "layout.container",
+    width: "100%",
     "@media (max-width: 768px)": {
       backgroundColor: "primary",
       width: "100%",
@@ -134,6 +134,9 @@ export default {
       // zIndex: 3,
       display: "block",
       position: "relative",
+    },
+    hideSmall: {
+      display: ["none", "none", "none", "block"],
     },
   },
 
