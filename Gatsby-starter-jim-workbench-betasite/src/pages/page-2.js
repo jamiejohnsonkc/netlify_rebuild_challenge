@@ -1,4 +1,4 @@
-Styled.h1 /** @jsx jsx */
+/** @jsx jsx */
 import React from "react"
 import { Styled, jsx } from "theme-ui"
 import SEO from "../pages/seo"

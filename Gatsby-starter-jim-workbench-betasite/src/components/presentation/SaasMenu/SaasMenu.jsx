@@ -92,7 +92,7 @@ const SaasMenu = (props) => (
           variant: "nav.navItem.hideSmall",
         }}
       >
-        <NavLink>Contact Sales</NavLink>
+        <NavLink to="/contact">Contact Sales</NavLink>
       </NavItem>
       <NavItem>
         <NavLink>Log In</NavLink>
