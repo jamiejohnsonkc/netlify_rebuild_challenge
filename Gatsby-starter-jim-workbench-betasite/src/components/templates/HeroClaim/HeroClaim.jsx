@@ -1,10 +1,12 @@
 /** @jsx jsx */
-import { jsx, Heading, Text } from "theme-ui"
+import { jsx, Heading, Text, Styled, Flex } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import "../../../css/fonts.css"
 import CtaLink from "../../base/CtaLink"
 import Button from "../../base/Button"
+import { Link } from "gatsby"
+import Icon from "../../base/Icon"
 
 const HeroClaim = (props) => (
   <div
@@ -37,18 +39,32 @@ const HeroClaim = (props) => (
           maxWidth: "63%",
         }}
       >
-        More speed. Less spend. 900,000+ developers & businesses use Netlify to
-        run web projects at global scale—without servers, devops, or costly
-        infrastructure.
+        <span
+          sx={{
+            fontWeight: 600,
+          }}
+        >
+          More speed. Less spend.
+        </span>{" "}
+        900,000+ developers & businesses use Netlify to run web projects at
+        global scale—without servers, devops, or costly infrastructure.
       </Text>
-      <div>
+      <Flex alignItems="center">
         <Button {...props} sx={{ marginRight: 4 }}>
           Get Started in seconds
         </Button>
-        <CtaLink linkVariant="links.ctaLink" iconName="ArrowRight">
-          Questions? Talk to an expert
-        </CtaLink>
-      </div>
+        <CtaLink
+          to="/"
+          linkText="Questions? Talk to an expert"
+          iconName="ArrowRight"
+          iconSize="1em"
+          iconColor="theme.colors.menuNavItem"
+          sx={{
+            variant: "links.ctaLink.arrowRight",
+            fontWeight: 600,
+          }}
+        />
+      </Flex>
     </div>
   </div>
 )

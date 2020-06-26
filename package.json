@@ -10,7 +10,8 @@
     "build": "yarn workspace gatsby-starter-jim-workbench-betasite build",
     "develop": "yarn workspace gatsby-starter-jim-workbench-betasite develop",
     "clean": "yarn workspace gatsby-starter-jim-workbench-betasite gatsby clean",
-    "sanitize": "yarn run clean && yarn develop"
+    "sanitize": "yarn run clean && yarn develop",
+    "storybook": "yarn workspace gatsby-starter-jim-workbench-betasite storybook"
   },
   "workspaces": [
     "gatsby-starter-jim-workbench-betasite",

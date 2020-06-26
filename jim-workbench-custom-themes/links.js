@@ -5,7 +5,7 @@ export default {
     lineHeight: 1.5,
     fontWeight: 600,
     fontFamily: "Roboto",
-    color: "#fff",
+    color: "navMenuItem",
     letterSpacing: "-.025em",
     textTransform: "captilalize",
     textDecoration: "none",
@@ -13,10 +13,11 @@ export default {
     fontSize: [2, 3, 1, 1],
     "&.active": { color: "accent" },
     "&:hover": {
-      color: "",
+      color: "navMenuItemHover",
       "&::after": {
         width: "100%",
-        backgroundColor: "accent",
+        backgroundColor: "navMenuItemHover",
+        transition: "all 0.5s ease-in",
       },
     },
     "&::after": {
@@ -33,30 +34,54 @@ export default {
     },
   },
 
-  navSubLink: {
-    variant: "links.nav",
+  navLinkSearchIcon: {
+    color: "navMenuItem",
+    width: "2em",
+    height: "1.5em",
+    verticalAlign: "sub",
+    transition: "all 0.5s ease-in",
+    "&:hover": {
+      color: "navMenuItemHover",
+      "&::after": {
+        width: "100%",
+        backgroundColor: "transparent",
+      },
+    },
   },
 
-  navCTA: {
-    color: "accent",
+  navSearch: {
+    display: ["none", "none", "flex", "flex"],
+    visibility: ["hidden", "hidden", "visible", "visible"],
+    padding: 1,
+    "&:hover": {
+      color: "background",
+      "&::after": {
+        width: "100%",
+        backgroundColor: "transparent",
+      },
+    },
   },
-  // navSearch: {
-  //   display: ["none", "none", "flex", "flex"],
-  //   visibility: ["hidden", "hidden", "visible", "visible"],
-  //   padding: 1,
-  //   "&:hover": {
-  //     color: "",
-  //     "&::after": {
-  //       width: "100%",
-  //       backgroundColor: "transparent",
-  //     },
-  //   },
-  // },
 
-  ctaLink: {},
-
-  ctaIcon: {
-    lineHeight: 1,
+  ctaLink: {
+    arrowRight: {
+      lineHeight: 1,
+      display: "flex",
+      alignItems: "center",
+      color: "navMenuItem",
+      "&:hover": {
+        color: "navMenuItemHover",
+      },
+      // mainNavCta: {
+      //   lineHeight: 1,
+      //   verticalAlign: "middle",
+      //   display: "flex",
+      //   alignItems: "center",
+      //   color: "navMenuItem",
+      //   "&:hover": {
+      //     color: "navMenuItemHover",
+      //   },
+      // },
+    },
   },
 
   megaNavLink: {

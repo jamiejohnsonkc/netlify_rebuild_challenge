@@ -44,7 +44,8 @@ const Navbar = (props) => {
     <div
       sx={{
         variant: "nav.navBar",
-        bg: transparentize("black", 0.95),
+        // bg: transparentize("black", 0.95),
+        // backgroundColor: "navMenu.backgroundColor",
       }}
       className="navBar"
     >

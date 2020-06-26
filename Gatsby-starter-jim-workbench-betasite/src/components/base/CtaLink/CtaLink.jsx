@@ -1,19 +1,27 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Icon from "../../base/Icon"
 
-const CtaLink = (props) => (
+const CtaLink = ({ flex, width, height, color, ...props }) => (
   <>
-    <Link variant={props.linkVariant}>
-      {props.children}
+    <Link
+      {...props}
+      to={props.to}
+      sx={{
+        flex,
+        width,
+        height,
+        color,
+      }}
+    >
+      {props.linkText}
       <Icon
         iconName={props.iconName}
-        sx={{
-          variant: "links.ctaIcon",
-          width: "2.2em",
-          verticalAlign: "middle",
-        }}
+        size={props.iconSize}
+        color={props.iconColor}
       />
     </Link>
   </>

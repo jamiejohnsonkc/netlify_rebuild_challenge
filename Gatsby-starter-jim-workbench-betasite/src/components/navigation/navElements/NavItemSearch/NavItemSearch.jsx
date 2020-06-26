@@ -3,10 +3,10 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 
-const NavItem = ({ bg, color, padding, ...props }) => (
+const NavItemSearch = ({ bg, color, padding, ...props }) => (
   <li
     {...props}
-    className="navItem"
+    className="navItemSearch"
     sx={{
       color,
       position: "relative",
@@ -19,15 +19,15 @@ const NavItem = ({ bg, color, padding, ...props }) => (
         opacity: "1",
         display: "block",
       },
-      variant: "nav.navItem",
+      variant: "nav.navItemSearch",
     }}
   >
     {props.children}
   </li>
 )
 
-NavItem.propTypes = {}
+NavItemSearch.propTypes = {}
 
-NavItem.defaultProps = {}
+NavItemSearch.defaultProps = {}
 
-export default NavItem
+export default NavItemSearch

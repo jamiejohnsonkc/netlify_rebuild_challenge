@@ -38,6 +38,7 @@ const AnnouncementBar = (props) => (
           display: "inline-flex",
           alignItems: "center",
           cursor: "pointer",
+          fontSize: 0,
           color: darken("primary", 0.25),
           "&:hover": {
             color: "background",

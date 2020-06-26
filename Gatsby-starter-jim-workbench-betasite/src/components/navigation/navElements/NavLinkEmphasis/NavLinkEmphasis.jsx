@@ -2,21 +2,18 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-export default ({ bg, padding, text, color, variant, ...props }) => (
-  <Link
+export default ({ bg, colors, padding, text, variant, ...props }) => (
+  <a
     {...props}
-    activeClassName="active"
-    className="navLink"
+    className="navLinkEmphasis"
     sx={{
       padding,
       bg,
       fontWeight: 500,
       variant: "links.nav",
-      // "&:hover": {
-      //   color: "links.nav",
-      // },
+      color: "highlight",
     }}
   >
     {props.children}
-  </Link>
+  </a>
 )

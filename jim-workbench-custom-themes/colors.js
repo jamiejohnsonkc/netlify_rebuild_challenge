@@ -1,12 +1,16 @@
 export default {
-  text: "#000",
-  background: "#fff",
-  primary: "#7C0C64",
-  secondary: "#303030",
-  muted: "#f6f6f6",
-  black: "#000",
-  white: "#fff",
-  accent: "#00ad9f",
+  text: "#000", //Body foreground color
+  background: "#fff", //Body background color
+  primary: "#7C0C64", //Primary brand color for links, buttons, etc.
+  secondary: "#303030", //Secondary brand color for alternative styling
+  accent: "#C57AA2", //Contrast color for emphasizing UI
+  highlight: "#00E0CE", //Background color for highlighting text
+  muted: "#f6f6f6", //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
+  navMenuBackground: `rgba(0,0,0,.015)`,
+  navMenuItem: "white",
+  mastHeadLogo: "#222",
+  navMenuItemHover: "#c57aa2",
+
   modes: {
     dark: {
       text: "#fff",
@@ -25,8 +29,19 @@ export default {
     },
     blue: {
       text: "#2D3B41",
-      background: "#E0E0E0",
+      background: "#f7f8f8",
       primary: "#146396",
+      navMenuItem: "#888",
+      navMenuItemHover: "#43B4d8",
+      highlight: "#43B4d8",
+    },
+    mono: {
+      text: "#2D3B41",
+      background: "#f7f8f8",
+      primary: "#146396",
+      navMenuItem: "#888",
+      navMenuItemHover: "#43B4d8",
+      highlight: "#43B4d8",
     },
   },
 }
