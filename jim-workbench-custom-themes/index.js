@@ -1,17 +1,3 @@
-//See other presets to try at https://theme-ui.com/packages/presets
-// import { funk } from "@theme-ui/presets"
-// export default {
-//   ...funk,
-//   styles: {
-//     ...funk.styles,
-//   },
-// }
-
-// import theme from "../../../gatsby-theme-jim-workbench-styles"
-
-// export default theme
-
-// import { toTheme } from "@theme-ui/typography"
 import { toTheme } from "./typographyjsEdits/my-to-theme"
 import wp2016 from "typography-theme-wordpress-2016"
 import merge from "lodash.merge"
@@ -35,14 +21,7 @@ export default merge(typography, {
   buttons,
   breakpoints: ["40em", "52em", "64em", "80em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-  // fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
 
-  // fontWeights: {
-  //   body: 300,
-  //   bold: 600,
-  //   heading: 600,
-  //   heavy: 900,
-  // },
   letterSpacings: {
     spread: "0.25em",
     loose: "0.1em",
@@ -55,7 +34,7 @@ export default merge(typography, {
   lineHeights: {
     body: 2,
     heading: 1,
-    display: 1.2,
+    display: 1.5,
   },
 
   text: {
@@ -68,7 +47,7 @@ export default merge(typography, {
     display: {
       fontFamily: "heading",
       fontWeight: "body",
-      lineHeight: "heading",
+      lineHeight: "display",
     },
     copy: {
       fontWeight: "body",
@@ -102,10 +81,11 @@ export default merge(typography, {
       fontWeight: "body",
     },
     b1: {
-      fontFamily: "Roboto Slab",
+      fontFamily: "MadeDillan",
       fontWeight: "heavy",
-      lineHeight: 0.8,
-      letterSpacing: "-0.084em",
+      lineHeight: 1,
+      letterSpacing: ".015em",
+      fontSize: 7,
     },
     b2: {
       fontFamily: "Roboto Slab",
@@ -164,12 +144,13 @@ export default merge(typography, {
     },
     d1: {
       variant: "text.display",
-      lineHeight: "body",
+      lineHeight: "lineHeights.body",
       fontSize: 4,
     },
     d2: {
       variant: "text.display",
       fontSize: 3,
+      lineHeight: 2,
     },
     d3: {
       variant: "text.display",
@@ -223,4 +204,11 @@ export default merge(typography, {
       maxWidth: "100%",
     },
   },
+
+  shadows: {
+    subtle: "0 0 4px 3px rgba(0, 0, 0, .05)",
+    // test2: (theme) => `0 0 4px 3px ${theme.colors.primary}`,
+    test3: `0 0 4px 3px ${colors.primary}`,
+  },
+  // boxShadow: (theme) => `0 0 4px ${theme.colors.primary}`, },
 })

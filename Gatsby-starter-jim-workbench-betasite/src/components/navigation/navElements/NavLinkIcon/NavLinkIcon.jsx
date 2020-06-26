@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../../../base/Icon"
+import { lighten } from "@theme-ui/color"
 
 const NavLinkIcon = (props) => (
   <Icon
@@ -11,6 +12,7 @@ const NavLinkIcon = (props) => (
     sx={{
       verticalAlign: "middle",
       width: "1.25em",
+      color: lighten("navMenuItem", 0.1),
     }}
   />
 )

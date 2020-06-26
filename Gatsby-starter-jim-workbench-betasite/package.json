@@ -19,6 +19,7 @@
     "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/react": "^6.0",
+    "@theme-ui/color": "^0.3.1",
     "@theme-ui/presets": "^0.3.0",
     "@theme-ui/typography": "^0.3.0",
     "babel-loader": "^8.1.0",
@@ -32,8 +33,8 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.6.9",
     "gatsby-plugin-theme-ui": "^0.3.0",
-    "gatsby-plugin-webfonts": "^1.1.2",
     "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-theme-style-guide": "^0.3.1",
     "gatsby-transformer-json": "^2.4.4",
     "gatsby-transformer-sharp": "^2.5.3",
     "lodash.merge": "^4.6.2",
@@ -50,6 +51,7 @@
   },
   "devDependencies": {
     "gatsby": "^2.6",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "prettier": "2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -63,7 +65,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "NODE_ENV=production start-storybook -s ./public -p 6006 --ci",
+    "storybook": "NODE_ENV=development start-storybook -s ./public -p 6006 --ci",
     "build-storybook": "NODE_ENV=production build-storybook"
   }
 }

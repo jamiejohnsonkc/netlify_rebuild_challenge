@@ -39,6 +39,7 @@ module.exports = {
           },
         ],
       },
+
       {
         name: "Enterprise",
         link: "/page-4",
@@ -50,13 +51,38 @@ module.exports = {
         ],
       },
       {
-        name: "Docs",
+        name: "Jamstack",
         link: "/page-5",
+        subMenu: [
+          {
+            link: "/sub-1",
+            name: "Sub 1",
+          },
+        ],
+      },
+      {
+        name: "Docs",
+        link: "/page-6",
         subMenu: [],
       },
       {
         name: "Blog",
-        link: "/page-6",
+        link: "/page-7",
+        subMenu: [],
+      },
+      {
+        name: "Contact Sales",
+        link: "/contact",
+        subMenu: [],
+      },
+      {
+        name: "Log In",
+        link: "/page-9",
+        subMenu: [],
+      },
+      {
+        name: "Sign Up",
+        link: "/page-10",
         subMenu: [],
       },
     ],
@@ -93,34 +119,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-theme-ui`,
+    {
+      resolve: "gatsby-theme-style-guide",
+      options: {
+        basePath: "./src/components/utilities/design-system",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: "Roboto",
-              variants: ["300", "400", "500", "600", "700", "800", "900"],
-              //subsets: ['latin']
-              //text: 'Hello'
-              //fontDisplay: 'swap',
-              //strategy: 'selfHosted' // 'base64' || 'cdn'
-            },
-            {
-              family: "Roboto Slab",
-              variants: ["300", "400", "500", "600", "700", "800", "900"],
-              //subsets: ['latin']
-              //text: 'Hello'
-              //fontDisplay: 'swap',
-              //strategy: 'selfHosted' // 'base64' || 'cdn'
-            },
-          ],
-        },
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

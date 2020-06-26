@@ -1,26 +1,11 @@
 import layout from "./layout"
 
 export default {
-  nav: {},
-
-  //!!! turns out this was scrap too.  saving jic
-  // mainMenu: {
-  //   whiteSpace: "nowrap",
-  //   // position: "relative",
-  //   alignItems: "center",
-  //   borderBottom: "transparent",
-  //   // justifyContent: "space-between",
-  //   borderRadius: 4,
-  //   lineHeight: 1,
-  //   height: ["8vh", "auto", null, null],
-  //   flexDirection: ["column", "column", "row", "row"],
-  // },
-
   //* nav root directory
   navBar: {
     textTransform: "capitalize",
     borderRadius: [0, 0, 6, 6],
-    backgroundColor: "rgba(0,0,0,.15)",
+    backgroundColor: "navMenuBackground",
     lineHeight: 1.5,
     px: 0,
     py: 0,
@@ -29,9 +14,9 @@ export default {
     justifyContent: "space-between",
     // height: "10vh",
     display: "flex",
-    variant: "layout.container",
+    width: "100%",
     "@media (max-width: 768px)": {
-      backgroundColor: "primary",
+      backgroundColor: "navMenuBackground",
       width: "100%",
       height: "10vh",
     },
@@ -41,6 +26,9 @@ export default {
     width: "5em",
     mx: 3,
     lineHeight: 1,
+    "& svg g path.logotext": {
+      fill: "mastHeadLogo",
+    },
   },
 
   //!where was this used before (or was it?) +> believe this is scrap.  saving jic
@@ -66,7 +54,7 @@ export default {
     "@media (max-width: 768px)": {
       width: "100%",
       justifyContent: "flex-start",
-      backgroundColor: "primary",
+      backgroundColor: "navMenuBackground",
       transition: "all 0.3s ease-in",
       top: "10vh",
       // overflow: ["scroll", "hidden"],
@@ -93,9 +81,9 @@ export default {
     p: 4,
     top: "100%",
     minWidth: "8rem",
-    backgroundColor: "nav.navBar",
+    // backgroundColor: "nav.navBar",
     borderRadius: 6,
-    transition: "all 0.5s ease",
+    transition: "all 0.3s ease",
 
     // marginTop: 1,
   },
@@ -106,34 +94,19 @@ export default {
 
   //* List Items //
   navItem: {
-    // backgroundColor: "transparent",
-    // ":nth-child(odd)": {
-    //   backgroundColor: ["rgba(0,0,0,.15)", "transparent"],
-    // },
-    // color: "white",
     padding: [4, 0, 0, 0],
-    transitionDuration: "0.5s",
+    transitionDuration: "0.3s",
     display: "flex",
-    // width: ["fill-available", "default"],
-    // flexBasis: "auto",
-    // minWidth: ["100%", "auto", "auto", "auto"],
-    "&:hover": {
-      // backgroundColor: "white",
-      "& > a": {
-        // color: "accent",
-      },
-    },
+    alignItems: "center",
     "@media (max-width: 768px)": {
       width: "100%",
-      // justifyContent: "flex-start",
-      // paddingTop: [2, 0],
-      backgroundColor: "primary",
+      backgroundColor: "navMenuBackground",
       transition: "all 0.3s ease-in",
-      // top: "10vh",
-      // overflow: ["scroll", "hidden"],
-      // zIndex: 3,
       display: "block",
       position: "relative",
+    },
+    hideSmall: {
+      display: ["none", "none", "none", "block"],
     },
   },
 
@@ -148,61 +121,41 @@ export default {
 
   //* Additional Menu Elements //
   navMenuDivider: {
-    color: "white",
-    transitionDuration: "0.5s",
+    transitionDuration: "0.3s",
     flexBasis: "auto",
     padding: 1,
     display: ["none", "none", "flex", "flex"],
     visibility: ["hidden", "hidden", "visible", "visible"],
-    // transitionDuration: "0.5s",
-    // display: "flex",
-    // flexBasis: "auto",
     "&:hover": {
       backgroundColor: "transparent",
     },
   },
 
-  navSearch: {
-    display: ["none", "none", "flex", "flex"],
+  navItemSearch: {
+    display: ["flex", "flex", "flex", "flex"],
     padding: "nav.navItem",
     alignSelf: "end",
   },
 
-  // searchSpan: {
-  //   display: ["inline-block", "none"],
-  //   padding: "nav.navItem",
-  // },
-
-  // searchIcon: {
-  //   display: ["none", "flex"],
-  // },
-
-  navMenuSpacer: {
+  navItemSpacer: {
     display: ["none", "flex", "flex", "flex"],
     padding: 0,
     flexGrow: 0.5,
-    cursor: "default",
-    "&:hover": {
-      backgroundColor: "transparent",
-    },
+    cursor: "none",
   },
 
-  sideNavDrawer: {
-    "@media (max-width: 768px)": {
-      backgroundColor: "primary",
-      width: "100%",
-    },
-  },
+  // sideNavDrawer: {
+  //   "@media (max-width: 768px)": {
+  //     backgroundColor: "primary",
+  //     width: "100%",
+  //   },
+  // },
 
-  menuChevronDown: {
-    color: "muted",
-    verticalAlign: "middle",
-    width: "1.25em",
-  },
-
-  menuArrowRight: {
-    color: "accent",
-  },
+  // menuChevronDown: {
+  //   color: "muted",
+  //   verticalAlign: "middle",
+  //   width: "1.25em",
+  // },
 
   toggle: {
     display: "none",
@@ -215,21 +168,21 @@ export default {
   },
 
   hamburger: {
-    backgroundColor: "white",
+    backgroundColor: "navMenuItem",
     borderRadius: 6,
     width: "30px",
     height: "3px",
     transition: "all 0.3s linear",
 
     "&::before": {
-      backgroundColor: "white",
+      backgroundColor: "navMenuItem",
       borderRadius: 6,
       width: "30px",
       height: "3px",
       transition: "all 0.3s linear",
     },
     "&::after": {
-      backgroundColor: "white",
+      backgroundColor: "navMenuItem",
       borderRadius: 6,
       width: "30px",
       height: "3px",
@@ -242,6 +195,7 @@ export default {
     borderRadius: 6,
     backgroundColor: "muted",
     transition: "all 0.3s ease-in",
+    boxShadow: "subtle",
   },
 
   footerNav: { fontSize: 1 },

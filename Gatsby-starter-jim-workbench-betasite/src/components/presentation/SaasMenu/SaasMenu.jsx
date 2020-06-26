@@ -2,18 +2,18 @@
 import { jsx } from "theme-ui"
 // import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
-// import Logo from "../../base/Logo"
 import Icon from "../../base/Icon"
-import NavLink from "../../navigation/navElements/NavLink"
-import NavSubLink from "../../navigation/navElements/NavSubLink"
 import PropTypes from "prop-types"
+import NavLink from "../../navigation/navElements/NavLink"
 import NavMenu from "../../navigation/navElements/NavMenu"
 import SubMenu from "../../navigation/navElements/SubMenu"
 import NavItem from "../../navigation/navElements/NavItem"
-import SubMenuNavItem from "../../navigation/navElements/SubMenuNavItem"
 import MegaNav from "../../presentation/MegaNav"
+import NavItemSpacer from "../../navigation/navElements/NavItemSpacer"
+import NavLinkIcon from "../../navigation/navElements/NavLinkIcon"
 import NavElement from "../../navigation/navElements/NavElement"
-import NavLinkIcon from "../../../components/navigation/navElements/NavLinkIcon"
+import NavLinkSearch from "../../../components/navigation/navElements/NavLinkSearch"
+import CtaLink from "../../base/CtaLink"
 
 //TODO fix logo box: what is forcing the extra space to the right?
 //TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
@@ -61,37 +61,38 @@ const SaasMenu = (props) => (
       <NavItem>
         <NavLink>Blog</NavLink>
       </NavItem>
-      <NavElement
-        {...props}
+      <NavItemSpacer
         sx={{
-          variant: "nav.navMenuSpacer",
+          variant: "nav.navItemSpacer",
         }}
-        className="spacer"
-      />{" "}
-      <NavElement
+      />
+
+      <NavItem
         {...props}
         sx={{
-          variant: "links.navSearch",
+          variant: "nav.navItemSearch",
         }}
       >
-        <NavLink>
+        <NavLinkSearch
+          sx={{
+            variant: "links.navLinkSearch",
+          }}
+        >
           <Icon
             iconName="Search"
-            {...props}
             sx={{
-              color: "white",
-              width: "2em",
-              height: "1.5em",
-              verticalAlign: "sub",
-              ":hover": {
-                color: "accent",
-              },
+              variant: "links.navLinkSearchIcon",
             }}
           />
-        </NavLink>
-      </NavElement>
-      <NavItem>
-        <NavLink>Contact Sales</NavLink>
+        </NavLinkSearch>
+      </NavItem>
+
+      <NavItem
+        sx={{
+          variant: "nav.navItem.hideSmall",
+        }}
+      >
+        <NavLink to="/contact">Contact Sales</NavLink>
       </NavItem>
       <NavItem>
         <NavLink>Log In</NavLink>
@@ -101,27 +102,23 @@ const SaasMenu = (props) => (
         className="divider"
         sx={{
           variant: "nav.navMenuDivider",
+          color: "navMenuItem",
         }}
       >
         |
       </NavElement>
       <NavItem>
         <NavLink>
-          <span
-            sx={{
-              variant: "links.navCTA",
-            }}
-          >
-            Sign Up
-          </span>
-          <Icon
-            {...props}
+          <CtaLink
+            to="/"
+            linkText="Sign Up"
             iconName="ArrowRight"
+            iconSize="1em"
+            iconColor="theme.colors.menuNavItem"
             sx={{
-              width: "2.2em",
-              verticalAlign: "middle",
-              ":hover": {},
-              variant: "nav.menuArrowRight",
+              variant: "links.ctaLink.arrowRight",
+              textDecoration: "none",
+              lineHeight: "1.5",
             }}
           />
         </NavLink>

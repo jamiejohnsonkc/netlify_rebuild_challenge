@@ -1,17 +1,20 @@
 /** @jsx jsx */
-import { jsx, colors } from "theme-ui"
+import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 
-export default ({ bg, colors, padding, text, variant, ...props }) => (
+export default ({ bg, padding, text, color, variant, ...props }) => (
   <Link
     {...props}
     activeClassName="active"
     className="navLink"
     sx={{
-      colors,
       padding,
       bg,
-      fontWeight: "500",
+      fontWeight: 500,
+      variant: "links.nav",
+      // "&:hover": {
+      //   color: "links.nav",
+      // },
     }}
   >
     {props.children}

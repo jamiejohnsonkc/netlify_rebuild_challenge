@@ -9,7 +9,6 @@ const NavItem = ({ bg, color, padding, ...props }) => (
     className="navItem"
     sx={{
       color,
-      display: "block",
       position: "relative",
 
       "&:hover": {

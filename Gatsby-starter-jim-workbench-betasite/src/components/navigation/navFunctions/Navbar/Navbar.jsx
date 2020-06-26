@@ -8,6 +8,7 @@ import styled from "@emotion/styled"
 import MainMenu from "../../../presentation/MainMenu"
 import { Link } from "gatsby"
 import Navbox from "../Navbox"
+import { transparentize } from "@theme-ui/color"
 // import MainNav from "../MainNav"
 
 const Toggle = styled.div``
@@ -43,6 +44,8 @@ const Navbar = (props) => {
     <div
       sx={{
         variant: "nav.navBar",
+        // bg: transparentize("black", 0.95),
+        // backgroundColor: "navMenu.backgroundColor",
       }}
       className="navBar"
     >
