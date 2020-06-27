@@ -19,7 +19,7 @@ export default merge(typography, {
   colors,
   links,
   buttons,
-  breakpoints: ["40em", "52em", "64em", "80em"],
+  breakpoints: ["40em", "52em", "60em", "80em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
   letterSpacings: {
@@ -85,7 +85,7 @@ export default merge(typography, {
       fontWeight: "heavy",
       lineHeight: 1,
       letterSpacing: ".015em",
-      fontSize: 7,
+      fontSize: [3, 3, 6, 7],
     },
     b2: {
       fontFamily: "Roboto Slab",
@@ -209,6 +209,7 @@ export default merge(typography, {
     subtle: "0 0 4px 3px rgba(0, 0, 0, .05)",
     // test2: (theme) => `0 0 4px 3px ${theme.colors.primary}`,
     test3: `0 0 4px 3px ${colors.primary}`,
+    test4: `0 2px 40px rgba(14,30,37,.16)`,
   },
   // boxShadow: (theme) => `0 0 4px ${theme.colors.primary}`, },
 })

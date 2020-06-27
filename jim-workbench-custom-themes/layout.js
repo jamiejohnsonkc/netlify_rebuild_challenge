@@ -13,7 +13,7 @@ export default {
     fontSize: 0,
   },
   container: {
-    width: ["100%", "100%", "79em"],
+    width: ["100%", "60em", "79em"],
     display: "block",
     position: "relative",
     mx: "auto",
@@ -43,13 +43,5 @@ export default {
     width: "100%",
     display: "block",
     padding: [0, 3],
-  },
-
-  intro: {
-    height: `calc(100vh - 18.75rem)`,
-    maxHeight: "40.625em",
-    minHeight: "26.875em",
-    alignItems: "center",
-    color: "primary",
   },
 }

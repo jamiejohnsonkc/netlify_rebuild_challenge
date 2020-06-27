@@ -7,16 +7,14 @@ import CtaLink from "../../base/CtaLink"
 import Button from "../../base/Button"
 import { Link } from "gatsby"
 import Icon from "../../base/Icon"
+import PanCake from "../../layout/Pancake"
+
+// const str = "Line 1. **new-line** Line 2."
+
+const arr = ["The fastest way to", <br />, "build the fastest sites."]
 
 const HeroClaim = (props) => (
-  <div
-    as="Section"
-    {...props}
-    sx={{
-      variant: "layout.intro",
-      display: "grid",
-    }}
-  >
+  <PanCake>
     <div
       {...props}
       sx={{
@@ -30,7 +28,7 @@ const HeroClaim = (props) => (
           marginBottom: 5,
         }}
       >
-        The fastest way to build the fastest sites.
+        {arr}
       </Heading>
       <Text
         sx={{
@@ -66,7 +64,7 @@ const HeroClaim = (props) => (
         />
       </Flex>
     </div>
-  </div>
+  </PanCake>
 )
 HeroClaim.propTypes = {}
 

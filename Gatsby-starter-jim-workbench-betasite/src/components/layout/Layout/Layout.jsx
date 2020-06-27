@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Styled, jsx, Container } from "theme-ui"
+import { Styled, jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header"
@@ -13,21 +13,7 @@ const Layout = (props) => (
     <Header>
       <SaasMasthead />
     </Header>
-    <Container>
-      <div
-        sx={{
-          display: "grid",
-          gridGap: 4, // theme.space[4]
-          // use arrays for mobile-first responsive styles
-          gridTemplateColumns: [
-            "auto", // default to a stacked layout on small screens
-            "1fr 256px", // use columns for larger screens
-          ],
-        }}
-      >
-        <main>{props.children}</main>
-      </div>
-    </Container>
+    <main>{props.children}</main>
     <Footer />
   </Styled.root>
 )

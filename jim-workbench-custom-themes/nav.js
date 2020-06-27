@@ -1,4 +1,5 @@
 import layout from "./layout"
+import { color } from "./colors"
 
 export default {
   //* nav root directory
@@ -193,7 +194,7 @@ export default {
   megaNav: {
     width: "71vw",
     borderRadius: 6,
-    backgroundColor: "muted",
+    backgroundColor: color.white,
     transition: "all 0.3s ease-in",
     boxShadow: "subtle",
   },

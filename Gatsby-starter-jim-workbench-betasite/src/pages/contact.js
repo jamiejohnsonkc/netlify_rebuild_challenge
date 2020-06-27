@@ -11,9 +11,31 @@ import ColorModeCycler from "../components/inputs/ColorModeCycler"
 
 // import geomanistregular from '../../static/Geomanist-Black-Webfont/geomanist-black-webfont.woff'
 
-const ContactPage = () => (
+const ContactPage = (props) => (
   <Layout>
     <SEO title="Contact" />
+    <div
+      {...props}
+      sx={{
+        bg: "primary",
+        height: "100px",
+        width: "100px",
+        position: "relative",
+      }}
+    >
+      control
+    </div>
+    <div
+      {...props}
+      sx={{
+        bg: "custom.jamie",
+        height: "100px",
+        width: "100px",
+        position: "relative",
+      }}
+    >
+      test
+    </div>
     <Contact />
   </Layout>
 )
