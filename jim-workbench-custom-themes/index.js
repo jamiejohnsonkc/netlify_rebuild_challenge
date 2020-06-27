@@ -85,7 +85,7 @@ export default merge(typography, {
       fontWeight: "heavy",
       lineHeight: 1,
       letterSpacing: ".015em",
-      fontSize: [3, 3, 6, 7],
+      fontSize: [6, 6, 6, 7],
     },
     b2: {
       fontFamily: "Roboto Slab",

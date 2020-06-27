@@ -29,8 +29,13 @@ const CustomTab = (props) => (
 
 CustomTab.tabsRole = "Tab" // Required field to use your custom Tab
 
-const TabsTest = (props) => (
-  <Tabs>
+const TabsBlock = (props) => (
+  <Tabs
+    {...props}
+    sx={{
+      padding: 2,
+    }}
+  >
     <TabList>
       <CustomTab>
         <Logo1
@@ -78,4 +83,4 @@ const TabsTest = (props) => (
   </Tabs>
 )
 
-export default TabsTest
+export default TabsBlock

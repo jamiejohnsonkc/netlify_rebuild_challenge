@@ -13,10 +13,12 @@ export default {
     fontSize: 0,
   },
   container: {
-    width: ["100%", "60em", "79em"],
+    maxWidth: ["100%", "100%", "60em", "79em"],
+    px: 4,
     display: "block",
     position: "relative",
-    mx: "auto",
+    margin: "0 auto",
+    // mx: "auto",
     // content: {
     //   width: ["75%", "98%", "63%"],
     // },
@@ -25,10 +27,16 @@ export default {
   mastHead: {
     display: "block",
     justifyContent: "center",
-    marginTop: [0, 4, 4, 4],
+    marginTop: [0, 0, 4, 4],
     position: "relative",
     mx: "auto",
     width: "layout.container",
+    backgroundColor: [
+      "navMenuBackground",
+      "navMenuBackground",
+      "transparent",
+      "transparent",
+    ],
     // backgroundColor: "gray",
   },
 

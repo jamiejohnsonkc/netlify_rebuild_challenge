@@ -15,7 +15,7 @@ const AnnouncementBar = (props) => (
       width: "100%",
       textAlign: "center",
       position: "relative",
-      display: "flex",
+      display: ["none", "none", "flex", "flex"],
       justifyContent: "center",
       alignItems: "center",
     }}
