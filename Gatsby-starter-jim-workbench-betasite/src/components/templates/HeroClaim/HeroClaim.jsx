@@ -12,8 +12,6 @@ import SplitTextLine from "../../base/SplitTextLine"
 
 // const str = "Line 1. **new-line** Line 2."
 
-const Arr = () => ["The fastest way to", <br />, "build the fastest sites."]
-
 const HeroClaim = (props) => (
   <PanCake>
     <Container>
@@ -39,7 +37,7 @@ const HeroClaim = (props) => (
           sx={{
             variant: "styles.d2",
             marginBottom: 5,
-            maxWidth: "63%",
+            maxWidth: ["100%", "83%", "50%"],
           }}
         >
           <span

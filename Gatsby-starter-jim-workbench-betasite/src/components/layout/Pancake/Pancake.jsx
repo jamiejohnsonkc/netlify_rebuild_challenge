@@ -8,12 +8,10 @@ const Pancake = (props) => (
     as="Section"
     {...props}
     sx={{
-      height: `calc(100vh - 18.75rem)`,
-      maxHeight: "40.625em",
-      minHeight: "26.875em",
       alignItems: "center",
       display: "grid",
       whiteSpace: "pre-wrap",
+      variant: "layout.intro",
       //   gridTemplateColumns:
       //     "[full-start] minmax(2rem,1fr) [standard-start] 3.75rem [narrow-start] minmax(1rem,67.5rem) [narrow-end] 3.75rem [standard-end] minmax(2rem,1fr) [full-end]",
     }}

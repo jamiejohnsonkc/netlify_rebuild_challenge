@@ -21,6 +21,16 @@ export default merge(typography, {
   buttons,
   breakpoints: ["40em", "52em", "60em", "80em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  widths: [
+    "6.18%",
+    "9.99%",
+    "16.18%",
+    "23.6%",
+    "38.2%",
+    "50%",
+    "61.8%",
+    "83.82%",
+  ],
 
   letterSpacings: {
     spread: "0.25em",
@@ -72,6 +82,11 @@ export default merge(typography, {
       textTransform: "uppercase",
       letterSpacing: "loose",
     },
+    capsBold: {
+      textTransform: "uppercase",
+      letterSpacing: "loose",
+      fontWeight: "bold",
+    },
   },
 
   styles: {
@@ -85,7 +100,7 @@ export default merge(typography, {
       fontWeight: "heavy",
       lineHeight: 1,
       letterSpacing: ".015em",
-      fontSize: [6, 6, 6, 7],
+      fontSize: [6, 7, 7, 7],
     },
     b2: {
       fontFamily: "Roboto Slab",
@@ -210,6 +225,7 @@ export default merge(typography, {
     // test2: (theme) => `0 0 4px 3px ${theme.colors.primary}`,
     test3: `0 0 4px 3px ${colors.primary}`,
     test4: `0 2px 40px rgba(14,30,37,.16)`,
+    test5: `-10px 10px 80px rgba(0,0,0,.1)`,
   },
   // boxShadow: (theme) => `0 0 4px ${theme.colors.primary}`, },
 })

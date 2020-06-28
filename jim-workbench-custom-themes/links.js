@@ -67,7 +67,7 @@ export default {
       lineHeight: 1,
       display: "flex",
       alignItems: "center",
-      color: "navMenuItem",
+      color: "highlight",
       "&:hover": {
         color: "navMenuItemHover",
       },

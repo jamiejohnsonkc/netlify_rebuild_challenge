@@ -1,10 +1,11 @@
 /** @jsx jsx */
-import { jsx, Box, Text } from "theme-ui"
+import { jsx, Box, Text, Close, IconButton } from "theme-ui"
 import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby"
 import RadialButton from "../../inputs/RadialButton"
 import { darken, lighten } from "@theme-ui/color"
+import Circle from "../../base/Circle"
 
 const AnnouncementBar = (props) => (
   <div
@@ -15,9 +16,11 @@ const AnnouncementBar = (props) => (
       width: "100%",
       textAlign: "center",
       position: "relative",
-      display: ["none", "none", "flex", "flex"],
+      display: ["flex", "flex", "flex", "flex"],
       justifyContent: "center",
       alignItems: "center",
+      padding: [2, 1, 1, 1],
+      // marginBottom: [0, 0, 2, 4],
     }}
   >
     <div
@@ -55,14 +58,40 @@ const AnnouncementBar = (props) => (
         </u>
       </Link>
     </div>
-    <RadialButton
+    <Circle
+      {...props}
+      sx={{
+        bg: "primary",
+        maxHeight: "1.25em",
+        maxWidth: "1.25em",
+        display: "flex",
+        color: "white",
+        justifyContent: "center",
+        alignItems: "center",
+        stroke: "white",
+        strokeWidth: "3px",
+        alignSelf: "inherit",
+        marginLeft: "-10px",
+        marginRight: "10px",
+      }}
+    >
+      <Close
+        {...props}
+        sx={
+          {
+            // bg: "primary",
+          }
+        }
+      />
+    </Circle>
+    {/* <RadialButton
       {...props}
       sx={{
         alignSelf: "inherit",
         display: "flex",
         marginLeft: "auto",
       }}
-    />
+    /> */}
   </div>
 )
 

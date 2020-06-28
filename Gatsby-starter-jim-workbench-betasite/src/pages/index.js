@@ -10,8 +10,9 @@ import ColorModeCycler from "../components/inputs/ColorModeCycler"
 
 import HeroClaim from "../components/templates/HeroClaim"
 import Grid1r3c from "../components/templates/Grid1r3c"
-import TabsBlock from "../components/layout/Tabs"
+import TabsBlock from "../components/layout/TabsBlock"
 import Pancake from "../components/layout/Pancake"
+import ProofTabs from "../components/templates/ProofTabs"
 // import geomanistregular from '../../static/Geomanist-Black-Webfont/geomanist-black-webfont.woff'
 
 const IndexPage = (props) => (
@@ -19,13 +20,7 @@ const IndexPage = (props) => (
     <SEO title="Home" />
 
     <HeroClaim />
-    <Pancake>
-      <Container>
-        {/* <ColorModeCycler />
-        <ColorModeToggle /> */}
-        <TabsBlock />
-      </Container>
-    </Pancake>
+    <ProofTabs />
   </Layout>
 )
 

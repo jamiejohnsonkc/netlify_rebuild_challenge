@@ -1,6 +1,5 @@
 import layout from "./layout"
 import { color } from "./colors"
-import TabsBlock from "../gatsby-starter-jim-workbench-betasite/src/components/layout/Tabs/Tabs"
 
 export default {
   //* nav root directory
