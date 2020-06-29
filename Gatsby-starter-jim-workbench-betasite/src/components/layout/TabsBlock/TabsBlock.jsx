@@ -216,7 +216,7 @@ const TabsBlock = (props) => (
           <Text
             {...props}
             sx={{
-              variant: "styles.b1",
+              variant: "styles.b2",
               color: "highlight",
               marginBottom: 1,
             }}
@@ -245,7 +245,7 @@ const TabsBlock = (props) => (
           <Text
             {...props}
             sx={{
-              variant: "styles.b1",
+              variant: "styles.b2",
               color: "highlight",
               marginBottom: 1,
             }}
