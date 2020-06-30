@@ -41,7 +41,7 @@ export default merge(typography, {
     lazy: ".025em",
     normal: "null",
     tight: "-0.05em",
-    heading: "-0.05em",
+    heading: "-0.025em",
   },
   lineHeights: {
     body: 2,
@@ -167,11 +167,13 @@ export default merge(typography, {
     },
     d2: {
       variant: "text.display",
+      lineHeight: "lineHeights.body",
       fontSize: 4,
       lineHeight: 2,
     },
     d3: {
       variant: "text.display",
+      lineHeight: 2,
       fontSize: 3,
     },
     p: {

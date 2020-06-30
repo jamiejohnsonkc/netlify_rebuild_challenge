@@ -14,7 +14,13 @@ const SaasGlobalCloud = (props) => (
       variant: "layout.section",
     }}
   >
-    <Container>
+    <Container
+      {...props}
+      className="Container"
+      sx={{
+        variant: "layout.containerNarrow",
+      }}
+    >
       <Section_Grid_1r_66Text_33Visual
         displayText="Distributed just like a CDN, but with advanced functionality for publishing entire sites and applications. Automate builds to prerender content and deploy worldwide to every major cloud provider—including staging, rollbacks, and even A/B testing."
         subheadText="A global platform with powerful features for managing code and assets."

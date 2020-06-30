@@ -26,6 +26,11 @@ export default {
     // },
   },
 
+  containerNarrow: {
+    variant: "layout.container",
+    maxWidth: ["100%", "100%", "60em", "60em"],
+  },
+
   mastHead: {
     display: "block",
     justifyContent: "center",
@@ -71,9 +76,10 @@ export default {
   },
 
   section: {
-    height: `calc(100vh - 18.75rem)`,
-    maxHeight: "40.625em",
-    minHeight: "26.875em",
+    paddingTop: 6,
+    paddingBottom: 6, // height: `calc(100vh - 18.75rem)`,
+    // maxHeight: "40.625em",
+    // minHeight: "26.875em",
   },
   //tabs
 

@@ -7,6 +7,8 @@ import ColorModeToggle from "../components/inputs/ColorModeToggle"
 import ColorModeCycler from "../components/inputs/ColorModeCycler"
 import HeroIntro from "../components/presentation/HeroIntro"
 import ProofTabs from "../components/presentation/ProofTabs"
+import SaasBenefits from "../components/presentation/SaasBenefits/SaasBenefits"
+import SaasGlobalCloud from "../components/presentation/SaasGlobalCloud/SaasGlobalCloud"
 
 const IndexPage = (props) => (
   <Layout>
@@ -30,6 +32,8 @@ const IndexPage = (props) => (
         borderRadius: 12,
       }}
     />
+    <SaasGlobalCloud />
+    <SaasBenefits />
   </Layout>
 )
 

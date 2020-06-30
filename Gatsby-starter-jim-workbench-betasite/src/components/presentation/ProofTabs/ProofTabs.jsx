@@ -75,7 +75,12 @@ const tablistStyle = {
 }
 
 const ProofTabs = (props) => (
-  <Pancake variant="layout.section">
+  <Pancake
+    {...props}
+    sx={{
+      variant: "layout.section",
+    }}
+  >
     {/* <ColorModeCycler />
       <ColorModeToggle /> */}
     <Container
