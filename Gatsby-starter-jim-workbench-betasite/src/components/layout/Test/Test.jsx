@@ -14,7 +14,6 @@ import {
   ThemeProvider,
 } from "theme-ui"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-// import "react-tabs/style/react-tabs.css"
 import Button from "../../base/Button"
 import Logo1 from "../../../svg/assets/logo-1.svg"
 import Logo2 from "../../../svg/assets/logo-2.svg"
@@ -63,16 +62,7 @@ const TabButton = ({ width, padding, grid, ...props }) => (
   />
 )
 
-// const tablistStyle = (props) => {
-//   useThemeUI({
-//     backgroundColor: "blue",
-//   })
-// }
-
 const tablistStyle = {
-  // backgroundColor: color.blueDark,
-  // paddingTop: "8px",
-  // paddingBottom: "16px",
   paddingLeft: 0,
   paddingRight: 0,
   display: "grid",
