@@ -1,5 +1,6 @@
-import React from "react"
 /** @jsx jsx */
+import React from "react"
+
 import {
   jsx,
   Box,

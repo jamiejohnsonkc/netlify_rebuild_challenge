@@ -6,13 +6,12 @@ import PropTypes from "prop-types"
 const Pancake = (props) => (
   <div
     as="Section"
+    className="panCake"
     {...props}
     sx={{
       alignItems: "center",
       display: "grid",
       whiteSpace: "pre-wrap",
-      //   gridTemplateColumns:
-      //     "[full-start] minmax(2rem,1fr) [standard-start] 3.75rem [narrow-start] minmax(1rem,67.5rem) [narrow-end] 3.75rem [standard-end] minmax(2rem,1fr) [full-end]",
     }}
   >
     {props.children}

@@ -5,10 +5,10 @@ import PropTypes from "prop-types"
 
 const F4colGrid = (props) => (
   <Grid gap={2} columns={[2, "1fr 2fr"]}>
-    <Box bg="primary">Box</Box>
-    <Box bg="muted">Box</Box>
-    <Box bg="primary">Box</Box>
-    <Box bg="muted">Box</Box>
+    <Box>{props.children}</Box>
+    <Box>{props.children}</Box>
+    <Box>{props.children}</Box>
+    <Box>{props.children}</Box>
   </Grid>
 )
 

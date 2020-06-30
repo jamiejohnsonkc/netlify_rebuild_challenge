@@ -1,3 +1,5 @@
+//! COLORS
+
 export const color = {
   teal: "#00AD9F",
   tealDark: "#15847D",

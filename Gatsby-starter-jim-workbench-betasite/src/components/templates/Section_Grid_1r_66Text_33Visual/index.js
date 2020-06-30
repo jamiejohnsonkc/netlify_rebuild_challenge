@@ -1,0 +1,3 @@
+import Section_Grid_1r_66Text_33Visual from "./Section_Grid_1r_66Text_33Visual"
+
+export default Section_Grid_1r_66Text_33Visual
