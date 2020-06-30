@@ -43,7 +43,7 @@ export default merge(typography, {
   },
   lineHeights: {
     body: 2,
-    heading: 1,
+    heading: 1.25,
     display: 1.5,
   },
 
@@ -98,15 +98,16 @@ export default merge(typography, {
     b1: {
       fontFamily: "MadeDillan",
       fontWeight: "heavy",
-      lineHeight: 1,
+      lineHeight: 1.25,
       letterSpacing: ".015em",
-      fontSize: [6, 7, 7, 7],
+      fontSize: [6, 7, 7, 8],
     },
     b2: {
-      fontFamily: "Roboto Slab",
+      fontFamily: "MadeDillan",
       fontWeight: "heavy",
-      lineHeight: 0.8,
-      letterSpacing: "-0.084em",
+      lineHeight: 1.25,
+      letterSpacing: ".015em",
+      fontSize: [6, 6, 7, 7],
     },
     b3: {
       fontFamily: "Roboto Slab",
@@ -160,16 +161,16 @@ export default merge(typography, {
     d1: {
       variant: "text.display",
       lineHeight: "lineHeights.body",
-      fontSize: 4,
+      fontSize: 5,
     },
     d2: {
       variant: "text.display",
-      fontSize: 3,
+      fontSize: 4,
       lineHeight: 2,
     },
     d3: {
       variant: "text.display",
-      fontSize: 2,
+      fontSize: 3,
     },
     p: {
       fontsize: 0,

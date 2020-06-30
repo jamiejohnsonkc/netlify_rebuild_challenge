@@ -13,7 +13,12 @@ import SplitTextLine from "../../base/SplitTextLine"
 // const str = "Line 1. **new-line** Line 2."
 
 const HeroClaim = (props) => (
-  <PanCake>
+  <PanCake
+    {...props}
+    sx={{
+      variant: "layout.intro",
+    }}
+  >
     <Container>
       <div
         {...props}
@@ -25,7 +30,8 @@ const HeroClaim = (props) => (
           as="h1"
           sx={{
             variant: "styles.b1",
-            marginBottom: 5,
+            marginBottom: 4,
+            paddingBottom: 4,
           }}
         >
           <SplitTextLine
@@ -36,8 +42,9 @@ const HeroClaim = (props) => (
         <Text
           sx={{
             variant: "styles.d2",
-            marginBottom: 5,
-            maxWidth: ["100%", "83%", "50%"],
+            marginBottom: 4,
+            paddingBottom: 4,
+            maxWidth: ["100%", "83%", "61.8%"],
           }}
         >
           <span

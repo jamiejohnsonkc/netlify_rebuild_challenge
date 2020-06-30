@@ -106,8 +106,8 @@ export default {
       justifyContent: "center",
       padding: "0",
       border: "none",
-      ".st0": {
-        fill: "primary",
+      ".logoipsum": {
+        fill: "yellow",
       },
     },
   },

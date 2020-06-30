@@ -60,9 +60,18 @@ export default {
     minHeight: "26.875em",
   },
 
+  introTop: {
+    height: `calc(100vh - 18.75rem)`,
+    maxHeight: "40.625em",
+    minHeight: "26.875em",
+    alignItems: "start",
+    paddingTop: 6,
+  },
+
   section: {
-    // paddingTop: "1.618em",
-    // paddingBottom: "2.618em",
+    height: `calc(100vh - 18.75rem)`,
+    maxHeight: "40.625em",
+    minHeight: "26.875em",
   },
   //tabs
 

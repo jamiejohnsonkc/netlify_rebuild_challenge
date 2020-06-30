@@ -38,9 +38,9 @@ const colors = {
   accent: color.violet, //Contrast color for emphasizing UI
   highlight: color.tealBright, //Background color for highlighting text
   muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
-  navMenuBackground: color.blackAlpha1,
-  navMenuItem: color.gray3,
-  mastHeadLogo: color.gray3,
+  navMenuBackground: color.blackAlpha2,
+  navMenuItem: color.white,
+  mastHeadLogo: color.white,
   navMenuItemHover: color.violetDark,
 
   modes: {

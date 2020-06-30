@@ -7,20 +7,37 @@ import SEO from "../pages/seo"
 
 import ColorModeToggle from "../components/inputs/ColorModeToggle"
 import ColorModeCycler from "../components/inputs/ColorModeCycler"
-
+import HeroIntro from "../components/templates/HeroIntro"
 import HeroClaim from "../components/templates/HeroClaim"
-import Grid1r3c from "../components/templates/Grid1r3c"
-import TabsBlock from "../components/layout/TabsBlock"
+// import Grid1r3c from "../components/templates/Grid1r3c"
 import Pancake from "../components/layout/Pancake"
 import ProofTabs from "../components/templates/ProofTabs"
+import Test from "../components/layout/Test"
+
 // import geomanistregular from '../../static/Geomanist-Black-Webfont/geomanist-black-webfont.woff'
 
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-
-    <HeroClaim />
-    <ProofTabs />
+    <div
+      {...props}
+      sx={{
+        position: "absolute",
+        zIndex: 1000,
+        top: 0,
+        left: 0,
+      }}
+    >
+      <ColorModeCycler />
+      <ColorModeToggle />
+    </div>
+    <HeroIntro />
+    <ProofTabs
+      {...props}
+      sx={{
+        borderRadius: 12,
+      }}
+    />
   </Layout>
 )
 

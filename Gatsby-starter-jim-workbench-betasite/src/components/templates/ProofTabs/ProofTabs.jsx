@@ -6,7 +6,7 @@ import Pancake from "../../layout/Pancake"
 import TabsBlock from "../../layout/TabsBlock"
 
 const ProofTabs = (props) => (
-  <Pancake>
+  <Pancake variant="layout.section">
     {/* <ColorModeCycler />
       <ColorModeToggle /> */}
     <Container
