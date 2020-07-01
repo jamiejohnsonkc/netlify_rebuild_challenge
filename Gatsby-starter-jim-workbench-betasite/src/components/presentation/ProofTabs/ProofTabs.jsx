@@ -63,19 +63,32 @@ const TabButton = ({ width, padding, grid, ...props }) => (
   />
 )
 
-const tablistStyle = {
-  paddingLeft: 0,
-  paddingRight: 0,
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
-  gap: 2,
-  borderBottom: 0,
-  width: "100%",
-  listStyle: "none",
-}
+const tablistStyle = (props) => (
+  <div
+    {...props}
+    sx={{
+      className: "tablistStyle",
+      paddingLeft: 0,
+      paddingRight: 0,
+      display: "grid",
+      gridTemplateColumns: [
+        "1fr",
+        "1fr 1fr 1fr 1fr 1fr",
+        "1fr 1fr 1fr 1fr 1fr",
+        "1fr 1fr 1fr 1fr 1fr",
+        "1fr 1fr 1fr 1fr 1fr",
+      ],
+      gap: 2,
+      borderBottom: 0,
+      width: "100%",
+      listStyle: "none",
+    }}
+  ></div>
+)
 
 const ProofTabs = (props) => (
   <Pancake
+    className="pancake"
     {...props}
     sx={{
       variant: "layout.section",
@@ -84,6 +97,7 @@ const ProofTabs = (props) => (
     {/* <ColorModeCycler />
       <ColorModeToggle /> */}
     <Container
+      className="container"
       {...props}
       sx={{
         boxShadow: "test5",
@@ -105,8 +119,7 @@ const ProofTabs = (props) => (
           },
         }}
       >
-        <TabList style={tablistStyle}>
-          {/* <TabList> */}
+        <TabList className="tablistStyle">
           <Tab>
             <Box {...props} sx={{}}>
               <TabButton>

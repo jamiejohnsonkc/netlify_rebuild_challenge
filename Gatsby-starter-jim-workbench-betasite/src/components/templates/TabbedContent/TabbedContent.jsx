@@ -63,7 +63,7 @@ const tablistStyle = {
   paddingLeft: 0,
   paddingRight: 0,
   display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+  gridTemplateColumns: ["1fr", "1fr 1fr 1fr 1fr 1fr"],
   gap: 2,
   borderBottom: 0,
   width: "100%",
@@ -80,7 +80,7 @@ export default (props) => (
           background: lighten("highlight", 0.51),
         },
         "& > div > button > svg > .logoIpsum": {
-          fill: "highlight",
+          fill: (props) => ({ color: color.primay }),
         },
       },
     }}

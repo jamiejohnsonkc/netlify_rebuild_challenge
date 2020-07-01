@@ -42,16 +42,24 @@ const AnnouncementBar = (props) => (
           alignItems: "center",
           cursor: "pointer",
           fontSize: 0,
+          flexWrap: ["wrap", "none", "none", "none"],
           color: darken("primary", 0.25),
           "&:hover": {
             color: "background",
           },
         }}
       >
-        Join us for a product demo - June 30.
+        <Text
+          {...props}
+          sx={{
+            display: "flex",
+          }}
+        >
+          Join us for a product demo - June 30.
+        </Text>
         <u
           sx={{
-            paddingLeft: 2,
+            paddingLeft: [0, 2, 2, 2],
           }}
         >
           Register Now!

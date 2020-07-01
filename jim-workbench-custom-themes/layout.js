@@ -16,7 +16,7 @@ export default {
   },
   container: {
     maxWidth: ["100%", "100%", "60em", "79em"],
-    px: 4,
+    px: [1, 4, 4, 4],
     display: "block",
     position: "relative",
     margin: "0 auto",
