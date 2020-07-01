@@ -13,6 +13,7 @@ import {
   Container,
 } from "theme-ui"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import React from "react"
 import Button from "../../base/Button"
 import Logo1 from "../../../svg/assets/logo-1.svg"
 import Logo2 from "../../../svg/assets/logo-2.svg"
@@ -52,6 +53,7 @@ const TabPanelContent = ({
 const TabButton = ({ width, padding, grid, ...props }) => (
   <Button
     {...props}
+    className="tabButton"
     variant="pill.grayMark"
     sx={{
       width: "100%",
@@ -80,6 +82,62 @@ const tablistStyle = {
   listStyle: "none",
 }
 
+const MyTabList = (props) => (
+  <>
+    <TabList
+      {...props}
+      sx={{
+        paddingLeft: 0,
+      }}
+    >
+      <Grid
+        columns={[1, 5, 5, 5]}
+        gap={(1, 2, 2, 2)}
+        {...props}
+        sx={{
+          paddingLeft: 0,
+          paddingRight: 0,
+          borderBottom: 0,
+          listStyle: "none",
+        }}
+      >
+        {props.children}
+      </Grid>
+    </TabList>
+  </>
+)
+
+const MyTab = ({ children, disabled, selected, ...props }) => (
+  <>
+    <Tab
+      className="MyTab"
+      disabled={disabled}
+      selected={selected}
+      disabledClassName="MyTabInactive"
+      selectedClassName="MyTabActive"
+      {...props}
+      sx={{
+        "&.MyTabActive": {
+          backgroundColor: "transparent",
+          // backgroundColor: "pink",
+          border: "none",
+
+          "& > button": {
+            background: lighten("highlight", 0.52),
+          },
+          "& > button > svg > .logoIpsum": {
+            fill: "highlight",
+          },
+        },
+      }}
+    >
+      {children}
+    </Tab>
+  </>
+)
+MyTab.tabsRole = "Tab"
+MyTabList.tabsRole = "TabList"
+
 const ProofTabs = (props) => (
   <Pancake
     {...props}
@@ -96,24 +154,96 @@ const ProofTabs = (props) => (
         py: 4,
       }}
     >
-      <Tabs
-        {...props}
-        sx={{
-          ".react-tabs__tab--selected": {
-            backgroundColor: "transparent",
-            border: "none",
-            "& > div > button": {
-              background: lighten("highlight", 0.51),
-            },
-            "& > div > button > svg > .logoIpsum": {
-              fill: "highlight",
-            },
-          },
-        }}
-      >
-        <TabList style={tablistStyle}>
-          {/* <TabList> */}
-          <Tab>
+      <Tabs {...props} sx={{}}>
+        {/* <TabList
+          {...props}
+          sx={{
+            paddingLeft: 0,
+            paddingRight: 0,
+            display: "grid",
+            gridTemplateColumns: [
+              "1fr",
+              "1fr 1fr 1fr 1fr 1fr",
+              "1fr 1fr 1fr 1fr 1fr",
+              "1fr 1fr 1fr 1fr 1fr",
+              "1fr 1fr 1fr 1fr 1fr",
+            ],
+            gap: 2,
+            borderBottom: 0,
+            width: "100%",
+            listStyle: "none",
+          }}
+        > */}
+        {/* <TabList> */}
+        <MyTabList
+        // {...props}
+        // sx={{
+        //   paddingLeft: 0,
+        //   paddingRight: 0,
+        //   display: "grid",
+        //   columns: "1fr 1fr 1fr 1fr 1fr",
+        //   gap: 2,
+        //   borderBottom: 0,
+        //   width: "100%",
+        //   listStyle: "none",
+        // }}
+        >
+          <MyTab>
+            <TabButton>
+              {" "}
+              <Logo1
+                {...props}
+                sx={{
+                  maxWidth: "6em",
+                }}
+              />
+            </TabButton>
+          </MyTab>
+          <MyTab>
+            <TabButton>
+              {" "}
+              <Logo1
+                {...props}
+                sx={{
+                  maxWidth: "6em",
+                }}
+              />
+            </TabButton>
+          </MyTab>
+          <MyTab>
+            <TabButton>
+              {" "}
+              <Logo1
+                {...props}
+                sx={{
+                  maxWidth: "6em",
+                }}
+              />
+            </TabButton>
+          </MyTab>
+          <MyTab>
+            <TabButton>
+              {" "}
+              <Logo1
+                {...props}
+                sx={{
+                  maxWidth: "6em",
+                }}
+              />
+            </TabButton>
+          </MyTab>
+          <MyTab>
+            <TabButton>
+              {" "}
+              <Logo1
+                {...props}
+                sx={{
+                  maxWidth: "6em",
+                }}
+              />
+            </TabButton>
+          </MyTab>
+          {/* <Tab>
             <Box {...props} sx={{}}>
               <TabButton>
                 <Logo1
@@ -172,8 +302,8 @@ const ProofTabs = (props) => (
                 />
               </TabButton>
             </Box>
-          </Tab>
-        </TabList>
+          </Tab> */}
+        </MyTabList>
 
         <TabPanel>
           <TabPanelContent
