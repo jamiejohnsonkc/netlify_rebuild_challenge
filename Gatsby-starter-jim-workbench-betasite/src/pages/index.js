@@ -9,6 +9,7 @@ import HeroIntro from "../components/presentation/HeroIntro"
 import ProofTabs from "../components/presentation/ProofTabs"
 import SaasBenefits from "../components/presentation/SaasBenefits/SaasBenefits"
 import SaasGlobalCloud from "../components/presentation/SaasGlobalCloud/SaasGlobalCloud"
+import SaasComparison from "../components/presentation/SaasComparison"
 
 const IndexPage = (props) => (
   <Layout>
@@ -34,6 +35,7 @@ const IndexPage = (props) => (
     />
     <SaasGlobalCloud />
     <SaasBenefits />
+    <SaasComparison />
   </Layout>
 )
 

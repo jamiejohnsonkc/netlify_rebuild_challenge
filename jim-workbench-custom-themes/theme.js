@@ -54,7 +54,6 @@ export default merge(typography, {
       fontFamily: "heading",
       fontWeight: "heading",
       lineHeight: "heading",
-      letterSpacing: "tight",
     },
     display: {
       fontFamily: "heading",
