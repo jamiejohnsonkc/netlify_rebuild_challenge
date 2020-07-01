@@ -1,4 +1,4 @@
-//! MAIN
+//! THEME BASE STYLES
 
 import { toTheme } from "./typographyjsEdits/my-to-theme"
 import wp2016 from "typography-theme-wordpress-2016"

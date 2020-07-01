@@ -1,6 +1,10 @@
 /** @jsx jsx */
 import React from "react"
 
+//!
+//! This component is not configured for reuse.
+//!
+
 import {
   jsx,
   Box,
