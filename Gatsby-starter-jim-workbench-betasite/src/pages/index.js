@@ -1,22 +1,41 @@
 /** @jsx jsx */
 import React from "react"
-// import { Link } from "gatsby"
 import Layout from "../components/layout/Layout"
-import { Styled, jsx, Container } from "theme-ui"
+import { jsx } from "theme-ui"
 import SEO from "../pages/seo"
-
 import ColorModeToggle from "../components/inputs/ColorModeToggle"
 import ColorModeCycler from "../components/inputs/ColorModeCycler"
+import HeroIntro from "../components/presentation/HeroIntro"
+import ProofTabs from "../components/presentation/ProofTabs"
+import SaasBenefits from "../components/presentation/SaasBenefits/SaasBenefits"
+import SaasGlobalCloud from "../components/presentation/SaasGlobalCloud/SaasGlobalCloud"
+import SaasComparison from "../components/presentation/SaasComparison"
 
-import HeroClaim from "../components/templates/HeroClaim"
-// import geomanistregular from '../../static/Geomanist-Black-Webfont/geomanist-black-webfont.woff'
-
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-    <ColorModeCycler />
-    <ColorModeToggle />
-    <HeroClaim />
+    <div
+      {...props}
+      sx={{
+        position: "absolute",
+        zIndex: 1000,
+        top: 0,
+        left: 0,
+      }}
+    >
+      <ColorModeCycler />
+      <ColorModeToggle />
+    </div>
+    <HeroIntro />
+    <ProofTabs
+      {...props}
+      sx={{
+        borderRadius: 12,
+      }}
+    />
+    <SaasGlobalCloud />
+    <SaasBenefits />
+    <SaasComparison />
   </Layout>
 )
 

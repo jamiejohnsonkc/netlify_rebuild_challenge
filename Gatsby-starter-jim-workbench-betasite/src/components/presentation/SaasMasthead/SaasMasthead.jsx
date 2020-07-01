@@ -8,7 +8,7 @@ import Nav from "../../navigation/navFunctions/Nav"
 const SaasMasthead = (props) => (
   <>
     <Masthead>
-      <Container className="container">
+      <Container className="Container">
         <Nav>
           <Navbar />
         </Nav>

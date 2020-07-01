@@ -44,12 +44,18 @@ const Navbar = (props) => {
     <div
       sx={{
         variant: "nav.navBar",
-        // bg: transparentize("black", 0.95),
-        // backgroundColor: "navMenu.backgroundColor",
       }}
       className="navBar"
     >
-      <Link to="/">
+      <Link
+        to="/"
+        {...props}
+        className="MastheadLogoLink"
+        sx={{
+          display: "inline-flex",
+          alignItems: "center",
+        }}
+      >
         <Logo
           className="mastHeadLogo"
           sx={{

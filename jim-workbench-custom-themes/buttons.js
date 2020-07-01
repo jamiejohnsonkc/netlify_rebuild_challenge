@@ -91,6 +91,25 @@ export default {
       borderRadius: 32,
       variant: "buttons.accent",
     },
+    grayMark: {
+      borderRadius: "5em",
+      color: "gray1",
+      appearance: "none",
+      display: "flex",
+      textAlign: "center",
+      lineHeight: "inherit",
+      cursor: "pointer",
+      color: "gray3",
+      width: "10em",
+      height: "3.3em",
+      overFlow: "hidden",
+      justifyContent: "center",
+      padding: "0",
+      border: "none",
+      ".logoipsum": {
+        fill: "yellow",
+      },
+    },
   },
   reversePill: {
     primary: {

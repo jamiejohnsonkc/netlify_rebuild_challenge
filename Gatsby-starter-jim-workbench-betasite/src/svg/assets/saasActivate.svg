@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" width="168" height="168" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="fc-1-a" x1="84" y1="81.15" x2="84" y2="119.91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f0084"></stop>
+      <stop offset="1" stop-color="#3c0059"></stop>
+    </linearGradient>
+    <linearGradient id="fc-1-b" x1="84" y1="112.85" x2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00d6c6" stop-opacity=".75"></stop>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient id="fc-1-c" x1="84" y1="49.46" x2="84" y2="112.85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f0084"></stop>
+      <stop offset="1" stop-color="#00aea0"></stop>
+    </linearGradient>
+    <linearGradient id="fc-1-d" x1="90.61" y1="97.59" x2="90.61" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff927c"></stop>
+      <stop offset=".43" stop-color="#ff947e"></stop>
+      <stop offset=".58" stop-color="#ff9985"></stop>
+      <stop offset=".69" stop-color="#ffa390"></stop>
+      <stop offset=".78" stop-color="#ffb1a1"></stop>
+      <stop offset=".85" stop-color="#ffc3b7"></stop>
+      <stop offset=".92" stop-color="#ffdad3"></stop>
+      <stop offset=".98" stop-color="#fff4f2"></stop>
+      <stop offset="1" stop-color="#fff"></stop>
+    </linearGradient>
+    <linearGradient id="fc-1-e" x1="150.4" y1="204.17" x2="164.12" y2="204.17" gradientTransform="translate(-69.18 -43.04)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset=".37" stop-color="#fff" stop-opacity=".01"></stop>
+      <stop offset=".51" stop-color="#fff" stop-opacity=".03"></stop>
+      <stop offset=".6" stop-color="#fff" stop-opacity=".08"></stop>
+      <stop offset=".68" stop-color="#fff" stop-opacity=".15"></stop>
+      <stop offset=".75" stop-color="#fff" stop-opacity=".23"></stop>
+      <stop offset=".8" stop-color="#fff" stop-opacity=".34"></stop>
+      <stop offset=".86" stop-color="#fff" stop-opacity=".47"></stop>
+      <stop offset=".91" stop-color="#fff" stop-opacity=".61"></stop>
+      <stop offset=".95" stop-color="#fff" stop-opacity=".78"></stop>
+      <stop offset=".99" stop-color="#fff" stop-opacity=".96"></stop>
+      <stop offset="1" stop-color="#fff"></stop>
+    </linearGradient>
+  </defs>
+  <g data-name="rays">
+    <path fill="none" stroke="#53007a" stroke-miterlimit="10" stroke-width="2" d="M33.44 86.85H0m168 0h-33.44M84 36.3V2.85"></path>
+    <path fill="none" stroke="#a8009c" stroke-miterlimit="10" stroke-width="2" d="M48.27 51.12L36.44 39.3m83.29 11.82l11.83-11.82"></path>
+    <path fill="none" stroke="#000" stroke-miterlimit="10" d="M119.73 122.58l11.83 11.83m-83.29-11.83l-11.83 11.83"></path>
+  </g>
+  <g data-name="confetti">
+    <circle cx="27.9" cy="61.56" r="4.74" fill="#fa6e84"></circle>
+    <circle cx="21.47" cy="37.84" r="2.69" fill="#00c4b5"></circle>
+    <circle cx="27.9" cy="16.89" r="1.9" fill="#00c4b5"></circle>
+    <circle cx="140.1" cy="61.56" r="4.74" fill="#00c4b5"></circle>
+    <circle cx="146.53" cy="37.84" r="2.69" fill="#b800aa"></circle>
+    <circle cx="140.1" cy="16.89" r="1.9" fill="#fa6e84"></circle>
+    <circle cx="140.1" cy="112.14" r="4.74" fill="#fa6e84"></circle>
+    <circle cx="146.53" cy="135.87" r="2.69" fill="#00c4b5"></circle>
+    <circle cx="140.1" cy="156.81" r="1.9" fill="#b800aa"></circle>
+    <circle cx="27.9" cy="112.14" r="4.74" fill="#b800aa"></circle>
+    <circle cx="21.47" cy="135.87" r="2.69" fill="#00c4b5"></circle>
+    <circle cx="27.9" cy="156.81" r="1.9" fill="#fa6e84"></circle>
+    <path fill="none" stroke="#00838c" stroke-miterlimit="10" stroke-width="2" d="M60.56 23.05v7.91M64.51 27h-7.9"></path>
+    <path fill="none" stroke="#00838c" stroke-miterlimit="10" stroke-width="2" d="M107.44 23.05v7.91M103.49 27h7.9"></path>
+    <path fill="none" stroke="#a8009c" stroke-miterlimit="10" stroke-width="2" d="M119.73 122.58l11.83 11.83m-83.29-11.83l-11.83 11.83"></path>
+    <path fill="none" stroke="#00838c" stroke-miterlimit="10" stroke-width="2" d="M60.56 150.65v-7.91m-3.95 3.96h7.9"></path>
+  </g>
+  <g data-name="click" class="illo-click">
+    <circle cx="84" cy="86.85" r="42.8" fill="#6f0084"></circle>
+    <path d="M115.7 81.15v7.75a31.69 31.69 0 0 1-63.37 0v-7.75z" fill="url(#fc-1-a)"></path>
+    <path class="hide-on-inverse" d="M168 0s-37.63 112.85-84 112.85C37.32 112.85 0 0 0 0z" fill="url(#fc-1-b)"></path>
+    <circle cx="84" cy="81.15" r="31.69" fill="url(#fc-1-c)"></circle>
+    <path fill="none" stroke="#3c0059" stroke-miterlimit="10" stroke-width="2" d="M74.84 81.06l9.85 11.34 13.72-22.5"></path>
+    <path d="M105.35 168H78.12c-.34-.86-.71-4.5-1.12-5.21-3.25-5.55-5-16.54-5-20.28 0-3.41 1.66-8 2-11.79s0-9 1.86-8.81c1.47.16 3.15 2.67 4 5.4.28-5.11.68-14 .84-16.7.21-3.41.56-13 3.4-13s3.21 10.69 3.36 13.52c.06.9.19 2.85.36 5.12 0-.84 5.31-.36 6.41 1.29.93 1.4 1.06 3.13 1.32 4.79 0-1 4.67-1.54 6.27.35 1 1.17 1.3 3.51 1.45 5.59.17-.92 4.11-.17 5.07 2.87 1.1 3.51.19 10.27.76 16.59.49 5.16-2.4 15.78-3.75 20.27z" fill="url(#fc-1-d)"></path>
+    <path class="hide-on-inverse" transform="rotate(90 88.085 161.135)" fill="url(#fc-1-e)" d="M81.22 131.61h13.72v59.05H81.22z"></path>
+    <path d="M79.76 125l.12 2.31c-.07 1.42-.14 2.55-.18 3.16-.21 2.8-1.1 9.9.54 15.77m15.32-25.19v1.3c0 .3.1.59.16.88.4 1.9.24 5.91 1.42 8.65m6.33-.3c-.07-.75-.14-2.86-.24-4.2m-14.55 4.91a18.27 18.27 0 0 0 .27-4.65s-.5-7.28-.86-12.24" fill="none" stroke="#ef5c8a" stroke-miterlimit="10"></path>
+  </g>
+</svg>

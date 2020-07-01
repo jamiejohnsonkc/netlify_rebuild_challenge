@@ -16,9 +16,10 @@ export const options = {
   ],
   bodyFontFamily: ["Roboto", "georgia", "serif"],
   monospaceFontFamily: ["Roboto", "monospace"],
-  headerWeight: 900, //default bold
-  bodyWeight: 400, //default normal
-  boldWeight: 700, //default bold
+  headerWeight: 500, //default bold
+  bodyWeight: 300, //default normal
+  boldWeight: 500, //default bold
+  heavyWeight: 900,
   includeNormalize: true,
   blockMarginBottom: 1,
 }

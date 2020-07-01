@@ -7,7 +7,7 @@ const Nav = (props) => (
   <nav
     className="Nav"
     sx={{
-      position: ["fixed", "fixed", "relative"],
+      position: ["sticky", "sticky", "relative"],
 
       zIndex: "2",
       "@media (max-width: 768px)": {

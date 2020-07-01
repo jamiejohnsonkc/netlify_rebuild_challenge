@@ -1,21 +1,77 @@
-export default {
-  text: "#000", //Body foreground color
-  background: "#fff", //Body background color
-  primary: "#7C0C64", //Primary brand color for links, buttons, etc.
-  secondary: "#303030", //Secondary brand color for alternative styling
-  accent: "#C57AA2", //Contrast color for emphasizing UI
-  highlight: "#00E0CE", //Background color for highlighting text
-  muted: "#f6f6f6", //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
-  navMenuBackground: `rgba(0,0,0,.015)`,
-  navMenuItem: "white",
-  mastHeadLogo: "#222",
-  navMenuItemHover: "#c57aa2",
+//! COLORS
+
+export const color = {
+  teal: "#00AD9F",
+  tealDark: "#15847D",
+  tealBright: "#00E0CE",
+  pink: "#FF6969",
+  pinkDark: "#FF1154",
+  pinkAccessible: "#E8114E",
+  orange: "#F86816",
+  orangeDark: "#B74808",
+  blue: "#43B4D8",
+  blueDark: "#146396",
+  blueDarkB: "#133857",
+  violet: "#C57AA2",
+  violetDark: "#7C0C64",
+  yellow: "#FFAD43",
+  yellowDark: "#CC801F",
+  white: "#fff",
+  white2: "#FBFBFB",
+  black: "#000",
+  black2: "#060606",
+  black3: "#0e1e25",
+  gray1: "#2D3B41",
+  gray2: "#646E73",
+  gray3: "#757575",
+  gray4: "#BDBDBD",
+  gray5: "#E0E0E0",
+  gray6: "#F7F8F8",
+  blackAlpha1: `rgba(0,0,0,.015)`,
+  blackAlpha2: `rgba(0,0,0,.1)`,
+  whiteAlpha1: `rgba(255,255,255,.05)`,
+}
+const colors = {
+  //default
+  text: color.black, //Body foreground color
+  background: color.white, //Body background color
+  primary: color.violetDark, //Primary brand color for links, buttons, etc.
+  secondary: color.gray3, //Secondary brand color for alternative styling
+  accent: color.violet, //Contrast color for emphasizing UI
+  highlight: color.tealBright, //Background color for highlighting text
+  muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
+  navMenuBackground: color.blackAlpha2,
+  navMenuItem: color.white,
+  mastHeadLogo: color.white,
+  navMenuItemHover: color.violetDark,
 
   modes: {
+    inverse: {
+      text: color.white,
+      background: color.violetDark,
+      primary: color.violet,
+      secondary: color.gray5,
+      accent: color.gray6,
+      highlight: color.white,
+      muted: color.gray,
+      navMenuBackground: color.whiteAlpha1,
+      navMenuItem: color.white2,
+      mastHeadLogo: color.white2,
+      navMenuItemHover: color.gray5,
+    },
+
     dark: {
-      text: "#fff",
-      background: "#191919",
-      primary: "#00ad9f",
+      text: color.white,
+      background: color.black2,
+      primary: color.gray3,
+      secondary: color.gray5,
+      accent: color.gray6,
+      highlight: color.white,
+      muted: color.gray,
+      navMenuBackground: color.whiteAlpha1,
+      navMenuItem: color.white2,
+      mastHeadLogo: color.white2,
+      navMenuItemHover: color.gray5,
     },
     purple: {
       text: "#fff",
@@ -28,7 +84,7 @@ export default {
       primary: "#000",
     },
     blue: {
-      text: "#2D3B41",
+      text: "#146396",
       background: "#f7f8f8",
       primary: "#146396",
       navMenuItem: "#888",
@@ -46,26 +102,4 @@ export default {
   },
 }
 
-// --color-teal: #00AD9F;
-// --color-teal-dark: #15847D;
-// --color-teal-bright: #00E0CE;
-// --color-pink: #FF6969;
-// --color-pink-dark: #FF1154;
-// --color-pink-accessible: #E8114E;
-// --color-orange: #F86816;
-// --color-orange-dark: #B74808;
-// --color-blue: #43B4D8;
-// --color-blue-dark: #146396;
-// --color-blue-dark-b: #133857;
-// --color-violet: #C57AA2;
-// --color-violet-dark: #7C0C64;
-// --color-yellow: #FFAD43;
-// --color-yellow-dark: #CC801F;
-// --color-white: #fff;
-// --color-black: #0e1e25;
-// --color-gray-1: #2D3B41;
-// --color-gray-2: #646E73;
-// --color-gray-3: #757575;
-// --color-gray-4: #BDBDBD;
-// --color-gray-5: #E0E0E0;
-// --color-gray-6: #F7F8F8;
+export default colors

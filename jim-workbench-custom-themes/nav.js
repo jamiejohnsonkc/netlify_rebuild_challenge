@@ -1,30 +1,37 @@
+//! NAV
+
 import layout from "./layout"
+import { color } from "./colors"
 
 export default {
   //* nav root directory
+  nav: {},
+
   navBar: {
     textTransform: "capitalize",
     borderRadius: [0, 0, 6, 6],
-    backgroundColor: "navMenuBackground",
+    backgroundColor: [
+      "transparent",
+      "transparent",
+      "navMenuBackground",
+      "navMenuBackground",
+    ],
     lineHeight: 1.5,
-    px: 0,
+    px: [0, 0, 0, 0],
     py: 0,
-    alignSelf: "center",
-    alignItems: "center",
-    justifyContent: "space-between",
-    // height: "10vh",
     display: "flex",
+    // alignSelf: "center",
+    alignItems: ["center", "center", "none", "none"],
+    justifyContent: ["space-between", "space-between", "none", "none"],
+    // height: "10vh",
+    // display: "flex",
     width: "100%",
-    "@media (max-width: 768px)": {
-      backgroundColor: "navMenuBackground",
-      width: "100%",
-      height: "10vh",
-    },
+    height: ["10vh", "10vh", "unset", "unset"],
   },
 
   mastHeadLogo: {
-    width: "5em",
-    mx: 3,
+    width: ["6em", "7em", "5em", "5em"],
+    mx: [0, 0, 3, 3],
     lineHeight: 1,
     "& svg g path.logotext": {
       fill: "mastHeadLogo",
@@ -33,22 +40,14 @@ export default {
 
   //!where was this used before (or was it?) +> believe this is scrap.  saving jic
 
-  navMenu: {
-    justifyContent: "space-between",
-    alignItems: "center",
-    height: "100%",
-    flex: 1,
-    display: "flex",
-    py: 2,
-  },
-
   //*  Responsive Menu/Drawer
   navBox: {
     justifyContent: "space-between",
     alignItems: "center",
     height: "100%",
-    flex: 1,
-    display: "flex",
+    width: "100%",
+    // flex: 1,
+    display: "inline-flex",
     paddingTop: [2, 0],
     // py: 2,
     "@media (max-width: 768px)": {
@@ -62,17 +61,30 @@ export default {
     },
   },
 
+  navMenu: {
+    // justifyContent: "space-between",
+    // alignItems: "center",
+    // height: "100%",
+    // flex: 1,
+    // display: "flex",
+    // display: "block",
+    // py: 2,
+  },
+
   //* Lists //
   //? this was prevdiously titled mainNavUl
   navMenu: {
+    // display: "flex",
+    // flex: `.1 5 53em`,
     display: "flex",
+    flex: 1,
     margin: 0,
     padding: [0, 3],
     px: [0, 4],
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: ["column", "column", "row"],
-    width: ["100%"],
+    // width: ["100%"],
   },
 
   subMenu: {
@@ -98,6 +110,7 @@ export default {
     transitionDuration: "0.3s",
     display: "flex",
     alignItems: "center",
+    flex: `0 1 fit-content`,
     "@media (max-width: 768px)": {
       width: "100%",
       backgroundColor: "navMenuBackground",
@@ -139,8 +152,10 @@ export default {
 
   navItemSpacer: {
     display: ["none", "flex", "flex", "flex"],
+    flex: 0.1,
     padding: 0,
-    flexGrow: 0.5,
+    // flexGrow: [null, null, "0.25", "0.25"],
+    // flexBasis: [null, null, "4em", "2em"],
     cursor: "none",
   },
 
@@ -163,7 +178,7 @@ export default {
     cursor: "pointer",
     padding: 2,
     "@media (max-width: 768px)": {
-      display: "flex",
+      display: "inline-flex",
     },
   },
 
@@ -193,7 +208,7 @@ export default {
   megaNav: {
     width: "71vw",
     borderRadius: 6,
-    backgroundColor: "muted",
+    backgroundColor: color.white,
     transition: "all 0.3s ease-in",
     boxShadow: "subtle",
   },

@@ -43,6 +43,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
     "react-icons": "^3.10.0",
+    "react-tabs": "^3.1.1",
     "theme-ui": "^0.3.1",
     "typeface-roboto": "^0.0.75",
     "typeface-roboto-slab": "^1.1.4",
@@ -65,7 +66,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "NODE_ENV=development start-storybook -s ./public -p 6006 --ci",
+    "storybook": "NODE_ENV=production start-storybook -s ./public -p 6006 --ci",
     "build-storybook": "NODE_ENV=production build-storybook"
   }
 }
