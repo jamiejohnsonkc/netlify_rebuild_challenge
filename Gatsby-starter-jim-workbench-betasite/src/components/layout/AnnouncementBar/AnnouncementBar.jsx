@@ -20,6 +20,7 @@ const AnnouncementBar = (props) => (
       justifyContent: "center",
       alignItems: "center",
       padding: [2, 1, 1, 1],
+      zIndex: 3,
       // marginBottom: [0, 0, 2, 4],
     }}
   >
@@ -53,6 +54,7 @@ const AnnouncementBar = (props) => (
           {...props}
           sx={{
             display: "flex",
+            paddingRight: [2, 2, 0, 0],
           }}
         >
           Join us for a product demo - June 30.

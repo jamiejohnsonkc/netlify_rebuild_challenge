@@ -13,6 +13,7 @@ const NavLinkIcon = (props) => (
       verticalAlign: "middle",
       width: "1.25em",
       color: lighten("navMenuItem", 0.1),
+      display: ["none", "none", "inline-block", "inline-block"],
     }}
   />
 )

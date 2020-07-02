@@ -21,7 +21,7 @@ import CtaLink from "../../base/CtaLink"
 //TODO content breaking parent when downsizing
 //TODO remove iconContext provider hooks inside gatsby: unnecessary
 
-//!Main menu will be the presentation component
+//* This is the presentation component for nav menu.  It defines the menus, items, links, submenus, etc. Due to this menu's complexity this element is not derived from a reusable component.
 
 const SaasMenu = (props) => (
   <>

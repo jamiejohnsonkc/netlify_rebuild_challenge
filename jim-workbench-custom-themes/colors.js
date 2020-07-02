@@ -14,6 +14,7 @@ export const color = {
   blueDarkB: "#133857",
   violet: "#C57AA2",
   violetDark: "#7C0C64",
+  purple: "#470054",
   yellow: "#FFAD43",
   yellowDark: "#CC801F",
   white: "#fff",
@@ -41,6 +42,7 @@ const colors = {
   highlight: color.tealBright, //Background color for highlighting text
   muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
   navMenuBackground: color.blackAlpha2,
+  mobileNavMenuBackground: color.purple,
   navMenuItem: color.white,
   mastHeadLogo: color.white,
   navMenuItemHover: color.violetDark,

@@ -3,20 +3,14 @@ import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 
 const Hamburger = styled.div`
-  width: 28px;
-  height: 2px;
-  transition: all 0.3s linear;
   align-self: center;
   position: relative;
   transform: ${(props) => (props.open ? "rotate(-45deg)" : "inherit")};
 
   ::before,
   ::after {
-    width: 28px;
-    height: 2px;
     content: "";
     position: absolute;
-    transition: all 0.3s linear;
   }
 
   ::before {

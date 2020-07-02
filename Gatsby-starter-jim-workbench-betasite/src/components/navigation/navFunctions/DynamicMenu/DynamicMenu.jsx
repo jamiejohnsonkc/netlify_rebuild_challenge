@@ -8,6 +8,8 @@ import NavLink from "../../navElements/NavLink"
 import NavSubLink from "../../NavElements/NavSubLink"
 import PropTypes from "prop-types"
 
+//* THIS COMPONENT IS A REMNANT OF THE INITIAL MENU DEVELOPMENT. KEPT HERE AS STARTING POINT FOR FUTURE REFACTORING OF A RESUABLE, DYNAMICALLY GENERATED MENU.
+
 const DynamicMenu = (props) => {
   return (
     <StaticQuery

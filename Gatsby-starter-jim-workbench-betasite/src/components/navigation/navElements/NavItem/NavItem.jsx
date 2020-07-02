@@ -16,8 +16,8 @@ const NavItem = ({ bg, color, padding, ...props }) => (
       },
       "&:hover > ul, :focus-within > ul ": {
         visibility: "visible",
-        opacity: "1",
-        display: "block",
+        opacity: ["0", "0", "1", "1"],
+        display: ["none", "none", "block", "block"],
       },
       variant: "nav.navItem",
     }}

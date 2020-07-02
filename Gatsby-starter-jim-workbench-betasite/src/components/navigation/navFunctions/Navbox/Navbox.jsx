@@ -5,6 +5,8 @@ import PropTypes from "prop-types"
 import styled from "@emotion/styled"
 import SaasMenu from "../../../presentation/SaasMenu/SaasMenu"
 
+//* Navbox is the wrapper for the navMenu and provides animation styles for the mobile menu/drawer
+
 const StyledDiv = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;

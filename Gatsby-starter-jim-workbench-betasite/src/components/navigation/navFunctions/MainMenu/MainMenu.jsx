@@ -8,13 +8,13 @@ import NavLink from "../../navigation/navElements/NavLink"
 import NavSubLink from "../../navigation/navElements/NavSubLink"
 import PropTypes from "prop-types"
 
+//! THIS COMPONENT IS TO BE REFACTORED FOR REUSE AND IS NOT AN ACTIVE ELEMENT IN THIS PROJECT.  iT PROVIDES BASIC MENU, ITEM, LINK, SUBMENU, ETC. FUNCTIONALITY
+
 //TODO fix logo box: what is forcing the extra space to the right?
 //TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
 //TODO delete the "NavBarLogo" component
 //TODO content breaking parent when downsizing
 //TODO remove iconContext provider hooks inside gatsby: unnecessary
-
-//!Main menu will be the presentation component
 
 const MainMenu = (props) => {
   return (

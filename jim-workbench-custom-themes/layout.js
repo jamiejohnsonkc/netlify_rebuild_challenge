@@ -68,11 +68,13 @@ export default {
   },
 
   introTop: {
-    height: `calc(100vh - 18.75rem)`,
+    height: `calc(100vh - 4em)`,
     maxHeight: "40.625em",
     minHeight: "26.875em",
     alignItems: "start",
-    paddingTop: 6,
+    paddingTop: ["0", "0", "6", "6"],
+    marginTop: ["20%", "20%", "0", "0"],
+    marginBottom: ["auto", "auto", "none", "none"],
   },
 
   section: {

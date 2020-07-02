@@ -38,14 +38,17 @@ const TabPanelContent = ({
 }) => (
   <Grid
     {...props}
-    columns={(5, "1fr 2fr 1fr 1fr")}
+    // columns={(5, "1fr 2fr 1fr 1fr")}
     sx={{
       height,
       width,
       bg,
       color,
-      padding,
       margin,
+      gridTemplateColumns: [(1, "1fr"), (5, "1fr 2fr 1fr 1fr")],
+      gap: [4, 4, 4, 4],
+      paddingBottom: [0, 4, 4, 4],
+      justifyContent: ["center"],
     }}
   />
 )
@@ -60,7 +63,7 @@ const TabButton = ({ width, padding, grid, ...props }) => (
       padding: 0,
       justifyContent: "center",
       alignContent: "center",
-      mb: 4,
+      mb: [2, 4, 4, 4],
     }}
   />
 )
@@ -88,6 +91,7 @@ const MyTabList = (props) => (
       {...props}
       sx={{
         paddingLeft: 0,
+        marginBottom: [4, 0, 0, 0],
       }}
     >
       <Grid
@@ -107,7 +111,7 @@ const MyTabList = (props) => (
   </>
 )
 
-const MyTab = ({ children, disabled, selected, ...props }) => (
+const MyTab = ({ iconName, disabled, selected, ...props }) => (
   <>
     <Tab
       className="MyTab"
@@ -131,7 +135,7 @@ const MyTab = ({ children, disabled, selected, ...props }) => (
         },
       }}
     >
-      {children}
+      <TabButton>{props.children}</TabButton>
     </Tab>
   </>
 )
@@ -189,59 +193,44 @@ const ProofTabs = (props) => (
         // }}
         >
           <MyTab>
-            <TabButton>
-              {" "}
-              <Logo1
-                {...props}
-                sx={{
-                  maxWidth: "6em",
-                }}
-              />
-            </TabButton>
+            <Logo1
+              {...props}
+              sx={{
+                maxWidth: "6em",
+              }}
+            />
           </MyTab>
           <MyTab>
-            <TabButton>
-              {" "}
-              <Logo1
-                {...props}
-                sx={{
-                  maxWidth: "6em",
-                }}
-              />
-            </TabButton>
+            <Logo2
+              {...props}
+              sx={{
+                maxWidth: "6em",
+              }}
+            />
           </MyTab>
           <MyTab>
-            <TabButton>
-              {" "}
-              <Logo1
-                {...props}
-                sx={{
-                  maxWidth: "6em",
-                }}
-              />
-            </TabButton>
+            <Logo3
+              {...props}
+              sx={{
+                maxWidth: "6em",
+              }}
+            />
           </MyTab>
           <MyTab>
-            <TabButton>
-              {" "}
-              <Logo1
-                {...props}
-                sx={{
-                  maxWidth: "6em",
-                }}
-              />
-            </TabButton>
+            <Logo4
+              {...props}
+              sx={{
+                maxWidth: "4em",
+              }}
+            />
           </MyTab>
           <MyTab>
-            <TabButton>
-              {" "}
-              <Logo1
-                {...props}
-                sx={{
-                  maxWidth: "6em",
-                }}
-              />
-            </TabButton>
+            <Logo5
+              {...props}
+              sx={{
+                maxWidth: "5.75em",
+              }}
+            />
           </MyTab>
           {/* <Tab>
             <Box {...props} sx={{}}>
@@ -306,12 +295,7 @@ const ProofTabs = (props) => (
         </MyTabList>
 
         <TabPanel>
-          <TabPanelContent
-            {...props}
-            sx={{
-              paddingBottom: 4,
-            }}
-          >
+          <TabPanelContent {...props}>
             <Box
               {...props}
               sx={{

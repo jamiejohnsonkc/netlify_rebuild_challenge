@@ -26,7 +26,7 @@ export default {
     // height: "10vh",
     // display: "flex",
     width: "100%",
-    height: ["10vh", "10vh", "unset", "unset"],
+    height: ["4em", "4em", "unset", "unset"],
   },
 
   mastHeadLogo: {
@@ -48,14 +48,23 @@ export default {
     width: "100%",
     // flex: 1,
     display: "inline-flex",
-    paddingTop: [2, 0],
+    paddingTop: [4, 0],
+
     // py: 2,
     "@media (max-width: 768px)": {
       width: "100%",
+      height: "100%",
       justifyContent: "flex-start",
-      backgroundColor: "navMenuBackground",
+      backgroundColor: ["navMenuBackground"],
+      backgroundColor: [
+        "mobileNavMenuBackground",
+        "mobileNavMenuBackground",
+        "navMenuBackground",
+        "navMenuBackground",
+      ],
       transition: "all 0.3s ease-in",
-      top: "10vh",
+      top: "2em",
+      position: "fixed",
       // overflow: ["scroll", "hidden"],
       // zIndex: 3,
     },
@@ -96,6 +105,7 @@ export default {
     // backgroundColor: "nav.navBar",
     borderRadius: 6,
     transition: "all 0.3s ease",
+    display: "none",
 
     // marginTop: 1,
   },
@@ -113,7 +123,12 @@ export default {
     flex: `0 1 fit-content`,
     "@media (max-width: 768px)": {
       width: "100%",
-      backgroundColor: "navMenuBackground",
+      backgroundColor: [
+        "mobileNavMenuBackground",
+        "mobileNavMenuBackground",
+        "navMenuBackground",
+        "navMenuBackground",
+      ],
       transition: "all 0.3s ease-in",
       display: "block",
       position: "relative",
@@ -179,6 +194,9 @@ export default {
     padding: 2,
     "@media (max-width: 768px)": {
       display: "inline-flex",
+      position: "fixed",
+      zIndex: 3,
+      right: 0,
     },
   },
 
