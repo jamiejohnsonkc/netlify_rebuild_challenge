@@ -38,8 +38,6 @@ export default {
     },
   },
 
-  //!where was this used before (or was it?) +> believe this is scrap.  saving jic
-
   //*  Responsive Menu/Drawer
   navBox: {
     justifyContent: "space-between",
@@ -55,7 +53,6 @@ export default {
       width: "100%",
       height: "100%",
       justifyContent: "flex-start",
-      backgroundColor: ["navMenuBackground"],
       backgroundColor: [
         "mobileNavMenuBackground",
         "mobileNavMenuBackground",
@@ -63,21 +60,11 @@ export default {
         "navMenuBackground",
       ],
       transition: "all 0.3s ease-in",
-      top: "2em",
+      top: "0",
       position: "fixed",
       // overflow: ["scroll", "hidden"],
       // zIndex: 3,
     },
-  },
-
-  navMenu: {
-    // justifyContent: "space-between",
-    // alignItems: "center",
-    // height: "100%",
-    // flex: 1,
-    // display: "flex",
-    // display: "block",
-    // py: 2,
   },
 
   //* Lists //
@@ -194,7 +181,7 @@ export default {
     padding: 2,
     "@media (max-width: 768px)": {
       display: "inline-flex",
-      position: "fixed",
+      // position: "fixed",
       zIndex: 3,
       right: 0,
     },

@@ -46,6 +46,7 @@ const colors = {
   navMenuItem: color.white,
   mastHeadLogo: color.white,
   navMenuItemHover: color.violetDark,
+  announcementBarBackground: color.tealDark,
 
   modes: {
     inverse: {

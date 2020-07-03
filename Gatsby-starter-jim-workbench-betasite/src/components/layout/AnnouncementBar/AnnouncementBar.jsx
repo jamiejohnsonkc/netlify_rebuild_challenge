@@ -7,12 +7,15 @@ import RadialButton from "../../inputs/RadialButton"
 import { darken, lighten } from "@theme-ui/color"
 import Circle from "../../base/Circle"
 
+//$  this is the first iteration of an unlinked module. need to refactor and reconfig for resuablity
+
 const AnnouncementBar = (props) => (
   <div
     {...props}
     className="AccouncementBar"
     sx={{
-      bg: lighten("primary", 0.5),
+      bg: lighten("primary", 0.005),
+
       width: "100%",
       textAlign: "center",
       position: "relative",
@@ -30,7 +33,7 @@ const AnnouncementBar = (props) => (
       sx={{
         alignItems: "center",
         position: "relative",
-        color: "text",
+        // color: "text",
         fontWeight: "bold",
         display: "flex",
         marginLeft: "auto",
@@ -44,10 +47,6 @@ const AnnouncementBar = (props) => (
           cursor: "pointer",
           fontSize: 0,
           flexWrap: ["wrap", "none", "none", "none"],
-          color: darken("primary", 0.25),
-          "&:hover": {
-            color: "background",
-          },
         }}
       >
         <Text
@@ -55,6 +54,10 @@ const AnnouncementBar = (props) => (
           sx={{
             display: "flex",
             paddingRight: [2, 2, 0, 0],
+            color: lighten("primary", 50),
+            "&:hover": {
+              color: lighten("primary", 80),
+            },
           }}
         >
           Join us for a product demo - June 30.
@@ -62,46 +65,33 @@ const AnnouncementBar = (props) => (
         <u
           sx={{
             paddingLeft: [0, 2, 2, 2],
+            color: lighten("primary", 99),
           }}
         >
           Register Now!
         </u>
       </Link>
     </div>
-    <Circle
+    <Close
       {...props}
       sx={{
-        bg: "primary",
-        maxHeight: "1.25em",
-        maxWidth: "1.25em",
+        bg: darken("primary", 0.075),
+        maxHeight: "1.618em",
+        maxWidth: "1.618em",
         display: "flex",
         color: "white",
         justifyContent: "center",
         alignItems: "center",
         stroke: "white",
-        strokeWidth: "3px",
+        strokeWidth: "1px",
         alignSelf: "inherit",
         marginLeft: "-10px",
         marginRight: "10px",
+        borderRadius: "50%",
+        p: 1,
+        // display: "inlineBlock",
       }}
-    >
-      <Close
-        {...props}
-        sx={
-          {
-            // bg: "primary",
-          }
-        }
-      />
-    </Circle>
-    {/* <RadialButton
-      {...props}
-      sx={{
-        alignSelf: "inherit",
-        display: "flex",
-        marginLeft: "auto",
-      }}
-    /> */}
+    />
   </div>
 )
 

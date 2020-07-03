@@ -2,21 +2,11 @@
 import { jsx, Flex } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "@emotion/styled"
-import SaasMenu from "../../../presentation/SaasMenu/SaasMenu"
 
-//* Navbox is the wrapper for the navMenu and provides animation styles for the mobile menu/drawer
-
-const StyledDiv = styled.div`
-  @media (max-width: 768px) {
-    flex-direction: column;
-    position: fixed;
-    left: ${(props) => (props.open ? "-100%" : "0")};
-  }
-`
+//* Navbox is the container housing the desktop and mobile nav components
 
 const Navbox = (props) => (
-  <StyledDiv
+  <div
     {...props}
     sx={{
       variant: "nav.navBox",
@@ -24,8 +14,8 @@ const Navbox = (props) => (
     className="navBox"
   >
     {/* {props.children} */}
-    <SaasMenu />
-  </StyledDiv>
+    {props.children}
+  </div>
 )
 
 Navbox.propTypes = {}

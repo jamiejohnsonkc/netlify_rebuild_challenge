@@ -5,13 +5,11 @@ import PropTypes from "prop-types"
 import Header from "../Header"
 import Footer from "../Footer"
 // import AnnouncementBar from "../AnnouncementBar"
-import SaasMasthead from "../../presentation/SaasMasthead"
+// import SaasMasthead from "../../presentation/SaasMasthead"
 
 const Layout = (props) => (
   <Styled.root>
-    <Header>
-      <SaasMasthead />
-    </Header>
+    <Header />
     <main>{props.children}</main>
     <Footer />
   </Styled.root>

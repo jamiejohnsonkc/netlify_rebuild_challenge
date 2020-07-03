@@ -3,9 +3,9 @@ import { jsx } from "theme-ui"
 import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 // import Logo from "../../base/Logo"
-import Icon from "../../base/Icon"
-import NavLink from "../../navigation/navElements/NavLink"
-import NavSubLink from "../../navigation/navElements/NavSubLink"
+import Icon from "../../../base/Icon"
+import NavLink from "../../navElements/NavLink"
+import NavSubLink from "../../navElements/NavSubLink"
 import PropTypes from "prop-types"
 
 //! THIS COMPONENT IS TO BE REFACTORED FOR REUSE AND IS NOT AN ACTIVE ELEMENT IN THIS PROJECT.  iT PROVIDES BASIC MENU, ITEM, LINK, SUBMENU, ETC. FUNCTIONALITY
