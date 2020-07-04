@@ -143,32 +143,33 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
       sx={{
         border: "none",
         outline: "none",
-        "&.MyTabActive": {
-          backgroundColor: "transparent",
-          // backgroundColor: "pink",
-          border: "none",
-          outline: "none",
-        },
-        "&.MyTabFocused": {
-          backgroundColor: "transparent",
-          // backgroundColor: "pink",
-          border: "none",
-          outline: "none",
-        },
-        "&:focus": {
-          border: "none !important",
-          outline: "none !important",
-        },
-        "& > button": {
-          background: lighten("highlight", 0.52),
-          border: "none",
-        },
         "& > button > svg": {
           alignSelf: "center",
           flex: 1,
         },
-        "& > button > svg > .logoIpsum": {
-          fill: "highlight",
+        "&.MyTabActive": {
+          // backgroundColor: "blue",
+          // backgroundColor: "pink",
+          border: "none",
+          outline: "none",
+
+          // "&.MyTabFocused": {
+          //   backgroundColor: "transparent",
+          //   // backgroundColor: "pink",
+          //   border: "none",
+          //   outline: "none",
+          // },
+          // "&:focus": {
+          //   border: "none !important",
+          //   outline: "none !important",
+          // },
+          "& > button": {
+            background: lighten("highlight", 0.52),
+            border: "none",
+          },
+          "& > button > svg > .logoIpsum": {
+            fill: "highlight",
+          },
         },
       }}
     >

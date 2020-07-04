@@ -105,7 +105,7 @@ export default {
     },
     grayMark: {
       borderRadius: "5em",
-      color: "gray1",
+      // color: "gray1",
       appearance: "none",
       display: "flex",
       textAlign: "center",
@@ -118,14 +118,14 @@ export default {
       justifyContent: "center",
       padding: "0",
       border: "none",
-      "&:active": {
-        borderColor: "transparent",
-        outline: "none",
-        "&:focus": {
-          outline: "none",
-          borderColor: "transparent",
-        },
-      },
+      // "&:active": {
+      //   borderColor: "transparent",
+      //   outline: "none",
+      //   "&:focus": {
+      //     outline: "none",
+      //     borderColor: "transparent",
+      //   },
+      // },
     },
   },
   reversePill: {
