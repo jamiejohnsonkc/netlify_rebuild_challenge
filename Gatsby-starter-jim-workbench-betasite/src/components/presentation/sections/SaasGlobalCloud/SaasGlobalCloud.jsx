@@ -1,11 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Grid, Styled, Text } from "theme-ui"
-import React from "react"
-import PropTypes from "prop-types"
-import Pancake from "../../../layout/Pancake"
-import Section_Grid_1r_66Text_33Visual from "../../../templates/Section_Grid_1r_66Text_33Visual"
+import { Container, jsx } from "theme-ui"
 import Cloud from "../../../../svg/assets/cloud.svg"
 import SplitTextLine from "../../../base/SplitTextLine/SplitTextLine"
+import Pancake from "../../../layout/Pancake"
+import Section_Grid_1r_66Text_33Visual from "../../../templates/Section_Grid_1r_66Text_33Visual"
 
 // const SplitText = ({ textline1, textline2, ...props }) => (
 //   <>

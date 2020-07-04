@@ -80,7 +80,7 @@ export default {
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: ["column", "column", "row"],
-    // width: ["100%"],
+    width: "100%",
   },
 
   subMenu: {

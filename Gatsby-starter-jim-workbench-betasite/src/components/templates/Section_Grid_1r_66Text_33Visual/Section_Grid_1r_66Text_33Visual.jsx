@@ -5,8 +5,14 @@ import PropTypes from "prop-types"
 import Pancake from "../../layout/Pancake"
 
 const Section_Grid_1r_66Text_33Visual = (props) => (
-  <Grid columns={[2, "2fr 1fr"]}>
-    <Box display="grid">
+  <Grid columns={[1, "2fr 1fr"]}>
+    <Box
+      display="grid"
+      {...props}
+      sx={{
+        order: [2, 2, 1, 1],
+      }}
+    >
       <Styled.h1>{props.headerText}</Styled.h1>
       <Text
         sx={{
@@ -23,7 +29,15 @@ const Section_Grid_1r_66Text_33Visual = (props) => (
         {props.displayText}
       </Text>
     </Box>
-    <Box display="grid">{props.visual}</Box>
+    <Box
+      display="grid"
+      {...props}
+      sx={{
+        order: [1, 1, 2, 2],
+      }}
+    >
+      {props.visual}
+    </Box>
   </Grid>
 )
 

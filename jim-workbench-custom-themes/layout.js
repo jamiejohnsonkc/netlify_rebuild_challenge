@@ -28,7 +28,7 @@ export default {
 
   containerNarrow: {
     variant: "layout.container",
-    maxWidth: ["100%", "100%", "60em", "60em"],
+    maxWidth: ["63%", "100%", "60em", "60em"],
   },
 
   mastHead: {

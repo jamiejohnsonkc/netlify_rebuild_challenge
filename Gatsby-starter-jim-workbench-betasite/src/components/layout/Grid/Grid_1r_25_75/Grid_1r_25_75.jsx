@@ -5,9 +5,14 @@ import PropTypes from "prop-types"
 import Pancake from "../../Pancake"
 
 const Grid_1r_25_75 = (props) => (
-  <Grid py={4} my={4} columns={[2, "1fr 3fr"]}>
+  <Grid
+    py={4}
+    my={4}
+    columns={[1, 1, "1fr 3fr", "1fr 3fr"]}
+    margin={[`0 auto`, 0]}
+  >
     <Box display="grid">{props.visual}</Box>
-    <Box display="grid" paddingRight={4}>
+    <Box display="grid" paddingRight={(0, 0, 4, 4)}>
       <Styled.h2>{props.header}</Styled.h2>
       <Text
         {...props}

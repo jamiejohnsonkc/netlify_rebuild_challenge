@@ -3,7 +3,7 @@ import { jsx, Box, Container, Grid, Styled, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../layout/Pancake"
-import Grid_1r_25_75 from "../../layout/Grid/Grid_1r_25_75/Grid_1r_25_75"
+import Grid_1r_25_75 from "../../layout/Grid/Grid_1r_25_75"
 import Grid_1r_75_25 from "../../layout/Grid/Grid_1r_75_25"
 
 const Section_Alternating_1r_25_Visual_75_Text = (props) => (

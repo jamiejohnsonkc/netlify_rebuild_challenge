@@ -53,7 +53,7 @@ const TabPanelContent = ({
       color,
       margin,
       gridTemplateColumns: [(1, "1fr"), (2, "1fr 1fr"), (5, "1fr 2fr 1fr 1fr")],
-      gap: [2, 2, 2, 2],
+      gap: [4, 4, 2, 2],
       paddingBottom: [0, 4, 4, 4],
       justifyContent: ["center"],
     }}
