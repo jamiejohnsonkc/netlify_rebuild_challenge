@@ -1,6 +1,13 @@
 import { text } from "./index"
 
 export default {
+  outline: "none",
+  borderColor: "transparent",
+  "& :focus": {
+    outline: "none",
+    border: "transparent",
+  },
+
   fontStyle: {
     fontFamily: "heading",
     fontWeight: "600",
@@ -11,12 +18,17 @@ export default {
   primary: {
     color: "background",
     bg: "primary",
-    borderColor: "primary",
+    borderColor: "transparent",
+    outline: "none",
     variant: "buttons.fontStyle",
     "&:hover": {
       color: "background",
       bg: "accent",
       borderColor: "accent",
+    },
+    "&:focus": {
+      outline: "none",
+      borderColor: "transparent",
     },
   },
   secondary: {
@@ -106,8 +118,13 @@ export default {
       justifyContent: "center",
       padding: "0",
       border: "none",
-      ".logoipsum": {
-        fill: "yellow",
+      "&:active": {
+        borderColor: "transparent",
+        outline: "none",
+        "&:focus": {
+          outline: "none",
+          borderColor: "transparent",
+        },
       },
     },
   },

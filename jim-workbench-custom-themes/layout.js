@@ -69,7 +69,7 @@ export default {
 
   introTop: {
     height: `calc(100vh - 4em)`,
-    maxHeight: "40.625em",
+    maxHeight: "30.625em",
     minHeight: "26.875em",
     alignItems: "start",
     paddingTop: ["0", "0", "6", "6"],

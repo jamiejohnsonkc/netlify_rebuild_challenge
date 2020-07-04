@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-import "react-tabs/style/react-tabs.css"
+// import "react-tabs/style/react-tabs.css"
 
 //!
 //! This component is not configured for reuse.

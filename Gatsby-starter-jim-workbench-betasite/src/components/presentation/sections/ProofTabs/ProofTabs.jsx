@@ -26,8 +26,12 @@ import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { lighten } from "@theme-ui/color"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import Img from "gatsby-image"
-import ImageQuery from "./ImageQuery"
+import ProofTabsCafe from "../../../hooks/ProofTabsCafe"
+import ProofTabsCombine from "../../../hooks/ProofTabsCombine"
+import ProofTabsPlanning from "../../../hooks/ProofTabsPlanning/ProofTabsPlanning"
+import ProofTabsSparks from "../../../hooks/ProofTabsSparks"
+import ProofTabsWoodworking from "../../../hooks/ProofTabsWoodworking"
+import { Img } from "gatsby-image"
 
 const TabPanelContent = ({
   height,
@@ -49,9 +53,20 @@ const TabPanelContent = ({
       color,
       margin,
       gridTemplateColumns: [(1, "1fr"), (2, "1fr 1fr"), (5, "1fr 2fr 1fr 1fr")],
-      gap: [4, 4, 4, 4],
+      gap: [2, 2, 2, 2],
       paddingBottom: [0, 4, 4, 4],
       justifyContent: ["center"],
+    }}
+  />
+)
+
+const ImageWrapper = (props) => (
+  <Box
+    {...props}
+    sx={{
+      "> .gatsby-image-wrapper": {
+        borderRadius: 6,
+      },
     }}
   />
 )
@@ -67,6 +82,8 @@ const TabButton = ({ width, padding, grid, ...props }) => (
       justifyContent: "center",
       alignContent: "center",
       mb: [2, 4, 4, 4],
+      border: "none",
+      outline: "none",
     }}
   />
 )
@@ -124,17 +141,34 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
       selectedClassName="MyTabActive"
       {...props}
       sx={{
+        border: "none",
+        outline: "none",
         "&.MyTabActive": {
           backgroundColor: "transparent",
           // backgroundColor: "pink",
           border: "none",
-
-          "& > button": {
-            background: lighten("highlight", 0.52),
-          },
-          "& > button > svg > .logoIpsum": {
-            fill: "highlight",
-          },
+          outline: "none",
+        },
+        "&.MyTabFocused": {
+          backgroundColor: "transparent",
+          // backgroundColor: "pink",
+          border: "none",
+          outline: "none",
+        },
+        "&:focus": {
+          border: "none !important",
+          outline: "none !important",
+        },
+        "& > button": {
+          background: lighten("highlight", 0.52),
+          border: "none",
+        },
+        "& > button > svg": {
+          alignSelf: "center",
+          flex: 1,
+        },
+        "& > button > svg > .logoIpsum": {
+          fill: "highlight",
         },
       }}
     >
@@ -162,39 +196,7 @@ const ProofTabs = ({ data, props }) => (
       }}
     >
       <Tabs {...props} sx={{}}>
-        {/* <TabList
-          {...props}
-          sx={{
-            paddingLeft: 0,
-            paddingRight: 0,
-            display: "grid",
-            gridTemplateColumns: [
-              "1fr",
-              "1fr 1fr 1fr 1fr 1fr",
-              "1fr 1fr 1fr 1fr 1fr",
-              "1fr 1fr 1fr 1fr 1fr",
-              "1fr 1fr 1fr 1fr 1fr",
-            ],
-            gap: 2,
-            borderBottom: 0,
-            width: "100%",
-            listStyle: "none",
-          }}
-        > */}
-        {/* <TabList> */}
-        <MyTabList
-        // {...props}
-        // sx={{
-        //   paddingLeft: 0,
-        //   paddingRight: 0,
-        //   display: "grid",
-        //   columns: "1fr 1fr 1fr 1fr 1fr",
-        //   gap: 2,
-        //   borderBottom: 0,
-        //   width: "100%",
-        //   listStyle: "none",
-        // }}
-        >
+        <MyTabList>
           <MyTab>
             <Logo1
               {...props}
@@ -223,11 +225,14 @@ const ProofTabs = ({ data, props }) => (
             <Logo4
               {...props}
               sx={{
-                maxWidth: "4em",
+                // maxWidth: "4em",
+                // height: "2em",
+                width: "auto",
+                maxHeight: "1.75em",
               }}
             />
           </MyTab>
-          <MyTab>
+          <MyTab {...props}>
             <Logo5
               {...props}
               sx={{
@@ -235,66 +240,6 @@ const ProofTabs = ({ data, props }) => (
               }}
             />
           </MyTab>
-          {/* <Tab>
-            <Box {...props} sx={{}}>
-              <TabButton>
-                <Logo1
-                  {...props}
-                  sx={{
-                    maxWidth: "6em",
-                  }}
-                />
-              </TabButton>
-            </Box>
-          </Tab>
-          <Tab>
-            <Box {...props} sx={{}}>
-              <TabButton>
-                <Logo2
-                  {...props}
-                  sx={{
-                    maxWidth: "6em",
-                  }}
-                />
-              </TabButton>
-            </Box>
-          </Tab>
-          <Tab>
-            <Box {...props} sx={{}}>
-              <TabButton>
-                <Logo3
-                  {...props}
-                  sx={{
-                    maxWidth: "6em",
-                  }}
-                />
-              </TabButton>
-            </Box>
-          </Tab>
-          <Tab>
-            <Box {...props} sx={{}}>
-              <TabButton>
-                <Logo4
-                  {...props}
-                  sx={{
-                    maxWidth: "4em",
-                  }}
-                />
-              </TabButton>
-            </Box>
-          </Tab>
-          <Tab>
-            <Box {...props} sx={{}}>
-              <TabButton>
-                <Logo5
-                  {...props}
-                  sx={{
-                    maxWidth: "5.75em",
-                  }}
-                />
-              </TabButton>
-            </Box>
-          </Tab> */}
         </MyTabList>
 
         <TabPanel>
@@ -302,21 +247,13 @@ const ProofTabs = ({ data, props }) => (
             <Box
               {...props}
               sx={{
-                justifyContent: "center",
                 alignContent: "start",
                 display: "grid",
               }}
             >
-              <Box
-                {...props}
-                sx={{
-                  height: "8em",
-                  width: "100%",
-                  bg: "lightgray",
-                  borderRadius: 6,
-                  overflow: "visibile",
-                }}
-              ></Box>
+              <ImageWrapper>
+                <ProofTabsCafe />
+              </ImageWrapper>
             </Box>
             <Box
               {...props}
@@ -324,12 +261,11 @@ const ProofTabs = ({ data, props }) => (
                 display: "grid",
               }}
             >
-              <Box>
+              <Box px={2}>
                 <Styled.h3
                   {...props}
                   sx={{
                     marginBottom: 2,
-                    maxWidth: "83%",
                   }}
                 >
                   Sit occaecat fugiat lorem tempor consectetur dolor amet
@@ -431,21 +367,13 @@ const ProofTabs = ({ data, props }) => (
             <Box
               {...props}
               sx={{
-                justifyContent: "center",
                 alignContent: "start",
                 display: "grid",
               }}
             >
-              <Box
-                {...props}
-                sx={{
-                  height: "8em",
-                  width: "12em",
-                  bg: "lightgray",
-                  borderRadius: 6,
-                  overflow: "visibile",
-                }}
-              ></Box>
+              <ImageWrapper>
+                <ProofTabsSparks />
+              </ImageWrapper>
             </Box>
             <Box
               {...props}
@@ -453,12 +381,11 @@ const ProofTabs = ({ data, props }) => (
                 display: "grid",
               }}
             >
-              <Box>
+              <Box px={2}>
                 <Styled.h3
                   {...props}
                   sx={{
                     marginBottom: 2,
-                    maxWidth: "83%",
                   }}
                 >
                   Sit occaecat fugiat lorem tempor consectetur dolor amet
@@ -560,21 +487,13 @@ const ProofTabs = ({ data, props }) => (
             <Box
               {...props}
               sx={{
-                justifyContent: "center",
                 alignContent: "start",
                 display: "grid",
               }}
             >
-              <Box
-                {...props}
-                sx={{
-                  height: "8em",
-                  width: "12em",
-                  bg: "lightgray",
-                  borderRadius: 6,
-                  overflow: "visibile",
-                }}
-              ></Box>
+              <ImageWrapper>
+                <ProofTabsWoodworking />
+              </ImageWrapper>
             </Box>
             <Box
               {...props}
@@ -582,12 +501,11 @@ const ProofTabs = ({ data, props }) => (
                 display: "grid",
               }}
             >
-              <Box>
+              <Box px={2}>
                 <Styled.h3
                   {...props}
                   sx={{
                     marginBottom: 2,
-                    maxWidth: "83%",
                   }}
                 >
                   Sit occaecat fugiat lorem tempor consectetur dolor amet
@@ -689,21 +607,13 @@ const ProofTabs = ({ data, props }) => (
             <Box
               {...props}
               sx={{
-                justifyContent: "center",
                 alignContent: "start",
                 display: "grid",
               }}
             >
-              <Box
-                {...props}
-                sx={{
-                  height: "8em",
-                  width: "12em",
-                  bg: "lightgray",
-                  borderRadius: 6,
-                  overflow: "visibile",
-                }}
-              ></Box>
+              <ImageWrapper>
+                <ProofTabsCombine />
+              </ImageWrapper>
             </Box>
             <Box
               {...props}
@@ -711,12 +621,11 @@ const ProofTabs = ({ data, props }) => (
                 display: "grid",
               }}
             >
-              <Box>
+              <Box px={2}>
                 <Styled.h3
                   {...props}
                   sx={{
                     marginBottom: 2,
-                    maxWidth: "83%",
                   }}
                 >
                   Sit occaecat fugiat lorem tempor consectetur dolor amet
@@ -818,21 +727,13 @@ const ProofTabs = ({ data, props }) => (
             <Box
               {...props}
               sx={{
-                justifyContent: "center",
                 alignContent: "start",
                 display: "grid",
               }}
             >
-              <Box
-                {...props}
-                sx={{
-                  height: "8em",
-                  width: "12em",
-                  bg: "lightgray",
-                  borderRadius: 6,
-                  overflow: "visibile",
-                }}
-              ></Box>
+              <ImageWrapper>
+                <ProofTabsPlanning />
+              </ImageWrapper>
             </Box>
             <Box
               {...props}
@@ -840,12 +741,11 @@ const ProofTabs = ({ data, props }) => (
                 display: "grid",
               }}
             >
-              <Box>
+              <Box px={2}>
                 <Styled.h3
                   {...props}
                   sx={{
                     marginBottom: 2,
-                    maxWidth: "83%",
                   }}
                 >
                   Sit occaecat fugiat lorem tempor consectetur dolor amet
