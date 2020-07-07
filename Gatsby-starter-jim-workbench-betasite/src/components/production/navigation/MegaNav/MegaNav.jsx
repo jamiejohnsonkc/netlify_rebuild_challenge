@@ -32,6 +32,9 @@ import MegaNavLink from "../../../navigation/MegaNavLink"
 //   />
 // )
 
+//TODO set hover color on left side of meganav
+//TODO fix responsive sizing
+
 const MegaNav = (props) => (
   <Box
     className="MegaNav"
@@ -54,13 +57,12 @@ const MegaNav = (props) => (
       >
         <Styled.h4
           sx={{
-            variant: "text.caps",
-            color: "highlight",
+            variant: "nav.MegaNavHeader",
           }}
         >
           The Netlify Platform
         </Styled.h4>
-        <Text mb={4} color="#333">
+        <Text mb={4} variant="nav.megaNavText">
           <b>Instantly build and deploy</b> your sites to our global network
           from Git. Custom domains, https, deploy previews, rollbacks and much
           more.
@@ -87,8 +89,7 @@ const MegaNav = (props) => (
             >
               <Styled.h4
                 sx={{
-                  variant: "text.caps",
-                  color: "highlight",
+                  variant: "nav.MegaNavHeader",
                 }}
               >
                 Features
@@ -105,8 +106,7 @@ const MegaNav = (props) => (
             <Box p={4}>
               <Styled.h4
                 sx={{
-                  variant: "text.caps",
-                  color: "highlight",
+                  variant: "nav.MegaNavHeader",
                 }}
               >
                 Technologies

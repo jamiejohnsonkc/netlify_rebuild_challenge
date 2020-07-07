@@ -2,7 +2,7 @@
 import React from "react"
 
 //!
-//! This component is not configured for reuse. See prooftabs in presentation components of the saas spec project
+//! This component is not configured for reuse. See prooftabs in production components of the saas spec project
 //!
 
 import {

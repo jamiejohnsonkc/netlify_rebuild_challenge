@@ -7,7 +7,7 @@ import HeroIntroCentered from "../../sections/HeroIntroCentered"
 import SEO from "../../../../pages/seo"
 import ContactPageContent from "../../sections/ContactPageContent"
 
-const ContactPage_Presentation = (props) => (
+const SaasContactPage = (props) => (
   <SaasLayout>
     <SEO title="Contact" />
     <HeroIntroCentered />
@@ -15,8 +15,8 @@ const ContactPage_Presentation = (props) => (
   </SaasLayout>
 )
 
-ContactPage_Presentation.propTypes = {}
+SaasContactPage.propTypes = {}
 
-ContactPage_Presentation.defaultProps = {}
+SaasContactPage.defaultProps = {}
 
-export default ContactPage_Presentation
+export default SaasContactPage

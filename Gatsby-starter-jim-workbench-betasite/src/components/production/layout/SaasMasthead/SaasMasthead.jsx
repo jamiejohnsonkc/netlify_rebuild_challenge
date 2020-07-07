@@ -5,11 +5,9 @@ import PropTypes from "prop-types"
 import Masthead from "../../../layout/Masthead"
 import SaasNavbar from "../../navigation/SaasNavbar"
 import Nav from "../../../navigation/navFunctions/Nav"
-import SaasAnnouncementBar from "../header/SaasAnnouncementBar"
 
 const SaasMasthead = (props) => (
   <>
-    <SaasAnnouncementBar />
     <Masthead>
       <Container className="Container">
         <Nav>

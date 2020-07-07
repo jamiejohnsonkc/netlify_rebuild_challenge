@@ -51,12 +51,7 @@ const SaasMenu = (props) => (
           Enterprise
           <NavLinkIcon iconName="ChevronDown" />
         </NavLink>
-        <SubMenu
-          {...props}
-          sx={{
-            variant: "nav.subMenu",
-          }}
-        >
+        <SubMenu>
           <Box
             {...props}
             sx={{
@@ -72,10 +67,18 @@ const SaasMenu = (props) => (
               Netlify Enterprise
             </Styled.h4>
             <SubSubMenu>
-              <SubMenuNavItem>High-Performance Products</SubMenuNavItem>
-              <SubMenuNavItem>Customers</SubMenuNavItem>
-              <SubMenuNavItem>Enterprise Whitepaper</SubMenuNavItem>
-              <SubMenuNavItem>Security at Netlify</SubMenuNavItem>
+              <SubMenuNavItem>
+                <NavSubLink to="/">High-Performance Products</NavSubLink>
+              </SubMenuNavItem>
+              <SubMenuNavItem>
+                <NavSubLink to="/">Customers</NavSubLink>
+              </SubMenuNavItem>
+              <SubMenuNavItem>
+                <NavSubLink to="/">Enterprise Whitepaper</NavSubLink>
+              </SubMenuNavItem>
+              <SubMenuNavItem>
+                <NavSubLink to="/">Security at Netlify</NavSubLink>
+              </SubMenuNavItem>
             </SubSubMenu>
           </Box>
         </SubMenu>

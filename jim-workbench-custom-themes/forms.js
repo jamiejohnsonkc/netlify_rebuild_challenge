@@ -16,7 +16,7 @@ export default {
     },
   },
   select: {
-    borderColor: "gray",
+    borderColor: color.gray5,
     "&:focus": {
       borderColor: "primary",
       boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
@@ -24,7 +24,7 @@ export default {
     },
   },
   textarea: {
-    borderColor: "gray",
+    borderColor: color.gray5,
     "&:focus": {
       borderColor: "primary",
       boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,

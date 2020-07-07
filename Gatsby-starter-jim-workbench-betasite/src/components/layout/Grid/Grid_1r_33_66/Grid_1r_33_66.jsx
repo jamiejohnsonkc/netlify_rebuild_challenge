@@ -16,4 +16,4 @@ Grid_1r_33_66.defaultProps = {}
 
 export default Grid_1r_33_66
 
-//TODO go back and understand how to apply props at the primitive level to enable customization at the presentation stage
+//TODO go back and understand how to apply props at the primitive level to enable customization at the production stage

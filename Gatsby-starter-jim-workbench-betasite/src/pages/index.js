@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import React from "react"
 // import Layout from "../components/layout/Layout"
-import SaasLayout from "../components/presentation/layout/SaasLayout"
+import SaasLayout from "../components/production/layout/SaasLayout"
 
 import { jsx } from "theme-ui"
 import SEO from "../pages/seo"
 import ColorModeToggle from "../components/inputs/ColorModeToggle"
 import ColorModeCycler from "../components/inputs/ColorModeCycler"
-import HeroIntro from "../components/presentation/sections/HeroIntro"
-import ProofTabs from "../components/presentation/sections/ProofTabs"
-import SaasBenefits from "../components/presentation/sections/SaasBenefits/SaasBenefits"
-import SaasGlobalCloud from "../components/presentation/sections/SaasGlobalCloud/SaasGlobalCloud"
-import SaasComparison from "../components/presentation/sections/SaasComparison"
+import HeroIntro from "../components/production/sections/HeroIntro"
+import ProofTabs from "../components/production/sections/ProofTabs"
+import SaasBenefits from "../components/production/sections/SaasBenefits/SaasBenefits"
+import SaasGlobalCloud from "../components/production/sections/SaasGlobalCloud/SaasGlobalCloud"
+import SaasComparison from "../components/production/sections/SaasComparison"
 
 const IndexPage = (props) => (
   <SaasLayout>

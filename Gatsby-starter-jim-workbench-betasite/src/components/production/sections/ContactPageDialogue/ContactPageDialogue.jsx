@@ -2,9 +2,6 @@
 import { jsx, Container, Styled, Text, Grid, Box } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Grid_1r_2c from "../../../layout/Grid/Grid_1r_2c"
-import Pancake from "../../../layout/Pancake/Pancake"
-
 import Logo1 from "../../../../svg/assets/logo-1.svg"
 import Logo2 from "../../../../svg/assets/logo-2.svg"
 import Logo3 from "../../../../svg/assets/logo-3.svg"
@@ -43,6 +40,7 @@ const ContactPageDialogue = (props) => (
       sx={{
         gap: 4,
         width: "90%",
+        gridTemplateRows: "1fr 1fr",
       }}
     >
       <Box
@@ -53,7 +51,7 @@ const ContactPageDialogue = (props) => (
           "& > svg": {
             maxHeight: "1.85em",
             "& > path": {
-              fill: color.teal,
+              fill: color.gray3,
             },
           },
         }}
@@ -67,7 +65,7 @@ const ContactPageDialogue = (props) => (
           "& > svg": {
             maxHeight: "1.85em",
             "& > path": {
-              fill: color.teal,
+              fill: color.gray3,
             },
           },
         }}
@@ -81,7 +79,7 @@ const ContactPageDialogue = (props) => (
           "& > svg": {
             maxHeight: "1.85em",
             "& > path": {
-              fill: color.teal,
+              fill: color.gray3,
             },
           },
         }}
@@ -96,13 +94,13 @@ const ContactPageDialogue = (props) => (
           "& > svg": {
             maxHeight: "1.9em",
             "& > path": {
-              fill: color.teal,
+              fill: color.gray3,
             },
             "& > circle": {
-              fill: color.teal,
+              fill: color.gray3,
             },
             "& > rect": {
-              fill: color.teal,
+              fill: color.gray3,
             },
           },
         }}
@@ -116,14 +114,14 @@ const ContactPageDialogue = (props) => (
           "& > svg": {
             maxHeight: "1.85em",
             "& > path": {
-              fill: color.teal,
+              fill: color.gray3,
             },
             "& > circle": {
-              fill: color.teal,
+              fill: color.gray3,
             },
           },
           "& > svg > .logoIpsum": {
-            fill: color.teal,
+            fill: color.gray3,
           },
         }}
       >
@@ -136,7 +134,7 @@ const ContactPageDialogue = (props) => (
           "& > svg": {
             maxHeight: "1.85em",
             "& > path": {
-              fill: color.teal,
+              fill: color.gray3,
             },
           },
         }}

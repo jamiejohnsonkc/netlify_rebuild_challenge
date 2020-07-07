@@ -225,8 +225,18 @@ export default {
     transition: "all 0.3s ease-in",
     boxShadow: "depth",
   },
+  megaNavHeader: {
+    color: {},
+    variant: "text.caps",
+  },
+  megaNavText: {
+    color: {},
+  },
 
   footerNav: { fontSize: 1 },
 }
 
 //TODO fix search icon in mobile
+//TODO assign meganav header and text colors
+//TODO review all nav color assignements
+//TODO config hot swapping of large and small menu formats

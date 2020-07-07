@@ -4,6 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "../../../layout/Header/Header"
 import SaasMasthead from "../SaasMasthead"
+import SaasAnnouncementBar from "../header/SaasAnnouncementBar"
 // import Footer from "../Footer"
 // import SaasHeader from "../SaasHeader/SaasHeader"
 
@@ -11,6 +12,7 @@ const SaasLayout = (props) => (
   <Styled.root>
     {/* <SaasHeader /> */}
     <Header>
+      <SaasAnnouncementBar />
       <SaasMasthead />
     </Header>
     <main>{props.children}</main>
