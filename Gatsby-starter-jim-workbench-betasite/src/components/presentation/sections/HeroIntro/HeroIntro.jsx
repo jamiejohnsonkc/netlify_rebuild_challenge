@@ -13,7 +13,7 @@ const HeroIntro = (props) => (
     {...props}
     cc
     sx={{
-      variant: "layout.introTop",
+      variant: "layout.introShort",
     }}
   >
     <BackgroundSvg {...props} sx={{ zIndex: "-1" }}>

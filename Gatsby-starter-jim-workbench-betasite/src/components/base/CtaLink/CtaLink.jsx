@@ -23,6 +23,10 @@ const CtaLink = ({ flex, width, height, color, ...props }) => (
         size={props.iconSize}
         color={props.iconColor}
         padding={props.iconMargin}
+        {...props}
+        sx={{
+          marginLeft: 1,
+        }}
       />
     </Link>
   </>

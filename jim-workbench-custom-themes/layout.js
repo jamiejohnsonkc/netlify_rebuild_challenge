@@ -20,10 +20,6 @@ export default {
     display: "block",
     position: "relative",
     margin: "0 auto",
-    // mx: "auto",
-    // content: {
-    //   width: ["75%", "98%", "63%"],
-    // },
   },
 
   containerNarrow: {
@@ -44,7 +40,6 @@ export default {
       "transparent",
       "transparent",
     ],
-    // backgroundColor: "gray",
   },
 
   footer: {
@@ -67,7 +62,7 @@ export default {
     minHeight: "26.875em",
   },
 
-  introTop: {
+  introShort: {
     height: `calc(100vh - 4em)`,
     maxHeight: "30.625em",
     minHeight: "26.875em",
@@ -77,7 +72,7 @@ export default {
     marginBottom: ["auto", "auto", "none", "none"],
   },
 
-  introTopCentered: {
+  introShortCentered: {
     height: `calc(100vh - 4em)`,
     maxHeight: "30.625em",
     minHeight: "26.875em",
@@ -89,9 +84,7 @@ export default {
 
   section: {
     paddingTop: 6,
-    paddingBottom: 6, // height: `calc(100vh - 18.75rem)`,
-    // maxHeight: "40.625em",
-    // minHeight: "26.875em",
+    paddingBottom: 6,
   },
   //tabs
 

@@ -13,7 +13,7 @@ const HeroIntroCentered = (props) => (
     {...props}
     cc
     sx={{
-      variant: "layout.introTopCentered",
+      variant: "layout.introShortCentered",
     }}
   >
     <Container>
