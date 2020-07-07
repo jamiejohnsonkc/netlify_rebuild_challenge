@@ -34,14 +34,17 @@ import MegaNavLink from "../../../navigation/MegaNavLink"
 
 const MegaNav = (props) => (
   <Box
+    className="MegaNav"
     {...props}
     sx={{
-      // width: ["100%", "83%"],
-
+      // width: ["80em"],
+      display: "block",
+      position: "absolute",
+      left: "0",
       variant: "nav.megaNav",
     }}
   >
-    <Grid gap={0} columns={[1, "1.618fr 1.618fr"]}>
+    <Grid gap={0} columns={[1, "30vw 24vw"]}>
       <Box
         p={4}
         {...props}
@@ -52,7 +55,7 @@ const MegaNav = (props) => (
         <Styled.h4
           sx={{
             variant: "text.caps",
-            color: "accent",
+            color: "highlight",
           }}
         >
           The Netlify Platform
@@ -85,7 +88,7 @@ const MegaNav = (props) => (
               <Styled.h4
                 sx={{
                   variant: "text.caps",
-                  color: "accent",
+                  color: "highlight",
                 }}
               >
                 Features
@@ -103,7 +106,7 @@ const MegaNav = (props) => (
               <Styled.h4
                 sx={{
                   variant: "text.caps",
-                  color: "accent",
+                  color: "highlight",
                 }}
               >
                 Technologies

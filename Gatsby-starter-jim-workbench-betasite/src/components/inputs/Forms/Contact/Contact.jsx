@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import {
   jsx,
+  Box,
   Label,
   Input,
   Select,
@@ -18,24 +19,24 @@ const Contact = (props) => (
       action="https://getform.io/f/20503eee-1266-42d3-af38-e8c2f7bf4f17"
       method="POST"
     >
-      <label>
+      <Label>
         Name
-        <input type="text" name="name" id="name" />
-      </label>
-      <label>
+        <Input type="text" name="name" id="name" />
+      </Label>
+      <Label>
         Email
-        <input type="email" name="email" id="email" />
-      </label>
-      <label>
+        <Input type="email" name="email" id="email" />
+      </Label>
+      <Label>
         Subject
-        <input type="text" name="subject" id="subject" />
-      </label>
-      <label>
+        <Input type="text" name="subject" id="subject" />
+      </Label>
+      <Label>
         Message
-        <textarea name="message" id="message" rows="5" />
-      </label>
+        <Textarea name="message" id="message" rows="5" />
+      </Label>
       <button type="submit">Send</button>
-      <input type="reset" value="Clear" />
+      <Input type="reset" value="Clear" />
     </form>
   </div>
 )

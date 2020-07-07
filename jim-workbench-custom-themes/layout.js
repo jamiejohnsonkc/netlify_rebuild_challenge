@@ -77,6 +77,16 @@ export default {
     marginBottom: ["auto", "auto", "none", "none"],
   },
 
+  introTopCentered: {
+    height: `calc(100vh - 4em)`,
+    maxHeight: "30.625em",
+    minHeight: "26.875em",
+    alignItems: "start",
+    paddingTop: ["0", "0", "6", "6"],
+    marginTop: ["20%", "20%", "0", "0"],
+    marginBottom: ["auto", "auto", "none", "none"],
+  },
+
   section: {
     paddingTop: 6,
     paddingBottom: 6, // height: `calc(100vh - 18.75rem)`,

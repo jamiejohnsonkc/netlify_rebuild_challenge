@@ -4,6 +4,7 @@ import { toTheme } from "./typographyjsEdits/my-to-theme"
 import wp2016 from "typography-theme-wordpress-2016"
 import merge from "lodash.merge"
 import { options } from "./typography"
+import forms from "./forms"
 import colors from "./colors"
 import layout from "./layout"
 import cards from "./cards"
@@ -21,6 +22,7 @@ export default merge(typography, {
   colors,
   links,
   buttons,
+  forms,
   breakpoints: ["40em", "52em", "60em", "80em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   widths: [
@@ -227,7 +229,7 @@ export default merge(typography, {
   shadows: {
     subtle: "0 0 4px 3px rgba(0, 0, 0, .05)",
     // test2: (theme) => `0 0 4px 3px ${theme.colors.primary}`,
-    test3: `0 0 4px 3px ${colors.primary}`,
+    primary: `0 0 4px 3px ${colors.primary}`,
     test4: `0 2px 40px rgba(14,30,37,.16)`,
     test5: `-10px 10px 80px rgba(0,0,0,.1)`,
     depth: `0 5px 20px -10px #000`,

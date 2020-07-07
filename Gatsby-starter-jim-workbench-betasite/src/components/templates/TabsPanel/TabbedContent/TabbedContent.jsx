@@ -2,7 +2,7 @@
 import React from "react"
 
 //!
-//! This component is not configured for reuse.
+//! This component is not configured for reuse. See prooftabs in presentation components of the saas spec project
 //!
 
 import {
@@ -19,10 +19,10 @@ import {
 } from "theme-ui"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 // import "react-tabs/style/react-tabs.css"
-import Button from "../../base/Button"
-import CtaLink from "../../base/CtaLink"
+import Button from "../../../base/Button"
+import CtaLink from "../../../base/CtaLink"
 import styled from "@emotion/styled"
-import { color } from "../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { lighten } from "@theme-ui/color"
 
 const TabPanelContent = ({
@@ -71,6 +71,7 @@ const tablistStyle = {
   gap: 2,
   borderBottom: 0,
   width: "100%",
+  listStyle: "none",
 }
 
 export default (props) => (

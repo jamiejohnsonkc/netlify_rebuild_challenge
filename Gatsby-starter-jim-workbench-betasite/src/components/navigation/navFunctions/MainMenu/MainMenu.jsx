@@ -153,7 +153,6 @@ const MainMenu = (props) => {
                               <NavSubLink
                                 sx={{
                                   color: "white",
-                                  textDecoration: "none",
                                 }}
                                 href={subSubLink.link}
                               >

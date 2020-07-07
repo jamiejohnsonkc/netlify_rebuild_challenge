@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Styled, Box } from "theme-ui"
 // import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
 import Icon from "../../../base/Icon"
@@ -14,6 +14,9 @@ import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import NavElement from "../../../navigation/navElements/NavElement"
 import NavLinkSearch from "../../../navigation/navElements/NavLinkSearch"
 import CtaLink from "../../../base/CtaLink"
+import NavSubLink from "../../../navigation/navElements/NavSubLink"
+import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
+import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
 
 //TODO fix logo box: what is forcing the extra space to the right?
 //TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
@@ -34,8 +37,12 @@ const SaasMenu = (props) => (
         <SubMenu
           {...props}
           sx={{
-            width: "80vw",
+            variant: "nav.subMenu",
           }}
+          // {...props}
+          // sx={{
+          //   width: "80vw",
+          // }}
         >
           <MegaNav />
         </SubMenu>
@@ -48,12 +55,68 @@ const SaasMenu = (props) => (
           Enterprise
           <NavLinkIcon iconName="ChevronDown" />
         </NavLink>
+        <SubMenu
+          {...props}
+          sx={{
+            variant: "nav.subMenu",
+          }}
+        >
+          <Box
+            {...props}
+            sx={{
+              variant: "nav.subMenuBox",
+            }}
+          >
+            <Styled.h4
+              sx={{
+                variant: "text.caps",
+                color: "highlight",
+              }}
+            >
+              Netlify Enterprise
+            </Styled.h4>
+            <SubSubMenu>
+              <SubMenuNavItem>High-Performance Products</SubMenuNavItem>
+              <SubMenuNavItem>Customers</SubMenuNavItem>
+              <SubMenuNavItem>Enterprise Whitepaper</SubMenuNavItem>
+              <SubMenuNavItem>Security at Netlify</SubMenuNavItem>
+            </SubSubMenu>
+          </Box>
+        </SubMenu>
       </NavItem>
+
       <NavItem>
         <NavLink>
           Jamstack
           <NavLinkIcon iconName="ChevronDown" />
         </NavLink>
+        <SubMenu
+          {...props}
+          sx={{
+            variant: "nav.subMenu",
+          }}
+        >
+          <Box
+            {...props}
+            sx={{
+              variant: "nav.subMenuBox",
+            }}
+          >
+            <Styled.h4
+              sx={{
+                variant: "text.caps",
+                color: "highlight",
+              }}
+            >
+              Netlify Enterprise
+            </Styled.h4>
+            <SubSubMenu>
+              <SubMenuNavItem>Jamstack Introduction</SubMenuNavItem>
+              <SubMenuNavItem>Jamstack Book</SubMenuNavItem>
+              <SubMenuNavItem>Jamstack Conference</SubMenuNavItem>
+            </SubSubMenu>
+          </Box>
+        </SubMenu>
       </NavItem>
       <NavItem>
         <NavLink>Docs</NavLink>
@@ -92,7 +155,18 @@ const SaasMenu = (props) => (
           variant: "nav.navItem.hideSmall",
         }}
       >
-        <NavLink to="/contact">Contact Sales</NavLink>
+        <NavLink
+          to="/contact"
+          {...props}
+          sx={{
+            textDecoration: "none",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          Contact Sales
+        </NavLink>
       </NavItem>
       <NavItem>
         <NavLink>Log In</NavLink>
@@ -103,6 +177,7 @@ const SaasMenu = (props) => (
         sx={{
           variant: "nav.navMenuDivider",
           color: "navMenuItem",
+          textDecoration: "none",
         }}
       >
         |
@@ -119,6 +194,9 @@ const SaasMenu = (props) => (
               variant: "links.ctaLink.arrowRight",
               textDecoration: "none",
               lineHeight: "1.5",
+              "&:hover": {
+                textDecoration: "underline",
+              },
             }}
           />
         </NavLink>

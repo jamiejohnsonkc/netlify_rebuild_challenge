@@ -85,7 +85,7 @@ export default {
 
   subMenu: {
     listStyle: "none",
-    m: 0,
+
     p: 4,
     top: "100%",
     minWidth: "8rem",
@@ -93,12 +93,12 @@ export default {
     borderRadius: 6,
     transition: "all 0.3s ease",
     display: "none",
-
-    // marginTop: 1,
+    // backgroundColor: "white",
   },
 
   subSubMenu: {
-    variant: "nav.subMenu",
+    listStyle: "none",
+    p: 0,
   },
 
   //* List Items //
@@ -108,6 +108,9 @@ export default {
     display: "flex",
     alignItems: "center",
     flex: `0 1 fit-content`,
+    "&:hover": {
+      textDecoration: "underline",
+    },
     "@media (max-width: 768px)": {
       width: "100%",
       backgroundColor: [
@@ -125,13 +128,19 @@ export default {
     },
   },
 
-  subMenuNavItem: {
-    variant: "nav.navItem",
-    display: ["none", "none", "flex", "flex"],
+  subMenuBox: {
+    borderRadius: ".5em",
+    backgroundColor: color.white,
+    transition: "all 0.3s ease-in",
+    boxShadow: "depth",
+    display: ["none", "none", "block", "block"],
+    padding: 4,
+    minWidth: "17em",
   },
 
   subSubMenuNavItem: {
-    variant: "nav.navItem",
+    lineHeight: 2,
+    fontWeight: 500,
   },
 
   //* Additional Menu Elements //
@@ -211,11 +220,10 @@ export default {
   },
 
   megaNav: {
-    width: "71vw",
     borderRadius: 6,
     backgroundColor: color.white,
     transition: "all 0.3s ease-in",
-    boxShadow: "subtle",
+    boxShadow: "depth",
   },
 
   footerNav: { fontSize: 1 },

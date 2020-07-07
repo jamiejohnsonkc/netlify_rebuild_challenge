@@ -32,33 +32,7 @@ import ProofTabsPlanning from "../../../hooks/ProofTabsPlanning/ProofTabsPlannin
 import ProofTabsSparks from "../../../hooks/ProofTabsSparks"
 import ProofTabsWoodworking from "../../../hooks/ProofTabsWoodworking"
 import { Img } from "gatsby-image"
-
-const TabPanelContent = ({
-  height,
-  width,
-  bg,
-  color,
-  padding,
-  margin,
-  data,
-  ...props
-}) => (
-  <Grid
-    {...props}
-    // columns={(5, "1fr 2fr 1fr 1fr")}
-    sx={{
-      height,
-      width,
-      bg,
-      color,
-      margin,
-      gridTemplateColumns: [(1, "1fr"), (2, "1fr 1fr"), (5, "1fr 2fr 1fr 1fr")],
-      gap: [4, 4, 2, 2],
-      paddingBottom: [0, 4, 4, 4],
-      justifyContent: ["center"],
-    }}
-  />
-)
+import TabPanelContent from "../../../templates/TabsPanel/TabPanelContent/TabPanelContent"
 
 const ImageWrapper = (props) => (
   <Box
@@ -148,21 +122,9 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
           flex: 1,
         },
         "&.MyTabActive": {
-          // backgroundColor: "blue",
-          // backgroundColor: "pink",
           border: "none",
           outline: "none",
 
-          // "&.MyTabFocused": {
-          //   backgroundColor: "transparent",
-          //   // backgroundColor: "pink",
-          //   border: "none",
-          //   outline: "none",
-          // },
-          // "&:focus": {
-          //   border: "none !important",
-          //   outline: "none !important",
-          // },
           "& > button": {
             background: lighten("highlight", 0.52),
             border: "none",
@@ -194,6 +156,7 @@ const ProofTabs = ({ data, props }) => (
       sx={{
         boxShadow: "test5",
         py: 4,
+        // px: 6,
       }}
     >
       <Tabs {...props} sx={{}}>
@@ -242,601 +205,65 @@ const ProofTabs = ({ data, props }) => (
             />
           </MyTab>
         </MyTabList>
-
         <TabPanel>
-          <TabPanelContent {...props}>
-            <Box
-              {...props}
-              sx={{
-                alignContent: "start",
-                display: "grid",
-              }}
-            >
-              <ImageWrapper>
-                <ProofTabsCafe />
-              </ImageWrapper>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-              }}
-            >
-              <Box px={2}>
-                <Styled.h3
-                  {...props}
-                  sx={{
-                    marginBottom: 2,
-                  }}
-                >
-                  Sit occaecat fugiat lorem tempor consectetur dolor amet
-                </Styled.h3>
-                <Styled.p
-                  {...props}
-                  sx={{
-                    marginBottom: 4,
-                    maxWidth: "94%",
-                  }}
-                >
-                  Laboris do sit nostrud pariatur cillum fugiat ullamco
-                  consequat veniam aliquip commodo incididunt eu ad. Ipsum
-                  deserunt reprehenderit Lorem tempor consectetur dolor amet id
-                  commodo ipsum ullamco officia consectetur. Enim adipisicing
-                  adipisicing consectetur elit veniam magna duis nulla velit
-                  cillum ipsum. Occaecat pariatur laborum deserunt
-                </Styled.p>
-                <CtaLink
-                  linkText="Read the case study"
-                  iconName="ArrowRight"
-                  iconSize="1em"
-                  color="inherit"
-                  sx={{
-                    variant: "links.ctaLink.arrowRight",
-                    fontWeight: 600,
-                    textDecoration: "underline",
-                  }}
-                />
-              </Box>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                75%
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                cost savings
-              </Text>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                3.5M
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                users annually
-              </Text>
-            </Box>
-          </TabPanelContent>
+          <TabPanelContent
+            tabsVisual={<ProofTabsCafe />}
+            textHeadline="Deliver Better Value at Higher Rates"
+            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsCtaLinkTo="/"
+            metric1="$86M"
+            metricCaption1="Annual Growth"
+            metric2="98%"
+            metricCaption2="Customer Satisfaction"
+          />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            {...props}
-            sx={{
-              paddingBottom: 4,
-            }}
-          >
-            <Box
-              {...props}
-              sx={{
-                alignContent: "start",
-                display: "grid",
-              }}
-            >
-              <ImageWrapper>
-                <ProofTabsSparks />
-              </ImageWrapper>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-              }}
-            >
-              <Box px={2}>
-                <Styled.h3
-                  {...props}
-                  sx={{
-                    marginBottom: 2,
-                  }}
-                >
-                  Sit occaecat fugiat lorem tempor consectetur dolor amet
-                </Styled.h3>
-                <Styled.p
-                  {...props}
-                  sx={{
-                    marginBottom: 4,
-                    maxWidth: "94%",
-                  }}
-                >
-                  Laboris do sit nostrud pariatur cillum fugiat ullamco
-                  consequat veniam aliquip commodo incididunt eu ad. Ipsum
-                  deserunt reprehenderit Lorem tempor consectetur dolor amet id
-                  commodo ipsum ullamco officia consectetur. Enim adipisicing
-                  adipisicing consectetur elit veniam magna duis nulla velit
-                  cillum ipsum. Occaecat pariatur laborum deserunt
-                </Styled.p>
-                <CtaLink
-                  linkText="Read the case study"
-                  iconName="ArrowRight"
-                  iconSize="1em"
-                  color="inherit"
-                  sx={{
-                    variant: "links.ctaLink.arrowRight",
-                    fontWeight: 600,
-                    textDecoration: "underline",
-                  }}
-                />
-              </Box>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                12%
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                annual growth
-              </Text>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                89%
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                uptime increase
-              </Text>
-            </Box>
-          </TabPanelContent>
+            tabsVisual={<ProofTabsSparks />}
+            textHeadline="Cut Lead Times And Accelerate Sales"
+            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsCtaLinkTo="/"
+            metric1="51%"
+            metricCaption1="Close Rate"
+            metric2="100%"
+            metricCaption2="Up Time"
+          />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            {...props}
-            sx={{
-              paddingBottom: 4,
-            }}
-          >
-            <Box
-              {...props}
-              sx={{
-                alignContent: "start",
-                display: "grid",
-              }}
-            >
-              <ImageWrapper>
-                <ProofTabsWoodworking />
-              </ImageWrapper>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-              }}
-            >
-              <Box px={2}>
-                <Styled.h3
-                  {...props}
-                  sx={{
-                    marginBottom: 2,
-                  }}
-                >
-                  Sit occaecat fugiat lorem tempor consectetur dolor amet
-                </Styled.h3>
-                <Styled.p
-                  {...props}
-                  sx={{
-                    marginBottom: 4,
-                    maxWidth: "94%",
-                  }}
-                >
-                  Laboris do sit nostrud pariatur cillum fugiat ullamco
-                  consequat veniam aliquip commodo incididunt eu ad. Ipsum
-                  deserunt reprehenderit Lorem tempor consectetur dolor amet id
-                  commodo ipsum ullamco officia consectetur. Enim adipisicing
-                  adipisicing consectetur elit veniam magna duis nulla velit
-                  cillum ipsum. Occaecat pariatur laborum deserunt
-                </Styled.p>
-                <CtaLink
-                  linkText="Read the case study"
-                  iconName="ArrowRight"
-                  iconSize="1em"
-                  color="inherit"
-                  sx={{
-                    variant: "links.ctaLink.arrowRight",
-                    fontWeight: 600,
-                    textDecoration: "underline",
-                  }}
-                />
-              </Box>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                75%
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                cost savings
-              </Text>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                3.5M
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                users annually
-              </Text>
-            </Box>
-          </TabPanelContent>
+            tabsVisual={<ProofTabsCombine />}
+            textHeadline="Engage When and Where It Matters"
+            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsCtaLinkTo="/"
+            metric1="15%"
+            metricCaption1="YOY Revenue"
+            metric2="10%"
+            metricCaption2="Site Traffic"
+          />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            {...props}
-            sx={{
-              paddingBottom: 4,
-            }}
-          >
-            <Box
-              {...props}
-              sx={{
-                alignContent: "start",
-                display: "grid",
-              }}
-            >
-              <ImageWrapper>
-                <ProofTabsCombine />
-              </ImageWrapper>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-              }}
-            >
-              <Box px={2}>
-                <Styled.h3
-                  {...props}
-                  sx={{
-                    marginBottom: 2,
-                  }}
-                >
-                  Sit occaecat fugiat lorem tempor consectetur dolor amet
-                </Styled.h3>
-                <Styled.p
-                  {...props}
-                  sx={{
-                    marginBottom: 4,
-                    maxWidth: "94%",
-                  }}
-                >
-                  Laboris do sit nostrud pariatur cillum fugiat ullamco
-                  consequat veniam aliquip commodo incididunt eu ad. Ipsum
-                  deserunt reprehenderit Lorem tempor consectetur dolor amet id
-                  commodo ipsum ullamco officia consectetur. Enim adipisicing
-                  adipisicing consectetur elit veniam magna duis nulla velit
-                  cillum ipsum. Occaecat pariatur laborum deserunt
-                </Styled.p>
-                <CtaLink
-                  linkText="Read the case study"
-                  iconName="ArrowRight"
-                  iconSize="1em"
-                  color="inherit"
-                  sx={{
-                    variant: "links.ctaLink.arrowRight",
-                    fontWeight: 600,
-                    textDecoration: "underline",
-                  }}
-                />
-              </Box>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                75%
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                cost savings
-              </Text>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                3.5M
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                users annually
-              </Text>
-            </Box>
-          </TabPanelContent>
+            tabsVisual={<ProofTabsPlanning />}
+            textHeadline="Break Down Silos. Optimize Workflows"
+            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsCtaLinkTo="/"
+            metric1="22%"
+            metricCaption1="SEO ROI"
+            metric2="5%"
+            metricCaption2="Avg Customer Value"
+          />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            {...props}
-            sx={{
-              paddingBottom: 4,
-            }}
-          >
-            <Box
-              {...props}
-              sx={{
-                alignContent: "start",
-                display: "grid",
-              }}
-            >
-              <ImageWrapper>
-                <ProofTabsPlanning />
-              </ImageWrapper>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-              }}
-            >
-              <Box px={2}>
-                <Styled.h3
-                  {...props}
-                  sx={{
-                    marginBottom: 2,
-                  }}
-                >
-                  Sit occaecat fugiat lorem tempor consectetur dolor amet
-                </Styled.h3>
-                <Styled.p
-                  {...props}
-                  sx={{
-                    marginBottom: 4,
-                    maxWidth: "94%",
-                  }}
-                >
-                  Laboris do sit nostrud pariatur cillum fugiat ullamco
-                  consequat veniam aliquip commodo incididunt eu ad. Ipsum
-                  deserunt reprehenderit Lorem tempor consectetur dolor amet id
-                  commodo ipsum ullamco officia consectetur. Enim adipisicing
-                  adipisicing consectetur elit veniam magna duis nulla velit
-                  cillum ipsum. Occaecat pariatur laborum deserunt
-                </Styled.p>
-                <CtaLink
-                  linkText="Read the case study"
-                  iconName="ArrowRight"
-                  iconSize="1em"
-                  color="inherit"
-                  sx={{
-                    variant: "links.ctaLink.arrowRight",
-                    fontWeight: 600,
-                    textDecoration: "underline",
-                  }}
-                />
-              </Box>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                75%
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                cost savings
-              </Text>
-            </Box>
-            <Box
-              {...props}
-              sx={{
-                display: "grid",
-                justifyContent: "center",
-                alignContent: "start",
-              }}
-            >
-              <Text
-                {...props}
-                sx={{
-                  variant: "styles.b2",
-                  color: "highlight",
-                  marginBottom: 1,
-                }}
-              >
-                3.5M
-              </Text>
-              <Text
-                {...props}
-                sx={{
-                  fontSize: 0,
-                  variant: "text.capsBold",
-                  textAlign: "center",
-                }}
-              >
-                users annually
-              </Text>
-            </Box>
-          </TabPanelContent>
+            tabsVisual={<ProofTabsWoodworking />}
+            textHeadline="Empower customer-facing personnel"
+            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsCtaLinkTo="/"
+            metric1="-10%"
+            metricCaption1="Customer Acquisition Cost"
+            metric2="6%"
+            metricCaption2="New Customer Creation"
+          />
         </TabPanel>
       </Tabs>
     </Container>

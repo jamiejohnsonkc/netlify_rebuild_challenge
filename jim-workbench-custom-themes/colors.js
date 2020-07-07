@@ -34,7 +34,7 @@ export const color = {
 }
 const colors = {
   //default
-  text: color.black, //Body foreground color
+  text: color.black2, //Body foreground color
   background: color.white, //Body background color
   primary: color.violetDark, //Primary brand color for links, buttons, etc.
   secondary: color.gray3, //Secondary brand color for alternative styling
@@ -45,7 +45,8 @@ const colors = {
   mobileNavMenuBackground: color.purple,
   navMenuItem: color.white,
   mastHeadLogo: color.white,
-  navMenuItemHover: color.violetDark,
+  // navMenuItemHover: color.violet,
+  navItemActive: color.tealBright,
   announcementBarBackground: color.tealDark,
 
   modes: {

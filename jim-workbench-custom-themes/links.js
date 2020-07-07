@@ -13,9 +13,10 @@ export default {
     textDecoration: "none",
     transition: "all 0.3s ease-in",
     fontSize: [2, 3, 1, 1],
-    "&.active": { color: "accent" },
+    "&.active": { color: "navItemActive" },
     "&:hover": {
       color: "navMenuItemHover",
+      textDecoration: "underline",
       "&::after": {
         width: "100%",
         backgroundColor: "navMenuItemHover",
@@ -84,6 +85,12 @@ export default {
       //   },
       // },
     },
+  },
+
+  navSubLink: {
+    lineHeight: 2,
+    display: "block",
+    minWidth: "20em",
   },
 
   megaNavLink: {
