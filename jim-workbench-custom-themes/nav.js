@@ -114,8 +114,8 @@ export default {
     "@media (max-width: 768px)": {
       width: "100%",
       backgroundColor: [
-        "mobileNavMenuBackground",
-        "mobileNavMenuBackground",
+        "navMenuBackground_SM",
+        "navMenuBackground_SM",
         "navMenuBackground",
         "navMenuBackground",
       ],
@@ -226,11 +226,16 @@ export default {
     boxShadow: "depth",
   },
   megaNavHeader: {
-    color: {},
+    color: color.blueDark,
+    variant: "text.caps",
+  },
+
+  megaNavColumnHead: {
+    color: color.teal,
     variant: "text.caps",
   },
   megaNavText: {
-    color: {},
+    color: "black",
   },
 
   footerNav: { fontSize: 1 },

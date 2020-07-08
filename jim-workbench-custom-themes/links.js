@@ -1,5 +1,7 @@
 //! LINKS
 
+import { color } from "./colors"
+
 export default {
   nav: {
     display: "inline-block",
@@ -91,6 +93,13 @@ export default {
     lineHeight: 2,
     display: "block",
     minWidth: "20em",
+    color: "navMenuItem",
+    textDecoration: "none",
+  },
+
+  jumpLink: {
+    textDecoration: "none",
+    color: color.gray1,
   },
 
   megaNavLink: {

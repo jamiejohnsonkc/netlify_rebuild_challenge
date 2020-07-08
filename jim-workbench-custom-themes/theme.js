@@ -43,7 +43,7 @@ export default merge(typography, {
     lazy: ".025em",
     normal: "null",
     tight: "-0.05em",
-    heading: "-0.025em",
+    snug: "-0.025em",
   },
   lineHeights: {
     body: 2,

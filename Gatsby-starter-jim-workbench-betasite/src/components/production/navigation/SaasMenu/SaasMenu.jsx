@@ -14,7 +14,7 @@ import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import NavElement from "../../../navigation/navElements/NavElement"
 import NavLinkSearch from "../../../navigation/navElements/NavLinkSearch"
 import CtaLink from "../../../base/CtaLink"
-import NavSubLink from "../../../navigation/navElements/NavSubLink"
+import JumpLink from "../../../navigation/navElements/JumpLink"
 import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
 
@@ -68,16 +68,16 @@ const SaasMenu = (props) => (
             </Styled.h4>
             <SubSubMenu>
               <SubMenuNavItem>
-                <NavSubLink to="/">High-Performance Products</NavSubLink>
+                <JumpLink to="/">High-Performance Products</JumpLink>
               </SubMenuNavItem>
               <SubMenuNavItem>
-                <NavSubLink to="/">Customers</NavSubLink>
+                <JumpLink to="/">Customers</JumpLink>
               </SubMenuNavItem>
               <SubMenuNavItem>
-                <NavSubLink to="/">Enterprise Whitepaper</NavSubLink>
+                <JumpLink to="/">Enterprise Whitepaper</JumpLink>
               </SubMenuNavItem>
               <SubMenuNavItem>
-                <NavSubLink to="/">Security at Netlify</NavSubLink>
+                <JumpLink to="/">Security at Netlify</JumpLink>
               </SubMenuNavItem>
             </SubSubMenu>
           </Box>
@@ -110,9 +110,15 @@ const SaasMenu = (props) => (
               Netlify Enterprise
             </Styled.h4>
             <SubSubMenu>
-              <SubMenuNavItem>Jamstack Introduction</SubMenuNavItem>
-              <SubMenuNavItem>Jamstack Book</SubMenuNavItem>
-              <SubMenuNavItem>Jamstack Conference</SubMenuNavItem>
+              <SubMenuNavItem>
+                <JumpLink to="/">Jamstack Introduction</JumpLink>
+              </SubMenuNavItem>
+              <SubMenuNavItem>
+                <JumpLink to="/">Jamstack Book</JumpLink>
+              </SubMenuNavItem>
+              <SubMenuNavItem>
+                <JumpLink to="/">Jamstack Conference</JumpLink>
+              </SubMenuNavItem>
             </SubSubMenu>
           </Box>
         </SubMenu>

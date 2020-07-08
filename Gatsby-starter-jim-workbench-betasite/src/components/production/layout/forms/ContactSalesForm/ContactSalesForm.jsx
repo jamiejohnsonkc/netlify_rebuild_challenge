@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx, Box, Label, Input, Textarea, Text, Styled } from "theme-ui"
-import React from "react"
-import PropTypes from "prop-types"
+import { darken } from "@theme-ui/color"
+
+import { Box, Input, jsx, Label, Styled, Text, Textarea } from "theme-ui"
 import Button from "../../../../base/Button"
-import { darken, transparentize } from "@theme-ui/color"
+import { Link } from "gatsby"
 
 // SaasLabel = (props) => (
 //   <Label
@@ -32,8 +32,17 @@ const ContactSalesForm = (props) => (
         marginBottom: 4,
       }}
     >
-      Existing customer? Get help with technical issues and general questions by
-      visiting our community.
+      Existing customer? Get help with technical issues and general questions by{" "}
+      <Link
+        to="/"
+        {...props}
+        sx={{
+          color: "highlight",
+          textDecoration: "none",
+        }}
+      >
+        visiting our community.
+      </Link>
     </Text>
     <Box
       as="form"

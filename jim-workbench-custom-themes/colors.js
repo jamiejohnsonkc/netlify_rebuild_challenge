@@ -28,7 +28,7 @@ export const color = {
   gray4: "#BDBDBD",
   gray5: "#E0E0E0",
   gray6: "#F7F8F8",
-  blackAlpha1: `rgba(0,0,0,.015)`,
+  blackAlpha1: `rgba(0,0,0,.025)`,
   blackAlpha2: `rgba(0,0,0,.1)`,
   whiteAlpha1: `rgba(255,255,255,.05)`,
 }
@@ -41,33 +41,43 @@ const colors = {
   accent: color.violet, //Contrast color for emphasizing UI
   highlight: color.tealBright, //Background color for highlighting text
   muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
-  //$ Navigtation.large
-  navMenuBackground: color.blackAlpha2,
+  navMenuItem: color.gray6,
+  mastHeadLogo: color.gray6,
+  // navMenuItemHover: color.violet,
 
-  navMenuItem: color.white,
-  mastHeadLogo: color.white,
+  //$ Navigtation.dark
+  navMenuBackground: color.blackAlpha2,
+  // navMenuBackground: "white",
+
   // navMenuItemHover: color.violet,
   navItemActive: color.tealBright,
   announcementBarBackground: color.tealDark,
 
-  //$ Navigation.small
-  mobileNavMenuBackground: color.purple,
+  navMenuBackground_SM: color.purple,
 
   modes: {
-    inverse: {
-      text: color.white,
-      background: color.violetDark,
-      primary: color.violet,
-      secondary: color.gray5,
-      accent: color.gray6,
-      highlight: color.white,
-      muted: color.gray,
-      navMenuBackground: color.whiteAlpha1,
-      navMenuItem: color.white2,
-      mastHeadLogo: color.white2,
-      navMenuItemHover: color.gray5,
+    light: {
+      navMenuItem: color.gray1,
+      mastHeadLogo: color.gray1,
+      navItemActive: color.tealBright,
+      announcementBarBackground: color.tealDark,
+      navMenuBackground: color.blackAlpha1,
+      navItemActive: color.gray1,
+      highlight: color.teal,
     },
-
+    // inverse: {
+    //   text: color.white,
+    //   background: color.violetDark,
+    //   primary: color.violet,
+    //   secondary: color.gray5,
+    //   accent: color.gray6,
+    //   highlight: color.white,
+    //   muted: color.gray,
+    //   navMenuBackground: color.whiteAlpha1,
+    //   navMenuItem: color.white2,
+    //   mastHeadLogo: color.white2,
+    //   navMenuItemHover: color.gray5,
+    // },
     dark: {
       text: color.white,
       background: color.black2,
@@ -77,36 +87,37 @@ const colors = {
       highlight: color.white,
       muted: color.gray,
       navMenuBackground: color.whiteAlpha1,
+
       navMenuItem: color.white2,
       mastHeadLogo: color.white2,
       navMenuItemHover: color.gray5,
     },
-    purple: {
-      text: "#fff",
-      background: "#4f005e",
-      primary: "#000",
-    },
-    gray: {
-      text: "#fff",
-      background: "#303030",
-      primary: "#000",
-    },
-    blue: {
-      text: "#146396",
-      background: "#f7f8f8",
-      primary: "#146396",
-      navMenuItem: "#888",
-      navMenuItemHover: "#43B4d8",
-      highlight: "#43B4d8",
-    },
-    mono: {
-      text: "#2D3B41",
-      background: "#f7f8f8",
-      primary: "#146396",
-      navMenuItem: "#888",
-      navMenuItemHover: "#43B4d8",
-      highlight: "#43B4d8",
-    },
+    // purple: {
+    //   text: "#fff",
+    //   background: "#4f005e",
+    //   primary: "#000",
+    // },
+    // gray: {
+    //   text: "#fff",
+    //   background: "#303030",
+    //   primary: "#000",
+    // },
+    // blue: {
+    //   text: "#146396",
+    //   background: "#f7f8f8",
+    //   primary: "#146396",
+    //   navMenuItem: "#888",
+    //   navMenuItemHover: "#43B4d8",
+    //   highlight: "#43B4d8",
+    // },
+    // mono: {
+    //   text: "#2D3B41",
+    //   background: "#f7f8f8",
+    //   primary: "#146396",
+    //   navMenuItem: "#888",
+    //   navMenuItemHover: "#43B4d8",
+    //   highlight: "#43B4d8",
+    // },
   },
 }
 

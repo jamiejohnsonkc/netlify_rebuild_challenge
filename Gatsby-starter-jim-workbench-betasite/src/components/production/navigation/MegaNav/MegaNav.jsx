@@ -57,7 +57,7 @@ const MegaNav = (props) => (
       >
         <Styled.h4
           sx={{
-            variant: "nav.MegaNavHeader",
+            variant: "nav.megaNavHeader",
           }}
         >
           The Netlify Platform
@@ -89,7 +89,7 @@ const MegaNav = (props) => (
             >
               <Styled.h4
                 sx={{
-                  variant: "nav.MegaNavHeader",
+                  variant: "nav.megaNavColumnHead",
                 }}
               >
                 Features
@@ -106,7 +106,7 @@ const MegaNav = (props) => (
             <Box p={4}>
               <Styled.h4
                 sx={{
-                  variant: "nav.MegaNavHeader",
+                  variant: "nav.megaNavColumnHead",
                 }}
               >
                 Technologies
