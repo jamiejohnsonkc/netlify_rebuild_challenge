@@ -33,8 +33,8 @@ import React from "react"
 // export default TestApp
 
 const TestApp = () => {
-  const [colorMode, setColorMode] = useColorMode()
-  setColorMode("dark")
+  // const [colorMode, setColorMode] = useColorMode()
+  // setColorMode("dark")
   return (
     <Box bg="primary" height="100px" width="100px">
       <Text color="highlight">Test Text</Text>

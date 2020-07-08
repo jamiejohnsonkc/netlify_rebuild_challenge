@@ -9,11 +9,11 @@ export default {
   },
   input: {
     borderColor: color.gray5,
-    "&:focus": {
-      borderColor: "primary",
-      boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
-      outline: "none",
-    },
+    // "&:focus": {
+    //   borderColor: "primary",
+    //   boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+    //   outline: "none",
+    // },
   },
   select: {
     borderColor: color.gray5,

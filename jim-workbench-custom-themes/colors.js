@@ -33,7 +33,6 @@ export const color = {
   whiteAlpha1: `rgba(255,255,255,.05)`,
 }
 const colors = {
-  //$default
   text: color.black2, //Body foreground color
   background: color.white, //Body background color
   primary: color.violetDark, //Primary brand color for links, buttons, etc.
@@ -41,11 +40,10 @@ const colors = {
   accent: color.violet, //Contrast color for emphasizing UI
   highlight: color.tealBright, //Background color for highlighting text
   muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
-  navMenuItem: color.gray6,
-  mastHeadLogo: color.gray6,
+  navMenuItem: color.white,
+  mastHeadLogo: color.white,
   // navMenuItemHover: color.violet,
 
-  //$ Navigtation.dark
   navMenuBackground: color.blackAlpha2,
   // navMenuBackground: "white",
 
@@ -56,6 +54,27 @@ const colors = {
   navMenuBackground_SM: color.purple,
 
   modes: {
+    splash: {
+      text: color.black2, //Body foreground color
+      background: color.white, //Body background color
+      primary: color.violetDark, //Primary brand color for links, buttons, etc.
+      secondary: color.gray3, //Secondary brand color for alternative styling
+      accent: color.violet, //Contrast color for emphasizing UI
+      highlight: color.tealBright, //Background color for highlighting text
+      muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
+      navMenuItem: color.white,
+      mastHeadLogo: color.white,
+      // navMenuItemHover: color.violet,
+
+      navMenuBackground: color.blackAlpha2,
+      // navMenuBackground: "white",
+
+      // navMenuItemHover: color.violet,
+      navItemActive: color.tealBright,
+      announcementBarBackground: color.tealDark,
+
+      navMenuBackground_SM: color.purple,
+    },
     light: {
       navMenuItem: color.gray1,
       mastHeadLogo: color.gray1,

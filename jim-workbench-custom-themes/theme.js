@@ -233,6 +233,7 @@ export default merge(typography, {
     test4: `0 2px 40px rgba(14,30,37,.16)`,
     test5: `-10px 10px 80px rgba(0,0,0,.1)`,
     depth: `0 5px 20px -10px #000`,
+    callOut: `0 0 4.236em rgba(14,30,37,.09)`,
   },
   // boxShadow: (theme) => `0 0 4px ${theme.colors.primary}`, },
 })

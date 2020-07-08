@@ -3,7 +3,7 @@
 import links from "./links"
 
 export default {
-  root: {},
+  // root: {},
   top: {
     bg: "#999",
     py: 4,

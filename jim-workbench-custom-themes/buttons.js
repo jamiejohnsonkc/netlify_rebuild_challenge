@@ -15,18 +15,22 @@ export default {
     fontWeight: "600",
     textTransform: "uppercase",
     letterSpacing: "normal",
-    fontSize: [0],
+    fontSize: [1],
   },
   primary: {
     color: "background",
     bg: "primary",
     borderColor: "transparent",
     outline: "none",
+    "& :focus": {
+      outline: "none",
+      borderColor: "transparent",
+    },
     variant: "buttons.fontStyle",
     "&:hover": {
       color: "background",
       bg: "accent",
-      borderColor: "accent",
+      // borderColor: "accent",
     },
     "&:focus": {
       outline: "none",
