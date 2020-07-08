@@ -10,7 +10,7 @@ const SaasSubscribe = (props) => (
   <Pancake
     {...props}
     sx={{
-      paddingBottom: 6,
+      paddingBottom: 4,
     }}
   >
     <Container

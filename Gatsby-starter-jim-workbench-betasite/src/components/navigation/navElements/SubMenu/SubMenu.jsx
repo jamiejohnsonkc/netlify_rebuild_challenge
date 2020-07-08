@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const SubMenu = ({ width, color, bg, ...props }) => (
   <ul
     {...props}
-    className="subMenu"
+    // className="subMenu"
     sx={{
       width,
       color,

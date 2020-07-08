@@ -239,9 +239,16 @@ export default {
   },
 
   footerNav: { fontSize: 1 },
+
+  dropDownMenu: {
+    backgroundColor: `${color.gray3}`,
+    height: "20em",
+  },
 }
 
 //TODO fix search icon in mobile
 //TODO assign meganav header and text colors
 //TODO review all nav color assignements
 //TODO config hot swapping of large and small menu formats
+
+//TODO combine all styling for menus in one, separate js file.  leave the defaults alone to provide functionality for primitives.

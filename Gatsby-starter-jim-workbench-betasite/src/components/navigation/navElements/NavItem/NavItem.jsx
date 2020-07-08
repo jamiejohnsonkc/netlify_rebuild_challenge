@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const NavItem = ({ bg, color, padding, ...props }) => (
   <li
     {...props}
-    className="navItem"
+    // className="navItem"
     sx={{
       color,
       position: "relative",

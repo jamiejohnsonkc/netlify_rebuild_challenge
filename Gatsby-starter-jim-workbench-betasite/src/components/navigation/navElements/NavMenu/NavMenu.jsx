@@ -9,9 +9,9 @@ const NavMenu = (props) => (
     sx={{
       listStyle: "none",
       cursor: "pointer",
-      variant: "nav.navMenu",
+      // variant: "nav.navMenu",
     }}
-    className="navMenu"
+    // className="navMenu"
   />
 )
 
