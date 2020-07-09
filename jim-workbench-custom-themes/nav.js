@@ -40,48 +40,94 @@ export default {
 
   //*  Responsive Menu/Drawer
   navBox: {
-    justifyContent: "space-between",
+    justifyContent: [
+      "flex-start",
+      "flex-start",
+      "space-between",
+      "space-between",
+    ],
     alignItems: "center",
     height: "100%",
     width: "100%",
+    transition: "all 0.3s ease-in",
     // flex: 1,
-    display: "inline-flex",
+    // display: "inline-flex",
     paddingTop: [4, 0],
-
+    backgroundColor: [
+      "navMenuBackground_SM",
+      "navMenuBackground_SM",
+      "transparent",
+      "transparent",
+    ],
     // py: 2,
     "@media (max-width: 768px)": {
-      width: "100%",
-      height: "100%",
-      justifyContent: "flex-start",
-      backgroundColor: [
-        "mobileNavMenuBackground",
-        "mobileNavMenuBackground",
-        "navMenuBackground",
-        "navMenuBackground",
-      ],
-      transition: "all 0.3s ease-in",
+      // width: "100%",
+      // height: "100%",
+      // justifyContent: "flex-start",
+      // backgroundColor: [
+      //   "mobileNavMenuBackground",
+      //   "mobileNavMenuBackground",
+      //   "navMenuBackground",
+      //   "navMenuBackground",
+      // ],
+      // transition: "all 0.3s ease-in",
       top: "0",
       position: "fixed",
+      overflowY: "scroll",
       // overflow: ["scroll", "hidden"],
       // zIndex: 3,
     },
   },
 
-  //* Lists //
+  //* Lists
   //? this was prevdiously titled mainNavUl
   navMenu: {
     // display: "flex",
     // flex: `.1 5 53em`,
-    display: "flex",
-    flex: 1,
+
     margin: 0,
     padding: [0, 3],
     px: [0, 4],
-    alignItems: "center",
-    justifyContent: "space-between",
-    flexDirection: ["column", "column", "row"],
-    width: "100%",
+    // alignItems: "center",
+    // display: "flex",
+    // flex: 1,
+    // justifyContent: "space-around",
+    // flexDirection: ["column", "column", "row"],
+    // width: "100%",
   },
+
+  navItem: {
+    padding: [4, 0, 0, 0],
+    // transitionDuration: "0.3s",
+    transition: "all 0.3s ease-in",
+    // backgroundColor: [
+    //   "navMenuBackground_SM",
+    //   "navMenuBackground_SM",
+    //   "navMenuBackground",
+    //   "navMenuBackground",
+    // ],
+    "&:hover": {
+      textDecoration: "underline",
+    },
+    // "@media (max-width: 768px)": {
+    // width: "100%",
+    // backgroundColor: [
+    //   "navMenuBackground_SM",
+    //   "navMenuBackground_SM",
+    //   "navMenuBackground",
+    //   "navMenuBackground",
+    // ],
+    // transition: "all 0.3s ease-in",
+    // display: "block",
+    // position: "relative",
+    // },
+    //TODO confirm benefit/functionality of the hideSmall styling
+    hideSmall: {
+      display: ["none", "none", "none", "block"],
+    },
+  },
+
+  //!NavLink in links.js
 
   subMenu: {
     listStyle: "none",
@@ -96,38 +142,23 @@ export default {
     // backgroundColor: "white",
   },
 
+  subMenuNavItem: {},
+
+  //!NavSubLink in links.js
+
   subSubMenu: {
     listStyle: "none",
     p: 0,
   },
 
-  //* List Items //
-  navItem: {
-    padding: [4, 0, 0, 0],
-    transitionDuration: "0.3s",
-    display: "flex",
-    alignItems: "center",
-    flex: `0 1 fit-content`,
-    "&:hover": {
-      textDecoration: "underline",
-    },
-    "@media (max-width: 768px)": {
-      width: "100%",
-      backgroundColor: [
-        "navMenuBackground_SM",
-        "navMenuBackground_SM",
-        "navMenuBackground",
-        "navMenuBackground",
-      ],
-      transition: "all 0.3s ease-in",
-      display: "block",
-      position: "relative",
-    },
-    hideSmall: {
-      display: ["none", "none", "none", "block"],
-    },
+  subSubMenuNavItem: {
+    lineHeight: 2,
+    fontWeight: 500,
   },
 
+  //!NavSubSub is not defined
+
+  //!Submenubox is lady coding for the saas dropdown menu, should've been a NavSubLink variant (i think)
   subMenuBox: {
     borderRadius: ".5em",
     backgroundColor: color.white,
@@ -138,12 +169,7 @@ export default {
     minWidth: "17em",
   },
 
-  subSubMenuNavItem: {
-    lineHeight: 2,
-    fontWeight: 500,
-  },
-
-  //* Additional Menu Elements //
+  //* Extraneous Saas Menu Elements //
   navMenuDivider: {
     transitionDuration: "0.3s",
     flexBasis: "auto",
@@ -156,18 +182,48 @@ export default {
   },
 
   navItemSearch: {
-    display: ["flex", "flex", "flex", "flex"],
+    display: ["none", "none", "flex", "flex"],
+    visibility: ["hidden", "hidden", "visible", "visible"],
     padding: "nav.navItem",
     alignSelf: "end",
   },
 
   navItemSpacer: {
-    display: ["none", "flex", "flex", "flex"],
+    display: ["none", "none", "flex", "flex"],
+    visibility: ["hidden", "hidden", "visible", "visible"],
     flex: 0.1,
     padding: 0,
     // flexGrow: [null, null, "0.25", "0.25"],
     // flexBasis: [null, null, "4em", "2em"],
     cursor: "none",
+  },
+
+  ctaLinkWrapper: {
+    "@media (max-width: 768px)": {
+      display: "flex",
+      background: "white",
+      borderRadius: "3em",
+      py: 2,
+      // paddingRight: 6,
+      // paddingLeft: 4,
+      width: "12em",
+      justifyContent: "center",
+      alignContent: "center",
+    },
+  },
+
+  searchLinkWrapper: {
+    "@media (max-width: 768px)": {
+      display: "flex",
+      background: "white",
+      borderRadius: "3em",
+      py: 2,
+      // paddingRight: 6,
+      // paddingLeft: 4,
+      width: "12em",
+      justifyContent: "center",
+      alignContent: "center",
+    },
   },
 
   // sideNavDrawer: {

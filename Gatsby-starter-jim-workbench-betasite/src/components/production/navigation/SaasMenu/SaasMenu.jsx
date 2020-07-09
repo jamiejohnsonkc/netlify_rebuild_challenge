@@ -17,6 +17,7 @@ import CtaLink from "../../../base/CtaLink"
 import JumpLink from "../../../navigation/navElements/JumpLink"
 import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
+import SearchButton from "../../../base/SearchButton"
 
 //TODO fix logo box: what is forcing the extra space to the right?
 //TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
@@ -26,9 +27,44 @@ import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
 
 //* This is the production component for nav menu.  It defines the menus, items, links, submenus, etc. Due to this menu's complexity this element is not derived from a reusable component.
 
+const iconStyle = {
+  marginRight: ".5em",
+}
+
 const SaasMenu = (props) => (
   <>
     <NavMenu>
+      <NavItem>
+        <NavLink>
+          <div
+            {...props}
+            sx={{
+              variant: "nav.searchLinkWrapper",
+            }}
+          >
+            <SearchButton
+              to="/"
+              linkText="Search"
+              iconName="Search"
+              iconSize="1em"
+              iconColor="theme.colors.menuNavItem"
+              sx={{
+                variant: "links.searchButton",
+                textDecoration: "none",
+                lineHeight: "1.5",
+                // background: "white",
+                // borderRadius: "3em",
+                // py: 2,
+                // paddingRight: 2,
+                // paddingLeft: 4,
+                "&:hover": {
+                  textDecoration: "underline",
+                },
+              }}
+            />
+          </div>
+        </NavLink>
+      </NavItem>
       <NavItem>
         <NavLink>
           Platform
@@ -189,21 +225,33 @@ const SaasMenu = (props) => (
       </NavElement>
       <NavItem>
         <NavLink>
-          <CtaLink
-            to="/"
-            linkText="Sign Up"
-            iconName="ArrowRight"
-            iconSize="1em"
-            iconColor="theme.colors.menuNavItem"
+          <div
+            {...props}
             sx={{
-              variant: "links.ctaLink.arrowRight",
-              textDecoration: "none",
-              lineHeight: "1.5",
-              "&:hover": {
-                textDecoration: "underline",
-              },
+              variant: "nav.ctaLinkWrapper",
             }}
-          />
+          >
+            <CtaLink
+              to="/"
+              linkText="Sign Up"
+              iconName="ArrowRight"
+              iconSize="1em"
+              iconColor="theme.colors.menuNavItem"
+              sx={{
+                variant: "links.ctaLink.arrowRight",
+                textDecoration: "none",
+                lineHeight: "1.5",
+                // background: "white",
+                // borderRadius: "3em",
+                // py: 2,
+                // paddingRight: 2,
+                // paddingLeft: 4,
+                "&:hover": {
+                  textDecoration: "underline",
+                },
+              }}
+            />
+          </div>
         </NavLink>
       </NavItem>
     </NavMenu>

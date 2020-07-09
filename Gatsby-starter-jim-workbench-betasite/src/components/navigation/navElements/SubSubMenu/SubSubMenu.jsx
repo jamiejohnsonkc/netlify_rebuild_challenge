@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const SubSubMenu = (props) => (
   <ul
     {...props}
-    className="subSubMenu"
+    // className="subSubMenu"
     sx={{
       listStyle: "none",
       cursor: "pointer",

@@ -20,6 +20,7 @@ const Navbox = (props) => (
   <StyledDiv
     {...props}
     sx={{
+      display: "inline-flex",
       variant: "nav.navBox",
     }}
     className="navBox"

@@ -4,8 +4,6 @@ import { color } from "./colors"
 
 export default {
   nav: {
-    display: "inline-block",
-    position: "relative",
     lineHeight: 1.5,
     fontWeight: 600,
     fontFamily: "Roboto",
@@ -14,7 +12,7 @@ export default {
     textTransform: "captilalize",
     textDecoration: "none",
     transition: "all 0.3s ease-in",
-    fontSize: [2, 3, 1, 1],
+    fontSize: [3, 3, 1, 1],
     "&.active": { color: "navItemActive" },
     "&:hover": {
       color: "navMenuItemHover",
@@ -22,7 +20,7 @@ export default {
       "&::after": {
         width: "100%",
         backgroundColor: "navMenuItemHover",
-        transition: "all 0.5s ease-in",
+        // transition: "all 0.5s ease-in",
       },
     },
     "&::after": {
@@ -72,7 +70,8 @@ export default {
       lineHeight: 1,
       display: "flex",
       alignItems: "center",
-      color: "highlight",
+      color: "navMenuBackground_SM",
+
       "&:hover": {
         color: "navMenuItemHover",
       },
@@ -86,6 +85,17 @@ export default {
       //     color: "navMenuItemHover",
       //   },
       // },
+    },
+  },
+
+  searchButton: {
+    lineHeight: 1,
+    visibility: ["visible", "visible", "hidden", "hidden"],
+    display: ["flex", "flex", "none", "none"],
+    alignItems: "center",
+    color: "navMenuBackground_SM",
+    "&:hover": {
+      color: "navMenuItemHover",
     },
   },
 

@@ -103,9 +103,10 @@ const SaasComparison = (props) => (
         Go beyond a standard CDN with even less to maintain.
       </Styled.h3>
       <Grid
-        columns={[3, "1fr 1fr 1fr"]}
-        rows={[8, " 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"]}
+        columns={["200px 200px 200px", "1fr 1fr 1fr"]}
+        rows={["1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"]}
         gap={0}
+        width="1000px"
         {...props}
         sx={{
           borderRadius: 12,
@@ -123,7 +124,12 @@ const SaasComparison = (props) => (
         </ColHead>
         <ColHead>CDN</ColHead>
         <ColHead>Netlify Edge</ColHead>
-        <Grid rows="repeat(7, 64px)" gap={0} sx={{ bg: "muted" }}>
+        <Grid
+          width="1000px"
+          rows="repeat(7, 64px)"
+          gap={0}
+          sx={{ bg: "muted" }}
+        >
           <RowHead>Supports static assets</RowHead>
           <RowHead backgroundColor={color.white}>
             Works without an origin
@@ -134,7 +140,12 @@ const SaasComparison = (props) => (
           <RowHead backgroundColor={color.white}>Rollbacks</RowHead>
           <RowHead>Cache invalidation</RowHead>
         </Grid>
-        <Grid rows="repeat(7, 64px)" gap={0} sx={{ bg: "muted" }}>
+        <Grid
+          width="1000px"
+          rows="repeat(7, 64px)"
+          gap={0}
+          sx={{ bg: "muted" }}
+        >
           <Content>
             <DataIcon iconName="Check" />
           </Content>
@@ -151,7 +162,12 @@ const SaasComparison = (props) => (
           <Content backgroundColor={color.white}>Manual</Content>
           <Content>Tricky (some risk of stale content)</Content>
         </Grid>
-        <Grid rows="repeat(7, 64px)" gap={0} sx={{ bg: "muted" }}>
+        <Grid
+          width="1000px"
+          rows="repeat(7, 64px)"
+          gap={0}
+          sx={{ bg: "muted" }}
+        >
           <Content>
             <DataIcon iconName="Check" />
           </Content>

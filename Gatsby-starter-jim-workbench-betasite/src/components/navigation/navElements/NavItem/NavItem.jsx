@@ -10,7 +10,9 @@ const NavItem = ({ bg, color, padding, ...props }) => (
     sx={{
       color,
       position: "relative",
-
+      display: ["block", "block", "flex", "flex"],
+      alignItems: "center",
+      flex: `0 1 fit-content`,
       "&:hover": {
         cursor: "pointer",
       },
