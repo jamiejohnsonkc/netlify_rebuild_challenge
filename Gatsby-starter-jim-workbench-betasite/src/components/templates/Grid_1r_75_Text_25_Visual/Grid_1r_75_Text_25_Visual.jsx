@@ -5,15 +5,19 @@ import PropTypes from "prop-types"
 
 const Grid_1r_75_Text_25_Visual = (props) => (
   <Grid
+    {...props}
     py={4}
     my={4}
     columns={[1, 1, "3fr 1fr", "3fr 1fr"]}
     margin={[`0 auto`, 0]}
+    sx={{
+      alignItems: "center",
+    }}
   >
     <Box
+      {...props}
       display="grid"
       paddingRight={[0, 0, 2, 2]}
-      {...props}
       sx={{
         order: [2, 2, 1, 1],
       }}
@@ -22,17 +26,18 @@ const Grid_1r_75_Text_25_Visual = (props) => (
       <Text
         {...props}
         sx={{
-          variant: "styles.d3",
+          variant: "styles.p2",
         }}
       >
         {props.body}
       </Text>
     </Box>
     <Box
-      display="grid"
       {...props}
+      display="grid"
       sx={{
         order: [1, 1, 2, 2],
+        textAlign: ["center", "center", "unset", "unset"],
       }}
     >
       {props.visual}

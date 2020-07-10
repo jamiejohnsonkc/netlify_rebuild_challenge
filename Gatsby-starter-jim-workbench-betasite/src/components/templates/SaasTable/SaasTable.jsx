@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../../../base/Icon"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import Icon from "../../base/Icon"
+import { color } from "../../../../../jim-workbench-custom-themes/colors"
 import { transparentize } from "@theme-ui/color"
 
 const DataIcon = (props) => (
@@ -24,10 +24,12 @@ const Table = (props) => (
     {...props}
     sx={{
       borderCollapse: "collapse",
+      display: "block",
       maxWidth: "100%",
       overflowX: "auto",
       tableLayout: "fixed",
       width: "100%",
+      margin: "1em auto",
     }}
   />
 )
@@ -51,6 +53,7 @@ const ThCol = ({ textAlign, ...props }) => (
     sx={{
       textAlign,
       fontSize: 3,
+      minWidth: "11em",
     }}
   >
     {props.content}
@@ -63,7 +66,7 @@ const ThRow = (props) => (
     sx={{
       color: `${color.gray3}`,
       fontWeight: 400,
-      py: 1,
+      py: 2,
     }}
   >
     {props.content}
@@ -117,126 +120,129 @@ const TdataCheckNo = (props) => (
 )
 
 const SaasTable = (props) => (
-  <Table>
-    <THead>
-      <TRow>
-        <ThCol
-          {...props}
-          content="Comparison Point"
-          sx={{
-            th: {
-              textAlign: "left",
-            },
-          }}
-        />
-        <ThCol
-          {...props}
-          content="CDN"
-          sx={{
-            textAlign: "center",
-          }}
-        />
-        <ThCol
-          content="Netlify Edge"
-          sx={{
-            textAlign: "center",
-          }}
-        />
-      </TRow>
-    </THead>
-    <TBody>
-      <TRow
-        {...props}
-        sx={{
-          bg: transparentize(color.gray6, 0.35),
-        }}
-      >
-        <ThRow content="Supports static assets" />
-        <TdataCheckYes
+  <>
+    {" "}
+    <Table>
+      <THead>
+        <TRow>
+          <ThCol
+            {...props}
+            content="Comparison Point"
+            sx={{
+              th: {
+                textAlign: "left",
+              },
+            }}
+          />
+          <ThCol
+            {...props}
+            content="CDN"
+            sx={{
+              textAlign: "center",
+            }}
+          />
+          <ThCol
+            content="Netlify Edge"
+            sx={{
+              textAlign: "center",
+            }}
+          />
+        </TRow>
+      </THead>
+      <TBody>
+        <TRow
           {...props}
           sx={{
             bg: transparentize(color.gray6, 0.35),
           }}
-        />
-        <TdataCheckYes />
-      </TRow>
-      <TRow>
-        <ThRow content="Works without an origin" />
-        <TdataCheckNo
-          {...props}
-          sx={{
-            bg: transparentize(color.gray6, 0.65),
-          }}
-        />
-        <TdataCheckYes />
-      </TRow>
-      <TRow
-        sx={{
-          bg: transparentize(color.gray6, 0.35),
-        }}
-      >
-        <ThRow content="Can prerender pages / run builds" />
-        <TdataCheckNo
-          {...props}
-          sx={{
-            bg: transparentize(color.gray6, 0.35),
-          }}
-        />
-        <TdataCheckYes />
-      </TRow>
-      <TRow>
-        <ThRow content="Git-integrated CI/CD" />
-        <TdataCheckNo
-          {...props}
-          sx={{
-            bg: transparentize(color.gray6, 0.65),
-          }}
-        />
-        <TdataCheckYes />
-      </TRow>
-      <TRow
-        sx={{
-          bg: transparentize(color.gray6, 0.35),
-        }}
-      >
-        <ThRow content="Deploys" />
-        <TdataText
-          {...props}
-          content="Manual"
+        >
+          <ThRow content="Supports static assets" />
+          <TdataCheckYes
+            {...props}
+            sx={{
+              bg: transparentize(color.gray6, 0.35),
+            }}
+          />
+          <TdataCheckYes />
+        </TRow>
+        <TRow>
+          <ThRow content="Works without an origin" />
+          <TdataCheckNo
+            {...props}
+            sx={{
+              bg: transparentize(color.gray6, 0.65),
+            }}
+          />
+          <TdataCheckYes />
+        </TRow>
+        <TRow
           sx={{
             bg: transparentize(color.gray6, 0.35),
           }}
-        />
-        <TdataText content="Automatic" />
-      </TRow>
-      <TRow>
-        <ThRow content="Rollbacks" />
-        <TdataText
-          {...props}
-          content="Manual"
-          sx={{
-            bg: transparentize(color.gray6, 0.65),
-          }}
-        />
-        <TdataText content="Automatic" />
-      </TRow>
-      <TRow
-        sx={{
-          bg: transparentize(color.gray6, 0.35),
-        }}
-      >
-        <ThRow content="Cache invalidation" />
-        <TdataText
-          {...props}
-          content="Tricky (some risk of stale content)"
+        >
+          <ThRow content="Can prerender pages / run builds" />
+          <TdataCheckNo
+            {...props}
+            sx={{
+              bg: transparentize(color.gray6, 0.35),
+            }}
+          />
+          <TdataCheckYes />
+        </TRow>
+        <TRow>
+          <ThRow content="Git-integrated CI/CD" />
+          <TdataCheckNo
+            {...props}
+            sx={{
+              bg: transparentize(color.gray6, 0.65),
+            }}
+          />
+          <TdataCheckYes />
+        </TRow>
+        <TRow
           sx={{
             bg: transparentize(color.gray6, 0.35),
           }}
-        />
-        <TdataText content="Instant (no risk of stale content)" />
-      </TRow>
-    </TBody>
-  </Table>
+        >
+          <ThRow content="Deploys" />
+          <TdataText
+            {...props}
+            content="Manual"
+            sx={{
+              bg: transparentize(color.gray6, 0.35),
+            }}
+          />
+          <TdataText content="Automatic" />
+        </TRow>
+        <TRow>
+          <ThRow content="Rollbacks" />
+          <TdataText
+            {...props}
+            content="Manual"
+            sx={{
+              bg: transparentize(color.gray6, 0.65),
+            }}
+          />
+          <TdataText content="Automatic" />
+        </TRow>
+        <TRow
+          sx={{
+            bg: transparentize(color.gray6, 0.35),
+          }}
+        >
+          <ThRow content="Cache invalidation" />
+          <TdataText
+            {...props}
+            content="Tricky (some risk of stale content)"
+            sx={{
+              bg: transparentize(color.gray6, 0.35),
+            }}
+          />
+          <TdataText content="Instant (no risk of stale content)" />
+        </TRow>
+      </TBody>
+    </Table>
+  </>
 )
 
 // const SaasTable = (props) => (

@@ -186,7 +186,7 @@ export default merge(typography, {
       marginBottom: 2,
     },
     p2: {
-      fontsize: 4,
+      fontsize: 2,
       color: "text",
       fontFamily: "body",
       fontWeight: "body",

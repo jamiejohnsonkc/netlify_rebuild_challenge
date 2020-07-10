@@ -16,7 +16,7 @@ export default {
   },
   container: {
     maxWidth: ["100%", "100%", "60em", "79em"],
-    px: [1, 4, 4, 4],
+    px: [3, 4, 4, 4],
     display: "block",
     position: "relative",
     margin: "0 auto",
@@ -24,7 +24,7 @@ export default {
 
   containerNarrow: {
     variant: "layout.container",
-    maxWidth: ["63%", "100%", "60em", "60em"],
+    maxWidth: ["100%", "100%", "60em", "60em"],
   },
 
   mastHead: {

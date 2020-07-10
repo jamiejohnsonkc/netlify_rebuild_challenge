@@ -16,6 +16,7 @@ import CalloutBand from "../components/production/sections/CalloutBand"
 import BuskerCtaBand from "../components/production/sections/BuskerCtaBand"
 import SaasSubscribe from "../components/production/sections/SaasSubscribe"
 import SaasLinkStack from "../components/production/layout/SaasLinkStack"
+// import SaasTable from "../components/templates/SaasTable"
 
 const IndexPage = (props) => {
   const [colorMode, setColorMode] = useColorMode()
@@ -46,6 +47,7 @@ const IndexPage = (props) => {
       />
       <SaasGlobalCloud />
       <SaasBenefits />
+      {/* <SaasTable /> */}
       <SaasComparison />
       <CalloutBand />
       <BuskerCtaBand />
