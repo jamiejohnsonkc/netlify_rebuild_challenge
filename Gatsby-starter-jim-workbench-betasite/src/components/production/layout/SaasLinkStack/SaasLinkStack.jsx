@@ -33,7 +33,7 @@ const SaasLinkStack = (props) => (
       }}
     >
       <Grid
-        columns={[1, 3, 5, 5]}
+        columns={[2, 3, 5, 5]}
         {...props}
         sx={{
           py: 5,

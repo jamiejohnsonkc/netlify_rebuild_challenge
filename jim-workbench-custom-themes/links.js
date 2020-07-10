@@ -70,10 +70,15 @@ export default {
       lineHeight: 1,
       display: "flex",
       alignItems: "center",
-      color: "navMenuBackground_SM",
+      color: [
+        "navMenuBackground_SM",
+        "navMenuBackground_SM",
+        "highlight",
+        "highlight",
+      ],
 
       "&:hover": {
-        color: "navMenuItemHover",
+        // color: "navMenuItemHover",
       },
       // mainNavCta: {
       //   lineHeight: 1,

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Icon from "../../../base/Icon"
 import React from "react"
 import PropTypes from "prop-types"
-import MegaNavLink from "../../../navigation/MegaNavLink"
+import MegaNavLink from "../../../navigation/navElements/MegaNavLink"
 // import Link from "../../navigation/MegaNavLink"
 
 // const MegaNavLink = ({
@@ -35,9 +35,9 @@ import MegaNavLink from "../../../navigation/MegaNavLink"
 //TODO set hover color on left side of meganav
 //TODO fix responsive sizing
 
-const MegaNav = (props) => (
+const SaasMegaNav = (props) => (
   <Box
-    className="MegaNav"
+    className="SaasMegaNav"
     {...props}
     sx={{
       // width: ["80em"],
@@ -127,8 +127,8 @@ const MegaNav = (props) => (
   </Box>
 )
 
-MegaNav.propTypes = {}
+SaasMegaNav.propTypes = {}
 
-MegaNav.defaultProps = {}
+SaasMegaNav.defaultProps = {}
 
-export default MegaNav
+export default SaasMegaNav

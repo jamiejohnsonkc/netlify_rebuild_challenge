@@ -19,7 +19,12 @@ import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { darken } from "@theme-ui/color"
 
 const Claim = (props) => (
-  <Box>
+  <Box
+    {...props}
+    sx={{
+      whiteSpace: "pre",
+    }}
+  >
     <CheckMark
       {...props}
       sx={{

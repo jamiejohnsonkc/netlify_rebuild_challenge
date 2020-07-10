@@ -8,7 +8,7 @@ import NavLink from "../../../navigation/navElements/NavLink"
 import NavMenu from "../../../navigation/navElements/NavMenu"
 import SubMenu from "../../../navigation/navElements/SubMenu"
 import NavItem from "../../../navigation/navElements/NavItem"
-import MegaNav from "../../../production/navigation/MegaNav"
+import SaasMegaNav from "../../../production/navigation/SaasMegaNav"
 import NavItemSpacer from "../../../navigation/navElements/NavItemSpacer"
 import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import NavElement from "../../../navigation/navElements/NavElement"
@@ -33,7 +33,12 @@ const iconStyle = {
 
 const SaasMenu = (props) => (
   <>
-    <NavMenu>
+    <NavMenu
+      {...props}
+      sx={{
+        variant: "nav.navMenu",
+      }}
+    >
       <NavItem>
         <NavLink>
           <div
@@ -76,7 +81,7 @@ const SaasMenu = (props) => (
             variant: "nav.subMenu",
           }}
         >
-          <MegaNav />
+          <SaasMegaNav />
         </SubMenu>
       </NavItem>
       <NavItem>

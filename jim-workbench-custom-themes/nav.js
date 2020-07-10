@@ -80,7 +80,7 @@ export default {
   },
 
   //* Lists
-  //? this was prevdiously titled mainNavUl
+
   navMenu: {
     // display: "flex",
     // flex: `.1 5 53em`,
@@ -127,8 +127,6 @@ export default {
     },
   },
 
-  //!NavLink in links.js
-
   subMenu: {
     listStyle: "none",
 
@@ -144,8 +142,6 @@ export default {
 
   subMenuNavItem: {},
 
-  //!NavSubLink in links.js
-
   subSubMenu: {
     listStyle: "none",
     p: 0,
@@ -158,7 +154,7 @@ export default {
 
   //!NavSubSub is not defined
 
-  //!Submenubox is lady coding for the saas dropdown menu, should've been a NavSubLink variant (i think)
+  //!Submenubox is lady coding for the saas dropdown menu, should've been a NavSubLink variant (or whatever)
   subMenuBox: {
     borderRadius: ".5em",
     backgroundColor: color.white,

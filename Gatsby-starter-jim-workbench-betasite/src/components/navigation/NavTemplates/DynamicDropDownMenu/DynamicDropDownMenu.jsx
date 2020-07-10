@@ -1,16 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { StaticQuery, graphql, Link } from "gatsby"
 import React from "react"
-import Logo from "../../../base/Logo"
+import { StaticQuery, graphql } from "gatsby"
+
 import Icon from "../../../base/Icon"
 import NavLink from "../../navElements/NavLink"
-import NavSubLink from "../../NavElements/NavSubLink"
+import NavSubLink from "../../navElements/NavSubLink"
 import PropTypes from "prop-types"
 
-//* THIS COMPONENT IS A REMNANT OF THE INITIAL MENU DEVELOPMENT. KEPT HERE AS STARTING POINT FOR FUTURE REFACTORING OF A RESUABLE, DYNAMICALLY GENERATED MENU.
+//! THIS COMPONENT IS TO BE REFACTORED FOR REUSE AND IS NOT AN ACTIVE ELEMENT IN THIS PROJECT.  iT PROVIDES BASIC MENU, ITEM, LINK, SUBMENU, ETC. FUNCTIONALITY
 
-const DynamicMenu = (props) => {
+//TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
+
+const DynamicDropDownMenu = (props) => {
   return (
     <StaticQuery
       query={graphql`
@@ -36,18 +38,17 @@ const DynamicMenu = (props) => {
       `}
       render={(data) => (
         <ul
-          className="mainNavUl"
+          // className="navMenu"
           sx={{
             listStyle: "none",
 
             cursor: "pointer",
-            variant: "layout.mainNavUl",
+            // variant: "nav.navMenu",
           }}
         >
-          <li>Test</li>
           {data.site.siteMetadata.menuLinks.map((link) => (
             <li
-              className="mainNavListItem"
+              // className="navItem"
               sx={{
                 display: "block",
                 position: "relative",
@@ -60,7 +61,7 @@ const DynamicMenu = (props) => {
                   opacity: "1",
                   display: "block",
                 },
-                variant: "layout.mainNavListItem",
+                // variant: "nav.navItem",
               }}
               key={link.name}
             >
@@ -74,7 +75,7 @@ const DynamicMenu = (props) => {
               </NavLink>
               {link.subMenu && link.subMenu.length > 0 ? (
                 <ul
-                  className="mainNavSubMenu"
+                  // className="subMenu"
                   sx={{
                     visibility: "hidden",
                     opacity: "0",
@@ -86,13 +87,13 @@ const DynamicMenu = (props) => {
                       opacity: "1",
                       display: "block",
                     },
-                    variant: "layout.mainNavSubMenu",
+                    // variant: "nav.subMenu",
                   }}
                   aria-label="submenu"
                 >
                   {link.subMenu.map((subLink) => (
                     <li
-                      className="mainNavSubListItem"
+                      // className="subMenuNavItem"
                       sx={{
                         clear: "both",
                         width: "100%",
@@ -102,7 +103,7 @@ const DynamicMenu = (props) => {
                           opacity: "1",
                           display: "block",
                         },
-                        variant: "layout.mainNavSubListItem",
+                        // variant: "nav.subMenuNavItem",
                       }}
                       key={subLink.name}
                     >
@@ -122,10 +123,10 @@ const DynamicMenu = (props) => {
                               opacity: "1",
                               display: "block",
                             },
-                            variant: "layout.mainNavSubSubMenu",
+                            // variant: "nav.subSubMenu",
                           }}
                           aria-label="submenu"
-                          className="MainNavSubSubMenu"
+                          // className="subSubMenu"
                         >
                           {subLink.subSubMenu.map((subSubLink) => (
                             <li
@@ -140,15 +141,14 @@ const DynamicMenu = (props) => {
                                   opacity: "1",
                                   display: "block",
                                 },
-                                variant: "layout.mainNavSubSubListItem",
+                                // variant: "nav.subSubMenuNavItem",
                               }}
                               key={subSubLink.name}
-                              className="MainNavSubSubListItem"
+                              // className="subSubMenuNavItem"
                             >
                               <NavSubLink
                                 sx={{
                                   color: "white",
-                                  textDecoration: "none",
                                 }}
                                 href={subSubLink.link}
                               >
@@ -164,92 +164,14 @@ const DynamicMenu = (props) => {
               ) : null}
             </li>
           ))}
-          <li
-            sx={{
-              variant: "layout.mainMenuSpacer",
-            }}
-            className="spacer"
-          ></li>
-          <li
-            className="search"
-            sx={{
-              variant: "layout.mainNavSearch",
-            }}
-          >
-            <NavLink
-              sx={{
-                variant: "links.mainMenuSearch",
-              }}
-            >
-              <Icon
-                iconName="Search"
-                sx={{
-                  color: "white",
-                  width: "2em",
-                  height: "1.5em",
-                  verticalAlign: "sub",
-                  ":hover": {
-                    color: "accent",
-                  },
-                }}
-              />
-            </NavLink>
-          </li>
-          <li
-            sx={{
-              variant: "layout.mainNavListItem",
-            }}
-          >
-            <NavLink>Contact Sales</NavLink>
-          </li>
-          <li
-            sx={{
-              variant: "layout.mainNavListItem",
-            }}
-          >
-            <NavLink>Log In</NavLink>
-          </li>
-          <li
-            className="divider"
-            sx={{
-              color: "white",
-
-              variant: "layout.mainMenuDivider",
-            }}
-          >
-            <a>|</a>
-          </li>
-          <li
-            sx={{
-              // marginRight: 0,
-              // height: "16px",
-              variant: "layout.mainNavListItem",
-            }}
-          >
-            <NavLink>
-              Sign Up
-              <Icon
-                iconName="ArrowRight"
-                sx={{
-                  color: "white",
-                  width: "2em",
-                  // height: "1.5em",
-                  verticalAlign: "middle",
-                  ":hover": {
-                    color: "accent",
-                  },
-                }}
-              />
-            </NavLink>
-          </li>
         </ul>
       )}
     />
   )
 }
 
-DynamicMenu.propTypes = {}
+DynamicDropDownMenu.propTypes = {}
 
-DynamicMenu.defaultProps = {}
+DynamicDropDownMenu.defaultProps = {}
 
-export default DynamicMenu
+export default DynamicDropDownMenu
