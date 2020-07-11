@@ -110,6 +110,9 @@ export default {
     minWidth: "20em",
     color: "navMenuItem",
     textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+    },
   },
 
   jumpLink: {

@@ -21,7 +21,6 @@ const SubMenu = ({ width, color, bg, ...props }) => (
         opacity: "1",
         display: "block",
       },
-      variant: "nav.subMenu",
     }}
     aria-label="submenu"
   >

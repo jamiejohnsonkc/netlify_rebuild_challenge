@@ -86,8 +86,8 @@ export default {
     // flex: `.1 5 53em`,
 
     margin: 0,
-    padding: [0, 3],
-    px: [0, 4],
+    py: [0, 3, 3, 3],
+    px: [0, 4, 4, 4],
     // alignItems: "center",
     // display: "flex",
     // flex: 1,
@@ -163,6 +163,30 @@ export default {
     display: ["none", "none", "block", "block"],
     padding: 4,
     minWidth: "17em",
+  },
+
+  superMenu: {
+    listStyle: "none",
+
+    p: 4,
+    bottom: 0,
+    minWidth: "8rem",
+    left: "unset",
+    // backgroundColor: "nav.navBar",
+    borderRadius: 6,
+    transition: "all 0.3s ease",
+    display: "none",
+  },
+
+  superMenuBox: {
+    borderRadius: ".5em",
+    backgroundColor: color.black,
+    color: color.white,
+    transition: "all 0.3s ease-in",
+    boxShadow: "depth",
+    display: ["none", "none", "block", "block"],
+    padding: 3,
+    minWidth: "18em",
   },
 
   //* Extraneous Saas Menu Elements //

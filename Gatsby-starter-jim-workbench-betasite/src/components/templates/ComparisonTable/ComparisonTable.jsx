@@ -27,7 +27,7 @@ const Table = (props) => (
       display: "block",
       maxWidth: "100%",
       overflowX: "auto",
-      tableLayout: "fixed",
+      tableLayout: ["fixed", "fixed", "auto", "auto"],
       width: "100%",
       margin: "1em auto",
     }}
@@ -53,7 +53,7 @@ const ThCol = ({ textAlign, ...props }) => (
     sx={{
       textAlign,
       fontSize: 3,
-      minWidth: "11em",
+      minWidth: ["11em", "11em", "14em", "14em"],
     }}
   >
     {props.content}
