@@ -16,7 +16,7 @@ const SaasAnnouncementBar = (props) => {
       className="AccouncementBar"
       style={{ display: isVisible ? "flex" : "none" }}
       sx={{
-        bg: lighten("primary", 0.005),
+        background: `linear-gradient(-45deg,#d4f5ff,#eafaff,#eafaff,#d3f6ef)`,
 
         width: "100%",
         textAlign: "center",
@@ -49,6 +49,10 @@ const SaasAnnouncementBar = (props) => {
             cursor: "pointer",
             fontSize: 0,
             flexWrap: ["wrap", "none", "none", "none"],
+            color: "#215888",
+            "&:hover": {
+              color: lighten("#215888", 0.25),
+            },
           }}
         >
           <Text
@@ -56,10 +60,11 @@ const SaasAnnouncementBar = (props) => {
             sx={{
               display: "flex",
               paddingRight: [2, 2, 0, 0],
-              color: lighten("primary", 50),
-              "&:hover": {
-                color: lighten("primary", 80),
-              },
+              // color: lighten("primary", 50),
+              // color: "#215888",
+              // "&:hover": {
+              //   color: lighten("primary", 80),
+              // },
             }}
           >
             Join us for a product demo - June 30.
@@ -67,7 +72,8 @@ const SaasAnnouncementBar = (props) => {
           <u
             sx={{
               paddingLeft: [0, 2, 2, 2],
-              color: lighten("primary", 99),
+              // color: lighten("primary", 99),
+              // color: "#215888",
             }}
           >
             Register Now!

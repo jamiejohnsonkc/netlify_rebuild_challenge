@@ -93,7 +93,7 @@ const SaasComparison = (props) => (
 
           // width: "100%",
           padding: "0 1em",
-          maxWidth: ["45em", "45em", "unset", "unset"],
+          maxWidth: ["45em", "45em", "60em", "60em"],
         }}
       >
         {/*

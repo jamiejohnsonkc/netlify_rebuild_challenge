@@ -23,7 +23,7 @@ const SaasBenefits = (props) => (
     <Container
       {...props}
       sx={{
-        variant: "layout.containerNarrow",
+        variant: "layout.containerTight",
       }}
     >
       <Styled.h1
@@ -36,25 +36,25 @@ const SaasBenefits = (props) => (
       >
         The benefits of Netlify Edge
       </Styled.h1>
-      <Grid_1r_75_Text_25_Visual
+      <Grid_1r_25_Visual_75_Text
         visual={<SaasCloud />}
         header="Faster sites & applications"
         body="Global distribution with automated prerendering makes for blazing fast site delivery. Smashing Magazine moved to Netlify for a 10x boost in performance."
       />
 
-      <Grid_1r_25_Visual_75_Text
+      <Grid_1r_75_Text_25_Visual
         visual={<SaasSecurity />}
         header="Extremely reliable. Extremely secure."
         body="Publish apps across multiple cloud providers for ultimate reliability. And since apps are prerendered, all edge nodes serve secure, static content with little opportunity for exploit.
         "
       />
 
-      <Grid_1r_75_Text_25_Visual
+      <Grid_1r_25_Visual_75_Text
         visual={<SaasWorkflow />}
         header="Beautiful workflows"
         body="Connect to Git for instant continuous delivery. Pull requests can generate automatic previews and every branch can be a different staging site. Every deployment is preserved allowing instant rollbacks to any prior state, without rebuilding."
       />
-      <Grid_1r_25_Visual_75_Text
+      <Grid_1r_75_Text_25_Visual
         visual={<SaasActivate />}
         header="Zero infrastructure required"
         body="Deploy direct to Netlify Edge to replace production servers, staging servers, deployment systems, and CDN caching."

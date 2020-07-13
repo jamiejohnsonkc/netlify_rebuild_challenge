@@ -2,19 +2,20 @@ import React from "react"
 import { GenIcon } from "react-icons"
 import { AiFillTwitterCircle } from "react-icons/ai"
 import { BsArrowRight } from "react-icons/bs"
-import {
-  FaDiscourse,
-  FaFacebookF,
-  FaFacebookMessenger,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaRedditAlien,
-  FaSearch,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa"
-import { GoCheck, GoChevronDown, GoChevronUp, GoX } from "react-icons/go"
+import { FaDiscourse } from "react-icons/fa"
+import { FaFacebookF } from "react-icons/fa"
+import { FaFacebookMessenger } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
+import { FaRedditAlien } from "react-icons/fa"
+import { FaSearch } from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
+import { FaYoutube } from "react-icons/fa"
+import { GoCheck } from "react-icons/go"
+import { GoChevronDown } from "react-icons/go"
+import { GoChevronUp } from "react-icons/go"
+import { GoX } from "react-icons/go"
 import { GrRadialSelected } from "react-icons/gr"
 import { MdFormatQuote } from "react-icons/md"
 import "./Icon.css"

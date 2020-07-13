@@ -2,6 +2,10 @@
 import { jsx, Box, Grid, Styled, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
+import {
+  slideUp1,
+  slideUp2,
+} from "../../../../../jim-workbench-custom-themes/animation.js"
 
 const Grid_1r_25_Visual_75_Text = (props) => (
   <Grid
@@ -16,6 +20,7 @@ const Grid_1r_25_Visual_75_Text = (props) => (
   >
     <Box
       {...props}
+      {...slideUp1}
       display="grid"
       sx={{
         // order: [2, 2, 1, 1],
@@ -24,16 +29,7 @@ const Grid_1r_25_Visual_75_Text = (props) => (
     >
       {props.visual}
     </Box>
-    <Box
-      {...props}
-      sx={
-        {
-          // order: [2, 2, 1, 1],
-        }
-      }
-      display="grid"
-      paddingRight={(0, 0, 4, 4)}
-    >
+    <Box {...props} {...slideUp2} display="grid" paddingRight={(0, 0, 4, 4)}>
       <Styled.h3>{props.header}</Styled.h3>
       <Text
         {...props}

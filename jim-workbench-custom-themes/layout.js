@@ -27,6 +27,11 @@ export default {
     maxWidth: ["100%", "100%", "60em", "60em"],
   },
 
+  containerTight: {
+    variant: "layout.container",
+    maxWidth: ["100%", "100%", "50em", "50em"],
+  },
+
   mastHead: {
     display: "block",
     justifyContent: "center",
