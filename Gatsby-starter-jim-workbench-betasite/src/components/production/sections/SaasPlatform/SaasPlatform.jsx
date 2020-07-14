@@ -1,44 +1,55 @@
 /** @jsx jsx */
-import { jsx, Container, Card, Styled, Text } from "theme-ui"
+import { jsx, Container, Card, Box, Styled, Text, Flex } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import CtaLink from "../../../base/CtaLink"
 import Pancake from "../../../layout/Pancake"
 import { color } from "../../../../../../jim-workbench-custom-themes/colors"
-import CardBlue from "../../../../svg/assets/cardBlue.svg"
-import CardGreen from "../../../../svg/assets/cardGreen.svg"
-import CardPurple from "../../../../svg/assets/cardPurple.svg"
+import { css } from "@emotion/core"
+import cardBlue from "./cardBlueBg.svg"
+import cardBlack from "./cardBlackBg.svg"
+import cardPurple from "./cardPurpleBg.svg"
+// import backgroundSvg from "./"
 
-const CardBackground = (props) => (
-  <div
-    {...props}
-    sx={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      borderRadius: 6,
-    }}
-  >
-    {props.cardBackground}
-  </div>
-)
+const card1Background = css`
+  background-image: url(${cardBlue});
+  background-repeat: no-repeat;
+`
+
+const card2Background = css`
+  background-image: url(${cardBlack});
+  background-repeat: no-repeat;
+  background-position: -0.25em -0.5em;
+  background-size: 102%;
+`
+
+const card3Background = css`
+  background-image: url(${cardPurple});
+  background-repeat: no-repeat;
+  background-position-y: -0.25em;
+`
 
 const SaasCard = (props) => (
   <Card
     {...props}
     sx={{
-      backgroundImage,
       position: "relative",
-      flex: `0 1 30%`,
-
-      borderRadius: 6,
+      flex: `0 1 31%`,
+      py: 4,
+      px: 3,
+      my: [2, 2, 0, 0],
+      boxShadow: "present",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "start",
     }}
+    css={props.cardBackground}
   >
-    {/* <CardBackground cardBackground={props.cardVisual} /> */}
     <Styled.h3
       {...props}
       sx={{
         color,
+        paddingTop: 2,
       }}
     >
       {props.cardHeader}
@@ -60,6 +71,7 @@ const SaasCard = (props) => (
       iconColor={color.teal}
       sx={{
         variant: "links.ctaLink.arrowRight",
+        marginTop: "auto",
         color: `${color.teal}`,
         "&:hover": {
           color: `${color.teal}`,
@@ -70,36 +82,53 @@ const SaasCard = (props) => (
 )
 
 const SaasPlatform = (props) => (
-  <Pancake>
-    <Container
-      {...props}
-      sx={{
-        display: "flex",
-        justifyContent: "space-evenly",
-      }}
-    >
-      <SaasCard
-        // cardVisual={<CardBlue />}
-        backgroundImage={<CardBlue />}
-        cardHeader="Netlify Build"
-        cardText="The Git workflow for web development. Build, deploy, and manage modern web projects."
-      />
-      <SaasCard
+  <Pancake
+    {...props}
+    sx={{
+      py: 6,
+    }}
+  >
+    <Container>
+      <Styled.h1
         {...props}
-        backgroundImage={<CardGreen />}
         sx={{
-          backgroundColor: `${color.black3}`,
-          color: "white",
+          textAlign: "center",
+          py: 4,
         }}
-        // cardVisual={<CardGreen />}
-        cardHeader="Netlify Dev"
-        cardText="Run our entire platform right on your laptop. Preview it all - site generation, functions, and edge logic."
-      />
-      <SaasCard
-        backgroundImage={<CardPurple />}
-        cardHeader="Netlify Edge"
-        cardText="A new type of application delivery network custom designed for fast, responsive sites and modern workflows."
-      />
+      >
+        The rest of the Netlify Platform
+      </Styled.h1>
+      <Flex
+        {...props}
+        sx={{
+          display: "flex",
+          flexDirection: ["column", "column", "row", "row"],
+          justifyContent: "space-evenly",
+        }}
+      >
+        <SaasCard
+          cardBackground={card1Background}
+          cardHeader="Netlify Build"
+          cardText="The Git workflow for web development. Build, deploy, and manage modern web projects."
+        />
+
+        <SaasCard
+          {...props}
+          cardBackground={card2Background}
+          sx={{
+            backgroundColor: `${color.black3}`,
+            color: "white",
+          }}
+          // cardVisual={<CardGreen />}
+          cardHeader="Netlify Dev"
+          cardText="Run our entire platform right on your laptop. Preview it all - site generation, functions, and edge logic."
+        />
+        <SaasCard
+          cardBackground={card3Background}
+          cardHeader="Netlify Edge"
+          cardText="A new type of application delivery network custom designed for fast, responsive sites and modern workflows."
+        />
+      </Flex>
     </Container>
   </Pancake>
 )

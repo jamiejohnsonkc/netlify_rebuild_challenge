@@ -230,7 +230,7 @@ export default merge(typography, {
     subtle: "0 0 4px 3px rgba(0, 0, 0, .05)",
     // test2: (theme) => `0 0 4px 3px ${theme.colors.primary}`,
     primary: `0 0 4px 3px ${colors.primary}`,
-    test4: `0 2px 40px rgba(14,30,37,.16)`,
+    present: `0 2px 40px rgba(14,30,37,.16)`,
     test5: `-10px 10px 80px rgba(0,0,0,.1)`,
     depth: `0 5px 20px -10px #000`,
     callOut: `0 0 4.236em rgba(14,30,37,.09)`,

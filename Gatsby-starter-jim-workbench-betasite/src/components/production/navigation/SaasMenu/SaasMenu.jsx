@@ -85,7 +85,7 @@ const SaasMenu = (props) => (
         </SubMenu>
       </NavItem>
       <NavItem>
-        <NavLink>Pricing</NavLink>
+        <NavLink to="/page-2">Pricing</NavLink>
       </NavItem>
       <NavItem>
         <NavLink>

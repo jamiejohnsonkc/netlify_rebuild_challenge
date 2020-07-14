@@ -18,6 +18,7 @@ import SaasSubscribe from "../components/production/sections/SaasSubscribe"
 import SaasLinkStack from "../components/production/layout/SaasLinkStack"
 import SaasFooter from "../components/production/layout/footer/SaasFooter"
 import SaasTechnology from "../components/production/sections/SaasTechnology"
+import SaasPlatform from "../components/production/sections/SaasPlatform"
 // import SaasTable from "../components/templates/SaasTable"
 
 const IndexPage = (props) => {
@@ -53,6 +54,7 @@ const IndexPage = (props) => {
       <SaasComparison />
       <SaasTechnology />
       <CalloutBand />
+      <SaasPlatform />
       <BuskerCtaBand />
       <SaasSubscribe />
       <SaasLinkStack />
