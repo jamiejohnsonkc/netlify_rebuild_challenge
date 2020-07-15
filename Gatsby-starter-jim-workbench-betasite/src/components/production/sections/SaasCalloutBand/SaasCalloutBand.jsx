@@ -21,24 +21,24 @@ import { darken } from "@theme-ui/color"
 import gradients from "../../../../../../jim-workbench-custom-themes/exThemeUi/gradients"
 import IconBulletListItem from "../../../templates/IconBulletListItem"
 
-const Claim = (props) => (
-  <Box
-    {...props}
-    sx={{
-      whiteSpace: "pre",
-    }}
-  >
-    <CheckMarkRnd />
-    <Text
-      {...props}
-      sx={{
-        display: "inline-block",
-      }}
-    >
-      {props.claimText}
-    </Text>
-  </Box>
-)
+// const Claim = (props) => (
+//   <Box
+//     {...props}
+//     sx={{
+//       whiteSpace: "pre",
+//     }}
+//   >
+//     <CheckMarkRnd />
+//     <Text
+//       {...props}
+//       sx={{
+//         display: "inline-block",
+//       }}
+//     >
+//       {props.claimText}
+//     </Text>
+//   </Box>
+// )
 
 const SaasCalloutBand = (props) => {
   const [colorMode, setColorMode] = useColorMode()

@@ -12,7 +12,7 @@ const DataIcon = (props) => (
     name={props.iconName}
     size="1.25em"
     sx={{
-      color: "primary",
+      color: color.teal,
       verticalAlign: "middle",
     }}
   />

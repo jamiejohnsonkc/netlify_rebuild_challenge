@@ -9,6 +9,11 @@ import { css } from "@emotion/core"
 import cardBlue from "./cardBlueBg.svg"
 import cardBlack from "./cardBlackBg.svg"
 import cardPurple from "./cardPurpleBg.svg"
+import {
+  slideUp1,
+  slideUp2,
+  slideUp3,
+} from "../../../../../../jim-workbench-custom-themes/exThemeUi/animation"
 // import backgroundSvg from "./"
 
 const card1Background = css`
@@ -107,6 +112,7 @@ const SaasPlatform = (props) => (
         }}
       >
         <SaasCard
+          {...slideUp1}
           cardBackground={card1Background}
           cardHeader="Netlify Build"
           cardText="The Git workflow for web development. Build, deploy, and manage modern web projects."
@@ -114,6 +120,7 @@ const SaasPlatform = (props) => (
 
         <SaasCard
           {...props}
+          {...slideUp2}
           cardBackground={card2Background}
           sx={{
             backgroundColor: `${color.black3}`,
@@ -125,6 +132,7 @@ const SaasPlatform = (props) => (
         />
         <SaasCard
           cardBackground={card3Background}
+          {...slideUp3}
           cardHeader="Netlify Edge"
           cardText="A new type of application delivery network custom designed for fast, responsive sites and modern workflows."
         />

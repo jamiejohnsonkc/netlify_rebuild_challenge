@@ -3,13 +3,14 @@ import { jsx, Box, Container, Grid, Styled, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-
 import SaasCloud from "../../../../svg/assets/saasCloud.svg"
 import SaasSecurity from "../../../../svg/assets/saasSecurity.svg"
 import SaasWorkflow from "../../../../svg/assets/saasWorkflow.svg"
 import SaasActivate from "../../../../svg/assets/saasActivate.svg"
 import Grid_1r_75_Text_25_Visual from "../../../templates/Grid_1r_75_Text_25_Visual"
 import Grid_1r_25_Visual_75_Text from "../../../templates/Grid_1r_25_Visual_75_Text"
+
+import { slideUp1 } from "../../../../../../jim-workbench-custom-themes/exThemeUi/animation"
 
 const SaasBenefits = (props) => (
   <Pancake
@@ -38,6 +39,7 @@ const SaasBenefits = (props) => (
       </Styled.h1>
       <Grid_1r_25_Visual_75_Text
         visual={<SaasCloud />}
+        {...slideUp1}
         header="Faster sites & applications"
         body="Global distribution with automated prerendering makes for blazing fast site delivery. Smashing Magazine moved to Netlify for a 10x boost in performance."
       />

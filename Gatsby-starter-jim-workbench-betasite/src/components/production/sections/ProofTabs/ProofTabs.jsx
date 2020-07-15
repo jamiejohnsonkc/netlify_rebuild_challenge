@@ -15,24 +15,31 @@ import {
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import React from "react"
 import Button from "../../../base/Button"
-import Logo1 from "../../../../svg/assets/logo-1.svg"
-import Logo2 from "../../../../svg/assets/logo-2.svg"
-import Logo3 from "../../../../svg/assets/logo-3.svg"
-import Logo4 from "../../../../svg/assets/logo-4.svg"
-import Logo5 from "../../../../svg/assets/logo-5.svg"
+import Cornerstone from "../../../../svg/assets/cornerstone.svg"
+import Loblaws from "../../../../svg/assets/loblaws.svg"
+import Nike from "../../../../svg/assets/nike.svg"
+import Beckham from "../../../../svg/assets/beckham.svg"
+import Citrix from "../../../../svg/assets/citrix.svg"
 import CtaLink from "../../../base/CtaLink"
 import styled from "@emotion/styled"
 import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { lighten } from "@theme-ui/color"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import ProofTabsCafe from "../../../hooks/ProofTabsCafe"
-import ProofTabsCombine from "../../../hooks/ProofTabsCombine"
-import ProofTabsPlanning from "../../../hooks/ProofTabsPlanning/ProofTabsPlanning"
-import ProofTabsSparks from "../../../hooks/ProofTabsSparks"
-import ProofTabsWoodworking from "../../../hooks/ProofTabsWoodworking"
+// import ProofTabsCafe from "../../../hooks/ProofTabsCafe"
+// import ProofTabsCombine from "../../../hooks/ProofTabsCombine"
+// import ProofTabsPlanning from "../../../hooks/ProofTabsPlanning/ProofTabsPlanning"
+// import ProofTabsSparks from "../../../hooks/ProofTabsSparks"
+// import ProofTabsWoodworking from "../../../hooks/ProofTabsWoodworking"
 import { Img } from "gatsby-image"
 import TabPanelContent from "../../../templates/TabsPanel/TabPanelContent/TabPanelContent"
+import NikeImage from "../../projectHooks/imageHooks/NikeImage"
+import LoblawsImage from "../../projectHooks/imageHooks/LoblawsImage"
+import BeckhamImage from "../../projectHooks/imageHooks/BeckhamImage"
+import CornerstoneImage from "../../projectHooks/imageHooks/CornerstoneImage"
+import CitrixImage from "../../projectHooks/imageHooks/CitrixImage"
+import SaasPancake from "../../layout/SaasPancake"
+import gradients from "../../../../../../jim-workbench-custom-themes/exThemeUi/gradients"
 
 const ImageWrapper = (props) => (
   <Box
@@ -58,6 +65,7 @@ const TabButton = ({ width, padding, grid, ...props }) => (
       mb: [2, 4, 4, 4],
       border: "none",
       outline: "none",
+      transition: "all 0.3s ease-in",
     }}
   />
 )
@@ -117,6 +125,7 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
       sx={{
         border: "none",
         outline: "none",
+
         "& > button > svg": {
           alignSelf: "center",
           flex: 1,
@@ -126,10 +135,14 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
           outline: "none",
 
           "& > button": {
-            background: lighten("highlight", 0.52),
+            // background: lighten("highlight", 0.52),
+            background: gradients.defined.highlight.background,
             border: "none",
           },
-          "& > button > svg > .logoIpsum": {
+          "& > button > svg > proofLogo": {
+            fill: "highlight",
+          },
+          "#proofLogo": {
             fill: "highlight",
           },
         },
@@ -143,26 +156,25 @@ MyTab.tabsRole = "Tab"
 MyTabList.tabsRole = "TabList"
 
 const ProofTabs = ({ data, props }) => (
-  <Pancake
-    {...props}
-    sx={{
-      variant: "layout.section",
-    }}
-  >
-    {/* <ColorModeCycler />
-      <ColorModeToggle /> */}
+  <SaasPancake>
     <Container
       {...props}
       sx={{
         boxShadow: "test5",
         py: 4,
+        borderRadius: 6,
         // px: 6,
       }}
     >
-      <Tabs {...props} sx={{}}>
+      <Tabs
+        {...props}
+        sx={{
+          minHeight: "26em",
+        }}
+      >
         <MyTabList>
           <MyTab>
-            <Logo1
+            <Loblaws
               {...props}
               sx={{
                 maxWidth: "6em",
@@ -170,104 +182,108 @@ const ProofTabs = ({ data, props }) => (
             />
           </MyTab>
           <MyTab>
-            <Logo2
+            <Nike
               {...props}
               sx={{
-                maxWidth: "6em",
+                maxWidth: "4em",
               }}
             />
           </MyTab>
           <MyTab>
-            <Logo3
+            <Beckham
               {...props}
               sx={{
-                maxWidth: "6em",
+                maxWidth: "8em",
               }}
             />
           </MyTab>
           <MyTab>
-            <Logo4
+            <Cornerstone
               {...props}
               sx={{
                 // maxWidth: "4em",
                 // height: "2em",
-                width: "auto",
-                maxHeight: "1.75em",
+                maxWidth: "6em",
+                // maxHeight: "1.75em",
               }}
             />
           </MyTab>
           <MyTab {...props}>
-            <Logo5
+            <Citrix
               {...props}
               sx={{
-                maxWidth: "5.75em",
+                maxWidth: "4em",
               }}
             />
           </MyTab>
         </MyTabList>
         <TabPanel>
           <TabPanelContent
-            tabsVisual={<ProofTabsCafe />}
-            textHeadline="Deliver Better Value at Higher Rates"
-            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsVisual={<LoblawsImage />}
+            textHeadline="Canada's largest grocer delivers sites 10x faster, while saving money"
+            textBody="Netlify helps the Loblaw engineering productivity team achieve its mission of reducing toil, increasing happiness and getting sites launched fast."
             tabsCtaLinkTo="/"
-            metric1="$86M"
-            metricCaption1="Annual Growth"
-            metric2="98%"
-            metricCaption2="Customer Satisfaction"
+            metric1="92%"
+            metricCaption1="Better performance"
+            metric2="$38k"
+            metricCaption2="Monthly cost savings"
           />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            tabsVisual={<ProofTabsSparks />}
-            textHeadline="Cut Lead Times And Accelerate Sales"
-            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsVisual={<NikeImage />}
+            textHeadline="Matter Supply delivered Emmy-winning “dream crazy” campaign for Nike in record time"
+            textBody="When Nike came calling, Matter Supply was able to create a highly responsive and dynamic campaign site on a tight timeline using Netlify."
             tabsCtaLinkTo="/"
-            metric1="51%"
-            metricCaption1="Close Rate"
-            metric2="100%"
-            metricCaption2="Up Time"
+            metric1="190k"
+            metricCaption1="Dream submissions"
+            metric2="200k"
+            metricCaption2="Hits per day"
           />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            tabsVisual={<ProofTabsCombine />}
-            textHeadline="Engage When and Where It Matters"
-            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsVisual={<BeckhamImage />}
+            textHeadline="Victoria Beckham Beauty launches highly performant eCommerce site"
+            textBody="Integrating Netlify, Contentful and Shopify Plus, digital agency Fostr created an eCommerce stack for VBB optimized for frequent content updates, performance and SEO. Using Netlify meant they could move quickly and scale without worrying about infrastructure."
             tabsCtaLinkTo="/"
-            metric1="15%"
-            metricCaption1="YOY Revenue"
-            metric2="10%"
-            metricCaption2="Site Traffic"
+            metric1="190k"
+            metricCaption1="Dream submissions"
+            metric2="200k"
+            metricCaption2="Hits per day"
+            // metric1={<beckhamProofImage1 />}
+            // metricCaption1=""
+            // metric2={<beckhamProofImage2 />}
+            // metricCaption2=""
           />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            tabsVisual={<ProofTabsPlanning />}
-            textHeadline="Break Down Silos. Optimize Workflows"
-            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsVisual={<CornerstoneImage />}
+            textHeadline="Cornerstone OnDemand achieves 25% better performance, without added cost of third-party CDN"
+            textBody="Talent management SaaS company CornerStone OnDemand increased the speed of development and delivery for its international site by migrating from a legacy technology stack to Netlify."
             tabsCtaLinkTo="/"
-            metric1="22%"
-            metricCaption1="SEO ROI"
-            metric2="5%"
-            metricCaption2="Avg Customer Value"
+            metric1="25%"
+            metricCaption1="Faster page loads"
+            metric2="30%"
+            metricCaption2="Fast time to market"
           />
         </TabPanel>
         <TabPanel>
           <TabPanelContent
-            tabsVisual={<ProofTabsWoodworking />}
-            textHeadline="Empower customer-facing personnel"
-            textBody="Laboris do sit nostrud pariatur cillum fugiat ullamco consequat veniam aliquip commodo incididunt eu ad. Ipsum deserunt reprehenderit Lorem tempor consectetur dolor amet id commodo ipsum ullamco officia"
+            tabsVisual={<CitrixImage />}
+            textHeadline="Citrix delivers better UX with less overhead"
+            textBody="Citrix executed a massive migration of their product documentation to Netlify ahead of schedule, resulting in a 65% cost savings and a significantly better user experience."
             tabsCtaLinkTo="/"
-            metric1="-10%"
-            metricCaption1="Customer Acquisition Cost"
-            metric2="6%"
-            metricCaption2="New Customer Creation"
+            metric1="65%"
+            metricCaption1="Cost savings"
+            metric2="3.5M"
+            metricCaption2="Users annually"
           />
         </TabPanel>
       </Tabs>
     </Container>
-  </Pancake>
+  </SaasPancake>
 )
 
 ProofTabs.propTypes = {}

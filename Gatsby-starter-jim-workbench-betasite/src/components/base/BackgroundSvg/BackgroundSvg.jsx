@@ -11,7 +11,7 @@ const BackgroundSvg = (props) => (
       position: "absolute",
       //   zIndex: "-1",
       overflow: "hidden",
-      height: "85vh",
+      height: "100vh",
       width: "100%",
       top: 0,
       left: 0,

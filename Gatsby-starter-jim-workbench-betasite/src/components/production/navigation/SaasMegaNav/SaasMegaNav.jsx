@@ -5,32 +5,6 @@ import Icon from "../../../base/Icon"
 import React from "react"
 import PropTypes from "prop-types"
 import MegaNavLink from "../../../navigation/navElements/MegaNavLink"
-// import Link from "../../navigation/MegaNavLink"
-
-// const MegaNavLink = ({
-//   bg,
-//   colors,
-//   padding,
-//   text,
-//   variant,
-//   margin,
-//   mt,
-//   ...props
-// }) => (
-//   <Link
-//     {...props}
-//     activeClassName="active"
-//     className="navLink"
-//     sx={{
-//       margin,
-//       mt,
-//       colors,
-//       padding,
-//       bg,
-//       variant: "links.megaNavLink",
-//     }}
-//   />
-// )
 
 //TODO set hover color on left side of meganav
 //TODO fix responsive sizing
@@ -47,7 +21,7 @@ const SaasMegaNav = (props) => (
       variant: "nav.megaNav",
     }}
   >
-    <Grid gap={0} columns={[1, "30vw 24vw"]}>
+    <Grid gap={0} columns={[1, "57% 43%"]}>
       <Box
         p={4}
         {...props}

@@ -4,6 +4,7 @@ import Cloud from "../../../../svg/assets/cloud.svg"
 import SplitTextLine from "../../../base/SplitTextLine/SplitTextLine"
 import Pancake from "../../../layout/Pancake"
 import Section_Grid_1r_66Text_33Visual from "../../../templates/Section_Grid_1r_66Text_33Visual"
+import SaasPancake from "../../layout/SaasPancake"
 
 // const SplitText = ({ textline1, textline2, ...props }) => (
 //   <>
@@ -26,13 +27,7 @@ const SaasGlobalCloud = (props) => {
   )
 
   return (
-    <Pancake
-      as="Section"
-      {...props}
-      sx={{
-        variant: "layout.section",
-      }}
-    >
+    <SaasPancake>
       <Container
         {...props}
         // className="Container"
@@ -47,7 +42,7 @@ const SaasGlobalCloud = (props) => {
           visual={<Cloud />}
         />
       </Container>
-    </Pancake>
+    </SaasPancake>
   )
 }
 

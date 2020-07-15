@@ -41,16 +41,9 @@ const IndexPage = (props) => {
         <ColorModeToggle />
       </div>
       <HeroIntro />
-      {/* <DemoContainer /> */}
-      <ProofTabs
-        {...props}
-        sx={{
-          borderRadius: 12,
-        }}
-      />
       <SaasGlobalCloud />
+      <ProofTabs />
       <SaasBenefits />
-      {/* <SaasTable /> */}
       <SaasComparison />
       <SaasTechnology />
       <SaasCalloutBand />

@@ -29,7 +29,7 @@ export default {
 
   containerTight: {
     variant: "layout.container",
-    maxWidth: ["100%", "100%", "50em", "50em"],
+    maxWidth: ["100%", "100%", "50em", "49em"],
   },
 
   mastHead: {
@@ -69,10 +69,11 @@ export default {
 
   introShort: {
     height: `calc(100vh - 4em)`,
-    maxHeight: "30.625em",
+    maxHeight: "35.625em",
     minHeight: "26.875em",
     alignItems: "start",
     paddingTop: ["0", "0", "6", "6"],
+    paddingBottom: ["0", "0", "7", "7"],
     marginTop: ["20%", "20%", "0", "0"],
     marginBottom: ["auto", "auto", "none", "none"],
   },
