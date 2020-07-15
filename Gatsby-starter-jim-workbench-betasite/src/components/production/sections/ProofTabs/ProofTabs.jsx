@@ -121,6 +121,7 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
       selected={selected}
       disabledClassName="MyTabInactive"
       selectedClassName="MyTabActive"
+      selectedTabPanelClassName="MyTabPanelSelected"
       {...props}
       sx={{
         border: "none",
@@ -152,8 +153,18 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
     </Tab>
   </>
 )
+
+const MyTabPanel = ({ height, width, bg, ...props }) => {
+  return (
+    <TabPanel {...props} selectedClassName="ActiveTabPanel">
+      {props.children}
+    </TabPanel>
+  )
+}
+
 MyTab.tabsRole = "Tab"
 MyTabList.tabsRole = "TabList"
+MyTabPanel.tabsRole = "TabPanel"
 
 const ProofTabs = ({ data, props }) => (
   <SaasPancake>
@@ -217,7 +228,7 @@ const ProofTabs = ({ data, props }) => (
             />
           </MyTab>
         </MyTabList>
-        <TabPanel>
+        <MyTabPanel>
           <TabPanelContent
             tabsVisual={<LoblawsImage />}
             textHeadline="Canada's largest grocer delivers sites 10x faster, while saving money"
@@ -228,8 +239,8 @@ const ProofTabs = ({ data, props }) => (
             metric2="$38k"
             metricCaption2="Monthly cost savings"
           />
-        </TabPanel>
-        <TabPanel>
+        </MyTabPanel>
+        <MyTabPanel>
           <TabPanelContent
             tabsVisual={<NikeImage />}
             textHeadline="Matter Supply delivered Emmy-winning “dream crazy” campaign for Nike in record time"
@@ -240,8 +251,8 @@ const ProofTabs = ({ data, props }) => (
             metric2="200k"
             metricCaption2="Hits per day"
           />
-        </TabPanel>
-        <TabPanel>
+        </MyTabPanel>
+        <MyTabPanel>
           <TabPanelContent
             tabsVisual={<BeckhamImage />}
             textHeadline="Victoria Beckham Beauty launches highly performant eCommerce site"
@@ -256,8 +267,8 @@ const ProofTabs = ({ data, props }) => (
             // metric2={<beckhamProofImage2 />}
             // metricCaption2=""
           />
-        </TabPanel>
-        <TabPanel>
+        </MyTabPanel>
+        <MyTabPanel>
           <TabPanelContent
             tabsVisual={<CornerstoneImage />}
             textHeadline="Cornerstone OnDemand achieves 25% better performance, without added cost of third-party CDN"
@@ -268,8 +279,8 @@ const ProofTabs = ({ data, props }) => (
             metric2="30%"
             metricCaption2="Fast time to market"
           />
-        </TabPanel>
-        <TabPanel>
+        </MyTabPanel>
+        <MyTabPanel>
           <TabPanelContent
             tabsVisual={<CitrixImage />}
             textHeadline="Citrix delivers better UX with less overhead"
@@ -280,7 +291,7 @@ const ProofTabs = ({ data, props }) => (
             metric2="3.5M"
             metricCaption2="Users annually"
           />
-        </TabPanel>
+        </MyTabPanel>
       </Tabs>
     </Container>
   </SaasPancake>

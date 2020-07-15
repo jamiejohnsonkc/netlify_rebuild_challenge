@@ -13,7 +13,7 @@ import {
 } from "theme-ui"
 import CtaLink from "../../../base/CtaLink/CtaLink"
 
-import { useSpring, animated } from "react-spring"
+import { slideUp1 } from "../../../../../../jim-workbench-custom-themes/exThemeUi/animation"
 
 const ImageWrapper = (props) => (
   <Box
