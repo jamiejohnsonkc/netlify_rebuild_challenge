@@ -16,7 +16,6 @@ export default ({
 }) => (
   <div
     {...props}
-    className="navElement"
     sx={{
       flexGrow,
       padding,

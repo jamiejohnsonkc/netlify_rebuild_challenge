@@ -9,9 +9,22 @@ const NavMenu = (props) => (
     sx={{
       listStyle: "none",
       cursor: "pointer",
-      variant: "nav.navMenu",
+      display: "inline-block",
+      position: "relative",
+      alignItems: "center",
+      display: "flex",
+      flex: 1,
+      justifyContent: [
+        "space-around",
+        "space-around",
+        "space-between",
+        "space-between",
+      ],
+      flexDirection: ["column", "column", "row", "row"],
+      width: "100%",
+      // variant: "nav.navMenu",
     }}
-    className="navMenu"
+    // className="navMenu"
   />
 )
 

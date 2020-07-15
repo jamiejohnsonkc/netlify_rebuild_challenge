@@ -5,8 +5,8 @@ import PropTypes from "prop-types"
 
 const Grid_1r_66_33 = (props) => (
   <Grid columns={[2, "2fr 1fr"]}>
-    <Box display="grid">{props.children}</Box>
-    <Box display="grid">{props.children}</Box>
+    <Box display="grid">{props.contentWide}</Box>
+    <Box display="grid">{props.contentNarrow}</Box>
   </Grid>
 )
 

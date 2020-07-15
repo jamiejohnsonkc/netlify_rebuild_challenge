@@ -3,7 +3,7 @@
 import links from "./links"
 
 export default {
-  root: {},
+  // root: {},
   top: {
     bg: "#999",
     py: 4,
@@ -16,19 +16,20 @@ export default {
   },
   container: {
     maxWidth: ["100%", "100%", "60em", "79em"],
-    px: [1, 4, 4, 4],
+    px: [3, 4, 4, 4],
     display: "block",
     position: "relative",
     margin: "0 auto",
-    // mx: "auto",
-    // content: {
-    //   width: ["75%", "98%", "63%"],
-    // },
   },
 
   containerNarrow: {
     variant: "layout.container",
     maxWidth: ["100%", "100%", "60em", "60em"],
+  },
+
+  containerTight: {
+    variant: "layout.container",
+    maxWidth: ["100%", "100%", "50em", "49em"],
   },
 
   mastHead: {
@@ -44,7 +45,6 @@ export default {
       "transparent",
       "transparent",
     ],
-    // backgroundColor: "gray",
   },
 
   footer: {
@@ -67,19 +67,30 @@ export default {
     minHeight: "26.875em",
   },
 
-  introTop: {
-    height: `calc(100vh - 18.75rem)`,
-    maxHeight: "40.625em",
+  introShort: {
+    height: `calc(100vh - 4em)`,
+    maxHeight: "35.625em",
     minHeight: "26.875em",
     alignItems: "start",
-    paddingTop: 6,
+    paddingTop: ["0", "0", "6", "6"],
+    paddingBottom: ["0", "0", "7", "7"],
+    marginTop: ["20%", "20%", "0", "0"],
+    marginBottom: ["auto", "auto", "none", "none"],
+  },
+
+  introShortCentered: {
+    height: `calc(100vh - 4em)`,
+    maxHeight: "30.625em",
+    minHeight: "26.875em",
+    alignItems: "start",
+    paddingTop: ["0", "0", "6", "6"],
+    marginTop: ["20%", "20%", "0", "0"],
+    marginBottom: ["auto", "auto", "none", "none"],
   },
 
   section: {
     paddingTop: 6,
-    paddingBottom: 6, // height: `calc(100vh - 18.75rem)`,
-    // maxHeight: "40.625em",
-    // minHeight: "26.875em",
+    paddingBottom: 6,
   },
   //tabs
 

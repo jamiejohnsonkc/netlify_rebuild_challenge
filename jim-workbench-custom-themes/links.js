@@ -1,9 +1,9 @@
 //! LINKS
 
+import { color } from "./colors"
+
 export default {
   nav: {
-    display: "inline-block",
-    position: "relative",
     lineHeight: 1.5,
     fontWeight: 600,
     fontFamily: "Roboto",
@@ -12,14 +12,15 @@ export default {
     textTransform: "captilalize",
     textDecoration: "none",
     transition: "all 0.3s ease-in",
-    fontSize: [2, 3, 1, 1],
-    "&.active": { color: "accent" },
+    fontSize: [3, 3, 1, 1],
+    "&.active": { color: "navItemActive" },
     "&:hover": {
       color: "navMenuItemHover",
+      textDecoration: "underline",
       "&::after": {
         width: "100%",
         backgroundColor: "navMenuItemHover",
-        transition: "all 0.5s ease-in",
+        // transition: "all 0.5s ease-in",
       },
     },
     "&::after": {
@@ -69,9 +70,15 @@ export default {
       lineHeight: 1,
       display: "flex",
       alignItems: "center",
-      color: "highlight",
+      color: [
+        "navMenuBackground_SM",
+        "navMenuBackground_SM",
+        "highlight",
+        "highlight",
+      ],
+
       "&:hover": {
-        color: "navMenuItemHover",
+        // color: "navMenuItemHover",
       },
       // mainNavCta: {
       //   lineHeight: 1,
@@ -86,11 +93,43 @@ export default {
     },
   },
 
+  searchButton: {
+    lineHeight: 1,
+    visibility: ["visible", "visible", "hidden", "hidden"],
+    display: ["flex", "flex", "none", "none"],
+    alignItems: "center",
+    color: "navMenuBackground_SM",
+    "&:hover": {
+      color: "navMenuItemHover",
+    },
+  },
+
+  navSubLink: {
+    lineHeight: 2,
+    display: "block",
+    minWidth: "20em",
+    color: "navMenuItem",
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+    },
+  },
+
+  jumpLink: {
+    textDecoration: "none",
+    color: color.gray1,
+  },
+
   megaNavLink: {
     display: "block",
     fontSize: 2,
     fontWeight: "500",
     marginBottom: 2,
     color: "#000",
+  },
+
+  dropDown: {
+    // backgroundColor: "blue",
+    // color: "",
   },
 }

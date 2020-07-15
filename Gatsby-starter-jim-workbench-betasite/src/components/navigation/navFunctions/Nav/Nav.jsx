@@ -3,6 +3,15 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 
+//* Nav is the top-level wrapper for the site's menu elements.
+
+// Nav
+//  Navbar
+//    Navbox
+//    |-Menu--desktop (MainMenu)
+//            |-MegaNav SubMenu
+//    |-menu--mobile
+
 const Nav = (props) => (
   <nav
     className="Nav"

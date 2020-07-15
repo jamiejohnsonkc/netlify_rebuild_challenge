@@ -6,11 +6,12 @@ export default ({ bg, padding, text, color, variant, ...props }) => (
   <Link
     {...props}
     activeClassName="active"
-    className="navLink"
+    // className="navLink"
     sx={{
       padding,
       bg,
       fontWeight: 500,
+      color,
       variant: "links.nav",
       // "&:hover": {
       //   color: "links.nav",

@@ -6,18 +6,20 @@ import PropTypes from "prop-types"
 const NavItem = ({ bg, color, padding, ...props }) => (
   <li
     {...props}
-    className="navItem"
+    // className="navItem"
     sx={{
       color,
       position: "relative",
-
+      display: ["block", "block", "flex", "flex"],
+      alignItems: "center",
+      flex: `0 1 fit-content`,
       "&:hover": {
         cursor: "pointer",
       },
       "&:hover > ul, :focus-within > ul ": {
         visibility: "visible",
-        opacity: "1",
-        display: "block",
+        opacity: ["0", "0", "1", "1"],
+        display: ["none", "none", "block", "block"],
       },
       variant: "nav.navItem",
     }}

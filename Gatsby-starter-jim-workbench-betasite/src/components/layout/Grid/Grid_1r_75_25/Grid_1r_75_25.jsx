@@ -4,19 +4,14 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const Grid_1r_75_25 = (props) => (
-  <Grid py={4} my={4} columns={[2, "3fr 1fr"]}>
-    <Box display="grid" paddingRight={2}>
-      <Styled.h2>{props.header}</Styled.h2>
-      <Text
-        {...props}
-        sx={{
-          variant: "styles.d3",
-        }}
-      >
-        {props.body}
-      </Text>
-    </Box>
-    <Box display="grid">{props.visual}</Box>
+  <Grid
+    py={4}
+    my={4}
+    columns={[1, 1, "3fr 1fr", "3fr 1fr"]}
+    margin={[`0 auto`, 0]}
+  >
+    <Box display="grid">{props.content75}</Box>
+    <Box display="grid">{props.content25}</Box>
   </Grid>
 )
 

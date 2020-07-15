@@ -13,14 +13,8 @@ const Button = ({ variant = "primary", ...props }) => (
       lineHeight: "inherit",
       textDecoration: "none",
       fontSize: "inherit",
-      fontWeight: "bold",
-      m: 0,
-      px: 3,
-      py: 2,
-      borderStyle: "solid",
-      borderWidth: 2,
-      borderRadius: 4,
       cursor: "pointer",
+
       variant: `buttons.${variant}`,
     }}
   />
