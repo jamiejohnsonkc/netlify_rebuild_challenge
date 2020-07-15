@@ -14,34 +14,10 @@ import {
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import CheckMark from "../../../base/CheckMark"
 import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { darken } from "@theme-ui/color"
-
-const Claim = (props) => (
-  <Box
-    {...props}
-    sx={{
-      whiteSpace: "pre",
-    }}
-  >
-    <CheckMark
-      {...props}
-      sx={{
-        display: "inline-grid",
-        marginRight: 1,
-      }}
-    />{" "}
-    <Text
-      {...props}
-      sx={{
-        display: "inline-block",
-      }}
-    >
-      {props.claimText}
-    </Text>
-  </Box>
-)
+import IconBulletList from "../IconBulletList"
+import IconBulletListItem from "../IconBulletListItem"
 
 const CalloutBand = (props) => {
   const [colorMode, setColorMode] = useColorMode()
@@ -51,21 +27,14 @@ const CalloutBand = (props) => {
       {...props}
       sx={{
         // backgroundColor: color.violetDark,
-        background: "linear-gradient(to left,#4f005e,#33065b)",
+        // background: "linear-gradient(to left,#4f005e,#33065b)",
         py: 6,
       }}
     >
       <Container>
         <Grid columns={[1, "2.75fr 1.25fr"]}>
           <Box>
-            <Styled.h1
-              {...props}
-              sx={{
-                color: "white",
-              }}
-            >
-              Get even further with Enterprise
-            </Styled.h1>
+            <Styled.h1>Get even further with Enterprise</Styled.h1>
             <Text
               {...props}
               sx={{
@@ -91,7 +60,7 @@ const CalloutBand = (props) => {
               Contact Sales
             </Button>
           </Box>
-          <Box
+          <IconBulletList
             {...props}
             sx={{
               py: "1.618em",
@@ -101,12 +70,12 @@ const CalloutBand = (props) => {
               boxShadow: "callOut",
             }}
           >
-            <Claim claimText="Faster buildbots" />
-            <Claim claimText="Dedicated build infrastructure" />
-            <Claim claimText="More POPs" />
-            <Claim claimText="Dedicated support / Custom SLAs" />
-            <Claim claimText="Phased roll-in" />
-          </Box>
+            <IconBulletListItem bulletListText="Faster buildbots" />
+            <IconBulletListItem bulletListText="Dedicated build infrastructure" />
+            <IconBulletListItem bulletListText="More POPs" />
+            <IconBulletListItem bulletListText="Dedicated support / Custom SLAs" />
+            <IconBulletListItem bulletListText="Phased roll-in" />
+          </IconBulletList>
         </Grid>
       </Container>
     </Pancake>

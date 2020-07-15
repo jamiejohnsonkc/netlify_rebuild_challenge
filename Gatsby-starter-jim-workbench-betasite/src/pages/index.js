@@ -12,13 +12,13 @@ import ProofTabs from "../components/production/sections/ProofTabs"
 import SaasBenefits from "../components/production/sections/SaasBenefits/SaasBenefits"
 import SaasGlobalCloud from "../components/production/sections/SaasGlobalCloud/SaasGlobalCloud"
 import SaasComparison from "../components/production/sections/SaasComparison"
-import CalloutBand from "../components/production/sections/CalloutBand"
 import BuskerCtaBand from "../components/production/sections/BuskerCtaBand"
 import SaasSubscribe from "../components/production/sections/SaasSubscribe"
 import SaasLinkStack from "../components/production/layout/SaasLinkStack"
 import SaasFooter from "../components/production/layout/footer/SaasFooter"
 import SaasTechnology from "../components/production/sections/SaasTechnology"
 import SaasPlatform from "../components/production/sections/SaasPlatform"
+import SaasCalloutBand from "../components/production/sections/SaasCalloutBand"
 // import SaasTable from "../components/templates/SaasTable"
 
 const IndexPage = (props) => {
@@ -53,7 +53,7 @@ const IndexPage = (props) => {
       {/* <SaasTable /> */}
       <SaasComparison />
       <SaasTechnology />
-      <CalloutBand />
+      <SaasCalloutBand />
       <SaasPlatform />
       <BuskerCtaBand />
       <SaasSubscribe />

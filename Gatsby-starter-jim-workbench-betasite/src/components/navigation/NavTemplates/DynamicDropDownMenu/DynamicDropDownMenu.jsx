@@ -10,8 +10,6 @@ import PropTypes from "prop-types"
 
 //! THIS COMPONENT IS TO BE REFACTORED FOR REUSE AND IS NOT AN ACTIVE ELEMENT IN THIS PROJECT.  iT PROVIDES BASIC MENU, ITEM, LINK, SUBMENU, ETC. FUNCTIONALITY
 
-//TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
-
 const DynamicDropDownMenu = (props) => {
   return (
     <StaticQuery

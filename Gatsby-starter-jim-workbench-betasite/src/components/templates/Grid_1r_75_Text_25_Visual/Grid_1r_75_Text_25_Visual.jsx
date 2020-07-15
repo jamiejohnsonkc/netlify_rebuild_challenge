@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import {
   slideUp1,
   slideUp2,
-} from "../../../../../jim-workbench-custom-themes/animation.js"
+} from "../../../../../jim-workbench-custom-themes/exThemeUi/animation.js"
 
 const Grid_1r_75_Text_25_Visual = (props) => (
   <Grid

@@ -6,16 +6,14 @@ import PropTypes from "prop-types"
 const Pancake = (props) => (
   <div
     as="Section"
-    className="panCake"
     {...props}
+    className={props.className}
     sx={{
       alignItems: "center",
       display: "grid",
       whiteSpace: "pre-wrap",
     }}
-  >
-    {props.children}
-  </div>
+  />
 )
 
 Pancake.propTypes = {}

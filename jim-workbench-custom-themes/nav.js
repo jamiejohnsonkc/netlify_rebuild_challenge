@@ -322,8 +322,6 @@ export default {
   },
 }
 
-//TODO fix search icon in mobile
-//TODO assign meganav header and text colors
 //TODO review all nav color assignements
 //TODO config hot swapping of large and small menu formats
 

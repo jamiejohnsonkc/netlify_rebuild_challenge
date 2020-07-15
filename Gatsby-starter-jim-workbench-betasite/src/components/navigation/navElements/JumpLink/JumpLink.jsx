@@ -12,9 +12,7 @@ const JumpLink = (props) => (
     sx={{
       variant: "links.jumpLink",
     }}
-  >
-    {props.children}
-  </Link>
+  />
 )
 
 JumpLink.propTypes = {}

@@ -19,12 +19,6 @@ import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
 import SearchButton from "../../../base/SearchButton"
 
-//TODO fix logo box: what is forcing the extra space to the right?
-//TODO something about the glyph arrow is disrupting the height and center axis alignment int he main header
-//TODO delete the "NavBarLogo" component
-//TODO content breaking parent when downsizing
-//TODO remove iconContext provider hooks inside gatsby: unnecessary
-
 //* This is the production component for nav menu.  It defines the menus, items, links, submenus, etc. Due to this menu's complexity this element is not derived from a reusable component.
 
 const iconStyle = {
