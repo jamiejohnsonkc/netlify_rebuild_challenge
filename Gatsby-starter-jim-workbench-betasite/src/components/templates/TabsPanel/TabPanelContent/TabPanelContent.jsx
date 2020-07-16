@@ -13,7 +13,7 @@ import {
 } from "theme-ui"
 import CtaLink from "../../../base/CtaLink/CtaLink"
 
-import { slideUp1 } from "../../../../../../jim-workbench-custom-themes/exThemeUi/animation"
+import { slideUp1 } from "../../../../../../customStyles/exThemeUi/animation"
 
 const ImageWrapper = (props) => (
   <Box

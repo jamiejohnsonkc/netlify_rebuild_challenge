@@ -11,7 +11,7 @@ import { Link } from "gatsby"
 
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
 import SearchButton from "../../../base/SearchButton"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
 

@@ -3,7 +3,7 @@ import { jsx, Container, Styled, Text, Button } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 import { darken, lighten } from "@theme-ui/color"
 import ProPancake from "../../proLayout/ProPancake"
 

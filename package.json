@@ -15,8 +15,8 @@
   },
   "workspaces": [
     "gatsby-starter-jim-workbench-betasite",
-    "jim-workbench-custom-themes",
-    "jim-workbench-custom-presentation"
+    "customStyles",
+    "productionComps"
   ],
   "nohoist": [
       "@storybook",

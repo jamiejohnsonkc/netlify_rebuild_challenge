@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
 import JumpLink from "../../../navigation/navElements/JumpLink"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 
 const LinkStack = (props) => (
   <Box

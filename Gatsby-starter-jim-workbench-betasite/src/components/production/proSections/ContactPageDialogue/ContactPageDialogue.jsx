@@ -7,7 +7,7 @@ import Logo2 from "../../../../svg/assets/logo-2.svg"
 import Logo3 from "../../../../svg/assets/logo-3.svg"
 import Logo4 from "../../../../svg/assets/logo-4.svg"
 import Logo5 from "../../../../svg/assets/logo-5.svg"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 
 const ContactPageDialogue = (props) => (
   <Box paddingRight={5} paddingTop={5}>

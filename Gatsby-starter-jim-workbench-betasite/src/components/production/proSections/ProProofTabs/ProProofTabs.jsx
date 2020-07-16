@@ -23,7 +23,7 @@ import Beckham from "../../../../svg/assets/beckham.svg"
 import Citrix from "../../../../svg/assets/citrix.svg"
 import CtaLink from "../../../base/CtaLink"
 import styled from "@emotion/styled"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 import { lighten } from "@theme-ui/color"
 import PropTypes from "prop-types"
 import { Img } from "gatsby-image"
@@ -34,7 +34,7 @@ import BeckhamImage from "../../proHooks/imageHooks/BeckhamImage"
 import CornerstoneImage from "../../proHooks/imageHooks/CornerstoneImage"
 import CitrixImage from "../../proHooks/imageHooks/CitrixImage"
 import ProPancake from "../../proLayout/ProPancake"
-import gradients from "jim-workbench-custom-themes/exThemeUi/gradients"
+import gradients from "@gradients"
 
 const ImageWrapper = (props) => (
   <Box

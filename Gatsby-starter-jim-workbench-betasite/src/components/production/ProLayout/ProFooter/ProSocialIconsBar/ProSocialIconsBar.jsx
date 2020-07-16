@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 import Icon from "../../../../base/Icon"
 
 const ProLinkWrapper = styled.div`

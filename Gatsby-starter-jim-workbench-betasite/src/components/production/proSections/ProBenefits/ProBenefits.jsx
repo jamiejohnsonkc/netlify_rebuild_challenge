@@ -10,7 +10,7 @@ import ProActivate from "../../../../svg/assets/proActivate.svg"
 import Grid_1r_75_Text_25_Visual from "../../../templates/Grid_1r_75_Text_25_Visual"
 import Grid_1r_25_Visual_75_Text from "../../../templates/Grid_1r_25_Visual_75_Text"
 
-import { slideUp1 } from "jim-workbench-custom-themes/exThemeUi/animation"
+import { slideUp1 } from "@animation"
 
 const ProBenefits = (props) => (
   <Pancake

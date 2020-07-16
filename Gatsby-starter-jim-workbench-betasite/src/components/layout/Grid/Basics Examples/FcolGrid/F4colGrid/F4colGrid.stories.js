@@ -2,7 +2,7 @@
 import { jsx, Box, Grid } from "theme-ui"
 import React from "react"
 
-// import { color } from "../../../../../../../jim-workbench-custom-themes/colors"
+// import { color } from "../../../../../../../customStyles/colors"
 
 export default {
   title: "F4colGrid",

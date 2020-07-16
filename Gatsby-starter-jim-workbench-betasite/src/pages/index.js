@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import React from "react"
-// import Layout from "../components/layout/Layout"
 import ProLayout from "../components/production/proLayout/ProLayout"
 
 import { jsx, colorMode, setColorMode, useColorMode } from "theme-ui"
@@ -19,7 +18,6 @@ import ProFooter from "../components/production/proLayout/ProFooter/ProFooter"
 import ProTechnology from "../components/production/proSections/ProTechnology"
 import ProPlatform from "../components/production/proSections/ProPlatform"
 import ProCalloutBand from "../components/production/proSections/ProCalloutBand"
-// import ProTable from "../components/templates/ProTable"
 
 const IndexPage = (props) => {
   const [colorMode, setColorMode] = useColorMode()

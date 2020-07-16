@@ -22,7 +22,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import Button from "../../../base/Button"
 import CtaLink from "../../../base/CtaLink"
 import styled from "@emotion/styled"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../../customStyles/colors"
 import { lighten } from "@theme-ui/color"
 
 const TabPanelContent = ({

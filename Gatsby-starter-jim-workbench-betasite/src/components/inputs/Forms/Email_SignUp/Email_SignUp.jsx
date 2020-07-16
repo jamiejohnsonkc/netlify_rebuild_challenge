@@ -2,7 +2,7 @@
 import { jsx, Label, Input, Box, Button } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../../customStyles/colors"
 import { darken, lighten } from "@theme-ui/color"
 
 const Email_SignUp = (props) => (

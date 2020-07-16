@@ -7,6 +7,6 @@
 //   },
 // }
 
-import theme from "../../../jim-workbench-custom-themes"
+import theme from "../../../customStyles"
 
 export default theme

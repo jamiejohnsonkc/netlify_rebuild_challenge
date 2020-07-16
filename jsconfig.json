@@ -8,7 +8,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "root/*": ["./*"],
-      "jim-workbench-custom-themes/*": ["./*"],
+      "customStyles/*": ["./*"],
       "svg/*": ["**/svg/*"]
     }
   },

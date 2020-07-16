@@ -14,7 +14,7 @@ import {
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../../customStyles/colors"
 import { darken } from "@theme-ui/color"
 import IconBulletList from "../IconBulletList"
 import IconBulletListItem from "../IconBulletListItem"

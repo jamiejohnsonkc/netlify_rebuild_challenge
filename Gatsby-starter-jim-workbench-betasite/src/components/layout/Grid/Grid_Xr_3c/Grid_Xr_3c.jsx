@@ -3,7 +3,7 @@ import { jsx, Grid, Box } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../../../base/Icon"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../../customStyles/colors"
 
 const ColHead = ({ width, padding, grid, ...props }) => (
   <Box

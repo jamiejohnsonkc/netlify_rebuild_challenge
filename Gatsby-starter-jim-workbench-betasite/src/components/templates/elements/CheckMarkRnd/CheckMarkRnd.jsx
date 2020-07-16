@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import CheckMark from "../../../base/CheckMark"
 import CircleBg from "../../../base/CircleBg"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../../customStyles/colors"
 
 const CheckMarkRnd = (props) => (
   <CircleBg

@@ -4,16 +4,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import CtaLink from "../../../base/CtaLink"
 import Pancake from "../../../layout/Pancake"
-import { color } from "jim-workbench-custom-themes/colors"
+import { color } from "@colors"
 import { css } from "@emotion/core"
 import cardBlue from "./cardBlueBg.svg"
 import cardBlack from "./cardBlackBg.svg"
 import cardPurple from "./cardPurpleBg.svg"
-import {
-  slideUp1,
-  slideUp2,
-  slideUp3,
-} from "jim-workbench-custom-themes/exThemeUi/animation"
+import { slideUp1, slideUp2, slideUp3 } from "@animation"
 // import backgroundSvg from "./"
 
 const card1Background = css`

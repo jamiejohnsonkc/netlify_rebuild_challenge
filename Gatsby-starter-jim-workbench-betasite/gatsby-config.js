@@ -106,9 +106,9 @@ module.exports = {
           "@proNavigation": "./src/components/production/proNavigation",
           "@proPages": "./src/components/production/proPages",
           "@proSections": "./src/components/production/proSections",
-          "@animation": "../**/exThemeUi/animation.js",
-          "@color": "../**/colors.js",
-          "@gradients": "../**/exThemeUi/gradients.js",
+          "@animation": "../customStyles/exThemeUi/animation.js",
+          "@colors": "../customStyles/colors.js",
+          "@gradients": "../customStyles/exThemeUi/gradients.js",
         },
       },
       extensions: ["js", "jpg", "svg", "png"],
@@ -126,13 +126,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `backgrounds`,
-    //     path: `${__dirname}/src/svg/backgrounds`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

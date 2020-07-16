@@ -8,7 +8,7 @@ import NavSubLink from "../../navigation/navElements/NavSubLink"
 import NavItem from "../../navigation/navElements/NavItem"
 import NavLink from "../../navigation/navElements/NavLink"
 import SubMenu from "../../navigation/navElements/SubMenu"
-import { color } from "../../../../../jim-workbench-custom-themes/colors"
+import { color } from "../../../../../customStyles/colors"
 // const DropDownNav = (props) => (
 //   <NavMenu
 //     {...props}
