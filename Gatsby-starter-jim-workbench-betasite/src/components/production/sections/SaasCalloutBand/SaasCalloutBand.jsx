@@ -40,7 +40,7 @@ import IconBulletListItem from "../../../templates/IconBulletListItem"
 //   </Box>
 // )
 
-const SaasCalloutBand = (props) => {
+const ProCalloutBand = (props) => {
   const [colorMode, setColorMode] = useColorMode()
   setColorMode("splash")
   return (
@@ -110,8 +110,8 @@ const SaasCalloutBand = (props) => {
   )
 }
 
-SaasCalloutBand.propTypes = {}
+ProCalloutBand.propTypes = {}
 
-SaasCalloutBand.defaultProps = {}
+ProCalloutBand.defaultProps = {}
 
-export default SaasCalloutBand
+export default ProCalloutBand

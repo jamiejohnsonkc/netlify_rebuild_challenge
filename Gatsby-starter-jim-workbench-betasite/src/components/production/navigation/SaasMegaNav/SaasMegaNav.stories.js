@@ -1,8 +1,8 @@
 import React from "react"
-import SaasMegaNav from "./SaasMegaNav"
+import ProMegaNav from "./ProMegaNav"
 
 export default {
-  title: "SaasMegaNav",
+  title: "ProMegaNav",
 }
 
-export const standard = () => <SaasMegaNav />
+export const standard = () => <ProMegaNav />

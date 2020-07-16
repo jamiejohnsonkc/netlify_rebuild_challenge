@@ -5,7 +5,7 @@ import { Box, Input, jsx, Label, Styled, Text, Textarea } from "theme-ui"
 import Button from "../../../../base/Button"
 import { Link } from "gatsby"
 
-// SaasLabel = (props) => (
+// ProLabel = (props) => (
 //   <Label
 //     {...props}
 //     sx={{

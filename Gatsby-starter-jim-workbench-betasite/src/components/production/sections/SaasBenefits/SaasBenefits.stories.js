@@ -1,8 +1,8 @@
 import React from "react"
-import SaasBenefits from "./SaasBenefits"
+import ProBenefits from "./ProBenefits"
 
 export default {
-  title: "SaasBenefits",
+  title: "ProBenefits",
 }
 
-export const standard = () => <SaasBenefits />
+export const standard = () => <ProBenefits />

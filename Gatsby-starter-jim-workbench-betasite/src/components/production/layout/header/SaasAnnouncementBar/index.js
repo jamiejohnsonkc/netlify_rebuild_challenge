@@ -1,3 +1,3 @@
-import SaasAnnouncementBar from "./SaasAnnouncementBar"
+import ProAnnouncementBar from "./ProAnnouncementBar"
 
-export default SaasAnnouncementBar
+export default ProAnnouncementBar

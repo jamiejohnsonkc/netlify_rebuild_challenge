@@ -1,8 +1,8 @@
 import React from "react"
-import SaasPancake from "./SaasPancake"
+import ProPancake from "./ProPancake"
 
 export default {
-  title: "SaasPancake",
+  title: "ProPancake",
 }
 
-export const standard = () => <SaasPancake />
+export const standard = () => <ProPancake />

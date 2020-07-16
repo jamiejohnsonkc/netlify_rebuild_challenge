@@ -1,8 +1,8 @@
 import React from "react"
-import SaasBottom from "./SaasBottom"
+import ProBottom from "./ProBottom"
 
 export default {
-  title: "SaasBottom",
+  title: "ProBottom",
 }
 
-export const standard = () => <SaasBottom />
+export const standard = () => <ProBottom />

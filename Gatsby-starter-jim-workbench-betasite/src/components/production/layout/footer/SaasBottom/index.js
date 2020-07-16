@@ -1,3 +1,3 @@
-import SaasBottom from "./SaasBottom"
+import ProBottom from "./ProBottom"
 
-export default SaasBottom
+export default ProBottom

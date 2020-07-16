@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Logo from "../../../base/Logo"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
-import SaasNavbox from "../SaasNavbox"
+import ProNavbox from "../ProNavbox"
 import Hamburger from "../../../navigation/Hamburger"
 
 //* This comp provides responsive functionality, defines and houses the key components used in the main nav menu (Navbar, Logo, Hamburger And the Navbox containing the desktop and mobile menu formats)
@@ -60,7 +60,7 @@ const Navbar = (props) => {
           />
         )}
       </Toggle>
-      {navbarOpen ? <SaasNavbox /> : <SaasNavbox open />}
+      {navbarOpen ? <ProNavbox /> : <ProNavbox open />}
     </div>
   )
 }

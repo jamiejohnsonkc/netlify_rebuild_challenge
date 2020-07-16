@@ -1,3 +1,3 @@
-import SaasPancake from "./SaasPancake"
+import ProPancake from "./ProPancake"
 
-export default SaasPancake
+export default ProPancake

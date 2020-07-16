@@ -8,7 +8,7 @@ import NavLink from "../../../navigation/navElements/NavLink"
 import NavMenu from "../../../navigation/navElements/NavMenu"
 import SubMenu from "../../../navigation/navElements/SubMenu"
 import NavItem from "../../../navigation/navElements/NavItem"
-import SaasMegaNav from "../../../production/navigation/SaasMegaNav"
+import ProMegaNav from "../../../production/navigation/ProMegaNav"
 import NavItemSpacer from "../../../navigation/navElements/NavItemSpacer"
 import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import NavElement from "../../../navigation/navElements/NavElement"
@@ -25,7 +25,7 @@ const iconStyle = {
   marginRight: ".5em",
 }
 
-const SaasMenu = (props) => (
+const ProMenu = (props) => (
   <>
     <NavMenu
       {...props}
@@ -75,7 +75,7 @@ const SaasMenu = (props) => (
             variant: "nav.subMenu",
           }}
         >
-          <SaasMegaNav />
+          <ProMegaNav />
         </SubMenu>
       </NavItem>
       <NavItem>
@@ -257,8 +257,8 @@ const SaasMenu = (props) => (
   </>
 )
 
-SaasMenu.propTypes = {}
+ProMenu.propTypes = {}
 
-SaasMenu.defaultProps = {}
+ProMenu.defaultProps = {}
 
-export default SaasMenu
+export default ProMenu

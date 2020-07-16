@@ -1,3 +1,3 @@
-import SaasComparison from "./SaasComparison"
+import ProComparison from "./ProComparison"
 
-export default SaasComparison
+export default ProComparison

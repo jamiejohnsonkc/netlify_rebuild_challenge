@@ -1,8 +1,8 @@
 import React from "react"
-import SaasTechnology from "./SaasTechnology"
+import ProTechnology from "./ProTechnology"
 
 export default {
-  title: "SaasTechnology",
+  title: "ProTechnology",
 }
 
-export const standard = () => <SaasTechnology />
+export const standard = () => <ProTechnology />

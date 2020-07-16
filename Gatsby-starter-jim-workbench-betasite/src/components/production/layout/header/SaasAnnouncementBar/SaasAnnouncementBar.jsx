@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 import { darken, lighten } from "@theme-ui/color"
 import Circle from "../../../../base/Circle"
 
-const SaasAnnouncementBar = (props) => {
+const ProAnnouncementBar = (props) => {
   const [isVisible, setIsVisible] = useState(true)
 
   return (
@@ -105,12 +105,12 @@ const SaasAnnouncementBar = (props) => {
   )
 }
 
-SaasAnnouncementBar.propTypes = {
+ProAnnouncementBar.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-SaasAnnouncementBar.defaultProps = {
+ProAnnouncementBar.defaultProps = {
   siteTitle: ``,
 }
 
-export default SaasAnnouncementBar
+export default ProAnnouncementBar

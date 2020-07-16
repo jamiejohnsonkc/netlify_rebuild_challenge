@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
 import Technology from "../../../../svg/assets/technology.svg"
 
-const SaasTechnology = (props) => (
+const ProTechnology = (props) => (
   <Pancake
     {...props}
     sx={{
@@ -91,8 +91,8 @@ const SaasTechnology = (props) => (
   </Pancake>
 )
 
-SaasTechnology.propTypes = {}
+ProTechnology.propTypes = {}
 
-SaasTechnology.defaultProps = {}
+ProTechnology.defaultProps = {}
 
-export default SaasTechnology
+export default ProTechnology

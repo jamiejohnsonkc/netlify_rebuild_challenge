@@ -1,3 +1,3 @@
-import SaasNavbar from "./SaasNavbar"
+import ProNavbar from "./ProNavbar"
 
-export default SaasNavbar
+export default ProNavbar

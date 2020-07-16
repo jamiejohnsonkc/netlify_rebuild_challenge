@@ -1,3 +1,3 @@
-import SaasPlatform from "./SaasPlatform"
+import ProPlatform from "./ProPlatform"
 
-export default SaasPlatform
+export default ProPlatform

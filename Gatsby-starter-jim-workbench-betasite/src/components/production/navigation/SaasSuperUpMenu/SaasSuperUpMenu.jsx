@@ -54,7 +54,7 @@ export const SuperSubLink = (props) => (
   />
 )
 
-const SaasSuperUpMenu = (props) => (
+const ProSuperUpMenu = (props) => (
   <>
     <NavMenu
       {...props}
@@ -338,8 +338,8 @@ const SaasSuperUpMenu = (props) => (
   </>
 )
 
-SaasSuperUpMenu.propTypes = {}
+ProSuperUpMenu.propTypes = {}
 
-SaasSuperUpMenu.defaultProps = {}
+ProSuperUpMenu.defaultProps = {}
 
-export default SaasSuperUpMenu
+export default ProSuperUpMenu

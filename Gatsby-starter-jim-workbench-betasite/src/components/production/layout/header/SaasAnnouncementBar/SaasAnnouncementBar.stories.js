@@ -1,8 +1,8 @@
 import React from "react"
-import SaasAnnouncementBar from "./SaasAnnouncementBar"
+import ProAnnouncementBar from "./ProAnnouncementBar"
 
 export default {
-  title: "SaasAnnouncementBar",
+  title: "ProAnnouncementBar",
 }
 
-export const standard = () => <SaasAnnouncementBar />
+export const standard = () => <ProAnnouncementBar />

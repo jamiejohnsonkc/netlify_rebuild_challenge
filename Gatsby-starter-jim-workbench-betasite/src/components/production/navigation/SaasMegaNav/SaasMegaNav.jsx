@@ -9,9 +9,9 @@ import MegaNavLink from "../../../navigation/navElements/MegaNavLink"
 //TODO set hover color on left side of meganav
 //TODO fix responsive sizing
 
-const SaasMegaNav = (props) => (
+const ProMegaNav = (props) => (
   <Box
-    className="SaasMegaNav"
+    className="ProMegaNav"
     {...props}
     sx={{
       // width: ["80em"],
@@ -101,8 +101,8 @@ const SaasMegaNav = (props) => (
   </Box>
 )
 
-SaasMegaNav.propTypes = {}
+ProMegaNav.propTypes = {}
 
-SaasMegaNav.defaultProps = {}
+ProMegaNav.defaultProps = {}
 
-export default SaasMegaNav
+export default ProMegaNav

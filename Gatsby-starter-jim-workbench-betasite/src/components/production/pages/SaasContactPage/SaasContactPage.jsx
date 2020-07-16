@@ -2,25 +2,25 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import SaasLayout from "../../layout/SaasLayout"
+import ProLayout from "../../layout/ProLayout"
 import HeroIntroCentered from "../../sections/HeroIntroCentered"
 import SEO from "../../../../pages/seo"
 import ContactPageContent from "../../sections/ContactPageContent"
 import { useColorMode } from "theme-ui"
 
-const SaasContactPage = (props) => {
+const ProContactPage = (props) => {
   const [colorMode, setColorMode] = useColorMode()
   setColorMode("light")
   return (
-    <SaasLayout>
+    <ProLayout>
       <SEO title="Contact" />
       <HeroIntroCentered />
       <ContactPageContent />
-    </SaasLayout>
+    </ProLayout>
   )
 }
-SaasContactPage.propTypes = {}
+ProContactPage.propTypes = {}
 
-SaasContactPage.defaultProps = {}
+ProContactPage.defaultProps = {}
 
-export default SaasContactPage
+export default ProContactPage

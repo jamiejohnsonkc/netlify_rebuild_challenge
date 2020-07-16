@@ -1,8 +1,8 @@
 import React from "react"
-import SaasSubscribe from "./SaasSubscribe"
+import ProSubscribe from "./ProSubscribe"
 
 export default {
-  title: "SaasSubscribe",
+  title: "ProSubscribe",
 }
 
-export const standard = () => <SaasSubscribe />
+export const standard = () => <ProSubscribe />

@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import SaasContactPage from "../components/production/pages/SaasContactPage"
+import ProContactPage from "../components/production/pages/ProContactPage"
 
 // import geomanistregular from '../../static/Geomanist-Black-Webfont/geomanist-black-webfont.woff'
 
-const ContactPage = (props) => <SaasContactPage />
+const ContactPage = (props) => <ProContactPage />
 
 export default ContactPage

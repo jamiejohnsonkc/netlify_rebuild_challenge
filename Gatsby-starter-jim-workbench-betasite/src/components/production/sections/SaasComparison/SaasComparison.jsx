@@ -7,7 +7,7 @@ import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import Pancake from "../../../layout/Pancake"
 import ComparisonTable from "../../../templates/ComparisonTable"
 
-const SaasComparison = (props) => (
+const ProComparison = (props) => (
   <Pancake
     {...props}
     sx={{
@@ -55,8 +55,8 @@ const SaasComparison = (props) => (
   </Pancake>
 )
 
-SaasComparison.propTypes = {}
+ProComparison.propTypes = {}
 
-SaasComparison.defaultProps = {}
+ProComparison.defaultProps = {}
 
-export default SaasComparison
+export default ProComparison

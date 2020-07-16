@@ -1,3 +1,3 @@
-import SaasGlobalCloud from "./SaasGlobalCloud"
+import ProGlobalCloud from "./ProGlobalCloud"
 
-export default SaasGlobalCloud
+export default ProGlobalCloud

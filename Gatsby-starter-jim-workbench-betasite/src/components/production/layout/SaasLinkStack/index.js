@@ -1,3 +1,3 @@
-import SaasLinkStack from "./SaasLinkStack"
+import ProLinkStack from "./ProLinkStack"
 
-export default SaasLinkStack
+export default ProLinkStack

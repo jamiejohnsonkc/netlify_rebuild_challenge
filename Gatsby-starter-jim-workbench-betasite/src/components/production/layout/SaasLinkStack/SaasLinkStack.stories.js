@@ -1,8 +1,8 @@
 import React from "react"
-import SaasLinkStack from "./SaasLinkStack"
+import ProLinkStack from "./ProLinkStack"
 
 export default {
-  title: "SaasLinkStack",
+  title: "ProLinkStack",
 }
 
-export const standard = () => <SaasLinkStack />
+export const standard = () => <ProLinkStack />

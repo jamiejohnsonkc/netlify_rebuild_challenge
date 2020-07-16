@@ -5,10 +5,10 @@ import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
 import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { darken, lighten } from "@theme-ui/color"
-import SaasPancake from "../../layout/SaasPancake"
+import ProPancake from "../../layout/ProPancake"
 
 const BuskerCtaBand = (props) => (
-  <SaasPancake>
+  <ProPancake>
     <Container
       {...props}
       sx={{
@@ -45,7 +45,7 @@ const BuskerCtaBand = (props) => (
         Get started for free
       </Button>
     </Container>
-  </SaasPancake>
+  </ProPancake>
 )
 
 BuskerCtaBand.propTypes = {}

@@ -3,23 +3,23 @@ import { jsx, Container } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Masthead from "../../../layout/Masthead"
-import SaasNavbar from "../../navigation/SaasNavbar"
+import ProNavbar from "../../navigation/ProNavbar"
 import Nav from "../../../navigation/navFunctions/Nav"
 
-const SaasMasthead = (props) => (
+const ProMasthead = (props) => (
   <>
     <Masthead>
       <Container className="Container">
         <Nav>
-          <SaasNavbar />
+          <ProNavbar />
         </Nav>
       </Container>
     </Masthead>
   </>
 )
 
-SaasMasthead.propTypes = {}
+ProMasthead.propTypes = {}
 
-SaasMasthead.defaultProps = {}
+ProMasthead.defaultProps = {}
 
-export default SaasMasthead
+export default ProMasthead

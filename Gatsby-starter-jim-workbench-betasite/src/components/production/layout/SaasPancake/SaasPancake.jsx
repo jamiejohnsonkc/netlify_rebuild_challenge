@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
 
-const SaasPancake = (props) => (
+const ProPancake = (props) => (
   <Pancake
     className="Pancake"
     {...props}
@@ -14,8 +14,8 @@ const SaasPancake = (props) => (
   />
 )
 
-SaasPancake.propTypes = {}
+ProPancake.propTypes = {}
 
-SaasPancake.defaultProps = {}
+ProPancake.defaultProps = {}
 
-export default SaasPancake
+export default ProPancake

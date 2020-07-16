@@ -34,7 +34,7 @@ const card3Background = css`
   background-position-y: -0.25em;
 `
 
-const SaasCard = (props) => (
+const ProCard = (props) => (
   <Card
     {...props}
     sx={{
@@ -86,7 +86,7 @@ const SaasCard = (props) => (
   </Card>
 )
 
-const SaasPlatform = (props) => (
+const ProPlatform = (props) => (
   <Pancake
     {...props}
     sx={{
@@ -111,14 +111,14 @@ const SaasPlatform = (props) => (
           justifyContent: "space-evenly",
         }}
       >
-        <SaasCard
+        <ProCard
           {...slideUp1}
           cardBackground={card1Background}
           cardHeader="Netlify Build"
           cardText="The Git workflow for web development. Build, deploy, and manage modern web projects."
         />
 
-        <SaasCard
+        <ProCard
           {...props}
           {...slideUp2}
           cardBackground={card2Background}
@@ -130,7 +130,7 @@ const SaasPlatform = (props) => (
           cardHeader="Netlify Dev"
           cardText="Run our entire platform right on your laptop. Preview it all - site generation, functions, and edge logic."
         />
-        <SaasCard
+        <ProCard
           cardBackground={card3Background}
           {...slideUp3}
           cardHeader="Netlify Edge"
@@ -141,8 +141,8 @@ const SaasPlatform = (props) => (
   </Pancake>
 )
 
-SaasPlatform.propTypes = {}
+ProPlatform.propTypes = {}
 
-SaasPlatform.defaultProps = {}
+ProPlatform.defaultProps = {}
 
-export default SaasPlatform
+export default ProPlatform

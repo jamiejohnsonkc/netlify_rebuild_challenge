@@ -6,7 +6,7 @@ import Pancake from "../../../layout/Pancake"
 import NetlifyGlyph from "../../../../svg/assets/Netlify_glyph.svg"
 import Email_SignUp from "../../../inputs/Forms/Email_SignUp"
 
-const SaasSubscribe = (props) => (
+const ProSubscribe = (props) => (
   <Pancake
     {...props}
     sx={{
@@ -40,8 +40,8 @@ const SaasSubscribe = (props) => (
   </Pancake>
 )
 
-SaasSubscribe.propTypes = {}
+ProSubscribe.propTypes = {}
 
-SaasSubscribe.defaultProps = {}
+ProSubscribe.defaultProps = {}
 
-export default SaasSubscribe
+export default ProSubscribe

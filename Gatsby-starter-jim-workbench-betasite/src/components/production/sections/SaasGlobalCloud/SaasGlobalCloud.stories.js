@@ -1,8 +1,8 @@
 import React from "react"
-import SaasGlobalCloud from "./SaasGlobalCloud"
+import ProGlobalCloud from "./ProGlobalCloud"
 
 export default {
-  title: "SaasGlobalCloud",
+  title: "ProGlobalCloud",
 }
 
-export const standard = () => <SaasGlobalCloud />
+export const standard = () => <ProGlobalCloud />

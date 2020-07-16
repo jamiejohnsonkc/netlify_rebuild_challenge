@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, Container, Box } from "theme-ui"
 import React from "react"
-import SaasSuperUpMenu from "./SaasSuperUpMenu"
+import ProSuperUpMenu from "./ProSuperUpMenu"
 
 export default {
-  title: "SaasSuperUpMenu",
+  title: "ProSuperUpMenu",
 }
 
 export const standard = (props) => (
@@ -17,7 +17,7 @@ export const standard = (props) => (
         paddingTop: 8,
       }}
     >
-      <SaasSuperUpMenu />
+      <ProSuperUpMenu />
     </Box>
   </Container>
 )

@@ -1,8 +1,8 @@
 import React from "react"
-import SaasSocialIconsBar from "./SaasSocialIconsBar"
+import ProSocialIconsBar from "./ProSocialIconsBar"
 
 export default {
-  title: "SaasSocialIconsBar",
+  title: "ProSocialIconsBar",
 }
 
-export const standard = () => <SaasSocialIconsBar />
+export const standard = () => <ProSocialIconsBar />

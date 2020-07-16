@@ -2,9 +2,9 @@
 import { jsx, Box } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { SuperLink } from "../../../navigation/SaasSuperUpMenu/SaasSuperUpMenu"
+import { SuperLink } from "../../../navigation/ProSuperUpMenu/ProSuperUpMenu"
 
-const SaasBottom = (props) => (
+const ProBottom = (props) => (
   <Box
     {...props}
     sx={{
@@ -62,8 +62,8 @@ const SaasBottom = (props) => (
   </Box>
 )
 
-SaasBottom.propTypes = {}
+ProBottom.propTypes = {}
 
-SaasBottom.defaultProps = {}
+ProBottom.defaultProps = {}
 
-export default SaasBottom
+export default ProBottom

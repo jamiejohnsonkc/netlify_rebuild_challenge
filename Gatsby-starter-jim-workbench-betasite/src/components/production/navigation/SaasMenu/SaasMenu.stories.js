@@ -1,8 +1,8 @@
 import React from "react"
-import SaasMenu from "./SaasMenu"
+import ProMenu from "./ProMenu"
 
 export default {
-  title: "SaasMenu",
+  title: "ProMenu",
 }
 
-export const standard = () => <SaasMenu />
+export const standard = () => <ProMenu />

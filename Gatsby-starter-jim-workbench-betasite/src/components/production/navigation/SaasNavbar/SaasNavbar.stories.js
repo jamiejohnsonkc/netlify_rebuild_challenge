@@ -1,8 +1,8 @@
 import React from "react"
-import SaasNavbar from "./SaasNavbar"
+import ProNavbar from "./ProNavbar"
 
 export default {
-  title: "SaasNavbar",
+  title: "ProNavbar",
 }
 
-export const standard = () => <SaasNavbar />
+export const standard = () => <ProNavbar />

@@ -1,3 +1,3 @@
-import SaasSocialIconsBar from "./SaasSocialIconsBar"
+import ProSocialIconsBar from "./ProSocialIconsBar"
 
-export default SaasSocialIconsBar
+export default ProSocialIconsBar

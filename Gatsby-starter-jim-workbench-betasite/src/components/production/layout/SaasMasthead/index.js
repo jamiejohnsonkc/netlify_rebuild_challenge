@@ -1,3 +1,3 @@
-import SaasMasthead from "./SaasMasthead"
+import ProMasthead from "./ProMasthead"
 
-export default SaasMasthead
+export default ProMasthead

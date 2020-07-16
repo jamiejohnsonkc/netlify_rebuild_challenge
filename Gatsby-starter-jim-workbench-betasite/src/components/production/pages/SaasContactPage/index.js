@@ -1,3 +1,3 @@
-import SaasContactPage from "./SaasContactPage"
+import ProContactPage from "./ProContactPage"
 
-export default SaasContactPage
+export default ProContactPage

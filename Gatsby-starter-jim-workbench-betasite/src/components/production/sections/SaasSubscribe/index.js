@@ -1,3 +1,3 @@
-import SaasSubscribe from "./SaasSubscribe"
+import ProSubscribe from "./ProSubscribe"
 
-export default SaasSubscribe
+export default ProSubscribe

@@ -189,7 +189,7 @@ export default {
     minWidth: "18em",
   },
 
-  //* Extraneous Saas Menu Elements //
+  //* Extraneous Pro Menu Elements //
   navMenuDivider: {
     transitionDuration: "0.3s",
     flexBasis: "auto",

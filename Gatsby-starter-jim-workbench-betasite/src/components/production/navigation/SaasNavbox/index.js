@@ -1,3 +1,3 @@
-import SaasNavbox from "./SaasNavbox"
+import ProNavbox from "./ProNavbox"
 
-export default SaasNavbox
+export default ProNavbox

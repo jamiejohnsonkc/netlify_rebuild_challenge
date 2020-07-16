@@ -38,7 +38,7 @@ import LoblawsImage from "../../projectHooks/imageHooks/LoblawsImage"
 import BeckhamImage from "../../projectHooks/imageHooks/BeckhamImage"
 import CornerstoneImage from "../../projectHooks/imageHooks/CornerstoneImage"
 import CitrixImage from "../../projectHooks/imageHooks/CitrixImage"
-import SaasPancake from "../../layout/SaasPancake"
+import ProPancake from "../../layout/ProPancake"
 import gradients from "../../../../../../jim-workbench-custom-themes/exThemeUi/gradients"
 
 const ImageWrapper = (props) => (
@@ -167,7 +167,7 @@ MyTabList.tabsRole = "TabList"
 MyTabPanel.tabsRole = "TabPanel"
 
 const ProofTabs = ({ data, props }) => (
-  <SaasPancake>
+  <ProPancake>
     <Container
       {...props}
       sx={{
@@ -294,7 +294,7 @@ const ProofTabs = ({ data, props }) => (
         </MyTabPanel>
       </Tabs>
     </Container>
-  </SaasPancake>
+  </ProPancake>
 )
 
 ProofTabs.propTypes = {}

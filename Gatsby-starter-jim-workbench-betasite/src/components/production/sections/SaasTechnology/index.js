@@ -1,3 +1,3 @@
-import SaasTechnology from "./SaasTechnology"
+import ProTechnology from "./ProTechnology"
 
-export default SaasTechnology
+export default ProTechnology

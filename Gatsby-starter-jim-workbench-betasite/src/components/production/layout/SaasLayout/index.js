@@ -1,3 +1,3 @@
-import SaasLayout from "./SaasLayout"
+import ProLayout from "./ProLayout"
 
-export default SaasLayout
+export default ProLayout

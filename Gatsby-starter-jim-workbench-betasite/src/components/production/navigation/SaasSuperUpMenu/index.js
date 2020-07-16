@@ -1,3 +1,3 @@
-import SaasSuperUpMenu from "./SaasSuperUpMenu"
+import ProSuperUpMenu from "./ProSuperUpMenu"
 
-export default SaasSuperUpMenu
+export default ProSuperUpMenu

@@ -1,3 +1,3 @@
-import SaasFooter from "./SaasFooter"
+import ProFooter from "./ProFooter"
 
-export default SaasFooter
+export default ProFooter

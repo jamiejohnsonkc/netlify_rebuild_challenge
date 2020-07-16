@@ -1,8 +1,8 @@
 import React from "react"
-import SaasNavbox from "./SaasNavbox"
+import ProNavbox from "./ProNavbox"
 
 export default {
-  title: "SaasNavbox",
+  title: "ProNavbox",
 }
 
-export const standard = () => <SaasNavbox />
+export const standard = () => <ProNavbox />

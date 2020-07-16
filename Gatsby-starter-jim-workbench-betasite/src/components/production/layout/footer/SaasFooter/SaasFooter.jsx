@@ -2,11 +2,11 @@
 import { jsx, Container, Box, Text, Styled } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import SaasSuperUpMenu from "../../../navigation/SaasSuperUpMenu"
-import SaasSocialIconsBar from "../SaasSocialIconsBar"
-import SaasBottom from "../SaasBottom"
+import ProSuperUpMenu from "../../../navigation/ProSuperUpMenu"
+import ProSocialIconsBar from "../ProSocialIconsBar"
+import ProBottom from "../ProBottom"
 
-const SaasFooter = (props) => (
+const ProFooter = (props) => (
   <Container>
     <Box>
       <Styled.h5
@@ -20,14 +20,14 @@ const SaasFooter = (props) => (
         © {new Date().getFullYear()} Netlify
       </Styled.h5>
     </Box>
-    <SaasSocialIconsBar />
-    <SaasSuperUpMenu />
-    <SaasBottom />
+    <ProSocialIconsBar />
+    <ProSuperUpMenu />
+    <ProBottom />
   </Container>
 )
 
-SaasFooter.propTypes = {}
+ProFooter.propTypes = {}
 
-SaasFooter.defaultProps = {}
+ProFooter.defaultProps = {}
 
-export default SaasFooter
+export default ProFooter

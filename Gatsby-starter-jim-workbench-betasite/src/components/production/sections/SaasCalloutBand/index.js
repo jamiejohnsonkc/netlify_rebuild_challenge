@@ -1,3 +1,3 @@
-import SaasCalloutBand from "./SaasCalloutBand"
+import ProCalloutBand from "./ProCalloutBand"
 
-export default SaasCalloutBand
+export default ProCalloutBand

@@ -1,8 +1,8 @@
 import React from "react"
-import SaasCalloutBand from "./SaasCalloutBand"
+import ProCalloutBand from "./ProCalloutBand"
 
 export default {
-  title: "SaasCalloutBand",
+  title: "ProCalloutBand",
 }
 
-export const standard = () => <SaasCalloutBand />
+export const standard = () => <ProCalloutBand />

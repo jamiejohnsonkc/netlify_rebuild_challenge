@@ -1,3 +1,3 @@
-import SaasMenu from "./SaasMenu"
+import ProMenu from "./ProMenu"
 
-export default SaasMenu
+export default ProMenu

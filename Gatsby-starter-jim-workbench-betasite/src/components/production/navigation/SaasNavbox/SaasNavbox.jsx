@@ -3,7 +3,7 @@ import { jsx, Flex } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import SaasMenu from "../SaasMenu"
+import ProMenu from "../ProMenu"
 
 //* Navbox is the wrapper for the navMenu and provides animation styles for the mobile menu/drawer
 
@@ -26,7 +26,7 @@ const Navbox = (props) => (
     className="navBox"
   >
     {/* {props.children} */}
-    <SaasMenu />
+    <ProMenu />
   </StyledDiv>
 )
 

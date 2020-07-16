@@ -1,8 +1,8 @@
 import React from "react"
-import SaasPlatform from "./SaasPlatform"
+import ProPlatform from "./ProPlatform"
 
 export default {
-  title: "SaasPlatform",
+  title: "ProPlatform",
 }
 
-export const standard = () => <SaasPlatform />
+export const standard = () => <ProPlatform />

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 // import Layout from "../components/layout/Layout"
-import SaasLayout from "../components/production/layout/SaasLayout"
+import ProLayout from "../components/production/layout/ProLayout"
 
 import { jsx, colorMode, setColorMode, useColorMode } from "theme-ui"
 import SEO from "../pages/seo"
@@ -9,23 +9,23 @@ import ColorModeToggle from "../components/inputs/ColorModeToggle"
 import ColorModeCycler from "../components/inputs/ColorModeCycler"
 import HeroIntro from "../components/production/sections/HeroIntro"
 import ProofTabs from "../components/production/sections/ProofTabs"
-import SaasBenefits from "../components/production/sections/SaasBenefits/SaasBenefits"
-import SaasGlobalCloud from "../components/production/sections/SaasGlobalCloud/SaasGlobalCloud"
-import SaasComparison from "../components/production/sections/SaasComparison"
+import ProBenefits from "../components/production/sections/ProBenefits/ProBenefits"
+import ProGlobalCloud from "../components/production/sections/ProGlobalCloud/ProGlobalCloud"
+import ProComparison from "../components/production/sections/ProComparison"
 import BuskerCtaBand from "../components/production/sections/BuskerCtaBand"
-import SaasSubscribe from "../components/production/sections/SaasSubscribe"
-import SaasLinkStack from "../components/production/layout/SaasLinkStack"
-import SaasFooter from "../components/production/layout/footer/SaasFooter"
-import SaasTechnology from "../components/production/sections/SaasTechnology"
-import SaasPlatform from "../components/production/sections/SaasPlatform"
-import SaasCalloutBand from "../components/production/sections/SaasCalloutBand"
-// import SaasTable from "../components/templates/SaasTable"
+import ProSubscribe from "../components/production/sections/ProSubscribe"
+import ProLinkStack from "../components/production/layout/ProLinkStack"
+import ProFooter from "../components/production/layout/footer/ProFooter"
+import ProTechnology from "../components/production/sections/ProTechnology"
+import ProPlatform from "../components/production/sections/ProPlatform"
+import ProCalloutBand from "../components/production/sections/ProCalloutBand"
+// import ProTable from "../components/templates/ProTable"
 
 const IndexPage = (props) => {
   const [colorMode, setColorMode] = useColorMode()
   setColorMode("splash")
   return (
-    <SaasLayout>
+    <ProLayout>
       <SEO title="Home" />
 
       <div
@@ -41,18 +41,18 @@ const IndexPage = (props) => {
         <ColorModeToggle />
       </div>
       <HeroIntro />
-      <SaasGlobalCloud />
+      <ProGlobalCloud />
       <ProofTabs />
-      <SaasBenefits />
-      <SaasComparison />
-      <SaasTechnology />
-      <SaasCalloutBand />
-      <SaasPlatform />
+      <ProBenefits />
+      <ProComparison />
+      <ProTechnology />
+      <ProCalloutBand />
+      <ProPlatform />
       <BuskerCtaBand />
-      <SaasSubscribe />
-      <SaasLinkStack />
-      <SaasFooter />
-    </SaasLayout>
+      <ProSubscribe />
+      <ProLinkStack />
+      <ProFooter />
+    </ProLayout>
   )
 }
 export default IndexPage

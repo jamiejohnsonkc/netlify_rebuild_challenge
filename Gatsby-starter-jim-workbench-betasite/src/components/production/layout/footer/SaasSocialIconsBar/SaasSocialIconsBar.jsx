@@ -6,16 +6,16 @@ import styled from "@emotion/styled"
 import { color } from "../../../../../../../jim-workbench-custom-themes/colors"
 import Icon from "../../../../base/Icon"
 
-const SaasLinkWrapper = styled.div`
+const ProLinkWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   maxwidth: ;
 `
 
-const SaasSocialIconsBar = (props) => (
+const ProSocialIconsBar = (props) => (
   <>
-    <SaasLinkWrapper
+    <ProLinkWrapper
       {...props}
       sx={{
         my: 4,
@@ -60,12 +60,12 @@ const SaasSocialIconsBar = (props) => (
         iconName="Youtube"
         size="1.618em"
       />
-    </SaasLinkWrapper>
+    </ProLinkWrapper>
   </>
 )
 
-SaasSocialIconsBar.propTypes = {}
+ProSocialIconsBar.propTypes = {}
 
-SaasSocialIconsBar.defaultProps = {}
+ProSocialIconsBar.defaultProps = {}
 
-export default SaasSocialIconsBar
+export default ProSocialIconsBar

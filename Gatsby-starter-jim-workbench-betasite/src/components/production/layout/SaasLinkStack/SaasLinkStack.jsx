@@ -23,7 +23,7 @@ const LinkStack = (props) => (
   />
 )
 
-const SaasLinkStack = (props) => (
+const ProLinkStack = (props) => (
   <Pancake {...props}>
     <Container
       {...props}
@@ -85,8 +85,8 @@ const SaasLinkStack = (props) => (
   </Pancake>
 )
 
-SaasLinkStack.propTypes = {}
+ProLinkStack.propTypes = {}
 
-SaasLinkStack.defaultProps = {}
+ProLinkStack.defaultProps = {}
 
-export default SaasLinkStack
+export default ProLinkStack

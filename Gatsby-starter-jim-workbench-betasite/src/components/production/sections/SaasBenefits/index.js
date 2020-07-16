@@ -1,3 +1,3 @@
-import SaasBenefits from "./SaasBenefits"
+import ProBenefits from "./ProBenefits"
 
-export default SaasBenefits
+export default ProBenefits

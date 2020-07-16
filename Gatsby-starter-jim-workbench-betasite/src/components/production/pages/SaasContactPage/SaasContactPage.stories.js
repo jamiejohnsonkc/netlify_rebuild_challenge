@@ -1,8 +1,8 @@
 import React from "react"
-import SaasContactPage from "./SaasContactPage"
+import ProContactPage from "./ProContactPage"
 
 export default {
-  title: "SaasContactPage",
+  title: "ProContactPage",
 }
 
-export const standard = () => <SaasContactPage />
+export const standard = () => <ProContactPage />

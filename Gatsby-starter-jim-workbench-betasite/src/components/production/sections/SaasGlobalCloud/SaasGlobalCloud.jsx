@@ -4,7 +4,7 @@ import Cloud from "../../../../svg/assets/cloud.svg"
 import SplitTextLine from "../../../base/SplitTextLine/SplitTextLine"
 import Pancake from "../../../layout/Pancake"
 import Section_Grid_1r_66Text_33Visual from "../../../templates/Section_Grid_1r_66Text_33Visual"
-import SaasPancake from "../../layout/SaasPancake"
+import ProPancake from "../../layout/ProPancake"
 
 // const SplitText = ({ textline1, textline2, ...props }) => (
 //   <>
@@ -18,7 +18,7 @@ import SaasPancake from "../../layout/SaasPancake"
 //   textLine2: "Multi-cloud by design.",
 // }
 
-const SaasGlobalCloud = (props) => {
+const ProGlobalCloud = (props) => {
   const SplitText = () => (
     <SplitTextLine
       textLine1="Global by default."
@@ -27,7 +27,7 @@ const SaasGlobalCloud = (props) => {
   )
 
   return (
-    <SaasPancake>
+    <ProPancake>
       <Container
         {...props}
         // className="Container"
@@ -42,17 +42,17 @@ const SaasGlobalCloud = (props) => {
           visual={<Cloud />}
         />
       </Container>
-    </SaasPancake>
+    </ProPancake>
   )
 }
 
-SaasGlobalCloud.propTypes = {
+ProGlobalCloud.propTypes = {
   // displayText: PropTypes.any,
   // headerText: PropTypes.any,
   // subheadText: PropTypes.any,
   // visual: PropTypes.any,
 }
 
-SaasGlobalCloud.defaultProps = {}
+ProGlobalCloud.defaultProps = {}
 
-export default SaasGlobalCloud
+export default ProGlobalCloud

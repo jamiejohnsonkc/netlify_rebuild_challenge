@@ -1,8 +1,8 @@
 import React from "react"
-import SaasMasthead from "./SaasMasthead"
+import ProMasthead from "./ProMasthead"
 
 export default {
-  title: "SaasMasthead",
+  title: "ProMasthead",
 }
 
-export const standard = () => <SaasMasthead />
+export const standard = () => <ProMasthead />

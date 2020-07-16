@@ -1,3 +1,3 @@
-import SaasMegaNav from "./SaasMegaNav"
+import ProMegaNav from "./ProMegaNav"
 
-export default SaasMegaNav
+export default ProMegaNav

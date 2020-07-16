@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import React from "react"
-import SaasComparison from "./SaasComparison"
+import ProComparison from "./ProComparison"
 
 export default {
-  title: "SaasComparison",
+  title: "ProComparison",
 }
 
 export const standard = (props) => (
@@ -16,6 +16,6 @@ export const standard = (props) => (
       overflowX: "scroll",
     }}
   >
-    <SaasComparison />
+    <ProComparison />
   </div>
 )
