@@ -1,21 +1,13 @@
 /** @jsx jsx */
-import { jsx, Box, Text, Close, IconButton } from "theme-ui"
+import { jsx, Text, Close } from "theme-ui"
 import PropTypes from "prop-types"
-import React from "react"
 import { Link } from "gatsby"
-import RadialButton from "../../inputs/RadialButton"
-import { darken, lighten } from "@theme-ui/color"
-import Circle from "../../base/Circle"
-
-//$  this is the first iteration of an unlinked module. need to refactor and reconfig for resuablity
 
 const AnnouncementBar = (props) => (
   <div
     {...props}
     className="AccouncementBar"
     sx={{
-      bg: lighten("primary", 0.005),
-
       width: "100%",
       textAlign: "center",
       position: "relative",
@@ -24,7 +16,6 @@ const AnnouncementBar = (props) => (
       alignItems: "center",
       padding: [2, 1, 1, 1],
       zIndex: 3,
-      // marginBottom: [0, 0, 2, 4],
     }}
   >
     <div
@@ -33,7 +24,6 @@ const AnnouncementBar = (props) => (
       sx={{
         alignItems: "center",
         position: "relative",
-        // color: "text",
         fontWeight: "bold",
         display: "flex",
         marginLeft: "auto",
@@ -60,7 +50,7 @@ const AnnouncementBar = (props) => (
             },
           }}
         >
-          Join us for a product demo - June 30.
+          {props.announcementText}
         </Text>
         <u
           sx={{
@@ -68,7 +58,7 @@ const AnnouncementBar = (props) => (
             color: lighten("primary", 99),
           }}
         >
-          Register Now!
+          {props.accouncementCtaText}
         </u>
       </Link>
     </div>
@@ -89,18 +79,16 @@ const AnnouncementBar = (props) => (
         marginRight: "10px",
         borderRadius: "50%",
         p: 1,
-        // display: "inlineBlock",
       }}
     />
   </div>
 )
 
 AnnouncementBar.propTypes = {
-  siteTitle: PropTypes.string,
+  accouncementCtaText: PropTypes.any,
+  announcementText: PropTypes.any,
 }
 
-AnnouncementBar.defaultProps = {
-  siteTitle: ``,
-}
+AnnouncementBar.defaultProps = {}
 
 export default AnnouncementBar

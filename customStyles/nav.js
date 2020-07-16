@@ -1,12 +1,15 @@
 //! NAV
 
+//TODO config hot swapping of large and small menu formats
+//TODO combine all styling for menus in one, separate js file.  leave the defaults alone to provide functionality for primitives.
+//TODO clean up style files
+
 import layout from "./layout"
 import { color } from "./colors"
 
 export default {
   //* nav root directory
   nav: {},
-
   navBar: {
     textTransform: "capitalize",
     borderRadius: [0, 0, 6, 6],
@@ -20,11 +23,8 @@ export default {
     px: [0, 0, 0, 0],
     py: 0,
     display: "flex",
-    // alignSelf: "center",
     alignItems: ["center", "center", "none", "none"],
     justifyContent: ["space-between", "space-between", "none", "none"],
-    // height: "10vh",
-    // display: "flex",
     width: "100%",
     height: ["4em", "4em", "unset", "unset"],
   },
@@ -50,8 +50,6 @@ export default {
     height: "100%",
     width: "100%",
     transition: "all 0.3s ease-in",
-    // flex: 1,
-    // display: "inline-flex",
     paddingTop: [4, 0],
     backgroundColor: [
       "navMenuBackground_SM",
@@ -59,69 +57,27 @@ export default {
       "transparent",
       "transparent",
     ],
-    // py: 2,
     "@media (max-width: 768px)": {
-      // width: "100%",
-      // height: "100%",
-      // justifyContent: "flex-start",
-      // backgroundColor: [
-      //   "mobileNavMenuBackground",
-      //   "mobileNavMenuBackground",
-      //   "navMenuBackground",
-      //   "navMenuBackground",
-      // ],
-      // transition: "all 0.3s ease-in",
       top: "0",
       position: "fixed",
       overflowY: "scroll",
-      // overflow: ["scroll", "hidden"],
-      // zIndex: 3,
     },
   },
 
   //* Lists
 
   navMenu: {
-    // display: "flex",
-    // flex: `.1 5 53em`,
-
     margin: 0,
     py: [0, 3, 3, 3],
     px: [0, 4, 4, 4],
-    // alignItems: "center",
-    // display: "flex",
-    // flex: 1,
-    // justifyContent: "space-around",
-    // flexDirection: ["column", "column", "row"],
-    // width: "100%",
   },
 
   navItem: {
     padding: [4, 0, 0, 0],
-    // transitionDuration: "0.3s",
     transition: "all 0.3s ease-in",
-    // backgroundColor: [
-    //   "navMenuBackground_SM",
-    //   "navMenuBackground_SM",
-    //   "navMenuBackground",
-    //   "navMenuBackground",
-    // ],
     "&:hover": {
       textDecoration: "underline",
     },
-    // "@media (max-width: 768px)": {
-    // width: "100%",
-    // backgroundColor: [
-    //   "navMenuBackground_SM",
-    //   "navMenuBackground_SM",
-    //   "navMenuBackground",
-    //   "navMenuBackground",
-    // ],
-    // transition: "all 0.3s ease-in",
-    // display: "block",
-    // position: "relative",
-    // },
-    //TODO confirm benefit/functionality of the hideSmall styling
     hideSmall: {
       display: ["none", "none", "none", "block"],
     },
@@ -129,15 +85,12 @@ export default {
 
   subMenu: {
     listStyle: "none",
-
     p: 4,
     top: "100%",
     minWidth: "8rem",
-    // backgroundColor: "nav.navBar",
     borderRadius: 6,
     transition: "all 0.3s ease",
     display: "none",
-    // backgroundColor: "white",
   },
 
   subMenuNavItem: {},
@@ -167,12 +120,10 @@ export default {
 
   superMenu: {
     listStyle: "none",
-
     p: 4,
     bottom: 0,
     minWidth: "8rem",
     left: "unset",
-    // backgroundColor: "nav.navBar",
     borderRadius: 6,
     transition: "all 0.3s ease",
     display: "none",
@@ -213,8 +164,6 @@ export default {
     visibility: ["hidden", "hidden", "visible", "visible"],
     flex: 0.1,
     padding: 0,
-    // flexGrow: [null, null, "0.25", "0.25"],
-    // flexBasis: [null, null, "4em", "2em"],
     cursor: "none",
   },
 
@@ -224,8 +173,6 @@ export default {
       background: "white",
       borderRadius: "3em",
       py: 2,
-      // paddingRight: 6,
-      // paddingLeft: 4,
       width: "12em",
       justifyContent: "center",
       alignContent: "center",
@@ -238,26 +185,11 @@ export default {
       background: "white",
       borderRadius: "3em",
       py: 2,
-      // paddingRight: 6,
-      // paddingLeft: 4,
       width: "12em",
       justifyContent: "center",
       alignContent: "center",
     },
   },
-
-  // sideNavDrawer: {
-  //   "@media (max-width: 768px)": {
-  //     backgroundColor: "primary",
-  //     width: "100%",
-  //   },
-  // },
-
-  // menuChevronDown: {
-  //   color: "muted",
-  //   verticalAlign: "middle",
-  //   width: "1.25em",
-  // },
 
   toggle: {
     display: "none",
@@ -266,7 +198,6 @@ export default {
     padding: 2,
     "@media (max-width: 768px)": {
       display: "inline-flex",
-      // position: "fixed",
       zIndex: 3,
       right: 0,
     },
@@ -302,7 +233,6 @@ export default {
     boxShadow: "depth",
     width: [null, null, "52em", "79em"],
     left: [null, null, "-125%", "-150%"],
-    // right: "20%",
   },
   megaNavHeader: {
     color: color.blueDark,
@@ -324,8 +254,3 @@ export default {
     height: "20em",
   },
 }
-
-//TODO review all nav color assignements
-//TODO config hot swapping of large and small menu formats
-
-//TODO combine all styling for menus in one, separate js file.  leave the defaults alone to provide functionality for primitives.

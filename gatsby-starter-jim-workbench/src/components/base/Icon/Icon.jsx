@@ -25,6 +25,8 @@ import { JimglyphJson } from "./jsonLogos/Jimglyph.js"
 use the following method to import local icons in json format. svg to json converter available at: https://react-icons-json-generator.surge.sh/
 */
 
+//TODO replace react-icons with react-icons-kit
+
 const Jimglyph = GenIcon(JimglyphJson)
 
 export const Icon = (props) => {
