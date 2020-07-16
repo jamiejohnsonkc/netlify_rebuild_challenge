@@ -8,8 +8,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "root/*": ["./*"],
-      "customStyles/*": ["./*"],
-      "svg/*": ["**/svg/*"]
+      "customStyles/*": ["./*"]
     }
   },
   "exclude": ["node_modules"]
