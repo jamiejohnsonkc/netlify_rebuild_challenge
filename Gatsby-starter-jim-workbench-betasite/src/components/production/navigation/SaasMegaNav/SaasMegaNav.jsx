@@ -17,7 +17,7 @@ const SaasMegaNav = (props) => (
       // width: ["80em"],
       display: "block",
       position: "absolute",
-      left: "0",
+
       variant: "nav.megaNav",
     }}
   >

@@ -300,7 +300,9 @@ export default {
     backgroundColor: color.white,
     transition: "all 0.3s ease-in",
     boxShadow: "depth",
-    width: "80vw",
+    width: [null, null, "52em", "79em"],
+    left: [null, null, "-125%", "-150%"],
+    // right: "20%",
   },
   megaNavHeader: {
     color: color.blueDark,
