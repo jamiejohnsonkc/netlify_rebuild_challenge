@@ -2,7 +2,7 @@
 import { jsx, Container, Box, Text, Styled } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import ProSuperUpMenu from "../../../ProNavigation/ProSuperUpMenu"
+import ProSuperUpMenu from "../../../proNavigation/ProSuperUpMenu"
 import ProSocialIconsBar from "../ProSocialIconsBar"
 import ProBottom from "../ProBottom"
 

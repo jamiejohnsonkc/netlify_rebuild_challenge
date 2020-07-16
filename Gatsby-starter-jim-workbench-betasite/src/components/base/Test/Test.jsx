@@ -6,7 +6,6 @@ import Button from "../Button/Button"
 
 const Test = (props) => (
   <div>
-    {" "}
     <button>raw</button>
     <Button>mine</Button>
   </div>

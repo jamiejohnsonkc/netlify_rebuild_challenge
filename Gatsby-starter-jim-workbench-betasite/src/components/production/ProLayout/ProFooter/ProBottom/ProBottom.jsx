@@ -2,7 +2,7 @@
 import { jsx, Box } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { SuperLink } from "../../../ProNavigation/ProSuperUpMenu/ProSuperUpMenu"
+import { SuperLink } from "../../../proNavigation/ProSuperUpMenu/ProSuperUpMenu"
 
 const ProBottom = (props) => (
   <Box

@@ -3,7 +3,7 @@ import { jsx, Grid, Box, Container, Styled } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../../../base/Icon"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "jim-workbench-custom-themes/colors"
 import Pancake from "../../../layout/Pancake"
 import ComparisonTable from "../../../templates/ComparisonTable"
 

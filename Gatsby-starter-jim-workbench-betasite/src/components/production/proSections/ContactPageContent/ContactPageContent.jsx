@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Grid_1r_2c from "../../../layout/Grid/Grid_1r_2c"
 import Pancake from "../../../layout/Pancake/Pancake"
-import ContactSalesForm from "../../ProLayout/forms/ContactSalesForm"
+import ContactSalesForm from "../../proLayout/forms/ContactSalesForm"
 import ContactPageDialogue from "../ContactPageDialogue"
 
 const ContactPageContent = (props) => (

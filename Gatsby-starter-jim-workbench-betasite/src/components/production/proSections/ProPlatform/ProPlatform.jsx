@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import CtaLink from "../../../base/CtaLink"
 import Pancake from "../../../layout/Pancake"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "jim-workbench-custom-themes/colors"
 import { css } from "@emotion/core"
 import cardBlue from "./cardBlueBg.svg"
 import cardBlack from "./cardBlackBg.svg"
@@ -13,7 +13,7 @@ import {
   slideUp1,
   slideUp2,
   slideUp3,
-} from "../../../../../../jim-workbench-custom-themes/exThemeUi/animation"
+} from "jim-workbench-custom-themes/exThemeUi/animation"
 // import backgroundSvg from "./"
 
 const card1Background = css`

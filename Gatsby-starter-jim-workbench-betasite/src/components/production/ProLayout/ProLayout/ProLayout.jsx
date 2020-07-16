@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "../../../layout/Header/Header"
 import ProMasthead from "../ProMasthead"
-import ProAnnouncementBar from "../ProHeader/ProAnnouncementBar"
+import ProAnnouncementBar from "../ProHeader/proAnnouncementBar"
 // import Footer from "../Footer"
 // import ProHeader from "../ProHeader/ProHeader"
 

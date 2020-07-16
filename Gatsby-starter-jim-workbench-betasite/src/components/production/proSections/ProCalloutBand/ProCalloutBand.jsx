@@ -14,11 +14,11 @@ import {
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import { color } from "../../../../../../jim-workbench-custom-themes/colors"
+import { color } from "jim-workbench-custom-themes/colors"
 import { darken } from "@theme-ui/color"
 // import CheckMarkRnd from "../../../templates/elements/CheckMarkRnd"
 
-import gradients from "../../../../../../jim-workbench-custom-themes/exThemeUi/gradients"
+import gradients from "jim-workbench-custom-themes/exThemeUi/gradients"
 import IconBulletListItem from "../../../templates/IconBulletListItem"
 
 // const Claim = (props) => (
