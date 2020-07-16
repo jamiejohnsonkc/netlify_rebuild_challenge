@@ -4,7 +4,7 @@ import Cloud from "../../../../svg/assets/cloud.svg"
 import SplitTextLine from "../../../base/SplitTextLine/SplitTextLine"
 import Pancake from "../../../layout/Pancake"
 import Section_Grid_1r_66Text_33Visual from "../../../templates/Section_Grid_1r_66Text_33Visual"
-import ProPancake from "../../layout/ProPancake"
+import ProPancake from "../../ProLayout/ProPancake"
 
 // const SplitText = ({ textline1, textline2, ...props }) => (
 //   <>

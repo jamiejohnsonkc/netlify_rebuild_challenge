@@ -3,11 +3,11 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import CheckMark from "../../../base/CheckMark"
-import Circle from "../../../base/Circle"
+import CircleBg from "../../../base/CircleBg"
 import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 
 const CheckMarkRnd = (props) => (
-  <Circle
+  <CircleBg
     {...props}
     // className={props.circleClassName}
     sx={{
@@ -25,7 +25,7 @@ const CheckMarkRnd = (props) => (
       iconSize=".83em"
       iconColor="white"
     />
-  </Circle>
+  </CircleBg>
 )
 
 CheckMarkRnd.propTypes = {}

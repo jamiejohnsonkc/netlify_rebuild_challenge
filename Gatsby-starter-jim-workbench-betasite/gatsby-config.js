@@ -90,6 +90,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@base": "./src/components/base",
+          "@navigation": "./src/components/navigation",
+          "@layout": "./src/components/layout",
+          "@templates": "./src/components/templates",
+          "@svg": "./src/svg/assets",
+          "@images": "./src/images",
+        },
+      },
+      extensions: ["js", "jpg", "svg", "png"],
+    },
+    {
       resolve: "gatsby-plugin-page-creator",
       options: {
         path: `${__dirname}/src/pages`,
