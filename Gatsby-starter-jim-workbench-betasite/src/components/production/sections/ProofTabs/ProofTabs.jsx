@@ -25,12 +25,6 @@ import styled from "@emotion/styled"
 import { color } from "../../../../../../jim-workbench-custom-themes/colors"
 import { lighten } from "@theme-ui/color"
 import PropTypes from "prop-types"
-import Pancake from "../../../layout/Pancake"
-// import ProofTabsCafe from "../../../hooks/ProofTabsCafe"
-// import ProofTabsCombine from "../../../hooks/ProofTabsCombine"
-// import ProofTabsPlanning from "../../../hooks/ProofTabsPlanning/ProofTabsPlanning"
-// import ProofTabsSparks from "../../../hooks/ProofTabsSparks"
-// import ProofTabsWoodworking from "../../../hooks/ProofTabsWoodworking"
 import { Img } from "gatsby-image"
 import TabPanelContent from "../../../templates/TabsPanel/TabPanelContent/TabPanelContent"
 import NikeImage from "../../projectHooks/imageHooks/NikeImage"
@@ -130,6 +124,11 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
         "& > button > svg": {
           alignSelf: "center",
           flex: 1,
+        },
+        "&.MyTab": {
+          "#proofLogo": {
+            fill: `${color.gray3}`,
+          },
         },
         "&.MyTabActive": {
           border: "none",
