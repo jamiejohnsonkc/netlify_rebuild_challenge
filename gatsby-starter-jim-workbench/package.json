@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-jim-workbench-betasite",
+  "name": "gatsby-starter-jim-workbench",
   "version": "1.0.0",
-  "description": "site workbench starter ingot",
+  "description": "site workbench",
   "main": "index.js",
   "author": "jamiejohnson <jamie@jamie-johnson.com> (@jamiejohnsonkc)",
   "license": "MIT",

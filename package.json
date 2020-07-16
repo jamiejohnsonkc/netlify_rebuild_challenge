@@ -7,14 +7,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "yarn workspace gatsby-starter-jim-workbench-betasite build",
-    "develop": "yarn workspace gatsby-starter-jim-workbench-betasite develop",
-    "clean": "yarn workspace gatsby-starter-jim-workbench-betasite gatsby clean",
+    "build": "yarn workspace gatsby-starter-jim-workbench build",
+    "develop": "yarn workspace gatsby-starter-jim-workbench develop",
+    "clean": "yarn workspace gatsby-starter-jim-workbench gatsby clean",
     "sanitize": "yarn run clean && yarn develop",
-    "storybook": "yarn workspace gatsby-starter-jim-workbench-betasite storybook"
+    "storybook": "yarn workspace gatsby-starter-jim-workbench storybook"
   },
   "workspaces": [
-    "gatsby-starter-jim-workbench-betasite",
+    "gatsby-starter-jim-workbench",
     "customStyles",
     "productionComps"
   ],

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `gatsby-starter-jim-workbench-betasite`,
+    title: `gatsby-starter-jim-workbench`,
     description: `root site for jim workbench`,
     author: `@jamiejohnsonkc`,
     menuLinks: [
@@ -171,7 +171,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-jim-workbench-betasite`,
+        name: `gatsby-starter-jim-workbench`,
         short_name: `betasite`,
         start_url: `/`,
         display: `minimal-ui`,

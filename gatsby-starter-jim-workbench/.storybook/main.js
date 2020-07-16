@@ -1,7 +1,5 @@
 module.exports = {
-  stories: [
-    "../../gatsby-starter-jim-workbench-betasite/src/**/*.stories.{js,jsx}",
-  ],
+  stories: ["../../gatsby-starter-jim-workbench/src/**/*.stories.{js,jsx}"],
 
   addons: [
     "@storybook/addon-docs",
