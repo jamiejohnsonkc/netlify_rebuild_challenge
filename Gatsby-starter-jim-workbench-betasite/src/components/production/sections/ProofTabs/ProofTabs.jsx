@@ -272,7 +272,7 @@ const ProofTabs = ({ data, props }) => (
           <TabPanelContent
             tabsVisual={<CornerstoneImage />}
             textHeadline="Cornerstone OnDemand achieves 25% better performance, without added cost of third-party CDN"
-            textBody="Talent management SaaS company CornerStone OnDemand increased the speed of development and delivery for its international site by migrating from a legacy technology stack to Netlify."
+            textBody="Talent management pro company CornerStone OnDemand increased the speed of development and delivery for its international site by migrating from a legacy technology stack to Netlify."
             tabsCtaLinkTo="/"
             metric1="25%"
             metricCaption1="Faster page loads"

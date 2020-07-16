@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query imageCombine {
-      file(relativePath: { eq: "saas/combine.jpg" }) {
+      file(relativePath: { eq: "pro/combine.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

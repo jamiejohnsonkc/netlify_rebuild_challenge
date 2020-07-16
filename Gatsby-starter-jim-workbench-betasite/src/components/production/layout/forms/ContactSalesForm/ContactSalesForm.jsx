@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 //   <Label
 //     {...props}
 //     sx={{
-//       variant: "saasContact",
+//       variant: "proContact",
 //     }}
 //   />
 // )

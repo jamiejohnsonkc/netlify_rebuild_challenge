@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query cornerstone {
-      file(relativePath: { eq: "saas/netlify_cornerstone.jpg" }) {
+      file(relativePath: { eq: "pro/netlify_cornerstone.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

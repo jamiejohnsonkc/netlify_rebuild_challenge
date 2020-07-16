@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query imageWoodworking {
-      file(relativePath: { eq: "saas/woodworking.jpg" }) {
+      file(relativePath: { eq: "pro/woodworking.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

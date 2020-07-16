@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query lobaws {
-      file(relativePath: { eq: "saas/netlify_loblaws.jpg" }) {
+      file(relativePath: { eq: "pro/netlify_loblaws.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

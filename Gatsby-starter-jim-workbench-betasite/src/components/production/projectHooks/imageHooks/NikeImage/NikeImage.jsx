@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 export default () => {
   const data = useStaticQuery(graphql`
     query nike {
-      file(relativePath: { eq: "saas/netlify_nike.jpg" }) {
+      file(relativePath: { eq: "pro/netlify_nike.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
