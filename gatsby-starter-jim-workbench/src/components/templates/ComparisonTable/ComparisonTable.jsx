@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../../base/Icon"
-import { color } from "../../../../../customStyles/colors"
+import palette from "@palette"
 import { transparentize } from "@theme-ui/color"
 
 const DataIcon = (props) => (
@@ -12,7 +12,7 @@ const DataIcon = (props) => (
     name={props.iconName}
     size="1.25em"
     sx={{
-      color: color.teal,
+      color: palette.teal,
       verticalAlign: "middle",
     }}
   />
@@ -64,7 +64,7 @@ const ThRow = (props) => (
     scope="row"
     {...props}
     sx={{
-      color: `${color.gray3}`,
+      color: `${palette.gray3}`,
       fontWeight: 400,
       py: 2,
     }}
@@ -77,7 +77,7 @@ const TdataText = (props) => (
     {...props}
     sx={{
       textAlign: "center",
-      color: `${color.gray1}`,
+      color: `${palette.gray1}`,
       fontWeight: 400,
     }}
   >
@@ -112,7 +112,7 @@ const TdataCheckNo = (props) => (
       {...props}
       iconName="CheckNo"
       sx={{
-        color: `${color.gray3}`,
+        color: `${palette.gray3}`,
         backgroundColor: "transparent",
       }}
     />
@@ -153,14 +153,14 @@ const ComparisonTable = (props) => (
         <TRow
           {...props}
           sx={{
-            bg: transparentize(color.gray6, 0.35),
+            bg: transparentize(palette.gray6, 0.35),
           }}
         >
           <ThRow content="Supports static assets" />
           <TdataCheckYes
             {...props}
             sx={{
-              bg: transparentize(color.gray6, 0.35),
+              bg: transparentize(palette.gray6, 0.35),
             }}
           />
           <TdataCheckYes />
@@ -170,21 +170,21 @@ const ComparisonTable = (props) => (
           <TdataCheckNo
             {...props}
             sx={{
-              bg: transparentize(color.gray6, 0.65),
+              bg: transparentize(palette.gray6, 0.65),
             }}
           />
           <TdataCheckYes />
         </TRow>
         <TRow
           sx={{
-            bg: transparentize(color.gray6, 0.35),
+            bg: transparentize(palette.gray6, 0.35),
           }}
         >
           <ThRow content="Can prerender pages / run builds" />
           <TdataCheckNo
             {...props}
             sx={{
-              bg: transparentize(color.gray6, 0.35),
+              bg: transparentize(palette.gray6, 0.35),
             }}
           />
           <TdataCheckYes />
@@ -194,14 +194,14 @@ const ComparisonTable = (props) => (
           <TdataCheckNo
             {...props}
             sx={{
-              bg: transparentize(color.gray6, 0.65),
+              bg: transparentize(palette.gray6, 0.65),
             }}
           />
           <TdataCheckYes />
         </TRow>
         <TRow
           sx={{
-            bg: transparentize(color.gray6, 0.35),
+            bg: transparentize(palette.gray6, 0.35),
           }}
         >
           <ThRow content="Deploys" />
@@ -209,7 +209,7 @@ const ComparisonTable = (props) => (
             {...props}
             content="Manual"
             sx={{
-              bg: transparentize(color.gray6, 0.35),
+              bg: transparentize(palette.gray6, 0.35),
             }}
           />
           <TdataText content="Automatic" />
@@ -220,14 +220,14 @@ const ComparisonTable = (props) => (
             {...props}
             content="Manual"
             sx={{
-              bg: transparentize(color.gray6, 0.65),
+              bg: transparentize(palette.gray6, 0.65),
             }}
           />
           <TdataText content="Automatic" />
         </TRow>
         <TRow
           sx={{
-            bg: transparentize(color.gray6, 0.35),
+            bg: transparentize(palette.gray6, 0.35),
           }}
         >
           <ThRow content="Cache invalidation" />
@@ -235,7 +235,7 @@ const ComparisonTable = (props) => (
             {...props}
             content="Tricky (some risk of stale content)"
             sx={{
-              bg: transparentize(color.gray6, 0.35),
+              bg: transparentize(palette.gray6, 0.35),
             }}
           />
           <TdataText content="Instant (no risk of stale content)" />

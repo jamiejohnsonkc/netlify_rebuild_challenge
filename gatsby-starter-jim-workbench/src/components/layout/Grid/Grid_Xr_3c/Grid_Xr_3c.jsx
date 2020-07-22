@@ -3,7 +3,7 @@ import { jsx, Grid, Box } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../../../base/Icon"
-import { color } from "../../../../../../customStyles/colors"
+import palette from "@palette"
 
 const ColHead = ({ width, padding, grid, ...props }) => (
   <Box
@@ -96,45 +96,45 @@ const Grid_Xr_3c = (props) => (
     <ColHead>Netlify Edge</ColHead>
     <Grid rows="repeat(7, 64px)" gap={0} sx={{ bg: "muted" }}>
       <RowHead>Supports static assets</RowHead>
-      <RowHead backgroundColor={color.white}>Works without an origin</RowHead>
+      <RowHead backgroundColor={palette.white}>Works without an origin</RowHead>
       <RowHead>Can prerender pages / run builds</RowHead>
-      <RowHead backgroundColor={color.white}>Git-integrated CI/CD</RowHead>
+      <RowHead backgroundColor={palette.white}>Git-integrated CI/CD</RowHead>
       <RowHead>Deploys</RowHead>
-      <RowHead backgroundColor={color.white}>Rollbacks</RowHead>
+      <RowHead backgroundColor={palette.white}>Rollbacks</RowHead>
       <RowHead>Cache invalidation</RowHead>
     </Grid>
     <Grid rows="repeat(7, 64px)" gap={0} sx={{ bg: "muted" }}>
       <Content>
         <DataIcon iconName="Check" />
       </Content>
-      <Content backgroundColor={color.white}>
+      <Content backgroundColor={palette.white}>
         <DataIcon iconName="CheckNo" />
       </Content>
       <Content>
         <DataIcon iconName="CheckNo" />
       </Content>
-      <Content backgroundColor={color.white}>
+      <Content backgroundColor={palette.white}>
         <DataIcon iconName="CheckNo" />
       </Content>
       <Content>Manual</Content>
-      <Content backgroundColor={color.white}>Manual</Content>
+      <Content backgroundColor={palette.white}>Manual</Content>
       <Content>Tricky (some risk of stale content)</Content>
     </Grid>
     <Grid rows="repeat(7, 64px)" gap={0} sx={{ bg: "muted" }}>
       <Content>
         <DataIcon iconName="Check" />
       </Content>
-      <Content backgroundColor={color.white}>
+      <Content backgroundColor={palette.white}>
         <DataIcon iconName="Check" />
       </Content>
       <Content>
         <DataIcon iconName="Check" />
       </Content>
-      <Content backgroundColor={color.white}>
+      <Content backgroundColor={palette.white}>
         <DataIcon iconName="Check" />
       </Content>
       <Content>Automatic</Content>
-      <Content backgroundColor={color.white}>Automatic</Content>
+      <Content backgroundColor={palette.white}>Automatic</Content>
       <Content>Instant (no risk of stale content)</Content>
     </Grid>
     {/* <Grid rows="repeat(auto-fill, 1fr)" gap={3} sx={{ bg: "muted" }}>

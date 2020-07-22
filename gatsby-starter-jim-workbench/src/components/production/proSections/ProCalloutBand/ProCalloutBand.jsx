@@ -14,7 +14,7 @@ import {
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import { color } from "@colors"
+import palette from "@palette"
 import { darken } from "@theme-ui/color"
 // import CheckMarkRnd from "../../../templates/elements/CheckMarkRnd"
 
@@ -47,7 +47,7 @@ const ProCalloutBand = (props) => {
     <Pancake
       {...props}
       sx={{
-        // backgroundColor: color.violetDark,
+        // backgroundColor: palette.violetDark,
         background: gradients.defined.purple.background,
         py: 6,
       }}
@@ -79,9 +79,9 @@ const ProCalloutBand = (props) => {
             <Button
               {...props}
               sx={{
-                bg: color.teal,
+                bg: palette.teal,
                 "&:hover": {
-                  bg: darken(color.teal, 0.05),
+                  bg: darken(palette.teal, 0.05),
                 },
               }}
             >

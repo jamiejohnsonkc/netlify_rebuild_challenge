@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
 import JumpLink from "../../../navigation/navElements/JumpLink"
-import { color } from "@colors"
+import palette from "@palette"
 
 const LinkStack = (props) => (
   <Box
@@ -13,7 +13,7 @@ const LinkStack = (props) => (
       fontSize: [0, 0, 1, 1],
       "& > a": {
         display: "block",
-        color: `${color.gray3}`,
+        color: `${palette.gray3}`,
         fontWeight: 400,
       },
       "& > a:hover": {
@@ -28,8 +28,8 @@ const ProLinkStack = (props) => (
     <Container
       {...props}
       sx={{
-        borderTop: `thin solid ${color.gray5}`,
-        borderBottom: `thin solid ${color.gray5}`,
+        borderTop: `thin solid ${palette.gray5}`,
+        borderBottom: `thin solid ${palette.gray5}`,
       }}
     >
       <Grid

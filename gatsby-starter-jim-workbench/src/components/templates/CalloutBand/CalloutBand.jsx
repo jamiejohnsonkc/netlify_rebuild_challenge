@@ -14,7 +14,7 @@ import {
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../layout/Pancake"
-import { color } from "../../../../../customStyles/colors"
+import palette from "@palette"
 import { darken } from "@theme-ui/color"
 import IconBulletList from "../IconBulletList"
 import IconBulletListItem from "../IconBulletListItem"
@@ -26,7 +26,7 @@ const CalloutBand = (props) => {
     <Pancake
       {...props}
       sx={{
-        // backgroundColor: color.violetDark,
+        // backgroundColor: palette.violetDark,
         // background: "linear-gradient(to left,#4f005e,#33065b)",
         py: 6,
       }}
@@ -51,9 +51,9 @@ const CalloutBand = (props) => {
             <Button
               {...props}
               sx={{
-                bg: color.teal,
+                bg: palette.teal,
                 "&:hover": {
-                  bg: darken(color.teal, 0.05),
+                  bg: darken(palette.teal, 0.05),
                 },
               }}
             >

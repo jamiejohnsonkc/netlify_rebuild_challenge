@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import CtaLink from "../../../base/CtaLink"
 import Pancake from "../../../layout/Pancake"
-import { color } from "@colors"
+import palette from "@palette"
 import { css } from "@emotion/core"
 import cardBlue from "./cardBlueBg.svg"
 import cardBlack from "./cardBlackBg.svg"
@@ -49,7 +49,7 @@ const ProCard = (props) => (
     <Styled.h3
       {...props}
       sx={{
-        color,
+        // color,
         paddingTop: 2,
       }}
     >
@@ -58,7 +58,7 @@ const ProCard = (props) => (
     <Text
       {...props}
       sx={{
-        color,
+        // color,
         variant: "styles.p2",
       }}
     >
@@ -69,13 +69,13 @@ const ProCard = (props) => (
       linkText="Learn More"
       iconName="ArrowRight"
       iconSize="1em"
-      iconColor={color.teal}
+      iconColor={palette.teal}
       sx={{
         variant: "links.ctaLink.arrowRight",
         marginTop: "auto",
-        color: `${color.teal}`,
+        color: `${palette.teal}`,
         "&:hover": {
-          color: `${color.teal}`,
+          color: `${palette.teal}`,
         },
       }}
     />
@@ -119,8 +119,8 @@ const ProPlatform = (props) => (
           {...animation.slideUp2}
           cardBackground={card2Background}
           sx={{
-            backgroundColor: `${color.black3}`,
-            color: "white",
+            backgroundColor: `${palette.black3}`,
+            color: `${palette.white}`,
           }}
           // cardVisual={<CardGreen />}
           cardHeader="Netlify Dev"

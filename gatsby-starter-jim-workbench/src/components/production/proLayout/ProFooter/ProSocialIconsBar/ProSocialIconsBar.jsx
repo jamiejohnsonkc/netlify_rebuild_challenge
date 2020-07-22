@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "@emotion/styled"
-import { color } from "@colors"
+import palette from "@palette"
 import Icon from "../../../../base/Icon"
 
 const ProLinkWrapper = styled.div`
@@ -24,7 +24,7 @@ const ProSocialIconsBar = (props) => (
       <Icon
         {...props}
         sx={{
-          color: `${color.violetDark}`,
+          color: `${palette.violetDark}`,
           mx: 2,
         }}
         iconName="FillTwitterCircle"
@@ -34,7 +34,7 @@ const ProSocialIconsBar = (props) => (
       <Icon
         {...props}
         sx={{
-          color: `${color.violetDark}`,
+          color: `${palette.violetDark}`,
           mx: 2,
         }}
         iconName="Github"
@@ -44,7 +44,7 @@ const ProSocialIconsBar = (props) => (
       <Icon
         {...props}
         sx={{
-          color: `${color.violetDark}`,
+          color: `${palette.violetDark}`,
           mx: 2,
         }}
         iconName="Discourse"
@@ -54,7 +54,7 @@ const ProSocialIconsBar = (props) => (
       <Icon
         {...props}
         sx={{
-          color: `${color.violetDark}`,
+          color: `${palette.violetDark}`,
           mx: 2,
         }}
         iconName="Youtube"

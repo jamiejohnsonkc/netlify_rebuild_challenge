@@ -5,7 +5,7 @@
 //TODO clean up style files
 //TODO config babel-Plugin-transform-imports
 import layout from "./layout"
-import { color } from "./colors"
+import palette from "./palette"
 
 export default {
   //* nav root directory
@@ -110,7 +110,7 @@ export default {
   //!Submenubox is lady coding for the saas dropdown menu, should've been a NavSubLink variant (or whatever)
   subMenuBox: {
     borderRadius: ".5em",
-    backgroundColor: color.white,
+    backgroundColor: palette.white,
     transition: "all 0.3s ease-in",
     boxShadow: "depth",
     display: ["none", "none", "block", "block"],
@@ -131,8 +131,8 @@ export default {
 
   superMenuBox: {
     borderRadius: ".5em",
-    backgroundColor: color.black,
-    color: color.white,
+    backgroundColor: palette.black,
+    color: palette.white,
     transition: "all 0.3s ease-in",
     boxShadow: "depth",
     display: ["none", "none", "block", "block"],
@@ -228,19 +228,19 @@ export default {
 
   megaNav: {
     borderRadius: 6,
-    backgroundColor: color.white,
+    backgroundColor: palette.white,
     transition: "all 0.3s ease-in",
     boxShadow: "depth",
     width: [null, null, "52em", "79em"],
     left: [null, null, "-125%", "-150%"],
   },
   megaNavHeader: {
-    color: color.blueDark,
+    color: palette.blueDark,
     variant: "text.caps",
   },
 
   megaNavColumnHead: {
-    color: color.teal,
+    color: palette.teal,
     variant: "text.caps",
   },
   megaNavText: {
@@ -250,7 +250,7 @@ export default {
   footerNav: { fontSize: 1 },
 
   dropDownMenu: {
-    backgroundColor: `${color.gray3}`,
+    backgroundColor: `${palette.gray3}`,
     height: "20em",
   },
 }

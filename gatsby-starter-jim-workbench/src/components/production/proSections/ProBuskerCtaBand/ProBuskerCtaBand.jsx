@@ -3,7 +3,7 @@ import { jsx, Container, Styled, Text, Button } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import { color } from "@colors"
+import palette from "@palette"
 import { darken, lighten } from "@theme-ui/color"
 import ProPancake from "../../proLayout/ProPancake"
 
@@ -19,7 +19,7 @@ const ProBuskerCtaBand = (props) => (
         {...props}
         sx={{
           variant: "styles.b1",
-          color: color.teal,
+          color: palette.teal,
         }}
       >
         Get started with Netlify
@@ -36,9 +36,9 @@ const ProBuskerCtaBand = (props) => (
       <Button
         {...props}
         sx={{
-          bg: color.teal,
+          bg: palette.teal,
           "&:hover": {
-            bg: lighten(color.teal, 0.05),
+            bg: lighten(palette.teal, 0.05),
           },
         }}
       >

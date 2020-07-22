@@ -4,14 +4,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import CheckMark from "../../../base/CheckMark"
 import CircleBg from "../../../base/CircleBg"
-import { color } from "../../../../../../customStyles/colors"
+import palette from "@palette"
 
 const CheckMarkRnd = (props) => (
   <CircleBg
     {...props}
     // className={props.circleClassName}
     sx={{
-      bg: color.blue,
+      bg: palette.blue,
       height: "1em",
       width: "1em",
       display: "grid",

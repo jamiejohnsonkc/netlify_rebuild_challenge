@@ -1,116 +1,85 @@
 //! COLORS
 
-export const color = {
-  teal: "#00AD9F",
-  tealDark: "#15847D",
-  tealBright: "#00E0CE",
-  pink: "#FF6969",
-  pinkDark: "#FF1154",
-  pinkAccessible: "#E8114E",
-  orange: "#F86816",
-  orangeDark: "#B74808",
-  blue: "#43B4D8",
-  blueDark: "#146396",
-  blueDarkB: "#133857",
-  violet: "#C57AA2",
-  violetDark: "#7C0C64",
-  purple: "#4f005e",
-  purpleDark: "#33065b",
-  yellow: "#FFAD43",
-  yellowDark: "#CC801F",
-  white: "#fff",
-  white2: "#FBFBFB",
-  black: "#000",
-  black2: "#060606",
-  black3: "#0e1e25",
-  gray1: "#2D3B41",
-  gray2: "#646E73",
-  gray3: "#757575",
-  gray4: "#BDBDBD",
-  gray5: "#E0E0E0",
-  gray6: "#F7F8F8",
-  blackAlpha1: `rgba(0,0,0,.025)`,
-  blackAlpha2: `rgba(0,0,0,.1)`,
-  whiteAlpha1: `rgba(255,255,255,.05)`,
-}
-const colors = {
-  text: color.black2, //Body foreground color
-  background: color.white, //Body background color
-  primary: color.violetDark, //Primary brand color for links, buttons, etc.
-  secondary: color.gray3, //Secondary brand color for alternative styling
-  accent: color.violet, //Contrast color for emphasizing UI
-  highlight: color.tealBright, //Background color for highlighting text
-  muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
-  navMenuItem: color.white,
-  mastHeadLogo: color.white,
-  // navMenuItemHover: color.violet,
+import palette from "./palette"
 
-  navMenuBackground: color.blackAlpha2,
+export default {
+  text: palette.black2, //Body foreground color
+  background: palette.white, //Body background color
+  primary: palette.violetDark, //Primary brand color for links, buttons, etc.
+  secondary: palette.gray3, //Secondary brand color for alternative styling
+  accent: palette.violet, //Contrast color for emphasizing UI
+  highlight: palette.tealBright, //Background color for highlighting text
+  muted: palette.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
+  navMenuItem: palette.white,
+  mastHeadLogo: palette.white,
+  // navMenuItemHover: palette.violet,
+
+  navMenuBackground: palette.blackAlpha2,
   // navMenuBackground: "white",
 
-  // navMenuItemHover: color.violet,
-  navItemActive: color.tealBright,
-  announcementBarBackground: color.tealDark,
+  // navMenuItemHover: palette.violet,
+  navItemActive: palette.tealBright,
+  announcementBarBackground: palette.tealDark,
 
-  navMenuBackground_SM: color.purple,
+  navMenuBackground_SM: palette.purple,
 
   modes: {
     splash: {
-      text: color.black2, //Body foreground color
-      background: color.white, //Body background color
-      primary: color.violetDark, //Primary brand color for links, buttons, etc.
-      secondary: color.gray3, //Secondary brand color for alternative styling
-      accent: color.violet, //Contrast color for emphasizing UI
-      highlight: color.tealBright, //Background color for highlighting text
-      muted: color.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
-      navMenuItem: color.white,
-      mastHeadLogo: color.white,
-      // navMenuItemHover: color.violet,
+      text: palette.black2, //Body foreground color
+      background: palette.white, //Body background color
+      primary: palette.violetDark, //Primary brand color for links, buttons, etc.
+      secondary: palette.gray3, //Secondary brand color for alternative styling
+      accent: palette.violet, //Contrast color for emphasizing UI
+      highlight: palette.tealBright, //Background color for highlighting text
+      muted: palette.gray6, //Faint color for backgrounds, borders, and accents that do not require high contrast with the background color
+      navMenuItem: palette.white,
+      mastHeadLogo: palette.white,
+      // navMenuItemHover: palette.violet,
 
-      navMenuBackground: color.blackAlpha2,
+      navMenuBackground: palette.blackAlpha2,
       // navMenuBackground: "white",
 
-      // navMenuItemHover: color.violet,
-      navItemActive: color.tealBright,
-      announcementBarBackground: color.tealDark,
+      // navMenuItemHover: palette.violet,
+      navItemActive: palette.tealBright,
+      announcementBarBackground: palette.tealDark,
 
-      navMenuBackground_SM: color.purple,
+      navMenuBackground_SM: palette.purple,
     },
     light: {
-      navMenuItem: color.gray1,
-      mastHeadLogo: color.gray1,
-      navItemActive: color.tealBright,
-      announcementBarBackground: color.tealDark,
-      navMenuBackground: color.blackAlpha1,
-      navItemActive: color.gray1,
-      highlight: color.teal,
+      navMenuItem: palette.gray1,
+      mastHeadLogo: palette.gray1,
+      navItemActive: palette.tealBright,
+      announcementBarBackground: palette.tealDark,
+      navMenuBackground: palette.blackAlpha1,
+      navItemActive: palette.gray1,
+      highlight: palette.teal,
     },
     // inverse: {
-    //   text: color.white,
-    //   background: color.violetDark,
-    //   primary: color.violet,
-    //   secondary: color.gray5,
-    //   accent: color.gray6,
-    //   highlight: color.white,
-    //   muted: color.gray,
-    //   navMenuBackground: color.whiteAlpha1,
-    //   navMenuItem: color.white2,
-    //   mastHeadLogo: color.white2,
-    //   navMenuItemHover: color.gray5,
+    //   text: palette.white,
+    //   background: palette.violetDark,
+    //   primary: palette.violet,
+    //   secondary: palette.gray5,
+    //   accent: palette.gray6,
+    //   highlight: palette.white,
+    //   muted: palette.gray,
+    //   navMenuBackground: palette.whiteAlpha1,
+    //   navMenuItem: palette.white2,
+    //   mastHeadLogo: palette.white2,
+    //   navMenuItemHover: palette.gray5,
     // },
     dark: {
-      text: color.white,
-      background: color.black2,
-      primary: color.gray3,
-      secondary: color.gray5,
-      accent: color.gray6,
-      highlight: color.white,
-      muted: color.gray,
-      navMenuBackground: color.whiteAlpha1,
+      text: palette.white,
+      background: palette.black2,
+      primary: palette.gray3,
+      secondary: palette.gray5,
+      accent: palette.gray6,
+      highlight: palette.white,
+      muted: palette.gray,
+      navMenuBackground: palette.whiteAlpha1,
 
-      navMenuItem: color.white2,
-      mastHeadLogo: color.white2,
-      navMenuItemHover: color.gray5,
+      navMenuItem: palette.white2,
+      mastHeadLogo: palette.white2,
+      navMenuItemHover: palette.gray5,
     },
     // purple: {
     //   text: "#fff",
@@ -140,5 +109,3 @@ const colors = {
     // },
   },
 }
-
-export default colors

@@ -23,7 +23,7 @@ import Beckham from "../../../../svg/assets/beckham.svg"
 import Citrix from "../../../../svg/assets/citrix.svg"
 import CtaLink from "../../../base/CtaLink"
 import styled from "@emotion/styled"
-import { color } from "@colors"
+import palette from "@palette"
 import { lighten } from "@theme-ui/color"
 import PropTypes from "prop-types"
 import { Img } from "gatsby-image"
@@ -128,7 +128,7 @@ const MyTab = ({ iconName, disabled, selected, ...props }) => (
         },
         "&.MyTab": {
           "#proofLogo": {
-            fill: `${color.gray3}`,
+            fill: `${palette.gray3}`,
           },
         },
         "&.MyTabActive": {

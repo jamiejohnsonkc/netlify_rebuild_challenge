@@ -11,7 +11,7 @@ import { Link } from "gatsby"
 
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
 import SearchButton from "../../../base/SearchButton"
-import { color } from "@colors"
+import palette from "@palette"
 import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
 
@@ -26,7 +26,7 @@ export const SuperLink = (props) => (
     sx={{
       variant: "links.nav",
       fontWeight: 400,
-      color: `${color.gray3}`,
+      color: `${palette.gray3}`,
     }}
   >
     {props.children}
@@ -60,7 +60,7 @@ const ProSuperUpMenu = (props) => (
       {...props}
       sx={{
         variant: "nav.navMenu",
-        bg: `${color.blackAlpha1}`,
+        bg: `${palette.blackAlpha1}`,
         borderRadius: 6,
         px: [0, 0, 6, 6],
         py: [0, 0, 2, 2],

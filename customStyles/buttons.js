@@ -117,7 +117,7 @@ export default {
       textAlign: "center",
       lineHeight: "inherit",
       cursor: "pointer",
-      color: "gray3",
+      color: "palette.gray3",
       width: "10em",
       height: "3.3em",
       overFlow: "hidden",

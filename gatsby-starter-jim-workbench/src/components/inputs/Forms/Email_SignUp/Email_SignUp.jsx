@@ -2,7 +2,7 @@
 import { jsx, Label, Input, Box, Button } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import { color } from "../../../../../../customStyles/colors"
+import palette from "@palette"
 import { darken, lighten } from "@theme-ui/color"
 
 const Email_SignUp = (props) => (
@@ -31,9 +31,9 @@ const Email_SignUp = (props) => (
       {...props}
       sx={{
         display: "inline-block",
-        bg: color.teal,
+        bg: palette.teal,
         "&:hover": {
-          bg: lighten(color.teal, 0.05),
+          bg: lighten(palette.teal, 0.05),
         },
       }}
     >

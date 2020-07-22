@@ -50,6 +50,10 @@ module.exports = {
             __dirname,
             "../../../saas-spec/customStyles/colors"
           ),
+          "@palette": path.resolve(
+            __dirname,
+            "../../../saas-spec/customStyles/palette"
+          ),
         },
       },
       exclude: [/node_modules\/(?!(gatsby)\/)/],

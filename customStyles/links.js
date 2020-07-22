@@ -1,6 +1,6 @@
 //! LINKS
 
-import { color } from "./colors"
+import palette from "./palette"
 
 export default {
   nav: {
@@ -117,7 +117,7 @@ export default {
 
   jumpLink: {
     textDecoration: "none",
-    color: color.gray1,
+    color: palette.gray1,
   },
 
   megaNavLink: {

@@ -1,14 +1,14 @@
 //! FORMS
-import { color } from "./colors"
+import palette from "./palette"
 
 export default {
   label: {
     fontSize: 1,
     fontWeight: "bold",
-    color: color.gray3,
+    color: `${palette.gray3}`,
   },
   input: {
-    borderColor: color.gray5,
+    borderColor: `${palette.gray5}`,
     // "&:focus": {
     //   borderColor: "primary",
     //   boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
@@ -16,7 +16,7 @@ export default {
     // },
   },
   select: {
-    borderColor: color.gray5,
+    borderColor: `${palette.gray5}`,
     "&:focus": {
       borderColor: "primary",
       boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
@@ -24,7 +24,7 @@ export default {
     },
   },
   textarea: {
-    borderColor: color.gray5,
+    borderColor: `${palette.gray5}`,
     "&:focus": {
       borderColor: "primary",
       boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,

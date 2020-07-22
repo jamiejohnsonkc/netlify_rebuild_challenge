@@ -108,6 +108,7 @@ module.exports = {
           "@proSections": "./src/components/production/proSections",
           "@animation": "../customStyles/exThemeUi/animation",
           "@colors": "../customStyles/colors",
+          "@palette": "../customStyles/palette",
           "@gradients": "../customStyles/exThemeUi/gradients",
         },
       },
