@@ -10,7 +10,7 @@ import ProActivate from "../../../../svg/assets/proActivate.svg"
 import Grid_1r_75_Text_25_Visual from "../../../templates/Grid_1r_75_Text_25_Visual"
 import Grid_1r_25_Visual_75_Text from "../../../templates/Grid_1r_25_Visual_75_Text"
 
-import { slideUp1 } from "@animation"
+import animation from "@animation"
 
 const ProBenefits = (props) => (
   <Pancake
@@ -39,7 +39,7 @@ const ProBenefits = (props) => (
       </Styled.h1>
       <Grid_1r_25_Visual_75_Text
         visual={<ProCloud />}
-        {...slideUp1}
+        {...animation.slideUp1}
         header="Faster sites & applications"
         body="Global distribution with automated prerendering makes for blazing fast site delivery. Smashing Magazine moved to Netlify for a 10x boost in performance."
       />

@@ -2,7 +2,7 @@
 import { jsx, Link, useThemeUI } from "theme-ui"
 import React from "react"
 import Icon from "../Icon"
-import Netlify from "../../../svg/assets/Netlify_logo.svg"
+import Netlify from "../../../svg/assets/netlify_logo.svg"
 import PropTypes from "prop-types"
 
 const Logo = (props) => (

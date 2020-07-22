@@ -3,7 +3,7 @@ import React from "react"
 import { jsx } from "theme-ui"
 import { Text, Box } from "theme-ui"
 import CheckMarkRnd from "../../templates/elements/CheckMarkRnd"
-import { InlineIconAndText } from "../../layout/InlineIconAndText/InlineIconAndText"
+import InlineIconAndText from "../../layout/InlineIconAndText"
 
 const InlineCheckMark = (props) => (
   <CheckMarkRnd

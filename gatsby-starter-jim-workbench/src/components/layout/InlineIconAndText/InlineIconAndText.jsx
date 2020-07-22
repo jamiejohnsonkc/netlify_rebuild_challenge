@@ -1,22 +1,28 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Text, Box } from "theme-ui"
+import { jsx, Text, Box } from "theme-ui"
+import React from "react"
 
-export const InlineIconAndText = (props) => (
-  <Box
-    {...props}
-    sx={{
-      whiteSpace: "pre",
-    }}
-  >
-    {props.inlineIcon}
-    <Text
+import PropTypes from "prop-types"
+
+const InlineIconAndText = (props) => (
+  <>
+    <Box
       {...props}
       sx={{
-        display: "inline-block",
+        whiteSpace: "pre",
       }}
     >
-      {props.inlineText}
-    </Text>
-  </Box>
+      {props.inlineIcon}
+      <Text
+        {...props}
+        sx={{
+          display: "inline-block",
+        }}
+      >
+        {props.inlineText}
+      </Text>
+    </Box>
+  </>
 )
+
+export default InlineIconAndText

@@ -5,4 +5,13 @@ export default {
   title: "HeadingSubHeadText",
 }
 
-export const standard = () => <HeadingSubHeadText />
+export const standard = () => (
+  <HeadingSubHeadText
+    headingText="Loro Sin Triante"
+    headingVariant="styled.h1"
+    subHeadText="Et este vincencia"
+    subHeadVariant="styled.h2"
+    textText="Lorium Ipsum Dolemet"
+    textVariant="styles.d2"
+  />
+)

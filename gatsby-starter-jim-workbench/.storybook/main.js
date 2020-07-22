@@ -1,13 +1,17 @@
+const path = require("path")
+
 module.exports = {
   stories: ["../../gatsby-starter-jim-workbench/src/**/*.stories.{js,jsx}"],
 
   addons: [
     "@storybook/addon-docs",
+    // "@storybook/addon-knobs",
     "@storybook/addon-actions",
     "@storybook/addon-viewport/register",
     "@storybook/addon-knobs/register",
     "@storybook/addon-storysource",
   ],
+
   webpackFinal: async (config) => {
     config.module.rules.push({
       // Config for js and jsx files
@@ -32,6 +36,22 @@ module.exports = {
           },
         },
       ],
+      resolve: {
+        alias: {
+          "@animation": path.resolve(
+            __dirname,
+            "../../../saas-spec/customStyles/exThemeUi/gradients.js"
+          ),
+          "@gradients": path.resolve(
+            __dirname,
+            "../../../saas-spec/customStyles/exThemeUi/gradients"
+          ),
+          "@colors": path.resolve(
+            __dirname,
+            "../../../saas-spec/customStyles/colors"
+          ),
+        },
+      },
       exclude: [/node_modules\/(?!(gatsby)\/)/],
     })
     //* enable svg previews

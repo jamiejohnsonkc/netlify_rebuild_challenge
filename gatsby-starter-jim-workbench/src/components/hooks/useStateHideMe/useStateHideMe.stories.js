@@ -1,8 +1,8 @@
 import React from "react"
-import HideMe from "./HideMe"
+import useStateHideMe from "./useStateHideMe"
 
 export default {
-  title: "HideMe",
+  title: "useStateHideMe",
 }
 
-export const standard = () => <HideMe />
+export const standard = () => <useStateHideMe />

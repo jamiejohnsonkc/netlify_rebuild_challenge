@@ -2,7 +2,7 @@
 import { jsx, Container } from "theme-ui"
 import React, { useState } from "react"
 
-function HideMe() {
+function useStateHideMe() {
   const [isVisible, setIsVisible] = useState(true)
 
   return (
@@ -13,4 +13,4 @@ function HideMe() {
   )
 }
 
-export default HideMe
+export default useStateHideMe

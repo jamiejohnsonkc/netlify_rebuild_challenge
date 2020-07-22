@@ -34,7 +34,7 @@ import BeckhamImage from "../../proHooks/imageHooks/BeckhamImage"
 import CornerstoneImage from "../../proHooks/imageHooks/CornerstoneImage"
 import CitrixImage from "../../proHooks/imageHooks/CitrixImage"
 import ProPancake from "../../proLayout/ProPancake"
-import gradients from "@gradients"
+import gradients from "../../../../../../customStyles/exThemeUi/gradients"
 
 const ImageWrapper = (props) => (
   <Box

@@ -4,7 +4,7 @@ import { ThemeProvider } from "theme-ui"
 import { addDecorator, addParameters } from "@storybook/react"
 import theme from "../src/gatsby-plugin-theme-ui"
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport"
-import CUSTOM_VIEWPORTS from "./CUSTOM_VIEWPORTS"
+import custom_viewports from "./custom_viewports"
 import "./storybookbrowserstyles.css"
 
 addParameters({
@@ -16,7 +16,7 @@ addParameters({
         : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),
   },
   viewport: {
-    viewports: CUSTOM_VIEWPORTS,
+    viewports: custom_viewports,
   },
 })
 // Gatsby's Link overrides:

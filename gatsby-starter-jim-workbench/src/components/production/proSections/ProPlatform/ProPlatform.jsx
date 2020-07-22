@@ -9,7 +9,7 @@ import { css } from "@emotion/core"
 import cardBlue from "./cardBlueBg.svg"
 import cardBlack from "./cardBlackBg.svg"
 import cardPurple from "./cardPurpleBg.svg"
-import { slideUp1, slideUp2, slideUp3 } from "@animation"
+import animation from "@animation"
 // import backgroundSvg from "./"
 
 const card1Background = css`
@@ -108,7 +108,7 @@ const ProPlatform = (props) => (
         }}
       >
         <ProCard
-          {...slideUp1}
+          {...animation.slideUp1}
           cardBackground={card1Background}
           cardHeader="Netlify Build"
           cardText="The Git workflow for web development. Build, deploy, and manage modern web projects."
@@ -116,7 +116,7 @@ const ProPlatform = (props) => (
 
         <ProCard
           {...props}
-          {...slideUp2}
+          {...animation.slideUp2}
           cardBackground={card2Background}
           sx={{
             backgroundColor: `${color.black3}`,
@@ -128,7 +128,7 @@ const ProPlatform = (props) => (
         />
         <ProCard
           cardBackground={card3Background}
-          {...slideUp3}
+          {...animation.slideUp3}
           cardHeader="Netlify Edge"
           cardText="A new type of application delivery network custom designed for fast, responsive sites and modern workflows."
         />

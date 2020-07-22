@@ -3,7 +3,7 @@ import { jsx, Container, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Pancake from "../../../layout/Pancake"
-import NetlifyGlyph from "../../../../svg/assets/Netlify_glyph.svg"
+import NetlifyGlyph from "../../../../svg/assets/netlify_glyph.svg"
 import Email_SignUp from "../../../inputs/Forms/Email_SignUp"
 
 const ProSubscribe = (props) => (

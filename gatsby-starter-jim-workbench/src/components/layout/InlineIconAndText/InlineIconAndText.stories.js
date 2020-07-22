@@ -5,4 +5,6 @@ export default {
   title: "InlineIconAndText",
 }
 
-export const standard = () => <InlineIconAndText />
+export const standard = () => (
+  <InlineIconAndText inlineIcon="LinkedIn" inlineText="inline text test" />
+)
