@@ -1,4 +1,4 @@
-const custom_viewports = {
+const CUSTOM_VIEWPORTS = {
   hd_desktop: {
     name: "HD Desktop",
     styles: {
@@ -147,4 +147,4 @@ const custom_viewports = {
 
 export const DEFAULT_VIEWPORT = "responsive"
 
-export default custom_viewports
+export default CUSTOM_VIEWPORTS

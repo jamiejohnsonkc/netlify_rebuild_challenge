@@ -5,7 +5,6 @@ module.exports = {
 
   addons: [
     "@storybook/addon-docs",
-    // "@storybook/addon-knobs",
     "@storybook/addon-actions",
     "@storybook/addon-viewport/register",
     "@storybook/addon-knobs/register",
@@ -40,7 +39,7 @@ module.exports = {
         alias: {
           "@animation": path.resolve(
             __dirname,
-            "../../../saas-spec/customStyles/exThemeUi/gradients.js"
+            "../../../saas-spec/customStyles/exThemeUi/animation.js"
           ),
           "@gradients": path.resolve(
             __dirname,
