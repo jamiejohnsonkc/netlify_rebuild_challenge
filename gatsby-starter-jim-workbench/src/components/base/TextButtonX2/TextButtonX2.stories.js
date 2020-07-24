@@ -2,7 +2,7 @@ import React from "react"
 import TextButtonX2 from "./TextButtonX2"
 
 export default {
-  title: "TextButtonX2",
+  title: "Base/Content Blocks/Text & Button X2",
 }
 
 export const standard = () => (

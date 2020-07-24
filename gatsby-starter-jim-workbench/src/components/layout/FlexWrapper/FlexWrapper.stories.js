@@ -2,7 +2,7 @@ import React from "react"
 import FlexWrapper from "./FlexWrapper"
 
 export default {
-  title: "FlexWrapper",
+  title: "Layout Elements/Containers/FlexWrapper",
 }
 
 export const standard = () => <FlexWrapper>children</FlexWrapper>

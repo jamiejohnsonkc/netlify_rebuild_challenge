@@ -2,7 +2,7 @@ import React from "react"
 import HeadingSubHeadText from "./HeadingSubHeadText"
 
 export default {
-  title: "HeadingSubHeadText",
+  title: "Base/Content Blocks/Heading, SubHead, Text",
 }
 
 export const standard = () => (

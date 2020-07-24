@@ -1,8 +1,8 @@
-import React from 'react'
-import IconsBar from './IconsBar'
+import React from "react"
+import IconsBar from "./IconsBar"
 
 export default {
-	title: 'IconsBar',
+  title: "Base/Graphic Blocks/IconsBar",
 }
 
 export const standard = () => <IconsBar />

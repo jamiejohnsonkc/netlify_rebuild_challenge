@@ -2,9 +2,13 @@ import React from "react"
 import InlineIconAndText from "./InlineIconAndText"
 
 export default {
-  title: "InlineIconAndText",
+  title: "Base/Content Blocks/Inline Icon & Text",
 }
 
 export const standard = () => (
-  <InlineIconAndText inlineIcon="LinkedIn" inlineText="inline text test" />
+  <InlineIconAndText
+    inlineIconName="Linkedin"
+    inlineIconSize="4em"
+    inlineText="inline text test"
+  />
 )

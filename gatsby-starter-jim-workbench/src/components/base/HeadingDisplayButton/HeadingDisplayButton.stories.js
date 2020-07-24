@@ -2,7 +2,7 @@ import React from "react"
 import HeadingDisplayButton from "./HeadingDisplayButton"
 
 export default {
-  title: "HeadingDisplayButton",
+  title: "Base/Content Blocks / Heading, Display Text, Button",
 }
 
 export const standard = () => <HeadingDisplayButton />

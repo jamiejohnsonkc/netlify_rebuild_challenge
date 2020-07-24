@@ -4,9 +4,8 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const Grid_1r_33_66 = (props) => (
-  <Grid columns={[1, "1fr 2fr"]}>
-    <Box display="grid">{props.children}</Box>
-    <Box display="grid">{props.children}</Box>
+  <Grid columns={[1, "1fr 2fr"]} gap={props.gap}>
+    {props.children}
   </Grid>
 )
 

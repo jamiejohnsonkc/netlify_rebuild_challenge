@@ -9,7 +9,7 @@ import Logo4 from "../../../../svg/assets/logo-4.svg"
 import Logo5 from "../../../../svg/assets/logo-5.svg"
 
 export default {
-  title: "Grid_2r_3c",
+  title: "Layout Elements/Css Grids/Columns/fluid [2, 3]",
 }
 
 export const standard = () => (

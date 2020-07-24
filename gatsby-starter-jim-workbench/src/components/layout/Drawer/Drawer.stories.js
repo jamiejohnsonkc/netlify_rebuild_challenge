@@ -2,7 +2,7 @@ import React from "react"
 import Drawer from "./Drawer"
 
 export default {
-  title: "Drawer",
+  title: "Layout Elements/Containers/Drawer",
 }
 
 export const standard = () => <Drawer />

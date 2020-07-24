@@ -4,7 +4,7 @@ import React from "react"
 import Grid_1r_3c from "./Grid_1r_3c"
 
 export default {
-  title: "Grid_1r_3c",
+  title: "Layout Elements/Css Grids/Columns/fluid 3",
 }
 
 export const standard = () => (

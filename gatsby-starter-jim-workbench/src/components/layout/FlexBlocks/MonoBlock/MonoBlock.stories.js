@@ -5,7 +5,7 @@ import MonoBlock from "./MonoBlock"
 import Button from "../../../base/Button"
 
 export default {
-  title: "MonoBlock",
+  title: "Layout Elements/FlexBlocks/MonoBlock",
 }
 
 const flexBlockStyle = { width: "44%" }

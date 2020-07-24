@@ -53,6 +53,7 @@ module.exports = {
             __dirname,
             "../../../saas-spec/customStyles/palette"
           ),
+          "@base": path.resolve(__dirname, "../src/components/base"),
         },
       },
       exclude: [/node_modules\/(?!(gatsby)\/)/],

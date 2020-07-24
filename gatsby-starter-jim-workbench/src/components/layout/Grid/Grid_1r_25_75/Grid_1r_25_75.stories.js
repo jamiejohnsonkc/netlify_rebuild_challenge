@@ -4,7 +4,7 @@ import React from "react"
 import Grid_1r_25_75 from "./Grid_1r_25_75"
 
 export default {
-  title: "Grid_1r_25_75",
+  title: "Layout Elements/Css Grids/Columns/variable [2, `1fr, 3fr`]",
 }
 
 export const standard = () => (

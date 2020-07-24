@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const R4colGrid = (props) => (
-  <Grid gap={2} columns={[2, null, 4]}>
+  <Grid gap={2} columns={[2, 2, 4, 4]}>
     <Box bg="primary">Box</Box>
     <Box bg="muted">Box</Box>
     <Box bg="primary">Box</Box>

@@ -4,7 +4,7 @@ import React from "react"
 import FlexContainer from "./FlexContainer"
 
 export default {
-  title: "FlexContainer",
+  title: "Layout Elements/Containers/FlexContainer",
 }
 
 export const standard = () => <FlexContainer />

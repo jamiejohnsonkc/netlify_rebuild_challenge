@@ -2,8 +2,10 @@
 import { jsx, Grid, Box } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../../../base/Icon"
+import Icon from "@base/Icon"
 import palette from "@palette"
+
+//TODO deconstruction required
 
 const ColHead = ({ width, padding, grid, ...props }) => (
   <Box
@@ -72,7 +74,7 @@ const DataIcon = (props) => (
   />
 )
 
-const Grid_Xr_3c = (props) => (
+const Grid_ComparisonTable = (props) => (
   <Grid
     columns={[3, "1fr 1fr 1fr"]}
     rows={[8, " 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"]}
@@ -144,8 +146,8 @@ const Grid_Xr_3c = (props) => (
   </Grid>
 )
 
-Grid_Xr_3c.propTypes = {}
+Grid_ComparisonTable.propTypes = {}
 
-Grid_Xr_3c.defaultProps = {}
+Grid_ComparisonTable.defaultProps = {}
 
-export default Grid_Xr_3c
+export default Grid_ComparisonTable
