@@ -2,7 +2,7 @@ import React from "react"
 import DropdownMenu from "./DropdownMenu"
 
 export default {
-  title: "DropdownMenu",
+  title: "Templates/DropdownMenu",
 }
 
 export const standard = () => <DropdownMenu />

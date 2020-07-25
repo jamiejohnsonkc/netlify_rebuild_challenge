@@ -4,7 +4,7 @@ import Navbar from "../Navbar"
 import { Container } from "theme-ui"
 
 export default {
-  title: "Nav",
+  title: "Navigation/Containers/Nav",
 }
 
 export const standard = () => (

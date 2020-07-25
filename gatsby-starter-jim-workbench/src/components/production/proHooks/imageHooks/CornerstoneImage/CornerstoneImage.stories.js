@@ -2,7 +2,7 @@ import React from "react"
 import CornerstoneImage from "./CornerstoneImage"
 
 export default {
-  title: "CornerstoneImage",
+  title: "Production/CornerstoneImage",
 }
 
 export const standard = () => <CornerstoneImage />

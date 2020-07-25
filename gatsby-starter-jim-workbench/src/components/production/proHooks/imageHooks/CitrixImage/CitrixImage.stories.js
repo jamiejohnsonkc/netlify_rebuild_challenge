@@ -2,7 +2,7 @@ import React from "react"
 import CitrixImage from "./CitrixImage"
 
 export default {
-  title: "CitrixImage",
+  title: "Production/CitrixImage",
 }
 
 export const standard = () => <CitrixImage />

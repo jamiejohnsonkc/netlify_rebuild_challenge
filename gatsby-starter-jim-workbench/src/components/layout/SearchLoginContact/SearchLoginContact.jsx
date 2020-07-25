@@ -1,10 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import PropTypes from "prop-types"
-import { IconContext } from "react-icons"
 import Icon from "../../base/Icon"
 import { Link } from "gatsby"
-import styled from "@emotion/styled"
 
 const SearchLoginContact = (props) => (
   <div>
@@ -12,21 +10,18 @@ const SearchLoginContact = (props) => (
       sx={{
         variant: "links.nav",
       }}
-    >
-      <IconContext.Provider
-        value={{
-          style: {
-            width: "1.25em",
-            height: "1.25em",
-            verticalAlign: "sub",
-            margin: "1em",
-            color: "white",
-          },
-        }}
-      >
-        <Icon iconName="Search" />
-      </IconContext.Provider>
-    </Link>
+    ></Link>
+    <Icon
+      {...props}
+      iconName="Search"
+      size="1.25em"
+      sx={{
+        verticalAlign: "sub",
+        margin: "1em",
+        color: "white",
+      }}
+    />
+
     <Link
       sx={{
         variant: "links.nav",

@@ -4,7 +4,7 @@ import React from "react"
 import StaticSuperUpMenu from "./StaticSuperUpMenu"
 
 export default {
-  title: "StaticSuperUpMenu",
+  title: "Navigation/Templates/StaticSuperUpMenu",
 }
 
 export const standard = () => (

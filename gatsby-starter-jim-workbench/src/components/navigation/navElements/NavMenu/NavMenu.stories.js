@@ -2,7 +2,7 @@ import React from "react"
 import NavMenu from "./NavMenu"
 
 export default {
-  title: "NavMenu",
+  title: "Navigation/Elements/NavMenu",
 }
 
 export const standard = () => <NavMenu />

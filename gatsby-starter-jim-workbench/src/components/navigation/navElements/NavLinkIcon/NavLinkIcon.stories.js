@@ -2,7 +2,7 @@ import React from "react"
 import NavLinkIcon from "./NavLinkIcon"
 
 export default {
-  title: "NavLinkIcon",
+  title: "Navigation/Elements/NavLinkIcon",
 }
 
 export const standard = () => <NavLinkIcon />

@@ -3,7 +3,7 @@ import AnnouncementBar from "./AnnouncementBar"
 import { withKnobs, text } from "@storybook/addon-knobs"
 
 export default {
-  title: "AnnouncementBar",
+  title: "Templates/AnnouncementBar",
   decorators: [withKnobs],
 }
 

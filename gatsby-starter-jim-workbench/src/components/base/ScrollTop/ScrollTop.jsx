@@ -4,7 +4,6 @@ import Button from "../../base/Button"
 import Icon from "../../base/Icon"
 import React from "react"
 import PropTypes from "prop-types"
-import { IconContext } from "react-icons"
 
 const ScrollTop = (variant = "scrollUp.fixed", props) => (
   <Button
@@ -15,18 +14,15 @@ const ScrollTop = (variant = "scrollUp.fixed", props) => (
       variant: `button.${variant}`,
     }}
   >
-    <IconContext.Provider
-      value={{
-        style: {
-          width: "2em",
-          height: "2em",
-          verticalAlign: "sub",
-          margin: "0em",
-        },
+    <Icon
+      iconName="ChevronUp"
+      size="2em"
+      {...props}
+      sx={{
+        verticalAlign: "sub",
+        margin: "0em",
       }}
-    >
-      <Icon iconName="ChevronUp" />
-    </IconContext.Provider>
+    />
   </Button>
 )
 

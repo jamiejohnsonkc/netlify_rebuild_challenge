@@ -2,7 +2,7 @@ import React from "react"
 import ProCalloutBand from "./ProCalloutBand"
 
 export default {
-  title: "ProCalloutBand",
+  title: "Production/ProCalloutBand",
 }
 
 export const standard = () => <ProCalloutBand />

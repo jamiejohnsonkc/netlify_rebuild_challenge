@@ -4,7 +4,7 @@ import React from "react"
 import ComparisonTable from "./ComparisonTable"
 
 export default {
-  title: "ComparisonTable",
+  title: "Templates/ComparisonTable",
 }
 
 export const standard = (props) => (

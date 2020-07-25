@@ -1,9 +1,5 @@
 //! NAV
 
-//TODO config hot swapping of large and small menu formats
-//TODO combine all styling for menus in one, separate js file.  leave the defaults alone to provide functionality for primitives.
-//TODO clean up style files
-//TODO config babel-Plugin-transform-imports
 import layout from "./layout"
 import palette from "./palette"
 

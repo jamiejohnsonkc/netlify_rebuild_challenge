@@ -2,7 +2,7 @@ import React from "react"
 import ContactPageContent from "./ContactPageContent"
 
 export default {
-  title: "ContactPageContent",
+  title: "Production/ContactPageContent",
 }
 
 export const standard = () => <ContactPageContent />

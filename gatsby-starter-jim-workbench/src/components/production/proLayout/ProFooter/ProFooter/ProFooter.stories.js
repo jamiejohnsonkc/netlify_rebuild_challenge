@@ -2,7 +2,7 @@ import React from "react"
 import ProFooter from "./ProFooter"
 
 export default {
-  title: "ProFooter",
+  title: "Production/ProFooter",
 }
 
 export const standard = () => <ProFooter />

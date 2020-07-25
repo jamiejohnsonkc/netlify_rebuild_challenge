@@ -2,7 +2,7 @@ import React from "react"
 import TabPanelContent from "./TabPanelContent"
 
 export default {
-  title: "TabPanelContent",
+  title: "Templates/TabPanelContent",
 }
 
 export const cafe = (props) => <TabPanelContent />

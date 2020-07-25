@@ -2,7 +2,7 @@ import React from "react"
 import SubSubMenuNavItem from "./SubSubMenuNavItem"
 
 export default {
-  title: "SubSubMenuNavItem",
+  title: "Navigation/Elements/SubSubMenuNavItem",
 }
 
 export const standard = () => <SubSubMenuNavItem />

@@ -3,7 +3,7 @@ import Section_Grid_1r_66Text_33Visual from "./Section_Grid_1r_66Text_33Visual"
 import Cloud from "../../../svg/assets/cloud.svg"
 
 export default {
-  title: "Section_Grid_1r_66Text_33Visual",
+  title: "Templates/Section_Grid_1r_66Text_33Visual",
 }
 
 export const standard = () => (

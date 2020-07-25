@@ -2,7 +2,7 @@ import React from "react"
 import NavItemSpacer from "./NavItemSpacer"
 
 export default {
-  title: "NavItemSpacer",
+  title: "Navigation/Elements/NavItemSpacer",
 }
 
 export const standard = () => <NavItemSpacer />

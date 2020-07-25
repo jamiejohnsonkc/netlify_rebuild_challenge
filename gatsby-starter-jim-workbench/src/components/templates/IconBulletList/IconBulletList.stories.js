@@ -2,7 +2,7 @@ import React from "react"
 import IconBulletList from "./IconBulletList"
 
 export default {
-  title: "IconBulletList",
+  title: "Templates/IconBulletList",
 }
 
 export const standard = () => <IconBulletList />

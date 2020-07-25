@@ -2,7 +2,7 @@ import React from "react"
 import LoblawsImage from "./LoblawsImage"
 
 export default {
-  title: "LoblawsImage",
+  title: "Production/LoblawsImage",
 }
 
 export const standard = () => <LoblawsImage />

@@ -2,8 +2,9 @@
 import { jsx, Box, Text, useThemeUI } from "theme-ui"
 import Icon from "../../base/Icon"
 import React from "react"
-import { IconContext } from "react-icons"
 import PropTypes from "prop-types"
+
+//TODO deconstruct
 
 const BlockQuote = (props) => {
   const context = useThemeUI()
@@ -20,22 +21,18 @@ const BlockQuote = (props) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-
           borderColor: `${theme.colors.accent}`,
         }}
       >
-        <IconContext.Provider
-          value={{
-            style: {
-              width: "4em",
-              height: "4em",
-              verticalAlign: "sub",
-              margin: "0em",
-            },
+        <Icon
+          iconName="MdFormatQuote"
+          size="4em"
+          {...props}
+          sx={{
+            verticalAlign: "sub",
+            margin: "0em",
           }}
-        >
-          <Icon iconName="MdFormatQuote" />
-        </IconContext.Provider>
+        />
       </div>
       <Text
         as="div"

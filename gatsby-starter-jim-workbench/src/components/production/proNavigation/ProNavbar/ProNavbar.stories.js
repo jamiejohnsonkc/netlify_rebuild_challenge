@@ -2,7 +2,7 @@ import React from "react"
 import ProNavbar from "./ProNavbar"
 
 export default {
-  title: "ProNavbar",
+  title: "Production/ProNavbar",
 }
 
 export const standard = () => <ProNavbar />

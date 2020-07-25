@@ -2,7 +2,7 @@ import React from "react"
 import ProHeroIntro from "./ProHeroIntro"
 
 export default {
-  title: "ProHeroIntro",
+  title: "Production/ProHeroIntro",
 }
 
 export const standard = () => <ProHeroIntro />

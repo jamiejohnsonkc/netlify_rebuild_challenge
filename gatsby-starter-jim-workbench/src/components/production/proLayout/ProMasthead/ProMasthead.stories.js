@@ -2,7 +2,7 @@ import React from "react"
 import ProMasthead from "./ProMasthead"
 
 export default {
-  title: "ProMasthead",
+  title: "Production/ProMasthead",
 }
 
 export const standard = () => <ProMasthead />

@@ -2,7 +2,7 @@ import React from "react"
 import navDrawer from "./navDrawer"
 
 export default {
-  title: "navDrawer",
+  title: "Navigation/Containers/navDrawer",
 }
 
 export const standard = () => <navDrawer />

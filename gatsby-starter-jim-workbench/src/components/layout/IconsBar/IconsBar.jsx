@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../../base/Icon"
-import { IconContext } from "react-icons"
+
 import styled from "@emotion/styled"
 import { useThemeUI } from "theme-ui"
 
