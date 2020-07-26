@@ -1,9 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import useBackgroundImage from "./useBackgroundImage"
 
-export default Background = ({ className, props }) => {
+const Background = ({ className, props }) => {
   const data = useBackgroundImage()
   return (
     <>
@@ -22,3 +23,4 @@ export default Background = ({ className, props }) => {
     </>
   )
 }
+export default Background

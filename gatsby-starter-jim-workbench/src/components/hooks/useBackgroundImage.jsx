@@ -6,7 +6,7 @@ import styled from "@emotion/styled"
 
 const useBackgroundImage = () => {
   const data = useStaticQuery(graphql`
-    query {
+    query FluidBackgroundImage {
       file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
