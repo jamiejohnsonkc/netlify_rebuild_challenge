@@ -1,29 +1,13 @@
 /** @jsx jsx */
 import { jsx, Box, Styled, Text } from "theme-ui"
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 import styled from "@emotion/styled"
-
 import BackgroundImage from "gatsby-background-image"
+import useBackgroundImage from "../../hooks/useBackgroundImage"
 
 const BackgroundContainer = ({ className, props }) => {
-  const data = useStaticQuery(graphql`
-    query BackgroundImage {
-      file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            base64
-            aspectRatio
-            src
-            srcSet
-            sizes
-          }
-        }
-      }
-    }
-  `)
-
-  const imageData = data.file.childImageSharp.fluid
+  const imageData = useBackgroundImage()
 
   // Set ImageData.
 
