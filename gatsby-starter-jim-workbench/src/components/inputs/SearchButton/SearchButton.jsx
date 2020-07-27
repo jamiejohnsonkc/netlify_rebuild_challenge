@@ -2,7 +2,7 @@
 import { jsx, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../Icon"
+import Icon from "../../base/Icon"
 import { Link } from "gatsby"
 import Button from "../Button"
 

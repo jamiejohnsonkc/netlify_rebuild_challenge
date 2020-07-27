@@ -4,7 +4,7 @@ import React from "react"
 import Ul from "./Ul"
 
 export default {
-  title: "Base/Content Block/Unordered List",
+  title: "Base/Content Blocks/Unordered List",
 }
 
 export const standard = (props) => (

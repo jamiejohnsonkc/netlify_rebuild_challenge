@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 export default {
-  title: "ImageTextButton",
+  title: "Base/Content Blocks/Image, Text, Button",
 }
 
 const data = useStaticQuery(graphql`

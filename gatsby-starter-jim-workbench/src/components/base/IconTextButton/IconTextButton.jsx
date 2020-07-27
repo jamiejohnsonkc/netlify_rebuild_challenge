@@ -3,7 +3,7 @@ import { jsx, Text } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import Icon from "../Icon"
-import Button from "../Button"
+import Button from "../../inputs/Button"
 
 const IconTextButton = (props) => (
   <>

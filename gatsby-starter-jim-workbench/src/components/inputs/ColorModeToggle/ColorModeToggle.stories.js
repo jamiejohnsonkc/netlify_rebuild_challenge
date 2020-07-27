@@ -2,7 +2,7 @@ import React from "react"
 import ColorModeToggle from "./ColorModeToggle"
 
 export default {
-  title: "ColorModeToggle",
+  title: "Inputs/Buttons/ColorModeToggle",
 }
 
 export const standard = () => <ColorModeToggle />

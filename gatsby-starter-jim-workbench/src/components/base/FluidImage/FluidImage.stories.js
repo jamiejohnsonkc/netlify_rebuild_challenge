@@ -2,7 +2,7 @@ import React from "react"
 import FluidImage from "./FluidImage"
 
 export default {
-  title: "FluidImage",
+  title: "Images/Fluid Image Query",
 }
 
 export const standard = () => <FluidImage />

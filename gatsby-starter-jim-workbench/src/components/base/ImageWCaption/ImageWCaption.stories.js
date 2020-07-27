@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 export default {
-  title: "ImageWCaption",
+  title: "Base/Content Blocks/Image with caption",
 }
 
 const data = useStaticQuery(graphql`

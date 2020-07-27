@@ -2,7 +2,7 @@
 import { jsx, Text, Image } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Button from "../../base/Button"
+import Button from "../../inputs/Button"
 
 const ImageTextButton = (props) => (
   <>

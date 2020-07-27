@@ -2,7 +2,7 @@ import React from "react"
 import HoverRevealBox from "./HoverRevealBox"
 
 export default {
-  title: "HoverRevealBox",
+  title: "Hooks/useHover",
 }
 
 const hoverRevealBoxStyle = {

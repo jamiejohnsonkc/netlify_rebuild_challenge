@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
-import Button from "../Button/Button"
+import Button from "../../inputs/Button/Button"
 
 const Test = (props) => (
   <div>

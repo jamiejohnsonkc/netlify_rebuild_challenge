@@ -19,7 +19,7 @@ import {
 } from "theme-ui"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 // import "react-tabs/style/react-tabs.css"
-import Button from "../../../base/Button"
+import Button from "../../../inputs/Button"
 import CtaLink from "../../../base/CtaLink"
 import styled from "@emotion/styled"
 import palette from "@palette"

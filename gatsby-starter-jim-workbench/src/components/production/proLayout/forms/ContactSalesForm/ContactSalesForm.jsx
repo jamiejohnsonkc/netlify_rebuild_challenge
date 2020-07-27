@@ -2,7 +2,7 @@
 import { darken } from "@theme-ui/color"
 
 import { Box, Input, jsx, Label, Styled, Text, Textarea } from "theme-ui"
-import Button from "../../../../base/Button"
+import Button from "../../../../inputs/Button"
 import { Link } from "gatsby"
 
 // ProLabel = (props) => (

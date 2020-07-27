@@ -10,7 +10,6 @@ import NavItem from "../../../navigation/navElements/NavItem"
 import { Link } from "gatsby"
 
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
-import SearchButton from "../../../base/SearchButton"
 import palette from "@palette"
 import NavLinkIcon from "../../../navigation/navElements/NavLinkIcon"
 import SubSubMenu from "../../../navigation/navElements/SubSubMenu"

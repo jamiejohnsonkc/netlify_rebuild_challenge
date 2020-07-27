@@ -2,7 +2,7 @@
 import { jsx, Text, Box } from "theme-ui"
 import React from "react"
 import MonoBlock from "./MonoBlock"
-import Button from "../../../base/Button"
+import Button from "../../../inputs/Button"
 
 export default {
   title: "Layout Elements/FlexBlocks/MonoBlock",

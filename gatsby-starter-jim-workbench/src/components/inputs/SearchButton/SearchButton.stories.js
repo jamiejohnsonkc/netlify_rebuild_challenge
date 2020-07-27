@@ -4,7 +4,7 @@ import React from "react"
 import SearchButton from "./SearchButton"
 
 export default {
-  title: "SearchButton",
+  title: "Inputs/Buttons/SearchButton",
 }
 
 export const standard = (props) => (

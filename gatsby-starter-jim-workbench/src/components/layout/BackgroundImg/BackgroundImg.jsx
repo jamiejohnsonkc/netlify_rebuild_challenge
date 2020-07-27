@@ -3,7 +3,7 @@ import { jsx, Box, Text, Styled } from "theme-ui"
 import React from "react"
 import PropTypes from "prop-types"
 import BackgroundImage from "gatsby-background-image"
-import useBackgroundImage from "../../../hooks/useBackgroundImage"
+import useBackgroundImage from "../../hooks/useBackgroundImage/useBackgroundImage"
 
 const BackgroundImg = ({ className, props, children }) => {
   const imageData = useBackgroundImage()

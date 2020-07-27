@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, sizes } from "theme-ui"
-import Button from "../../base/Button"
+import Button from "../Button"
 import Icon from "../../base/Icon"
 import React from "react"
 import PropTypes from "prop-types"

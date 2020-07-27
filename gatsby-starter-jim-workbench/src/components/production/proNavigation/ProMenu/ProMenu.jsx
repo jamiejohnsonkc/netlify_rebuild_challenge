@@ -17,7 +17,7 @@ import CtaLink from "../../../base/CtaLink"
 import JumpLink from "../../../navigation/navElements/JumpLink"
 import SubSubMenu from "../../../navigation/navElements/SubSubMenu"
 import SubMenuNavItem from "../../../navigation/navElements/SubMenuNavItem"
-import SearchButton from "../../../base/SearchButton"
+import SearchButton from "../../../inputs/SearchButton"
 
 //* This is the production component for nav menu.  It defines the menus, items, links, submenus, etc. Due to this menu's complexity this element is not derived from a reusable component.
 

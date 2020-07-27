@@ -4,7 +4,7 @@ import React from "react"
 import BackgroundImg from "./BackgroundImg"
 
 export default {
-  title: "BackgroundImg",
+  title: "Layout Elements /Containers/Backgrounds/Background Image Container",
 }
 
 export const standard = ({ children, ...props }) => (

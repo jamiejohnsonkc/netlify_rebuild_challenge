@@ -6,7 +6,6 @@ import PropTypes from "prop-types"
 const BackgroundSvg = (props) => (
   <div
     {...props}
-    className="BackgroundSvg"
     sx={{
       position: "absolute",
       //   zIndex: "-1",
@@ -16,6 +15,7 @@ const BackgroundSvg = (props) => (
       top: 0,
       left: 0,
     }}
+    css={props.svgBackground}
   >
     {props.children}
   </div>

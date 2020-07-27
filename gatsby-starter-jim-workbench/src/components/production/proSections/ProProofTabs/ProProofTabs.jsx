@@ -14,7 +14,7 @@ import {
 } from "theme-ui"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import React from "react"
-import Button from "../../../base/Button"
+import Button from "../../../inputs/Button"
 
 import Loblaws from "../../../../svg/assets/loblaws.svg"
 import Cornerstone from "../../../../svg/assets/cornerstone.svg"
