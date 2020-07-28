@@ -4,7 +4,7 @@ import React from "react"
 import ProComparison from "./ProComparison"
 
 export default {
-  title: "Production/ProComparison",
+  title: "Production/Sections/ProComparison",
 }
 
 export const standard = (props) => (

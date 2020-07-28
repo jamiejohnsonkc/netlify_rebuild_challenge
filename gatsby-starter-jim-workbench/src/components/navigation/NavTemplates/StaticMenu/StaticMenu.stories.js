@@ -2,7 +2,7 @@ import React from "react"
 import StaticMenu from "./StaticMenu"
 
 export default {
-  title: "Navigation/Templates/StaticMenu",
+  title: "Navigation/Menus/Static/StaticMenu",
 }
 
 export const standard = () => <StaticMenu />

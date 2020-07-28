@@ -30,6 +30,10 @@ const card3Background = css`
   background-position-y: -0.25em;
 `
 
+const arrowColor = css`
+  color: ${palette.teal};
+`
+
 const ProCard = (props) => (
   <Card
     {...props}
@@ -69,7 +73,7 @@ const ProCard = (props) => (
       linkText="Learn More"
       iconName="ArrowRight"
       iconSize="1em"
-      iconColor={palette.teal}
+      iconColor={arrowColor}
       sx={{
         variant: "links.ctaLink.arrowRight",
         marginTop: "auto",

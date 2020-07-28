@@ -1,11 +1,8 @@
-import React from 'react';
-import DynamicDropDownMenu from './DynamicDropDownMenu';
-
+import React from "react"
+import DynamicDropDownMenu from "./DynamicDropDownMenu"
 
 export default {
-    title: 'DynamicDropDownMenu',
-    
-};
+  title: "Navigation/Menus/Dynamic/Dynamic drop-down menu",
+}
 
-export const standard = () => <DynamicDropDownMenu                
-/>;
+export const standard = () => <DynamicDropDownMenu />

@@ -61,13 +61,13 @@ const ProAnnouncementBar = (props) => {
           >
             Join us for a product demo - June 30.
           </Text>
-          <u
+          <Text
             sx={{
               paddingLeft: [0, 2, 2, 2],
             }}
           >
             Register Now!
-          </u>
+          </Text>
         </Link>
       </div>
 

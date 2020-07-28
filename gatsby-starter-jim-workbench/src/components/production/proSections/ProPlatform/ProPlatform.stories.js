@@ -2,7 +2,7 @@ import React from "react"
 import ProPlatform from "./ProPlatform"
 
 export default {
-  title: "Production/ProPlatform",
+  title: "Production/Sections/ProPlatform",
 }
 
 export const standard = () => <ProPlatform />

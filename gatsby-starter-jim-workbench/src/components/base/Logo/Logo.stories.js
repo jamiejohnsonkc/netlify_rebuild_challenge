@@ -4,7 +4,7 @@ import React from "react"
 import Logo from "./Logo"
 
 export default {
-  title: "Logo",
+  title: "Base/Graphics/Site Logo",
 }
 
 export const standard = () => <Logo />

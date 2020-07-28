@@ -23,6 +23,7 @@ module.exports = {
               // use @babel/preset-react for JSX and env (instead of staged presets)
               require.resolve("@babel/preset-react"),
               require.resolve("@babel/preset-env"),
+              require.resolve("@emotion/babel-preset-css-prop"),
             ],
             plugins: [
               // use @babel/plugin-proposal-class-properties for class arrow functions
@@ -58,6 +59,7 @@ module.exports = {
       },
       exclude: [/node_modules\/(?!(gatsby)\/)/],
     })
+
     //* enable svg previews
     config.module.rules = config.module.rules.map((rule) => {
       if (rule.test.toString().includes("svg")) {
@@ -67,6 +69,7 @@ module.exports = {
         return rule
       }
     })
+
     //* enable svgr
     config.module.rules.push({
       test: /\.svg$/,

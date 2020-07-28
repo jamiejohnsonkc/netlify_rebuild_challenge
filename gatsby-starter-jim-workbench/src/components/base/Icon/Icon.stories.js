@@ -4,7 +4,7 @@ import Icon from "."
 import { IconContext } from "react-icons"
 
 export default {
-  title: "Icon",
+  title: "Base/Graphics/Icon",
 }
 
 export const Icons = () => (

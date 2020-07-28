@@ -146,9 +146,9 @@ module.exports = {
     `gatsby-plugin-theme-ui`,
     {
       resolve: "gatsby-theme-style-guide",
-      options: {
-        basePath: "./src/components/utilities/design-system",
-      },
+      // options: {
+      //   basePath: "./src/components/utilities/design-system",
+      // },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

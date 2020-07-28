@@ -2,7 +2,7 @@ import React from "react"
 import BeckhamImage from "./BeckhamImage"
 
 export default {
-  title: "Production/BeckhamImage",
+  title: "Production/Images/ImageHooks/BeckhamImage",
 }
 
 export const standard = () => <BeckhamImage />

@@ -2,7 +2,7 @@ import React from "react"
 import ProSocialIconsBar from "./ProSocialIconsBar"
 
 export default {
-  title: "Production/ProSocialIconsBar",
+  title: "Production/Layout/ProSocialIconsBar",
 }
 
 export const standard = () => <ProSocialIconsBar />

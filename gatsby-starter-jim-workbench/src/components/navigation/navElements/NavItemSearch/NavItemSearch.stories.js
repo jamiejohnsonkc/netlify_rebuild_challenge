@@ -2,7 +2,7 @@ import React from "react"
 import NavItemSearch from "./NavItemSearch"
 
 export default {
-  title: "Navigation/Elements/NavItemSearch",
+  title: "Navigation/Elements/Utilities/NavItemSearch",
 }
 
 export const standard = () => <NavItemSearch />

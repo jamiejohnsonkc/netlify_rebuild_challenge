@@ -4,11 +4,11 @@ import React from "react"
 import Section from "./Section"
 
 export default {
-  title: "Section",
+  title: "Layout Elements/Containers/Section",
 }
 
 export const standard = (props) => (
   <Section {...props} sx={{ bg: "accent", alignItems: "center" }}>
-    alsdkfjl;kasjdfl;kj
+    Section Container
   </Section>
 )

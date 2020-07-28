@@ -2,7 +2,7 @@ import React from "react"
 import ProTechnology from "./ProTechnology"
 
 export default {
-  title: "Production/ProTechnology",
+  title: "Production/Sections/ProTechnology",
 }
 
 export const standard = () => <ProTechnology />

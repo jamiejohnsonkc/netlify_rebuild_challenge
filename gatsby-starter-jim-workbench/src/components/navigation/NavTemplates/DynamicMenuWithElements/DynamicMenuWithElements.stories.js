@@ -1,11 +1,8 @@
-import React from 'react';
-import DynamicMenuWithElements from './DynamicMenuWithElements';
-
+import React from "react"
+import DynamicMenuWithElements from "./DynamicMenuWithElements"
 
 export default {
-    title: 'DynamicMenuWithElements',
-    
-};
+  title: "Navigation/Menus/Dynamic/Dynamic menu with elements",
+}
 
-export const standard = () => <DynamicMenuWithElements                
-/>;
+export const standard = () => <DynamicMenuWithElements />

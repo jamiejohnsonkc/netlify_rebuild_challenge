@@ -4,7 +4,7 @@ import React from "react"
 import ProSuperUpMenu from "./ProSuperUpMenu"
 
 export default {
-  title: "Production/ProSuperUpMenu",
+  title: "Production/Navigation/ProSuperUpMenu",
 }
 
 export const standard = (props) => (

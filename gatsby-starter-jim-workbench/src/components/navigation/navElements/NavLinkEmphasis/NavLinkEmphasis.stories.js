@@ -1,8 +1,8 @@
-import React from 'react'
-import NavLinkEmphasis from './NavLinkEmphasis'
+import React from "react"
+import NavLinkEmphasis from "./NavLinkEmphasis"
 
 export default {
-	title: 'NavLinkEmphasis',
+  title: "Navigation/Elements/Links/NavLinkEmphasis",
 }
 
-export const standard = () => <NavLinkEmphasis />
+export const standard = () => <NavLinkEmphasis>Emphasized Link</NavLinkEmphasis>

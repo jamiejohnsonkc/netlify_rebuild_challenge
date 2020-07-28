@@ -4,7 +4,7 @@ import React from "react"
 import Button from "./Button"
 
 export default {
-  title: "Inputs/Button/Button defaults",
+  title: "Inputs/Buttons/Default",
 }
 
 export const standard = (props) => (

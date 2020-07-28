@@ -5,12 +5,13 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 // import RadialButton from "../../inputs/RadialButton"
 import { darken, lighten } from "@theme-ui/color"
-import Circle from "../../../../base/Circle"
 
 const CloseButton = (props) => (
   <CloseButton
     // onClick={() => setIsVisible(!isVisible)}
+
     {...props}
+    onClick={() => setIsVisible(false)}
     sx={{
       bg: darken("primary", 0.075),
       maxHeight: "1.618em",
@@ -25,8 +26,6 @@ const CloseButton = (props) => (
       marginLeft: "-10px",
       marginRight: "10px",
       borderRadius: "50%",
-      position: "absolute",
-      zIndex: 4,
       p: 1,
       // display: "inlineBlock",
     }}

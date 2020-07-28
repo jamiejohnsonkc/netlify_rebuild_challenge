@@ -2,7 +2,7 @@
 import { Container, jsx } from "theme-ui"
 import Cloud from "../../../../svg/assets/cloud.svg"
 import SplitTextLine from "../../../base/SplitTextLine/SplitTextLine"
-import Section_Grid_1r_66Text_33Visual from "../../../templates/Section_Grid_1r_66Text_33Visual"
+import Grid66Text33Visual from "../../../templates/Grid66Text33Visual"
 import ProPancake from "../../proLayout/ProPancake"
 
 // const SplitText = ({ textline1, textline2, ...props }) => (
@@ -34,7 +34,7 @@ const ProGlobalCloud = (props) => {
           variant: "layout.containerNarrow",
         }}
       >
-        <Section_Grid_1r_66Text_33Visual
+        <Grid66Text33Visual
           displayText="Distributed just like a CDN, but with advanced functionality for publishing entire sites and applications. Automate builds to prerender content and deploy worldwide to every major cloud provider—including staging, rollbacks, and even A/B testing."
           subheadText="A global platform with powerful features for managing code and assets."
           headerText={<SplitText />}
