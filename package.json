@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-site",
+  "name": "Netlify_Challenge_MonoRepo",
   "version": "1.0.0",
   "description": "jim site workbench",
   "main": "index.js",
@@ -7,14 +7,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "yarn workspace gatsby-starter-jim-workbench build",
-    "develop": "yarn workspace gatsby-starter-jim-workbench develop",
-    "clean": "yarn workspace gatsby-starter-jim-workbench gatsby clean",
+    "build": "yarn workspace Netlify_Challenge_Build build",
+    "develop": "yarn workspace Netlify_Challenge_Build develop",
+    "clean": "yarn workspace Netlify_Challenge_Build gatsby clean",
     "sanitize": "yarn run clean && yarn develop",
-    "storybook": "yarn workspace gatsby-starter-jim-workbench storybook"
+    "storybook": "yarn workspace Netlify_Challenge_Build storybook"
   },
   "workspaces": [
-    "gatsby-starter-jim-workbench",
+    "Netlify_Challenge_Build",
     "customStyles"
   ],
   "nohoist": [

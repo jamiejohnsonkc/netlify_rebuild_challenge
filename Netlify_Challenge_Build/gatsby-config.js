@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/netlify_rebuild_challenge",
   siteMetadata: {
-    title: `gatsby-starter-jim-workbench`,
-    description: `root site for jim workbench`,
+    title: `Netlify_Challenge_Build`,
+    description: `NetlifyEdge.com rebuild project`,
     author: `@jamiejohnsonkc`,
     menuLinks: [
       {

@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-jim-workbench",
+  "name": "Netlify_Challenge_Build",
   "version": "1.0.0",
-  "description": "site workbench",
+  "description": "gatsby + theme-ui dev monorepo",
   "main": "index.js",
   "author": "jamiejohnson <jamie@jamie-johnson.com> (@jamiejohnsonkc)",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
@@ -42,6 +42,7 @@
     "gatsby-theme-style-guide": "^0.3.1",
     "gatsby-transformer-json": "^2.4.4",
     "gatsby-transformer-sharp": "^2.5.3",
+    "gh-pages": "^3.1.0",
     "lodash.merge": "^4.6.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
