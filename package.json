@@ -11,7 +11,6 @@
     "develop": "yarn workspace Netlify_Challenge_Build develop",
     "clean": "yarn workspace Netlify_Challenge_Build gatsby clean",
     "sanitize": "yarn run clean && yarn develop",
-    "storybook": "yarn workspace Netlify_Challenge_Build storybook"
   },
   "workspaces": [
     "Netlify_Challenge_Build",
