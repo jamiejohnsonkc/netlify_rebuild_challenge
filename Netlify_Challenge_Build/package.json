@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "jamiejohnson <jamie@jamie-johnson.com> (@jamiejohnsonkc)",
   "license": "MIT",
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/jamiejohnsonkc/netlify_rebuild_challenge.git"
+    },
   "private": false,
   "dependencies": {
     "@babel/core": "^7.10.3",
@@ -12,12 +16,6 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "@emotion/babel-preset-css-prop": "^10.0.27",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-docs": "^5.3.19",
-    "@storybook/addon-knobs": "^5.3.19",
-    "@storybook/addon-storysource": "^5.3.19",
-    "@storybook/addon-viewport": "^5.3.19",
-    "@storybook/react": "^6.0",
     "@svgr/webpack": "^5.4.0",
     "@theme-ui/color": "^0.3.1",
     "@theme-ui/presets": "^0.3.0",
@@ -74,8 +72,6 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "NODE_ENV=production start-storybook -s ./public -p 6006 --ci",
-    "build-storybook": "NODE_ENV=production build-storybook"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
