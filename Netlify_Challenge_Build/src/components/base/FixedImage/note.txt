@@ -1,2 +1,0 @@
-Gatsby fixedImage width is 400px
-
