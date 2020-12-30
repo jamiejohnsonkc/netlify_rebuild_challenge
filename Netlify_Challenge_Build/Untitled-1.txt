@@ -1,2 +1,0 @@
---dropdown-position-left: calc(-1 * var(--masthead-logo-width) - 1em);
---dropdown-width: calc(100vw - 5rem);
