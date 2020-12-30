@@ -10,7 +10,7 @@
     "build": "yarn workspace Netlify_Challenge_Build build",
     "develop": "yarn workspace Netlify_Challenge_Build develop",
     "clean": "yarn workspace Netlify_Challenge_Build gatsby clean",
-    "sanitize": "yarn run clean && yarn develop",
+    "sanitize": "yarn run clean && yarn develop"
   },
   "workspaces": [
     "Netlify_Challenge_Build",
