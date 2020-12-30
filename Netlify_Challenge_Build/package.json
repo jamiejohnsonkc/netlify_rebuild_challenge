@@ -73,6 +73,6 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public -c core.longpaths=true"
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public"
   }
 }
