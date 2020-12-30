@@ -7,7 +7,7 @@ module.exports = {
     menuLinks: [
       {
         name: "Platform",
-        link: "/page-2",
+        link: "/",
         subMenu: [
           {
             link: "/sub-1",
@@ -32,7 +32,7 @@ module.exports = {
 
       {
         name: "Pricing",
-        link: "/page-3",
+        link: "/",
         subMenu: [
           {
             link: "/sub-1",
@@ -43,7 +43,7 @@ module.exports = {
 
       {
         name: "Enterprise",
-        link: "/page-4",
+        link: "/",
         subMenu: [
           {
             link: "/sub-1",
@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         name: "Jamstack",
-        link: "/page-5",
+        link: "/",
         subMenu: [
           {
             link: "/sub-1",
@@ -63,12 +63,12 @@ module.exports = {
       },
       {
         name: "Docs",
-        link: "/page-6",
+        link: "/",
         subMenu: [],
       },
       {
         name: "Blog",
-        link: "/page-7",
+        link: "/",
         subMenu: [],
       },
       {
@@ -78,12 +78,12 @@ module.exports = {
       },
       {
         name: "Log In",
-        link: "/page-9",
+        link: "/",
         subMenu: [],
       },
       {
         name: "Sign Up",
-        link: "/page-10",
+        link: "/",
         subMenu: [],
       },
     ],
@@ -173,8 +173,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-jim-workbench`,
-        short_name: `betasite`,
+        name: `netlify_rebuild_challenge`,
+        short_name: `Netlify Rebuild`,
         start_url: `/`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
